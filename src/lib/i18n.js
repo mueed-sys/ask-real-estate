@@ -4,14 +4,13 @@ import en from '../data/translations/en.json'
 import ar from '../data/translations/ar.json'
 import { LOCALES } from './constants'
 
+// Arabic UI toggle disabled for v1 — locked to English. Translation files for
+// 'ar' remain in src/data/translations/ar.json so we can re-enable the toggle
+// later without losing copy. Wipe any previously-stored preference so users
+// who tested the AR mode don't get stuck in it.
 const STORAGE_KEY = 'ire.lang'
-
-const initialLang = (() => {
-  if (typeof window === 'undefined') return 'en'
-  const saved = localStorage.getItem(STORAGE_KEY)
-  if (saved === 'en' || saved === 'ar') return saved
-  return 'en'
-})()
+if (typeof window !== 'undefined') localStorage.removeItem(STORAGE_KEY)
+const initialLang = 'en'
 
 i18n.use(initReactI18next).init({
   resources: {

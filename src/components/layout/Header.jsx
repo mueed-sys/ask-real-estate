@@ -16,22 +16,6 @@ const NAV_LINKS = [
   { to: '/contact', key: 'nav.contact' },
 ]
 
-function LangToggle() {
-  const { i18n } = useTranslation()
-  const next = i18n.language === 'en' ? 'ar' : 'en'
-  const label = i18n.language === 'en' ? 'AR' : 'EN'
-  return (
-    <button
-      onClick={() => i18n.changeLanguage(next)}
-      className="group relative inline-flex items-center gap-1.5 px-3 py-1.5 text-[11px] font-medium uppercase tracking-widest text-ink-200 transition-colors hover:text-gold-300"
-      aria-label={`Switch to ${label}`}
-    >
-      <span className="text-gold-500">◇</span>
-      <span>{label}</span>
-    </button>
-  )
-}
-
 export default function Header() {
   const { t } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
@@ -103,8 +87,6 @@ export default function Header() {
 
         {/* Right side actions */}
         <div className="flex items-center gap-3">
-          <LangToggle />
-
           {/* Favorites + Compare quick links (icons) */}
           <Link
             to="/favorites"
