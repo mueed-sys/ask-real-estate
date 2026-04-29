@@ -1,0 +1,13 @@
+[
+  { "slug": "juffair", "name": "Juffair", "lat": 26.2120, "lng": 50.6000, "demand": "hot", "color": "#ef4444", "searches": 1842, "inquiries": 412, "listings": 45, "avg_price": 520, "supply_demand": "High Demand, Low Supply", "top_type": "2BR Apartment" },
+  { "slug": "seef", "name": "Seef", "lat": 26.2336, "lng": 50.5469, "demand": "hot", "color": "#ef4444", "searches": 1456, "inquiries": 318, "listings": 38, "avg_price": 480, "supply_demand": "High Demand, Low Supply", "top_type": "Studio" },
+  { "slug": "amwaj", "name": "Amwaj Islands", "lat": 26.2877, "lng": 50.6650, "demand": "high", "color": "#f97316", "searches": 1124, "inquiries": 254, "listings": 42, "avg_price": 1100, "supply_demand": "High Demand, Balanced Supply", "top_type": "3BR Villa" },
+  { "slug": "bahrain-bay", "name": "Bahrain Bay", "lat": 26.2400, "lng": 50.5910, "demand": "high", "color": "#f97316", "searches": 968, "inquiries": 218, "listings": 28, "avg_price": 950, "supply_demand": "High Demand, Low Supply", "top_type": "1BR Apartment" },
+  { "slug": "riffa", "name": "Riffa", "lat": 26.1300, "lng": 50.5550, "demand": "medium", "color": "#eab308", "searches": 712, "inquiries": 142, "listings": 51, "avg_price": 560, "supply_demand": "Balanced", "top_type": "Family Villa" },
+  { "slug": "reef-island", "name": "Reef Island", "lat": 26.2510, "lng": 50.5750, "demand": "medium", "color": "#eab308", "searches": 564, "inquiries": 118, "listings": 19, "avg_price": 850, "supply_demand": "Balanced", "top_type": "2BR Apartment" },
+  { "slug": "diplomatic-area", "name": "Diplomatic Area", "lat": 26.2398, "lng": 50.5778, "demand": "medium", "color": "#eab308", "searches": 489, "inquiries": 92, "listings": 24, "avg_price": 1200, "supply_demand": "Balanced", "top_type": "Office Suite" },
+  { "slug": "saar", "name": "Saar", "lat": 26.1850, "lng": 50.4778, "demand": "low", "color": "#22c55e", "searches": 392, "inquiries": 84, "listings": 38, "avg_price": 850, "supply_demand": "Oversupplied", "top_type": "Family Villa" },
+  { "slug": "budaiya", "name": "Budaiya", "lat": 26.2100, "lng": 50.4480, "demand": "low", "color": "#22c55e", "searches": 287, "inquiries": 56, "listings": 31, "avg_price": 320, "supply_demand": "Oversupplied", "top_type": "2BR Apartment" },
+  { "slug": "hidd", "name": "Hidd", "lat": 26.2497, "lng": 50.6480, "demand": "low", "color": "#22c55e", "searches": 218, "inquiries": 41, "listings": 22, "avg_price": 280, "supply_demand": "Oversupplied", "top_type": "2BR Apartment" },
+  { "slug": "tubli", "name": "Tubli", "lat": 26.1865, "lng": 50.5350, "demand": "low", "color": "#22c55e", "searches": 184, "inquiries": 32, "listings": 18, "avg_price": 380, "supply_demand": "Balanced", "top_type": "Garden Apartment" }
+]

@@ -1,0 +1,11 @@
+[
+  { "name": "Carlton Real Estate", "listings": 678, "avg_price": 510, "share": 8.1, "areas": ["Juffair", "Seef"], "has_website": true },
+  { "name": "Alforsa Real Estate", "listings": 589, "avg_price": 480, "share": 7.0, "areas": ["Seef", "Manama"], "has_website": true },
+  { "name": "Kayan Real Estate", "listings": 558, "avg_price": 520, "share": 6.6, "areas": ["Juffair", "Amwaj"], "has_website": true },
+  { "name": "Underhill Real Estate", "listings": 364, "avg_price": 450, "share": 4.3, "areas": ["Riffa", "Saar"], "has_website": false },
+  { "name": "IRE Bahrain", "listings": 247, "avg_price": 495, "share": 2.9, "areas": ["Juffair", "Seef", "Amwaj"], "has_website": true, "self": true },
+  { "name": "Property Inn", "listings": 212, "avg_price": 490, "share": 2.5, "areas": ["Juffair"], "has_website": true },
+  { "name": "Best Properties", "listings": 156, "avg_price": 460, "share": 1.9, "areas": ["Juffair", "Seef"], "has_website": false },
+  { "name": "Al Mahd Real Estate", "listings": 149, "avg_price": 440, "share": 1.8, "areas": ["Riffa"], "has_website": false },
+  { "name": "Homes Bahrain", "listings": 134, "avg_price": 500, "share": 1.6, "areas": ["Various"], "has_website": true }
+]

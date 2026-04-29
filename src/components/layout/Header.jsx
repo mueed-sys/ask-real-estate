@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Menu, X, GitCompare, Heart } from 'lucide-react'
+import { Menu, X, GitCompare, Heart, ShieldCheck } from 'lucide-react'
 import { BRAND } from '../../lib/constants'
 import { useFavorites } from '../../store/useFavorites'
 import { useComparison } from '../../store/useComparison'
@@ -113,6 +113,16 @@ export default function Header() {
             )}
           </Link>
 
+          {/* Admin entry — subtle gold pill, opens dashboard */}
+          <Link
+            to="/dashboard"
+            className="hidden items-center gap-1.5 rounded-full border border-gold-500/25 bg-gold-500/[0.04] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-widest text-gold-400 transition-all hover:border-gold-500/50 hover:bg-gold-500/10 hover:text-gold-300 lg:inline-flex"
+            title="Admin dashboard"
+          >
+            <ShieldCheck className="h-3 w-3" strokeWidth={1.8} />
+            Admin
+          </Link>
+
           {/* CTA */}
           <Link to="/list-property" className="btn-gold hidden text-xs lg:inline-flex">
             {t('nav.list_property')}
@@ -158,6 +168,12 @@ export default function Header() {
                 ))}
                 <Link to="/list-property" className="btn-gold mt-4 text-xs">
                   {t('nav.list_property')}
+                </Link>
+                <Link
+                  to="/dashboard"
+                  className="mt-2 inline-flex items-center justify-center gap-1.5 rounded-full border border-gold-500/30 bg-gold-500/5 px-4 py-2 text-[10px] font-semibold uppercase tracking-widest text-gold-300"
+                >
+                  <ShieldCheck className="h-3 w-3" /> Admin
                 </Link>
                 <div className="mt-3 flex items-center gap-3 px-4">
                   <Link to="/favorites" className="btn-ghost">

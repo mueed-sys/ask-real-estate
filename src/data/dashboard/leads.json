@@ -1,0 +1,457 @@
+[
+  {
+    "id": "L-2401",
+    "name": "Ahmed Al-Sayed",
+    "phone": "+97333112233",
+    "email": "ahmed.alsayed@example.com",
+    "property_id": "IRE-001",
+    "status": "new",
+    "source": "whatsapp",
+    "agent_id": "agent-001",
+    "first_contact": "2026-04-29T08:42:00Z",
+    "last_activity": "2026-04-29T08:42:00Z",
+    "budget": 700,
+    "notes": "Looking for 2BR sea view, ready to view this week.",
+    "timeline": [
+      { "type": "inbound", "channel": "whatsapp", "text": "Hi, I'm interested in the 2BR Juffair listing. Available for viewing?", "time": "2026-04-29T08:42:00Z" }
+    ]
+  },
+  {
+    "id": "L-2400",
+    "name": "Sarah Mitchell",
+    "phone": "+97333445566",
+    "email": "sarah.mitchell@example.com",
+    "property_id": "IRE-011",
+    "status": "viewing",
+    "source": "website",
+    "agent_id": "agent-003",
+    "first_contact": "2026-04-27T11:20:00Z",
+    "last_activity": "2026-04-29T07:15:00Z",
+    "budget": 1200,
+    "notes": "Two kids in British School. Needs to be close to BSB campus.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Form submitted: 4BR villa Saar inquiry", "time": "2026-04-27T11:20:00Z" },
+      { "type": "agent", "channel": "whatsapp", "text": "Fatima responded with availability and Saar shortlist", "time": "2026-04-27T11:48:00Z" },
+      { "type": "system", "text": "Viewing scheduled — May 2, 10:30 AM at IRE-011", "time": "2026-04-29T07:15:00Z" }
+    ]
+  },
+  {
+    "id": "L-2399",
+    "name": "Khalid Al-Rashid",
+    "phone": "+97333778899",
+    "email": "khalid.rashid@example.com",
+    "property_id": "IRE-005",
+    "status": "negotiating",
+    "source": "phone",
+    "agent_id": "agent-005",
+    "first_contact": "2026-04-22T14:00:00Z",
+    "last_activity": "2026-04-28T16:30:00Z",
+    "budget": 3000,
+    "notes": "Bahraini investor. Returning client. Asked for 5% off list.",
+    "timeline": [
+      { "type": "inbound", "channel": "phone", "text": "Khalid called requesting Bay Tower penthouse details", "time": "2026-04-22T14:00:00Z" },
+      { "type": "agent", "text": "Sarah Williams sent full unit pack + floor plan", "time": "2026-04-22T15:30:00Z" },
+      { "type": "system", "text": "Viewing completed — May 25", "time": "2026-04-26T11:00:00Z" },
+      { "type": "agent", "text": "Client made offer BD 2,650/month, awaiting landlord response", "time": "2026-04-28T16:30:00Z" }
+    ]
+  },
+  {
+    "id": "L-2398",
+    "name": "James Wilson",
+    "phone": "+97333998877",
+    "email": "james.wilson@example.com",
+    "property_id": "IRE-006",
+    "status": "closed",
+    "source": "website",
+    "agent_id": "agent-004",
+    "first_contact": "2026-04-10T09:10:00Z",
+    "last_activity": "2026-04-26T14:00:00Z",
+    "budget": 950,
+    "notes": "Regional banking office relocation. Closed at asking. 1-year lease.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Form: WTC office space inquiry", "time": "2026-04-10T09:10:00Z" },
+      { "type": "agent", "text": "Ali Karimi sent floor pack + parking allocation", "time": "2026-04-10T10:00:00Z" },
+      { "type": "system", "text": "Tenancy agreement signed — IRE-DOC-0181", "time": "2026-04-26T14:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2397",
+    "name": "Mariam Al-Khalifa",
+    "phone": "+97333556677",
+    "email": "mariam.khalifa@example.com",
+    "property_id": "IRE-013",
+    "status": "contacted",
+    "source": "instagram",
+    "agent_id": "agent-002",
+    "first_contact": "2026-04-28T18:30:00Z",
+    "last_activity": "2026-04-29T09:00:00Z",
+    "budget": 2000,
+    "notes": "Returning Bahraini from London. Wants canal-front Amwaj.",
+    "timeline": [
+      { "type": "inbound", "channel": "instagram", "text": "DM via @irebahrain post", "time": "2026-04-28T18:30:00Z" },
+      { "type": "agent", "text": "Hassan replied with Tala Tower spec", "time": "2026-04-29T09:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2396",
+    "name": "Olivier Dubois",
+    "phone": "+97333221199",
+    "email": "olivier.dubois@example.com",
+    "property_id": "IRE-009",
+    "status": "viewing",
+    "source": "website",
+    "agent_id": "agent-005",
+    "first_contact": "2026-04-25T16:00:00Z",
+    "last_activity": "2026-04-28T11:30:00Z",
+    "budget": 850,
+    "notes": "French expat, language preference: English/French.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Form submitted — Reef Island 2BR", "time": "2026-04-25T16:00:00Z" },
+      { "type": "agent", "text": "Sarah replied with viewing slots", "time": "2026-04-26T09:00:00Z" },
+      { "type": "system", "text": "Viewing booked for May 1, 4 PM", "time": "2026-04-28T11:30:00Z" }
+    ]
+  },
+  {
+    "id": "L-2395",
+    "name": "Fahad Al-Doseri",
+    "phone": "+97333998811",
+    "email": "fahad.doseri@example.com",
+    "property_id": "IRE-020",
+    "status": "negotiating",
+    "source": "whatsapp",
+    "agent_id": "agent-003",
+    "first_contact": "2026-04-23T10:30:00Z",
+    "last_activity": "2026-04-29T08:00:00Z",
+    "budget": 750,
+    "notes": "Looking for villa in Riffa Views. Family of 5.",
+    "timeline": [
+      { "type": "inbound", "channel": "whatsapp", "text": "Riffa Views duplex — viewing this weekend?", "time": "2026-04-23T10:30:00Z" },
+      { "type": "system", "text": "Viewing completed — Riffa Views Estate", "time": "2026-04-26T16:00:00Z" },
+      { "type": "agent", "text": "Fatima negotiating includes maid's quarters", "time": "2026-04-29T08:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2394",
+    "name": "Nadia Hassan",
+    "phone": "+97333662288",
+    "email": "nadia.hassan@example.com",
+    "property_id": "IRE-002",
+    "status": "closed",
+    "source": "whatsapp",
+    "agent_id": "agent-001",
+    "first_contact": "2026-04-15T07:30:00Z",
+    "last_activity": "2026-04-22T13:00:00Z",
+    "budget": 320,
+    "notes": "Doctor at Bahrain Specialist. Needed Seef studio same week.",
+    "timeline": [
+      { "type": "inbound", "channel": "whatsapp", "text": "Need Seef studio ASAP, can move in 5 days", "time": "2026-04-15T07:30:00Z" },
+      { "type": "agent", "text": "Murat showed Almoayyed unit same day", "time": "2026-04-15T15:00:00Z" },
+      { "type": "system", "text": "Tenancy agreement signed", "time": "2026-04-22T13:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2393",
+    "name": "Daniel Schultz",
+    "phone": "+97333147258",
+    "email": "d.schultz@example.com",
+    "property_id": "IRE-015",
+    "status": "new",
+    "source": "website",
+    "agent_id": "agent-005",
+    "first_contact": "2026-04-29T09:48:00Z",
+    "last_activity": "2026-04-29T09:48:00Z",
+    "budget": 600,
+    "notes": "German expat, recently arrived Bahrain.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Inquiry on Reflections 1BR Bahrain Bay", "time": "2026-04-29T09:48:00Z" }
+    ]
+  },
+  {
+    "id": "L-2392",
+    "name": "Reema Al-Hashimi",
+    "phone": "+97333994455",
+    "email": "reema.hashimi@example.com",
+    "property_id": "IRE-018",
+    "status": "contacted",
+    "source": "phone",
+    "agent_id": "agent-003",
+    "first_contact": "2026-04-28T13:00:00Z",
+    "last_activity": "2026-04-28T13:45:00Z",
+    "budget": 400,
+    "notes": "Looking for 2BR Tubli garden flat for parents.",
+    "timeline": [
+      { "type": "inbound", "channel": "phone", "text": "Tubli garden flat available?", "time": "2026-04-28T13:00:00Z" },
+      { "type": "agent", "text": "Fatima sent listing pack + viewing slots", "time": "2026-04-28T13:45:00Z" }
+    ]
+  },
+  {
+    "id": "L-2391",
+    "name": "Yusuf Al-Mannai",
+    "phone": "+97333778822",
+    "email": "yusuf.mannai@example.com",
+    "property_id": "IRE-017",
+    "status": "viewing",
+    "source": "instagram",
+    "agent_id": "agent-003",
+    "first_contact": "2026-04-26T20:00:00Z",
+    "last_activity": "2026-04-28T19:00:00Z",
+    "budget": 280000,
+    "notes": "Buyer for Saar villa, BD 280K cash budget.",
+    "timeline": [
+      { "type": "inbound", "channel": "instagram", "text": "Asked about IRE-017 in Saar", "time": "2026-04-26T20:00:00Z" },
+      { "type": "agent", "text": "Fatima sent investor pack", "time": "2026-04-27T08:00:00Z" },
+      { "type": "system", "text": "Viewing booked May 3", "time": "2026-04-28T19:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2390",
+    "name": "Lara Petrova",
+    "phone": "+97333556633",
+    "email": "lara.petrova@example.com",
+    "property_id": "IRE-007",
+    "status": "negotiating",
+    "source": "website",
+    "agent_id": "agent-001",
+    "first_contact": "2026-04-21T11:00:00Z",
+    "last_activity": "2026-04-29T08:30:00Z",
+    "budget": 380,
+    "notes": "Asked for furnished + free parking included.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "1BR Seef inquiry", "time": "2026-04-21T11:00:00Z" },
+      { "type": "system", "text": "Viewing completed — Almeer Tower", "time": "2026-04-25T15:00:00Z" },
+      { "type": "agent", "text": "Murat negotiating — landlord agreed BD 380 inclusive", "time": "2026-04-29T08:30:00Z" }
+    ]
+  },
+  {
+    "id": "L-2389",
+    "name": "Ravi Krishnan",
+    "phone": "+97333887766",
+    "email": "ravi.krishnan@example.com",
+    "property_id": "IRE-016",
+    "status": "closed",
+    "source": "whatsapp",
+    "agent_id": "agent-006",
+    "first_contact": "2026-04-12T09:00:00Z",
+    "last_activity": "2026-04-19T10:00:00Z",
+    "budget": 320,
+    "notes": "Closed lease same week, low-fuss tenant.",
+    "timeline": [
+      { "type": "inbound", "channel": "whatsapp", "text": "2BR Hidd available?", "time": "2026-04-12T09:00:00Z" },
+      { "type": "system", "text": "Tenancy signed", "time": "2026-04-19T10:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2388",
+    "name": "Hala Al-Otaibi",
+    "phone": "+97333117788",
+    "email": "hala.otaibi@example.com",
+    "property_id": "IRE-008",
+    "status": "new",
+    "source": "instagram",
+    "agent_id": "agent-003",
+    "first_contact": "2026-04-29T07:30:00Z",
+    "last_activity": "2026-04-29T07:30:00Z",
+    "budget": 450,
+    "notes": "Returning Saudi expat, family of 6.",
+    "timeline": [
+      { "type": "inbound", "channel": "instagram", "text": "DM about 3BR Riffa", "time": "2026-04-29T07:30:00Z" }
+    ]
+  },
+  {
+    "id": "L-2387",
+    "name": "Mark Thompson",
+    "phone": "+97333449977",
+    "email": "mark.thompson@example.com",
+    "property_id": "IRE-014",
+    "status": "contacted",
+    "source": "website",
+    "agent_id": "agent-004",
+    "first_contact": "2026-04-28T10:00:00Z",
+    "last_activity": "2026-04-28T11:30:00Z",
+    "budget": 1200,
+    "notes": "Café operator looking for retail unit Seef.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Retail Seef Avenue Mall inquiry", "time": "2026-04-28T10:00:00Z" },
+      { "type": "agent", "text": "Ali sent floor plan + foot-traffic data", "time": "2026-04-28T11:30:00Z" }
+    ]
+  },
+  {
+    "id": "L-2386",
+    "name": "Tariq Al-Khater",
+    "phone": "+97333662299",
+    "email": "tariq.khater@example.com",
+    "property_id": "IRE-019",
+    "status": "viewing",
+    "source": "phone",
+    "agent_id": "agent-004",
+    "first_contact": "2026-04-26T13:30:00Z",
+    "last_activity": "2026-04-28T17:00:00Z",
+    "budget": 700,
+    "notes": "Consultancy expanding office, 6 desks needed.",
+    "timeline": [
+      { "type": "inbound", "channel": "phone", "text": "Seef Tower office suite available?", "time": "2026-04-26T13:30:00Z" },
+      { "type": "system", "text": "Viewing scheduled May 2", "time": "2026-04-28T17:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2385",
+    "name": "Kanya Sulistio",
+    "phone": "+97333445522",
+    "email": "kanya.s@example.com",
+    "property_id": "IRE-010",
+    "status": "closed",
+    "source": "whatsapp",
+    "agent_id": "agent-001",
+    "first_contact": "2026-04-09T15:00:00Z",
+    "last_activity": "2026-04-15T14:00:00Z",
+    "budget": 290,
+    "notes": "Studio Juffair — closed in 6 days.",
+    "timeline": [
+      { "type": "inbound", "channel": "whatsapp", "text": "Studio Juffair available?", "time": "2026-04-09T15:00:00Z" },
+      { "type": "system", "text": "Tenancy signed", "time": "2026-04-15T14:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2384",
+    "name": "Layla Al-Mahmood",
+    "phone": "+97333998800",
+    "email": "layla.mahmood@example.com",
+    "property_id": "IRE-012",
+    "status": "negotiating",
+    "source": "website",
+    "agent_id": "agent-003",
+    "first_contact": "2026-04-22T09:00:00Z",
+    "last_activity": "2026-04-29T09:30:00Z",
+    "budget": 380,
+    "notes": "First-time tenant, landlord meeting halfway BD 360.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Budaiya 2BR enquiry", "time": "2026-04-22T09:00:00Z" },
+      { "type": "agent", "text": "Counter-offer in progress", "time": "2026-04-29T09:30:00Z" }
+    ]
+  },
+  {
+    "id": "L-2383",
+    "name": "Anna Kowalski",
+    "phone": "+97333114455",
+    "email": "anna.kowalski@example.com",
+    "property_id": "IRE-004",
+    "status": "new",
+    "source": "website",
+    "agent_id": "agent-001",
+    "first_contact": "2026-04-29T06:50:00Z",
+    "last_activity": "2026-04-29T06:50:00Z",
+    "budget": 480,
+    "notes": "Polish expat — financial services, just relocated.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Skyline Tower 1BR", "time": "2026-04-29T06:50:00Z" }
+    ]
+  },
+  {
+    "id": "L-2382",
+    "name": "Omar Al-Awadhi",
+    "phone": "+97333774488",
+    "email": "omar.awadhi@example.com",
+    "property_id": "IRE-003",
+    "status": "contacted",
+    "source": "whatsapp",
+    "agent_id": "agent-002",
+    "first_contact": "2026-04-28T20:00:00Z",
+    "last_activity": "2026-04-29T08:15:00Z",
+    "budget": 1500,
+    "notes": "Wants Amwaj canal villa for executive lease.",
+    "timeline": [
+      { "type": "inbound", "channel": "whatsapp", "text": "Amwaj canal villa for short lease?", "time": "2026-04-28T20:00:00Z" },
+      { "type": "agent", "text": "Hassan replied with availability", "time": "2026-04-29T08:15:00Z" }
+    ]
+  },
+  {
+    "id": "L-2381",
+    "name": "Camila Rodriguez",
+    "phone": "+97333662200",
+    "email": "camila.rodriguez@example.com",
+    "property_id": "IRE-007",
+    "status": "viewing",
+    "source": "instagram",
+    "agent_id": "agent-001",
+    "first_contact": "2026-04-26T16:00:00Z",
+    "last_activity": "2026-04-28T20:00:00Z",
+    "budget": 400,
+    "notes": "Spanish teacher at Lycée — Seef preferred.",
+    "timeline": [
+      { "type": "inbound", "channel": "instagram", "text": "Seef 1BR DM", "time": "2026-04-26T16:00:00Z" },
+      { "type": "system", "text": "Viewing booked May 1", "time": "2026-04-28T20:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2380",
+    "name": "Jonathan Pierce",
+    "phone": "+97333998866",
+    "email": "j.pierce@example.com",
+    "property_id": "IRE-005",
+    "status": "new",
+    "source": "phone",
+    "agent_id": "agent-005",
+    "first_contact": "2026-04-29T11:30:00Z",
+    "last_activity": "2026-04-29T11:30:00Z",
+    "budget": 3000,
+    "notes": "Regional CEO, looking at Bahrain Bay penthouse",
+    "timeline": [
+      { "type": "inbound", "channel": "phone", "text": "Bay Tower 2 penthouse availability", "time": "2026-04-29T11:30:00Z" }
+    ]
+  },
+  {
+    "id": "L-2379",
+    "name": "Bashar Al-Naimi",
+    "phone": "+97333445599",
+    "email": "bashar.naimi@example.com",
+    "property_id": "IRE-008",
+    "status": "negotiating",
+    "source": "whatsapp",
+    "agent_id": "agent-003",
+    "first_contact": "2026-04-23T17:00:00Z",
+    "last_activity": "2026-04-29T07:45:00Z",
+    "budget": 450,
+    "notes": "Bahraini family relocating from Saudi.",
+    "timeline": [
+      { "type": "inbound", "channel": "whatsapp", "text": "Riffa 3BR enquiry", "time": "2026-04-23T17:00:00Z" },
+      { "type": "system", "text": "Viewing completed — Block 1213", "time": "2026-04-26T14:00:00Z" },
+      { "type": "agent", "text": "Counter at BD 420 inclusive EWA", "time": "2026-04-29T07:45:00Z" }
+    ]
+  },
+  {
+    "id": "L-2378",
+    "name": "Ines Saleh",
+    "phone": "+97333111222",
+    "email": "ines.saleh@example.com",
+    "property_id": "IRE-009",
+    "status": "closed",
+    "source": "website",
+    "agent_id": "agent-005",
+    "first_contact": "2026-04-08T10:00:00Z",
+    "last_activity": "2026-04-21T15:00:00Z",
+    "budget": 800,
+    "notes": "French-Lebanese, Reef Island 2BR. Closed at asking.",
+    "timeline": [
+      { "type": "inbound", "channel": "website", "text": "Form: Reef Island 2BR", "time": "2026-04-08T10:00:00Z" },
+      { "type": "system", "text": "Tenancy signed", "time": "2026-04-21T15:00:00Z" }
+    ]
+  },
+  {
+    "id": "L-2377",
+    "name": "Zayed Al-Maktoum",
+    "phone": "+97333998800",
+    "email": "zayed.maktoum@example.com",
+    "property_id": "IRE-013",
+    "status": "contacted",
+    "source": "phone",
+    "agent_id": "agent-002",
+    "first_contact": "2026-04-29T05:30:00Z",
+    "last_activity": "2026-04-29T10:00:00Z",
+    "budget": 2000,
+    "notes": "Asked about Tala Tower duplex penthouse.",
+    "timeline": [
+      { "type": "inbound", "channel": "phone", "text": "Tala duplex availability", "time": "2026-04-29T05:30:00Z" },
+      { "type": "agent", "text": "Hassan sent video tour link", "time": "2026-04-29T10:00:00Z" }
+    ]
+  }
+]
