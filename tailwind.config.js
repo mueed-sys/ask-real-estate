@@ -71,7 +71,10 @@ export default {
         'fade-up': 'fade-up 0.6s ease-out forwards',
       },
       letterSpacing: {
-        widest: '0.32em',
+        // Restrained luxury tracking — was 0.32em which read as awkwardly
+        // wide. 0.12em keeps small-caps eyebrows feeling refined without the
+        // letters drifting apart.
+        widest: '0.12em',
       },
     },
   },
