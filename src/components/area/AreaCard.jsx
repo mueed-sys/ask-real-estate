@@ -51,12 +51,12 @@ export default function AreaCard({ area, variant = 'home' }) {
     )
   }
 
-  // home variant — image-only card with overlay
+  // home variant — image-only card with overlay. Compact on phones.
   return (
-    <motion.div whileHover={{ y: -8 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}>
+    <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}>
       <Link
         to={`/areas/${area.slug}`}
-        className="group relative block aspect-[4/5] overflow-hidden rounded-sm"
+        className="group relative block aspect-square overflow-hidden rounded-sm sm:aspect-[4/5]"
       >
         <img
           src={area.image}
@@ -66,13 +66,13 @@ export default function AreaCard({ area, variant = 'home' }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/30 to-transparent transition-opacity group-hover:from-ink-950/95" />
 
-        <div className="absolute inset-x-0 bottom-0 p-6">
-          <p className="inline-flex items-center gap-1 text-[10px] uppercase tracking-widest text-gold-500">
-            <MapPin className="h-3 w-3" /> {area.property_count} {t('areas_page.available')}
+        <div className="absolute inset-x-0 bottom-0 p-3 sm:p-5">
+          <p className="inline-flex items-center gap-1 text-[9px] uppercase tracking-widest text-gold-500 sm:text-[10px]">
+            <MapPin className="h-2.5 w-2.5 sm:h-3 sm:w-3" /> {area.property_count} {t('areas_page.available')}
           </p>
-          <h3 className="mt-2 font-display text-3xl leading-none text-ink-100">{name}</h3>
-          <div className="mt-2 h-px w-8 bg-gold-gradient transition-all duration-500 group-hover:w-16" />
-          <p className="mt-3 max-h-0 overflow-hidden text-xs text-ink-200 opacity-0 transition-all duration-500 group-hover:max-h-12 group-hover:opacity-100">
+          <h3 className="mt-1 font-display text-lg leading-tight text-ink-100 sm:mt-2 sm:text-2xl md:text-3xl">{name}</h3>
+          <div className="mt-1.5 h-px w-6 bg-gold-gradient transition-all duration-500 group-hover:w-12 sm:mt-2 sm:w-8" />
+          <p className="mt-2 hidden max-h-0 overflow-hidden text-xs text-ink-200 opacity-0 transition-all duration-500 group-hover:max-h-12 group-hover:opacity-100 sm:block">
             {tagline}
           </p>
         </div>

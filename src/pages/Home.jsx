@@ -69,13 +69,13 @@ export default function Home() {
       <Hero />
 
       {/* STATS */}
-      <section className="container-lux -mt-12 relative z-10">
+      <section className="container-lux -mt-8 relative z-10 sm:-mt-12">
         <StatsBar />
       </section>
 
       {/* FEATURED PROPERTIES */}
-      <section className="container-lux py-24 lg:py-32">
-        <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
+      <section className="container-lux py-16 sm:py-24 lg:py-32">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4 sm:mb-12 sm:gap-6">
           <SectionHeader
             eyebrow={t('sections.featured_eyebrow')}
             title={t('sections.featured_title')}
@@ -92,7 +92,7 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {featured.map((property, i) => (
             <Reveal key={property.id} delay={i * 0.08}>
               <PropertyCard property={property} />
@@ -102,14 +102,14 @@ export default function Home() {
       </section>
 
       {/* AREAS */}
-      <section className="bg-ink-850/40 py-24 lg:py-32">
+      <section className="bg-ink-850/40 py-16 sm:py-24 lg:py-32">
         <div className="container-lux">
           <SectionHeader
             eyebrow={t('sections.areas_eyebrow')}
             title={t('sections.areas_title')}
             subtitle={t('sections.areas_subtitle')}
           />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-5 lg:grid-cols-3">
             {homepageAreas.map((area, i) => (
               <Reveal key={area.slug} delay={i * 0.06}>
                 <AreaCard area={area} />
@@ -120,26 +120,26 @@ export default function Home() {
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="container-lux py-24 lg:py-32">
+      <section className="container-lux py-16 sm:py-24 lg:py-32">
         <SectionHeader
           eyebrow={t('sections.types_eyebrow')}
           title={t('sections.types_title')}
           align="center"
         />
-        <div className="mx-auto mt-12 grid max-w-5xl grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+        <div className="mx-auto mt-8 grid max-w-5xl grid-cols-3 gap-3 sm:mt-12 sm:gap-4 md:grid-cols-3 lg:grid-cols-6">
           {typeCounts.map((typeInfo, i) => {
             const Icon = typeInfo.icon
             return (
               <Reveal key={typeInfo.value} delay={i * 0.05}>
                 <Link
                   to={`/properties?type=${typeInfo.value}`}
-                  className="card-lux group flex flex-col items-center gap-3 p-6 text-center"
+                  className="card-lux group flex flex-col items-center gap-2 p-4 text-center sm:gap-3 sm:p-6"
                 >
-                  <div className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-gold-500/20 bg-gold-500/5 text-gold-400 transition-all group-hover:border-gold-500 group-hover:bg-gold-500/10">
-                    <Icon className="h-6 w-6" strokeWidth={1.4} />
+                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gold-500/20 bg-gold-500/5 text-gold-400 transition-all group-hover:border-gold-500 group-hover:bg-gold-500/10 sm:h-14 sm:w-14">
+                    <Icon className="h-4 w-4 sm:h-6 sm:w-6" strokeWidth={1.4} />
                   </div>
-                  <p className="font-display text-lg leading-tight text-ink-100">{typeInfo.value}</p>
-                  <p className="text-[10px] font-medium uppercase tracking-widest text-gold-500">
+                  <p className="font-display text-sm leading-tight text-ink-100 sm:text-lg">{typeInfo.value}</p>
+                  <p className="text-[9px] font-medium uppercase tracking-widest text-gold-500 sm:text-[10px]">
                     {typeInfo.count} listed
                   </p>
                 </Link>
@@ -150,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE IRE */}
-      <section className="relative overflow-hidden bg-ink-950 py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-ink-950 py-16 sm:py-24 lg:py-32">
         <div className="pointer-events-none absolute inset-0 bg-radial-gold opacity-50" />
         <div className="container-lux relative">
           <SectionHeader
@@ -159,7 +159,7 @@ export default function Home() {
             subtitle={t('sections.why_subtitle')}
             align="center"
           />
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:mt-16 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               { icon: ShieldCheck, t: 'why.verified_title', d: 'why.verified_text' },
               { icon: MessageCircle, t: 'why.whatsapp_title', d: 'why.whatsapp_text' },
@@ -169,13 +169,13 @@ export default function Home() {
               const Icon = item.icon
               return (
                 <Reveal key={i} delay={i * 0.1}>
-                  <div className="card-lux flex h-full flex-col p-8">
-                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-gold-500/30 bg-gold-500/5 text-gold-400">
-                      <Icon className="h-5 w-5" strokeWidth={1.4} />
+                  <div className="card-lux flex h-full flex-col p-5 sm:p-8">
+                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gold-500/30 bg-gold-500/5 text-gold-400 sm:h-12 sm:w-12">
+                      <Icon className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={1.4} />
                     </div>
-                    <h3 className="mt-6 font-display text-xl text-ink-100">{t(item.t)}</h3>
-                    <div className="mt-3 h-px w-8 bg-gold-gradient" />
-                    <p className="mt-4 text-sm leading-relaxed text-ink-300">{t(item.d)}</p>
+                    <h3 className="mt-4 font-display text-lg text-ink-100 sm:mt-6 sm:text-xl">{t(item.t)}</h3>
+                    <div className="mt-2 h-px w-8 bg-gold-gradient sm:mt-3" />
+                    <p className="mt-3 text-sm leading-relaxed text-ink-300 sm:mt-4">{t(item.d)}</p>
                   </div>
                 </Reveal>
               )
@@ -185,21 +185,21 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="container-lux py-24 lg:py-32">
+      <section className="container-lux py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-3xl">
           <SectionHeader
             eyebrow={t('sections.testimonials_eyebrow')}
             title={t('sections.testimonials_title')}
             align="center"
           />
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <TestimonialCarousel />
           </div>
         </div>
       </section>
 
       {/* INSTAGRAM */}
-      <section className="bg-ink-850/40 py-24 lg:py-32">
+      <section className="bg-ink-850/40 py-16 sm:py-24 lg:py-32">
         <div className="container-lux">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeader
@@ -253,20 +253,20 @@ export default function Home() {
       </section>
 
       {/* NEWSLETTER */}
-      <section className="relative overflow-hidden bg-ink-950 py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-ink-950 py-16 sm:py-24 lg:py-32">
         <div className="pointer-events-none absolute -left-1/2 top-0 h-full w-full bg-radial-gold opacity-30" />
         <div className="container-lux relative">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <span className="eyebrow mx-auto justify-center">{t('sections.newsletter_eyebrow')}</span>
-              <h2 className="mt-4 font-display text-4xl leading-tight text-ink-100 md:text-5xl">
+              <h2 className="mt-3 font-display text-3xl leading-tight text-ink-100 sm:mt-4 sm:text-4xl md:text-5xl">
                 {t('sections.newsletter_title')}
               </h2>
-              <p className="mx-auto mt-4 max-w-md text-base text-ink-300">{t('sections.newsletter_subtitle')}</p>
+              <p className="mx-auto mt-3 max-w-md text-sm text-ink-300 sm:mt-4 sm:text-base">{t('sections.newsletter_subtitle')}</p>
 
               <motion.form
                 onSubmit={handleSubscribe}
-                className="mx-auto mt-10 flex max-w-lg gap-2"
+                className="mx-auto mt-8 flex max-w-lg flex-col gap-2 sm:mt-10 sm:flex-row"
                 animate={subscribed ? { opacity: 0.4, y: -8 } : {}}
               >
                 <input
@@ -319,7 +319,7 @@ function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-lux relative z-10 pb-24 pt-32">
+      <div className="container-lux relative z-10 pb-16 pt-28 sm:pb-24 sm:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -333,12 +333,12 @@ function Hero() {
             Find your place
             <span className="mt-1 block text-gold-gradient italic">in Bahrain.</span>
           </h1>
-          <p className="mt-8 max-w-md text-base leading-relaxed text-ink-200 sm:text-lg">
+          <p className="mt-5 max-w-md text-sm leading-relaxed text-ink-200 sm:mt-8 sm:text-lg">
             Curated rentals and sales across the kingdom's most coveted addresses — since 2008.
           </p>
         </motion.div>
 
-        <div className="mt-12 lg:mt-16">
+        <div className="mt-8 sm:mt-12 lg:mt-16">
           <HeroSearch />
         </div>
       </div>

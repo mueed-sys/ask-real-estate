@@ -39,20 +39,20 @@ export default function StatsBar() {
 
   return (
     <Reveal>
-      <div className="relative grid gap-px overflow-hidden rounded-sm border border-white/5 bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="relative grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-white/5 bg-white/5 lg:grid-cols-4">
         {items.map((item, i) => {
           const Icon = item.icon
           return (
-            <div key={i} className="bg-ink-850/90 px-6 py-8 text-center">
-              <Icon className="mx-auto h-6 w-6 text-gold-500" strokeWidth={1.4} />
-              <p className="mt-3 font-numbers text-4xl font-semibold tracking-tight tabular-nums text-gold-gradient md:text-6xl">
+            <div key={i} className="bg-ink-850/90 px-3 py-5 text-center sm:px-6 sm:py-8">
+              <Icon className="mx-auto h-5 w-5 text-gold-500 sm:h-6 sm:w-6" strokeWidth={1.4} />
+              <p className="mt-2 font-numbers text-2xl font-semibold tracking-tight tabular-nums text-gold-gradient sm:mt-3 sm:text-4xl md:text-5xl">
                 {item.static ? (
                   <span>RERA</span>
                 ) : (
                   <CountUp to={item.value} format={item.format} duration={1800} />
                 )}
               </p>
-              <p className="mt-1 text-[11px] font-medium uppercase tracking-widest text-ink-300">
+              <p className="mt-1 text-[9px] font-medium uppercase tracking-widest text-ink-300 sm:text-[11px]">
                 {item.static ? 'Licensed Brokerage' : t(item.labelKey, { [item.param]: '' }).replace(/\d+\+\s?/, '')}
               </p>
             </div>
