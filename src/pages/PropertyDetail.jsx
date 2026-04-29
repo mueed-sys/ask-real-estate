@@ -150,7 +150,7 @@ export default function PropertyDetail() {
             </div>
 
             <div className="text-right">
-              <p className="text-gold-gradient font-numbers text-5xl font-semibold leading-none tracking-tight tabular-nums md:text-6xl">{price}</p>
+              <p className="text-gold-gradient font-numbers text-5xl font-bold leading-none tracking-tight tabular-nums md:text-6xl">{price}</p>
               {period && <p className="mt-1 text-sm text-ink-300">{period}</p>}
               <div className="mt-4 flex items-center justify-end gap-2">
                 <button

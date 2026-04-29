@@ -78,7 +78,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
           </div>
           <div className="flex items-end justify-between">
             <div>
-              <span className="text-gold-gradient font-numbers text-3xl font-semibold tracking-tight tabular-nums">{price}</span>
+              <span className="text-gold-gradient font-numbers text-3xl font-bold tracking-tight tabular-nums">{price}</span>
               {period && <span className="ml-1 text-sm text-ink-300">{period}</span>}
             </div>
             <CardActions {...{ isFav, isCompare, handleFav, handleCompare, handleWhatsapp, showCompare, t }} />
@@ -118,7 +118,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
           </div>
 
           <div>
-            <span className="text-gold-gradient font-numbers text-4xl font-semibold leading-none tracking-tight tabular-nums">{price}</span>
+            <span className="text-gold-gradient font-numbers text-4xl font-bold leading-none tracking-tight tabular-nums">{price}</span>
             {period && <span className="ml-1 text-sm text-ink-300">{period}</span>}
           </div>
 

@@ -327,14 +327,25 @@ function Hero() {
           className="max-w-3xl"
         >
           <span className="eyebrow">
-            {t('brand.shortName')} · {t('brand.since')}
+            IRE BAHRAIN · SINCE 2008
           </span>
-          <h1 className="mt-6 font-display text-[clamp(3.25rem,10vw,9rem)] font-semibold leading-[0.92] tracking-tight text-balance text-ink-100">
-            Your home in
-            <span className="mt-1 block text-gold-gradient italic">Bahrain awaits.</span>
+
+          {/* Two-line headline — Line 1 in DM Sans for "trusted partner" framing,
+              Line 2 the commanding Playfair Display 800 gold-gradient block. */}
+          <h1 className="mt-6 text-balance leading-[0.95]">
+            <span className="block font-sans font-normal text-[clamp(1.5rem,3.6vw,2.6rem)] leading-snug text-ink-100">
+              Your Trusted Partner in
+            </span>
+            <span
+              className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(3.25rem,11vw,9.5rem)]"
+              style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}
+            >
+              Bahrain Real Estate
+            </span>
           </h1>
-          <p className="mt-5 max-w-md text-sm leading-relaxed text-ink-200 sm:mt-8 sm:text-lg">
-            A curated portfolio of the kingdom's finest rentals and freehold homes — since 2008.
+
+          <p className="mt-7 max-w-xl text-base leading-[1.7] text-ink-200 sm:mt-9 sm:text-lg">
+            The Kingdom's premier property portfolio. 17 years of excellence, 4,000+ properties, one trusted name.
           </p>
         </motion.div>
 

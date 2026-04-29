@@ -85,9 +85,9 @@ export default function Documents() {
             <tbody>
               {documents.recent.map((d) => (
                 <tr key={d.id} className="border-b border-white/5 hover:bg-white/[0.02]">
-                  <td className="px-5 py-3 font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-400">{d.id}</td>
+                  <td className="px-5 py-3 font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-400">{d.id}</td>
                   <td className="px-5 py-3 text-sm text-ink-100">{d.type}</td>
-                  <td className="px-5 py-3 font-numbers text-sm font-semibold tracking-tight tabular-nums text-ink-300">{d.property}</td>
+                  <td className="px-5 py-3 font-numbers text-sm font-bold tracking-tight tabular-nums text-ink-300">{d.property}</td>
                   <td className="px-5 py-3 text-sm text-ink-300">{d.client}</td>
                   <td className="px-5 py-3 text-sm text-ink-300">{d.agent.split(' ')[0]}</td>
                   <td className="px-5 py-3 text-[11px] text-ink-400">{d.generated}</td>
@@ -250,7 +250,7 @@ function DocumentPreview({ document, onClose, pushToast }) {
             <header className="flex items-center justify-between border-b border-white/5 px-6 py-4">
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-widest text-gold-500">Document Preview</p>
-                <p className="mt-0.5 font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">{document.id}</p>
+                <p className="mt-0.5 font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">{document.id}</p>
               </div>
               <div className="flex items-center gap-2">
                 <button onClick={() => pushToast('Downloaded as PDF')} className="inline-flex items-center gap-1.5 rounded-md border border-white/10 px-3 py-1.5 text-[11px] uppercase tracking-widest text-ink-200 hover:border-gold-500/40">

@@ -96,7 +96,7 @@ function statusDotColor(s) {
 function Stat({ label, value }) {
   return (
     <div className="rounded border border-white/5 bg-white/[0.02] p-2.5 text-center">
-      <p className="font-numbers text-xl font-semibold tracking-tight tabular-nums text-gold-300">{value}</p>
+      <p className="font-numbers text-xl font-bold tracking-tight tabular-nums text-gold-300">{value}</p>
       <p className="mt-0.5 text-[9px] font-medium uppercase tracking-widest text-ink-400">{label}</p>
     </div>
   )
@@ -169,7 +169,7 @@ function AgentDetail({ agent, onClose }) {
                         <p className="truncate text-sm text-ink-100">{p.title}</p>
                         <p className="text-[11px] text-ink-400">{p.location} · {p.id}</p>
                       </div>
-                      <span className="font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">BD {p.price}</span>
+                      <span className="font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">BD {p.price}</span>
                     </li>
                   ))}
                 </ul>
@@ -215,7 +215,7 @@ function StatBlock({ icon: Icon, label, value }) {
   return (
     <div className="rounded-md border border-white/5 bg-white/[0.02] p-4 text-center">
       <Icon className="mx-auto h-4 w-4 text-gold-500" strokeWidth={1.5} />
-      <p className="mt-2 font-numbers text-lg font-semibold tracking-tight tabular-nums text-gold-gradient">{value}</p>
+      <p className="mt-2 font-numbers text-lg font-bold tracking-tight tabular-nums text-gold-gradient">{value}</p>
       <p className="mt-0.5 text-[9px] font-medium uppercase tracking-widest text-ink-400">{label}</p>
     </div>
   )

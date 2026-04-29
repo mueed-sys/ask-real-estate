@@ -94,14 +94,14 @@ export default function MarketIntel() {
                       )}
                     </div>
                   </td>
-                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">{c.listings}</td>
-                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-ink-200">BD {c.avg_price}</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">{c.listings}</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-bold tracking-tight tabular-nums text-ink-200">BD {c.avg_price}</td>
                   <td className="px-5 py-3 text-right">
                     <div className="ml-auto flex w-32 items-center justify-end gap-2">
                       <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-white/5">
                         <div className="h-full rounded-full bg-gold-gradient" style={{ width: `${(c.share / 9) * 100}%` }} />
                       </div>
-                      <span className="font-numbers text-sm font-semibold tracking-tight tabular-nums text-emerald-400">{c.share}%</span>
+                      <span className="font-numbers text-sm font-bold tracking-tight tabular-nums text-emerald-400">{c.share}%</span>
                     </div>
                   </td>
                   <td className="px-5 py-3 text-xs text-ink-300">{c.areas.join(' · ')}</td>

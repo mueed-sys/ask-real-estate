@@ -103,7 +103,7 @@ export default function Leads() {
               >
                 <header className="mb-3 flex items-center justify-between">
                   <h3 className="text-[11px] font-semibold uppercase tracking-widest text-ink-100">{col.label}</h3>
-                  <span className="font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">{inCol.length}</span>
+                  <span className="font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">{inCol.length}</span>
                 </header>
                 <ul className="space-y-2">
                   {inCol.map((lead) => (
@@ -150,7 +150,7 @@ export default function Leads() {
                       <td className="px-4 py-3 text-xs text-ink-300">{l.email}</td>
                       <td className="px-4 py-3 text-xs text-ink-300">{prop?.title.slice(0, 24) || '—'}…</td>
                       <td className="px-4 py-3 text-xs text-ink-300">{prop?.location || '—'}</td>
-                      <td className="px-4 py-3 font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">BD {l.budget?.toLocaleString()}</td>
+                      <td className="px-4 py-3 font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">BD {l.budget?.toLocaleString()}</td>
                       <td className="px-4 py-3"><StatusBadge status={l.status} /></td>
                       <td className="px-4 py-3 text-xs">
                         <span className="inline-flex items-center gap-1.5 text-ink-300">
@@ -244,7 +244,7 @@ function LeadDetail({ lead, onClose, onMove }) {
           >
             <header className="sticky top-0 z-10 flex items-center justify-between border-b border-white/5 bg-[#0a0c18]/95 px-6 py-4 backdrop-blur">
               <div>
-                <p className="font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-400">{lead.id}</p>
+                <p className="font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-400">{lead.id}</p>
                 <h2 className="mt-0.5 font-display text-3xl text-ink-100">{lead.name}</h2>
               </div>
               <button onClick={onClose} className="rounded-md p-2 text-ink-200 hover:text-gold-300">

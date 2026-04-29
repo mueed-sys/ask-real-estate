@@ -12,11 +12,17 @@
 
   body {
     background-color: #0a0b14;
-    color: #e6e7f0;
-    font-family: 'Inter', system-ui, sans-serif;
+    color: #f3f4f9;
+    font-family: 'DM Sans', system-ui, sans-serif;
     font-weight: 400;
-    font-feature-settings: 'cv11', 'ss01', 'ss03';
+    font-size: 16px;
+    line-height: 1.7;
     overflow-x: hidden;
+  }
+
+  /* Paragraph copy on dark backgrounds — guaranteed legible default. */
+  p {
+    line-height: 1.7;
   }
 
   ::selection {
@@ -43,20 +49,23 @@
 
   h1, h2, h3, h4, .display {
     font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -0.02em;
-    line-height: 1.05;
+    line-height: 1.1;
+    color: #f3f4f9;
   }
+  h1 { margin-bottom: 0.4em; }
+  h2 { margin-top: 0.4em; margin-bottom: 0.4em; }
+  h3 { margin-top: 0.5em; margin-bottom: 0.4em; }
 
-  /* Inter tabular figures — prices, stats, big counters. Aligned, crisp,
-     readable. Replaces the previous Bebas Neue all-caps treatment for a
-     calmer, more luxury-dashboard feel. */
+  /* Outfit numbers — prices, stat counters, percentages, sqm, distances.
+     Bold + tabular so figures align column-perfect across rows. */
   .numerals,
   .price {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Outfit', 'DM Sans', system-ui, sans-serif;
     font-feature-settings: 'tnum' 1, 'lnum' 1;
+    font-weight: 700;
     letter-spacing: -0.01em;
-    font-weight: 600;
   }
 
   /* Disable user-agent button styling so our custom buttons render predictably */
@@ -66,10 +75,11 @@
 }
 
 @layer components {
-  /* Eyebrow text — small uppercase gold label used above section titles */
+  /* Eyebrow / badge / small-cap label — DM Sans 600, uppercase, 3px tracking. */
   .eyebrow {
-    @apply inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-widest text-gold-500;
-    font-family: 'Inter', sans-serif;
+    @apply inline-flex items-center gap-3 text-[11px] font-semibold uppercase text-gold-500;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.25em;
   }
   .eyebrow::before {
     content: '';
@@ -101,9 +111,9 @@
     color: transparent;
   }
 
-  /* Primary CTA button — solid gold gradient */
+  /* Primary CTA button — solid gold gradient. DM Sans 600. */
   .btn-gold {
-    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3 font-medium tracking-wide transition-all duration-300;
+    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3 font-semibold tracking-wide transition-all duration-300;
     background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
     background-size: 200% 100%;
     background-position: 0% 50%;
@@ -119,9 +129,9 @@
     transform: translateY(0);
   }
 
-  /* Secondary outlined button */
+  /* Secondary outlined button — DM Sans 600. */
   .btn-outline {
-    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3 font-medium tracking-wide transition-all duration-300;
+    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3 font-semibold tracking-wide transition-all duration-300;
     color: #f4e08f;
     border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 2px;
@@ -133,9 +143,9 @@
     color: #faf0c2;
   }
 
-  /* Ghost button (clean text) */
+  /* Ghost button (clean text) — DM Sans 600. */
   .btn-ghost {
-    @apply inline-flex items-center gap-2 text-sm font-medium tracking-wide text-ink-200 transition-colors;
+    @apply inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-ink-200 transition-colors;
   }
   .btn-ghost:hover {
     color: #f4e08f;

@@ -13,9 +13,11 @@ export default {
           600: '#252a45',
           500: '#3a3f5e',
           400: '#5b6080',
-          300: '#9da2bd',
-          200: '#c8cbe0',
-          100: '#e6e7f0',
+          // Lightened readable copy tokens — every paragraph using
+          // text-ink-200 / text-ink-300 now clears the #e0e0e0-on-dark bar.
+          300: '#c4c8db', // muted UI text (timestamps, helper)
+          200: '#e0e3ee', // primary paragraph copy
+          100: '#f3f4f9', // headlines / stat values
         },
         gold: {
           50: '#fdf9e7',
@@ -31,15 +33,16 @@ export default {
         },
       },
       fontFamily: {
-        // Display: Playfair Display — high-contrast neoclassical serif used
-        // by Vogue, Architectural Digest, Sotheby's editorial. Reads as
-        // unmistakably luxury at large sizes. Variable weight 400-900.
+        // Display — Playfair Display 700/800. The luxury editorial serif
+        // (Vogue, Architectural Digest, Sotheby's). All h1/h2/h3.
         display: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        body: ['Inter', 'system-ui', 'sans-serif'],
-        // Numbers: Inter w/ tabular-nums via .numerals class. Keeps prices
-        // column-aligned and crisp without a competing display font.
-        numbers: ['Inter', 'system-ui', 'sans-serif'],
+        // Body & UI — DM Sans. Clean modern geometric sans, designed pair to
+        // DM Serif. Used for all paragraphs, nav, buttons, labels, tables.
+        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        // Numbers — Outfit 700/800. Bold geometric, commanding. Used for
+        // every BD price, stat counter, percentage, sqm value, distance.
+        numbers: ['Outfit', '"DM Sans"', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gold-gradient': 'linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%)',

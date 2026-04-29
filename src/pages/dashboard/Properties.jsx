@@ -221,7 +221,7 @@ export default function DashProperties() {
                       <img src={p.images[0]} alt="" className="h-11 w-16 rounded object-cover" loading="lazy" />
                     </td>
                     <td className="px-5 py-3">
-                      <span className="font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-400">{p.id}</span>
+                      <span className="font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-400">{p.id}</span>
                     </td>
                     <td className="px-5 py-3 max-w-xs">
                       <p className="truncate text-sm text-ink-100">{p.title}</p>
@@ -229,11 +229,11 @@ export default function DashProperties() {
                     <td className="px-5 py-3 text-sm text-ink-300">{p.location}</td>
                     <td className="px-5 py-3 text-sm text-ink-300">{p.type}</td>
                     <td className="px-5 py-3">
-                      <span className="font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">BD {formatPrice(p.price)}</span>
+                      <span className="font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">BD {formatPrice(p.price)}</span>
                     </td>
                     <td className="px-5 py-3"><StatusBadge status={p.status} /></td>
-                    <td className="px-5 py-3 font-numbers text-sm font-semibold tracking-tight tabular-nums text-ink-200">{p.views}</td>
-                    <td className="px-5 py-3 font-numbers text-sm font-semibold tracking-tight tabular-nums text-emerald-400">{p.inquiries}</td>
+                    <td className="px-5 py-3 font-numbers text-sm font-bold tracking-tight tabular-nums text-ink-200">{p.views}</td>
+                    <td className="px-5 py-3 font-numbers text-sm font-bold tracking-tight tabular-nums text-emerald-400">{p.inquiries}</td>
                     <td className="px-5 py-3 text-[11px] text-ink-400">{p.created_at}</td>
                     <td className="px-5 py-3 text-sm text-ink-300">{agent?.name.split(' ')[0] || '—'}</td>
                     <td className="px-5 py-3">

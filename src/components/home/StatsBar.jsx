@@ -45,7 +45,7 @@ export default function StatsBar() {
           return (
             <div key={i} className="bg-ink-850/90 px-3 py-5 text-center sm:px-6 sm:py-8">
               <Icon className="mx-auto h-5 w-5 text-gold-500 sm:h-6 sm:w-6" strokeWidth={1.4} />
-              <p className="mt-2 font-numbers text-2xl font-semibold tracking-tight tabular-nums text-gold-gradient sm:mt-3 sm:text-4xl md:text-5xl">
+              <p className="mt-2 font-numbers text-2xl font-bold tracking-tight tabular-nums text-gold-gradient sm:mt-3 sm:text-4xl md:text-5xl">
                 {item.static ? (
                   <span>RERA</span>
                 ) : (
