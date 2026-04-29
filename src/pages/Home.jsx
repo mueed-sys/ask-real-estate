@@ -309,8 +309,8 @@ function Hero() {
       {/* Layered background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=2400&auto=format&fit=crop&q=80"
-          alt="Bahrain skyline"
+          src="/images/hero/manama-skyline.jpg"
+          alt="Manama skyline at twilight, Kingdom of Bahrain"
           fetchpriority="high"
           className="h-full w-full object-cover"
         />
