@@ -72,7 +72,7 @@ export default function Analytics() {
       </div>
 
       {/* Key metrics */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-6">
         <StatCard icon={Eye} label="Total Page Views" value={14289} />
         <StatCard icon={Users} label="Unique Visitors" value={3842} trend={{ dir: 'up', text: '+18% MoM' }} />
         <StatCard icon={MousePointer} label="Bounce Rate" value={34} suffix="%" trend={{ dir: 'down', text: '-3% MoM' }} />

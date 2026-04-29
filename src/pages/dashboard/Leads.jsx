@@ -83,7 +83,10 @@ export default function Leads() {
       </div>
 
       {view === 'kanban' ? (
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-5">
+        // Horizontal-scroll kanban on phone (swipe through 5 columns), grid on
+        // tablet/desktop. Negative-margin trick lets columns flush to edges
+        // for a phone-native swipe feel.
+        <div className="-mx-3 flex snap-x snap-mandatory gap-3 overflow-x-auto scrollbar-none px-3 pb-2 sm:-mx-5 sm:px-5 md:mx-0 md:grid md:grid-cols-2 md:gap-4 md:overflow-visible md:px-0 md:pb-0 xl:grid-cols-5">
           {COLUMNS.map((col) => {
             const inCol = filtered.filter((l) => l.status === col.id)
             return (
@@ -96,7 +99,7 @@ export default function Leads() {
                     setDraggingId(null)
                   }
                 }}
-                className={`rounded-md border ${col.accent} p-3 min-h-[400px]`}
+                className={`w-[80vw] flex-shrink-0 snap-start rounded-md border md:w-auto ${col.accent} p-3 min-h-[400px]`}
               >
                 <header className="mb-3 flex items-center justify-between">
                   <h3 className="text-[11px] font-semibold uppercase tracking-widest text-ink-100">{col.label}</h3>

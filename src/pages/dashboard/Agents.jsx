@@ -38,7 +38,7 @@ export default function Agents() {
         {agents.length} agents · {agents.reduce((s, a) => s + a.active_listings, 0)} listings · {agents.reduce((s, a) => s + a.deals_closed_year, 0)} deals YTD
       </p>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
         {agents.map((agent) => {
           const leadsCount = leads.filter((l) => l.agent_id === agent.id).length
           return (

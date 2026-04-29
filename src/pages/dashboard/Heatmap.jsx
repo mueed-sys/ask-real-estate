@@ -75,7 +75,7 @@ export default function Heatmap() {
       <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
         {/* Map */}
         <Panel noPadding>
-          <div className="h-[560px] overflow-hidden rounded-md">
+          <div className="h-[380px] overflow-hidden rounded-md sm:h-[480px] lg:h-[560px]">
             <MapContainer
               center={[26.0667, 50.5577]}
               zoom={11}

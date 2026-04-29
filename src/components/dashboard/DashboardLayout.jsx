@@ -8,6 +8,7 @@ import {
   ChevronLeft, ChevronRight, ChevronDown,
 } from 'lucide-react'
 import notifications from '../../data/dashboard/notifications.json'
+import MobileNotice from './MobileNotice'
 
 const NAV_SECTIONS = [
   { to: '/dashboard', label: 'Overview', icon: LayoutDashboard, end: true },
@@ -43,9 +44,13 @@ export default function DashboardLayout() {
         <body className="dashboard-body" />
       </Helmet>
 
+      <MobileNotice />
+
       <div className="flex min-h-screen bg-[#070810] text-ink-100">
-        {/* Sidebar — desktop */}
-        <Sidebar />
+        {/* Sidebar — desktop only (drawer on mobile) */}
+        <div className="hidden lg:block">
+          <Sidebar />
+        </div>
 
         {/* Sidebar — mobile drawer */}
         <AnimatePresence>
@@ -74,32 +79,40 @@ export default function DashboardLayout() {
         {/* Main column */}
         <div className="flex min-w-0 flex-1 flex-col">
           {/* Topbar */}
-          <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b border-white/5 bg-[#070810]/95 px-5 backdrop-blur-xl">
+          <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-white/5 bg-[#070810]/95 px-3 backdrop-blur-xl sm:h-16 sm:gap-4 sm:px-5">
             <button
               onClick={() => setMobileOpen(true)}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/10 text-ink-200 lg:hidden"
+              className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-md border border-white/10 text-ink-200 lg:hidden"
               aria-label="Menu"
             >
               <Menu className="h-4 w-4" />
             </button>
 
-            <h1 className="font-display text-2xl text-ink-100">{pageTitleFor(location.pathname)}</h1>
+            <h1 className="truncate font-display text-lg text-ink-100 sm:text-2xl">{pageTitleFor(location.pathname)}</h1>
 
-            {/* Search */}
+            {/* Search — desktop only */}
             <div className="relative ml-auto hidden md:block">
               <Search className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-ink-400" />
               <input
                 type="search"
                 placeholder="Search properties, leads, agents…"
-                className="w-72 rounded-md border border-white/10 bg-white/[0.03] py-2 pl-9 pr-3 text-sm text-ink-100 placeholder:text-ink-400 outline-none transition-colors focus:border-gold-500/40"
+                className="w-64 rounded-md border border-white/10 bg-white/[0.03] py-2 pl-9 pr-3 text-sm text-ink-100 placeholder:text-ink-400 outline-none transition-colors focus:border-gold-500/40 lg:w-72"
               />
             </div>
+
+            {/* Search icon — mobile only */}
+            <button
+              className="ml-auto inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-md border border-white/10 text-ink-200 md:hidden"
+              aria-label="Search"
+            >
+              <Search className="h-4 w-4" />
+            </button>
 
             {/* Notification bell */}
             <div className="relative">
               <button
                 onClick={() => setBellOpen((v) => !v)}
-                className="relative inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/10 text-ink-200 transition-colors hover:border-gold-500/40 hover:text-gold-300"
+                className="relative inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-md border border-white/10 text-ink-200 transition-colors hover:border-gold-500/40 hover:text-gold-300"
                 aria-label="Notifications"
               >
                 <Bell className="h-4 w-4" />
@@ -137,7 +150,8 @@ export default function DashboardLayout() {
             {/* View Live Site */}
             <Link
               to="/"
-              className="inline-flex items-center gap-1.5 rounded-md border border-gold-500/30 bg-gold-500/5 px-3 py-2 text-xs font-medium tracking-wide text-gold-300 transition-colors hover:bg-gold-500/10"
+              className="inline-flex h-9 flex-shrink-0 items-center justify-center gap-1.5 rounded-md border border-gold-500/30 bg-gold-500/5 px-2.5 text-xs font-medium tracking-wide text-gold-300 transition-colors hover:bg-gold-500/10 sm:px-3"
+              title="View Live Site"
             >
               <ExternalLink className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">View Live Site</span>
@@ -145,7 +159,7 @@ export default function DashboardLayout() {
           </header>
 
           {/* Page content */}
-          <main className="min-w-0 flex-1 overflow-x-hidden p-6 lg:p-8">
+          <main className="min-w-0 flex-1 overflow-x-hidden p-3 sm:p-5 lg:p-8">
             <Outlet />
           </main>
         </div>

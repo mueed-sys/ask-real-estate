@@ -37,7 +37,7 @@ export default function Documents() {
       </div>
 
       {/* Stats */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         <StatCard icon={FileText} label="Generated This Month" value={47} />
         <StatCard icon={Clock} label="Avg Time to Generate" value={30} suffix=" sec" duration={1200} />
         <StatCard icon={FileWarning} label="Pending Signature" value={8} />
@@ -46,7 +46,7 @@ export default function Documents() {
 
       {/* Templates */}
       <Panel title="Document Templates" subtitle="Click a template to generate a new document">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
           {documents.templates.map((t) => {
             const Icon = ICONS[t.icon] || FileText
             return (

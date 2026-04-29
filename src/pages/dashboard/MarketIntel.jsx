@@ -55,7 +55,7 @@ export default function MarketIntel() {
       </div>
 
       {/* Market overview */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         <StatCard icon={TrendingUp} label="Avg Bahrain Rent" value={485} prefix="BD " trend={{ dir: 'up', text: '+3.2% YoY' }} />
         <StatCard icon={Globe} label="Total Market Listings" value={8420} />
         <StatCard icon={AlertCircle} label="Your Market Share" value={2.9} suffix="%" />

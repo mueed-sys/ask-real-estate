@@ -39,7 +39,7 @@ export default function Overview() {
   return (
     <div className="space-y-6">
       {/* Stat row */}
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-6">
         <StatCard icon={Building2} label="Active Listings" value={247} trend={{ dir: 'up', text: '+12 this week' }} />
         <StatCard icon={MessageSquare} label="Inquiries / Month" value={1842} trend={{ dir: 'up', text: '+23% vs last month' }} />
         <StatCard icon={Home} label="Rented This Month" value={63} trend={{ dir: 'up', text: '+8 vs last month' }} />
