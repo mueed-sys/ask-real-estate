@@ -1,0 +1,10 @@
+# Istanbul Real Estate WLL — irebahrain.com
+
+User-agent: *
+Allow: /
+
+# Disallow user-only / non-indexable routes
+Disallow: /favorites
+Disallow: /compare
+
+Sitemap: https://irebahrain.com/sitemap.xml

@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #0a0b14;
+    color: #e6e7f0;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  html[dir='rtl'] body {
+    font-family: 'Noto Naskh Arabic', 'DM Sans', serif;
+  }
+
+  ::selection {
+    background-color: rgba(212, 175, 55, 0.35);
+    color: #fdf9e7;
+  }
+
+  /* Custom scrollbar — gold accent on dark navy */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0b14;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #634e16, #d4af37);
+    border-radius: 8px;
+    border: 2px solid #0a0b14;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #d4af37, #f4d03f);
+  }
+
+  h1, h2, h3, h4, .display {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  /* Disable user-agent button styling so our custom buttons render predictably */
+  button {
+    font-family: inherit;
+  }
+}
+
+@layer components {
+  /* Eyebrow text — small uppercase gold label used above section titles */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[11px] font-medium uppercase tracking-widest text-gold-500;
+    font-family: 'Outfit', sans-serif;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d4af37);
+  }
+
+  /* Glass-morphism panel */
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .glass-strong {
+    background: rgba(10, 11, 20, 0.65);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Gold gradient text */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Primary CTA button — solid gold gradient */
+  .btn-gold {
+    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3 font-medium tracking-wide transition-all duration-300;
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    color: #0a0b14;
+    border-radius: 2px;
+  }
+  .btn-gold:hover {
+    background-position: 100% 50%;
+    box-shadow: 0 12px 32px -8px rgba(212, 175, 55, 0.55);
+    transform: translateY(-1px);
+  }
+  .btn-gold:active {
+    transform: translateY(0);
+  }
+
+  /* Secondary outlined button */
+  .btn-outline {
+    @apply relative inline-flex items-center justify-center gap-2 px-7 py-3 font-medium tracking-wide transition-all duration-300;
+    color: #f4e08f;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 2px;
+    background: transparent;
+  }
+  .btn-outline:hover {
+    border-color: #d4af37;
+    background: rgba(212, 175, 55, 0.06);
+    color: #faf0c2;
+  }
+
+  /* Ghost button (clean text) */
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 text-sm font-medium tracking-wide text-ink-200 transition-colors;
+  }
+  .btn-ghost:hover {
+    color: #f4e08f;
+  }
+
+  /* Card luxury baseline */
+  .card-lux {
+    @apply relative overflow-hidden bg-ink-850/60 transition-all duration-500;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+  }
+  .card-lux:hover {
+    border-color: rgba(212, 175, 55, 0.25);
+    transform: translateY(-8px);
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.2), 0 32px 64px -16px rgba(212, 175, 55, 0.18);
+  }
+
+  /* Decorative gold underline used under section titles */
+  .gold-rule {
+    @apply mt-4 h-px w-16 bg-gold-gradient;
+  }
+
+  /* Skeleton shimmer */
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04) 25%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.04) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  /* Container with luxury max-width */
+  .container-lux {
+    @apply mx-auto w-full px-5 sm:px-8 lg:px-12;
+    max-width: 1400px;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar utility */
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Diagonal grain overlay for hero */
+  .grain {
+    position: relative;
+  }
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}

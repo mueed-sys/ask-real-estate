@@ -1,0 +1,98 @@
+[
+  {
+    "id": "t-001",
+    "name": "Ahmed Al-Sayed",
+    "name_ar": "أحمد السيد",
+    "role": "Long-term tenant, Juffair",
+    "role_ar": "مستأجر طويل الأمد، الجفير",
+    "rating": 5,
+    "agent": "Murat Yilmaz",
+    "area": "Juffair",
+    "quote": "Murat found us our third Juffair apartment in five years. Every move he's understood exactly what we needed without us having to over-explain. IRE is the only agency I'd recommend in Bahrain.",
+    "quote_ar": "وجد لنا مراد ثالث شقة في الجفير خلال خمس سنوات. في كل انتقال فهم بالضبط ما نحتاجه دون الحاجة إلى الشرح المفرط."
+  },
+  {
+    "id": "t-002",
+    "name": "Sarah Mitchell",
+    "name_ar": "سارة ميتشل",
+    "role": "Expat family, Saar",
+    "role_ar": "عائلة مغتربة، سار",
+    "rating": 5,
+    "agent": "Fatima Al Doseri",
+    "area": "Saar",
+    "quote": "Fatima walked us through six villas in two days, and the seventh was the one we signed. She understood we had two kids at the British School and prioritised the school commute without us asking.",
+    "quote_ar": "أخذتنا فاطمة في جولة عبر ست فيلات في يومين، والسابعة كانت تلك التي وقعناها. فهمت أن لدينا طفلين في المدرسة البريطانية."
+  },
+  {
+    "id": "t-003",
+    "name": "Khalid Al-Rashid",
+    "name_ar": "خالد الراشد",
+    "role": "Bahraini investor",
+    "role_ar": "مستثمر بحريني",
+    "rating": 5,
+    "agent": "Ahmed Al Khalifa",
+    "area": "Bahrain Bay",
+    "quote": "Bought my first investment unit through IRE in 2018. Bought my fourth in 2025. Ahmed runs the most disciplined yield analysis I've seen from a Gulf brokerage.",
+    "quote_ar": "اشتريت أول وحدة استثمار من خلال IRE في 2018. اشتريت رابعة في 2025."
+  },
+  {
+    "id": "t-004",
+    "name": "James Wilson",
+    "name_ar": "جيمس ويلسون",
+    "role": "Banker, Diplomatic Area office",
+    "role_ar": "مصرفي، مكتب المنطقة الدبلوماسية",
+    "rating": 5,
+    "agent": "Ali Karimi",
+    "area": "Diplomatic Area",
+    "quote": "Relocated my regional banking office through IRE. Ali knew the WTC towers floor by floor and saved us six weeks of search time.",
+    "quote_ar": "نقلت مكتبي المصرفي الإقليمي من خلال IRE. علي يعرف أبراج WTC طابقاً طابقاً."
+  },
+  {
+    "id": "t-005",
+    "name": "Mariam Al-Khalifa",
+    "name_ar": "مريم آل خليفة",
+    "role": "Returning Bahraini, Amwaj",
+    "role_ar": "بحرينية عائدة، أمواج",
+    "rating": 5,
+    "agent": "Hassan Al Mahmood",
+    "area": "Amwaj Islands",
+    "quote": "Came back to Bahrain after eight years in London. Hassan helped me find a canal-front Amwaj villa within ten days of landing. Service felt boutique, not transactional.",
+    "quote_ar": "عدت إلى البحرين بعد ثماني سنوات في لندن. ساعدني حسن في إيجاد فيلا أمواج خلال عشرة أيام."
+  },
+  {
+    "id": "t-006",
+    "name": "Olivier Dubois",
+    "name_ar": "أوليفييه دوبوا",
+    "role": "French expat, Reef Island",
+    "role_ar": "مغترب فرنسي، جزيرة ريف",
+    "rating": 4,
+    "agent": "Sarah Williams",
+    "area": "Reef Island",
+    "quote": "Sarah was patient through a complicated international transfer of funds and made the leasing process feel European in its precision. Highly recommended.",
+    "quote_ar": "كانت سارة صبورة خلال عملية تحويل دولي معقدة للأموال."
+  },
+  {
+    "id": "t-007",
+    "name": "Fahad Al-Doseri",
+    "name_ar": "فهد الدوسري",
+    "role": "Riffa family villa tenant",
+    "role_ar": "مستأجر فيلا عائلية في الرفاع",
+    "rating": 5,
+    "agent": "Fatima Al Doseri",
+    "area": "Riffa",
+    "quote": "Three boys, a dog, a wife who doesn't compromise — Fatima found us the right villa in Riffa Views in two viewings. We've renewed three times.",
+    "quote_ar": "ثلاثة أبناء، كلب، زوجة لا تساوم — وجدت لنا فاطمة الفيلا المناسبة في إطلالات الرفاع."
+  },
+  {
+    "id": "t-008",
+    "name": "Nadia Hassan",
+    "name_ar": "نادية حسن",
+    "role": "Doctor, Seef",
+    "role_ar": "طبيبة، السيف",
+    "rating": 5,
+    "agent": "Murat Yilmaz",
+    "area": "Seef",
+    "quote": "Long shifts at Bahrain Specialist meant I needed a Seef studio I could move into the same week. Murat made it happen, end to end. Five-minute walking commute. Life-changing.",
+    "quote_ar": "نوبات طويلة في مستشفى البحرين التخصصي تعني أنني كنت بحاجة إلى استوديو في السيف."
+  }
+]
