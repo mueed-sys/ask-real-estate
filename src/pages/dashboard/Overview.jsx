@@ -212,11 +212,11 @@ export default function Overview() {
                     <p className="text-[11px] text-ink-400">{p.location} · {p.id}</p>
                   </div>
                   <div className="text-right">
-                    <p className="font-numbers text-xl tracking-wider text-gold-300">{p.views.toLocaleString()}</p>
+                    <p className="font-numbers text-lg font-semibold tracking-tight tabular-nums text-gold-300">{p.views.toLocaleString()}</p>
                     <p className="text-[10px] uppercase tracking-widest text-ink-400">views</p>
                   </div>
                   <div className="hidden text-right sm:block">
-                    <p className="font-numbers text-lg tracking-wider text-emerald-400">{Math.round((p.views / 30) * 0.12)}%</p>
+                    <p className="font-numbers text-base font-semibold tracking-tight tabular-nums text-emerald-400">{Math.round((p.views / 30) * 0.12)}%</p>
                     <p className="text-[10px] uppercase tracking-widest text-ink-400">conv</p>
                   </div>
                 </Link>

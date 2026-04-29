@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import {
-  Building2, Users, Bell, Plug, Globe, CreditCard, Plus, Trash2, Check,
-} from 'lucide-react'
+import { Plus, Trash2 } from 'lucide-react'
 import Panel from '../../components/dashboard/Panel'
 import { useToast } from '../../store/useToast'
 import { BRAND, CONTACT, OFFICE } from '../../lib/constants'
@@ -15,7 +13,6 @@ export default function Settings() {
       <NotificationPrefs />
       <Integrations />
       <SiteSettings />
-      <Billing />
     </div>
   )
 }
@@ -193,46 +190,6 @@ function SiteSettings() {
             <Toggle checked={sections[k]} onChange={() => toggle(k)} />
           </div>
         ))}
-      </div>
-    </Panel>
-  )
-}
-
-function Billing() {
-  return (
-    <Panel title="Billing" subtitle="Plan and usage">
-      <div className="grid gap-6 md:grid-cols-3">
-        <div className="md:col-span-2 rounded-md border border-gold-500/20 bg-gold-500/[0.04] p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-widest text-gold-500">Current Plan</p>
-          <p className="mt-2 font-display text-3xl text-gold-gradient">Professional</p>
-          <p className="mt-1 font-numbers text-3xl tracking-wider text-gold-300">BD 199<span className="text-base text-ink-300">/month</span></p>
-          <ul className="mt-5 space-y-1.5 text-sm text-ink-200">
-            <li className="flex items-center gap-2"><Check className="h-3.5 w-3.5 text-gold-500" /> Unlimited listings</li>
-            <li className="flex items-center gap-2"><Check className="h-3.5 w-3.5 text-gold-500" /> Up to 10 agents</li>
-            <li className="flex items-center gap-2"><Check className="h-3.5 w-3.5 text-gold-500" /> AI Price Analysis (500 / month)</li>
-            <li className="flex items-center gap-2"><Check className="h-3.5 w-3.5 text-gold-500" /> Document automation</li>
-            <li className="flex items-center gap-2"><Check className="h-3.5 w-3.5 text-gold-500" /> Heat map + market intelligence</li>
-          </ul>
-          <button className="btn-outline mt-6 text-xs">Manage subscription</button>
-        </div>
-
-        <div className="space-y-3">
-          <div className="rounded-md border border-white/5 bg-white/[0.02] p-4">
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-ink-400">Listings used</p>
-            <p className="mt-1 font-numbers text-2xl tracking-wider text-gold-300">247 / Unlimited</p>
-          </div>
-          <div className="rounded-md border border-white/5 bg-white/[0.02] p-4">
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-ink-400">Documents this month</p>
-            <p className="mt-1 font-numbers text-2xl tracking-wider text-gold-300">47 / Unlimited</p>
-          </div>
-          <div className="rounded-md border border-white/5 bg-white/[0.02] p-4">
-            <p className="text-[10px] font-semibold uppercase tracking-widest text-ink-400">AI analyses</p>
-            <p className="mt-1 font-numbers text-2xl tracking-wider text-gold-300">38 / 500</p>
-            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/5">
-              <div className="h-full rounded-full bg-gold-gradient" style={{ width: `${(38 / 500) * 100}%` }} />
-            </div>
-          </div>
-        </div>
       </div>
     </Panel>
   )

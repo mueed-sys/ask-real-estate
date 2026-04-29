@@ -113,7 +113,7 @@ export default function MortgageCalculator({ defaultPrice = 100000, isRental = f
         {/* Results column */}
         <div className="rounded-sm border border-gold-500/20 bg-gold-500/[0.03] p-6">
           <p className="text-[10px] uppercase tracking-widest text-gold-500">{t('mortgage.monthly_payment')}</p>
-          <p className="mt-2 font-numbers text-6xl leading-none tracking-wider text-gold-gradient">
+          <p className="mt-2 font-numbers text-5xl font-semibold leading-none tracking-tight tabular-nums text-gold-gradient">
             {formatPriceWithCurrency(Math.round(monthly))}
           </p>
 

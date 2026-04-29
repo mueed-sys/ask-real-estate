@@ -329,12 +329,12 @@ function Hero() {
           <span className="eyebrow">
             {t('brand.shortName')} · {t('brand.since')}
           </span>
-          <h1 className="mt-6 font-display text-5xl leading-[1.05] text-balance text-ink-100 md:text-7xl lg:text-8xl">
-            {t('hero.headline')}
-            <span className="mt-2 block text-gold-gradient">{t('hero.subheadline')}</span>
+          <h1 className="mt-6 font-display text-[clamp(3rem,9vw,8rem)] font-medium leading-[0.95] tracking-tight text-balance text-ink-100">
+            Find your place
+            <span className="mt-1 block text-gold-gradient italic">in Bahrain.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-200">
-            {t('brand.tagline')} — {t('about.story_p2')}
+          <p className="mt-8 max-w-md text-base leading-relaxed text-ink-200 sm:text-lg">
+            Curated rentals and sales across the kingdom's most coveted addresses — since 2008.
           </p>
         </motion.div>
 

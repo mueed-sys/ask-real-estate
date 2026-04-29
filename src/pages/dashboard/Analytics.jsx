@@ -160,8 +160,8 @@ export default function Analytics() {
               {searchTerms.map((s) => (
                 <tr key={s.term} className="border-b border-white/5 hover:bg-white/[0.02]">
                   <td className="px-5 py-3 text-sm text-ink-100">{s.term}</td>
-                  <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-gold-300">{s.count}</td>
-                  <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-emerald-400">{s.conversion}%</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">{s.count}</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-emerald-400">{s.conversion}%</td>
                   <td className="px-5 py-3">
                     <div className="ml-auto h-1.5 w-32 overflow-hidden rounded-full bg-white/5">
                       <div className="h-full rounded-full bg-gold-gradient" style={{ width: `${(s.count / 350) * 100}%` }} />
@@ -194,10 +194,10 @@ export default function Analytics() {
                     <p className="text-sm text-ink-100">{p.title}</p>
                     <p className="text-[11px] text-ink-400">{p.location} · {p.id}</p>
                   </td>
-                  <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-gold-300">{p.views}</td>
-                  <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-blue-400">{Math.round(p.views * 0.12)}</td>
-                  <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-emerald-400">{p.conv}%</td>
-                  <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-ink-200">{Math.floor(p.time / 60)}m {p.time % 60}s</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">{p.views}</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-blue-400">{Math.round(p.views * 0.12)}</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-emerald-400">{p.conv}%</td>
+                  <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-ink-200">{Math.floor(p.time / 60)}m {p.time % 60}s</td>
                 </tr>
               ))}
             </tbody>

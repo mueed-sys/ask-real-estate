@@ -31,12 +31,13 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Cormorant"', 'Georgia', 'serif'],
-        sans: ['Manrope', 'system-ui', 'sans-serif'],
-        body: ['Manrope', 'system-ui', 'sans-serif'],
-        // Bebas Neue — used for prices, stat counters, and big numerals.
-        // Condensed and impactful; reads bold even at default weight.
-        numbers: ['"Bebas Neue"', '"Oswald"', 'sans-serif'],
+        display: ['Spectral', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        // Numbers: same family as body but tabular figures (set via .numerals
+        // class in index.css). Keeps prices crisp and aligned without a
+        // separate display font screaming for attention.
+        numbers: ['Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gold-gradient': 'linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%)',

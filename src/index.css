@@ -13,8 +13,9 @@
   body {
     background-color: #0a0b14;
     color: #e6e7f0;
-    font-family: 'Manrope', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     font-weight: 400;
+    font-feature-settings: 'cv11', 'ss01', 'ss03';
     overflow-x: hidden;
   }
 
@@ -41,18 +42,21 @@
   }
 
   h1, h2, h3, h4, .display {
-    font-family: 'Cormorant', Georgia, serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.05;
+    font-family: 'Spectral', Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
   }
 
-  /* Bebas Neue numerals — prices, stats, big counters. Condensed and impactful. */
+  /* Inter tabular figures — prices, stats, big counters. Aligned, crisp,
+     readable. Replaces the previous Bebas Neue all-caps treatment for a
+     calmer, more luxury-dashboard feel. */
   .numerals,
   .price {
-    font-family: 'Bebas Neue', 'Oswald', sans-serif;
-    letter-spacing: 0.02em;
-    font-weight: 400;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'tnum' 1, 'lnum' 1;
+    letter-spacing: -0.01em;
+    font-weight: 600;
   }
 
   /* Disable user-agent button styling so our custom buttons render predictably */
@@ -65,7 +69,7 @@
   /* Eyebrow text — small uppercase gold label used above section titles */
   .eyebrow {
     @apply inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-widest text-gold-500;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   .eyebrow::before {
     content: '';

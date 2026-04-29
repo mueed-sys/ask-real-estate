@@ -18,7 +18,7 @@ export default function StatCard({
         <p className="text-[10px] font-semibold uppercase tracking-widest text-ink-300">{label}</p>
         {Icon && <Icon className="h-4 w-4 text-gold-500" strokeWidth={1.5} />}
       </div>
-      <p className="mt-3 font-numbers text-5xl tracking-wider text-gold-gradient leading-none">
+      <p className="mt-3 font-numbers text-4xl font-semibold tracking-tight tabular-nums text-gold-gradient leading-none">
         {prefix}
         <CountUp to={value} format={format} duration={duration} />
         {suffix}

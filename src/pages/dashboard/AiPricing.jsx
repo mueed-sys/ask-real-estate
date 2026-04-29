@@ -217,7 +217,7 @@ export default function AiPricing() {
                 >
                   <div className="text-center">
                     <p className="text-[11px] font-semibold uppercase tracking-widest text-gold-500">Recommended Price</p>
-                    <p className="mt-2 font-numbers text-7xl tracking-wider text-gold-gradient">
+                    <p className="mt-2 font-numbers text-6xl font-semibold tracking-tight tabular-nums text-gold-gradient">
                       BD {formatPrice(result.recommended)}
                     </p>
                     <p className="mt-1 text-sm text-ink-300">{form.type === 'Land' ? 'total' : '/month'}</p>
@@ -256,7 +256,7 @@ export default function AiPricing() {
                 {result.factors.map((f, i) => (
                   <li key={i} className="flex items-center justify-between px-5 py-3">
                     <span className="text-sm text-ink-200">{f.label}</span>
-                    <span className={`font-numbers text-base tracking-wider ${f.delta > 0 ? 'text-emerald-400' : 'text-red-400'}`}>
+                    <span className={`font-numbers text-sm font-semibold tracking-tight tabular-nums ${f.delta > 0 ? 'text-emerald-400' : 'text-red-400'}`}>
                       {f.delta > 0 ? '+' : ''}BD {f.delta}
                     </span>
                   </li>
@@ -299,9 +299,9 @@ export default function AiPricing() {
                     <td className="px-5 py-3 text-sm text-ink-100">{c.title}</td>
                     <td className="px-5 py-3 text-sm text-ink-300">{c.location}</td>
                     <td className="px-5 py-3 text-sm text-ink-300">{c.type}</td>
-                    <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-gold-300">{c.bedrooms}</td>
-                    <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-ink-200">{c.sqm}</td>
-                    <td className="px-5 py-3 text-right font-numbers text-base tracking-wider text-gold-300">BD {c.price}</td>
+                    <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">{c.bedrooms}</td>
+                    <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-ink-200">{c.sqm}</td>
+                    <td className="px-5 py-3 text-right font-numbers text-sm font-semibold tracking-tight tabular-nums text-gold-300">BD {c.price}</td>
                     <td className="px-5 py-3 text-xs uppercase tracking-widest text-ink-400">IRE Bahrain</td>
                   </tr>
                 ))}
