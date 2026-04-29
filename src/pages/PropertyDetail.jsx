@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link, useParams, Navigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
@@ -15,7 +14,7 @@ import Reveal from '../components/common/Reveal'
 
 import properties from '../data/properties.json'
 import agents from '../data/agents.json'
-import { formatPriceWithCurrency, bedroomLabel, floorLabel, localized } from '../lib/format'
+import { formatPriceWithCurrency, bedroomLabel, floorLabel } from '../lib/format'
 import { waLink } from '../lib/whatsapp'
 import { useFavorites } from '../store/useFavorites'
 import { useComparison } from '../store/useComparison'
@@ -30,11 +29,9 @@ const ALL_AMENITIES = [
 
 export default function PropertyDetail() {
   const { id } = useParams()
-  const { t, i18n } = useTranslation()
-  const lang = i18n.language
+  const { t } = useTranslation()
 
   const property = properties.find((p) => p.id === id)
-  const [showArabic, setShowArabic] = useState(lang === 'ar')
 
   const isFav = useFavorites((s) => s.isFavorite(id))
   const toggleFav = useFavorites((s) => s.toggle)
@@ -51,9 +48,9 @@ export default function PropertyDetail() {
     .filter((p) => p.id !== property.id && (p.location === property.location || Math.abs(p.price - property.price) < 200))
     .slice(0, 4)
 
-  const title = localized(property, 'title', lang)
-  const description = showArabic ? property.description_ar : property.description
-  const price = formatPriceWithCurrency(property.price, lang)
+  const title = property.title
+  const description = property.description
+  const price = formatPriceWithCurrency(property.price)
   const period =
     property.purpose === 'rent'
       ? property.price_period === 'year' ? t('common.per_year') : t('common.per_month')
@@ -153,7 +150,7 @@ export default function PropertyDetail() {
             </div>
 
             <div className="text-right">
-              <p className="text-gold-gradient font-display text-5xl leading-none">{price}</p>
+              <p className="text-gold-gradient font-numbers text-6xl leading-none tracking-wider md:text-7xl">{price}</p>
               {period && <p className="mt-1 text-sm text-ink-300">{period}</p>}
               <div className="mt-4 flex items-center justify-end gap-2">
                 <button
@@ -198,17 +195,9 @@ export default function PropertyDetail() {
             {/* Description */}
             <Reveal>
               <section>
-                <div className="flex items-center justify-between">
-                  <h2 className="font-display text-3xl text-ink-100">{t('details.description')}</h2>
-                  <button
-                    onClick={() => setShowArabic((s) => !s)}
-                    className="text-xs uppercase tracking-widest text-gold-500 hover:text-gold-300"
-                  >
-                    {showArabic ? t('common.show_english') : t('common.show_arabic')}
-                  </button>
-                </div>
+                <h2 className="font-display text-3xl text-ink-100">{t('details.description')}</h2>
                 <div className="gold-rule" />
-                <p className={`mt-6 max-w-3xl whitespace-pre-line text-base leading-relaxed text-ink-200 ${showArabic ? 'text-right' : ''}`}>
+                <p className="mt-6 max-w-3xl whitespace-pre-line text-base leading-relaxed text-ink-200">
                   {description}
                 </p>
               </section>

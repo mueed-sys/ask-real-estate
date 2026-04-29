@@ -2,17 +2,29 @@
   {
     "id": "agent-001",
     "name": "Murat Yilmaz",
-    "name_ar": "مراد يلماز",
     "title": "Senior Property Consultant",
-    "title_ar": "مستشار عقاري أول",
     "photo": "https://randomuser.me/api/portraits/men/32.jpg",
     "bio": "Murat brings five years of high-end residential and commercial leasing experience in Bahrain's most competitive districts. Originally from Istanbul, he specializes in matching expat executives with premium Juffair and Seef towers, with deep knowledge of every newly delivered building.",
-    "bio_ar": "يجلب مراد خمس سنوات من الخبرة في تأجير العقارات السكنية والتجارية الراقية في البحرين.",
-    "specializations": ["Juffair", "Seef"],
+    "specializations": [
+      "Juffair",
+      "Seef"
+    ],
     "languages": [
-      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
-      { "code": "en", "label": "English", "flag": "🇬🇧" },
-      { "code": "tr", "label": "Turkish", "flag": "🇹🇷" }
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      },
+      {
+        "code": "tr",
+        "label": "Turkish",
+        "flag": "🇹🇷"
+      }
     ],
     "years_with_ire": 5,
     "active_listings": 45,
@@ -26,16 +38,24 @@
   {
     "id": "agent-002",
     "name": "Hassan Al Mahmood",
-    "name_ar": "حسن المحمود",
     "title": "Property Consultant",
-    "title_ar": "مستشار عقاري",
     "photo": "https://randomuser.me/api/portraits/men/45.jpg",
     "bio": "Hassan is the IRE specialist for Bahrain's waterfront and island communities. With three years brokering Amwaj villas and Bahrain Bay penthouses, he understands the lifestyle expectations of every buyer who walks through his doors.",
-    "bio_ar": "حسن هو متخصص IRE لمجتمعات الواجهة البحرية والجزر في البحرين.",
-    "specializations": ["Amwaj Islands", "Bahrain Bay"],
+    "specializations": [
+      "Amwaj Islands",
+      "Bahrain Bay"
+    ],
     "languages": [
-      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
-      { "code": "en", "label": "English", "flag": "🇬🇧" }
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      }
     ],
     "years_with_ire": 3,
     "active_listings": 32,
@@ -49,16 +69,24 @@
   {
     "id": "agent-003",
     "name": "Fatima Al Doseri",
-    "name_ar": "فاطمة الدوسري",
     "title": "Senior Leasing Consultant",
-    "title_ar": "مستشار تأجير أول",
     "photo": "https://randomuser.me/api/portraits/women/65.jpg",
     "bio": "Fatima has spent seven years building IRE's family-villa portfolio across Riffa and Saar. Bahraini-born and a parent herself, she understands what families need from a home — from school catchments to garden orientations.",
-    "bio_ar": "أمضت فاطمة سبع سنوات في بناء محفظة فلل العائلات في IRE في الرفاع وسار.",
-    "specializations": ["Riffa", "Saar"],
+    "specializations": [
+      "Riffa",
+      "Saar"
+    ],
     "languages": [
-      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
-      { "code": "en", "label": "English", "flag": "🇬🇧" }
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      }
     ],
     "years_with_ire": 7,
     "active_listings": 28,
@@ -72,17 +100,29 @@
   {
     "id": "agent-004",
     "name": "Ali Karimi",
-    "name_ar": "علي كريمي",
     "title": "Commercial Property Specialist",
-    "title_ar": "متخصص العقارات التجارية",
     "photo": "https://randomuser.me/api/portraits/men/52.jpg",
     "bio": "Ali leads IRE's commercial leasing desk, with a focus on Diplomatic Area and Seef office towers. Four years advising banks, embassies, and multinational tenants on flexible workspace and prestige addresses.",
-    "bio_ar": "يقود علي مكتب التأجير التجاري في IRE، مع التركيز على المنطقة الدبلوماسية وأبراج السيف المكتبية.",
-    "specializations": ["Diplomatic Area", "Seef"],
+    "specializations": [
+      "Diplomatic Area",
+      "Seef"
+    ],
     "languages": [
-      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
-      { "code": "en", "label": "English", "flag": "🇬🇧" },
-      { "code": "fa", "label": "Farsi", "flag": "🇮🇷" }
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      },
+      {
+        "code": "fa",
+        "label": "Farsi",
+        "flag": "🇮🇷"
+      }
     ],
     "years_with_ire": 4,
     "active_listings": 18,
@@ -96,16 +136,24 @@
   {
     "id": "agent-005",
     "name": "Sarah Williams",
-    "name_ar": "سارة ويليامز",
     "title": "Luxury Property Specialist",
-    "title_ar": "متخصصة العقارات الفاخرة",
     "photo": "https://randomuser.me/api/portraits/women/44.jpg",
     "bio": "Sarah brings two years of trophy-property experience to IRE's Bahrain Bay and Reef Island portfolio. British-born and Cannes-trained, she advises high-net-worth individuals on Bahrain's most exclusive new addresses.",
-    "bio_ar": "تجلب سارة سنتين من الخبرة في العقارات الفاخرة إلى محفظة IRE في خليج البحرين.",
-    "specializations": ["Bahrain Bay", "Reef Island"],
+    "specializations": [
+      "Bahrain Bay",
+      "Reef Island"
+    ],
     "languages": [
-      { "code": "en", "label": "English", "flag": "🇬🇧" },
-      { "code": "fr", "label": "French", "flag": "🇫🇷" }
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      },
+      {
+        "code": "fr",
+        "label": "French",
+        "flag": "🇫🇷"
+      }
     ],
     "years_with_ire": 2,
     "active_listings": 22,
@@ -119,20 +167,27 @@
   {
     "id": "agent-006",
     "name": "Ahmed Al Khalifa",
-    "name_ar": "أحمد آل خليفة",
     "title": "Branch Manager",
-    "title_ar": "مدير الفرع",
     "photo": "https://randomuser.me/api/portraits/men/68.jpg",
     "bio": "Ahmed has led IRE's Bahrain office for a decade, growing the team from a handful of consultants to one of the kingdom's most respected agencies. Direct line for institutional clients and complex transactions.",
-    "bio_ar": "يقود أحمد مكتب IRE في البحرين منذ عقد من الزمن.",
-    "specializations": ["All areas"],
+    "specializations": [
+      "All areas"
+    ],
     "languages": [
-      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
-      { "code": "en", "label": "English", "flag": "🇬🇧" }
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      }
     ],
     "years_with_ire": 10,
     "active_listings": 15,
-    "rating": 5.0,
+    "rating": 5,
     "deals_closed_year": 22,
     "response_time": "< 1 hr",
     "phone": "+97366000009",

@@ -13,8 +13,7 @@ import { useToast } from '../store/useToast'
 
 export default function BlogPost() {
   const { slug } = useParams()
-  const { t, i18n } = useTranslation()
-  const lang = i18n.language
+  const { t } = useTranslation()
   const pushToast = useToast((s) => s.push)
 
   const post = blog.find((p) => p.slug === slug)
@@ -30,7 +29,7 @@ export default function BlogPost() {
     } catch {}
   }
 
-  const title = lang === 'ar' && post.title_ar ? post.title_ar : post.title
+  const title = post.title
 
   return (
     <>
@@ -79,7 +78,7 @@ export default function BlogPost() {
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-ink-300">
               <span>{t('blog.by')} <span className="font-medium text-ink-100">{post.author}</span></span>
               <span>·</span>
-              <span>{shortDate(post.date, lang)}</span>
+              <span>{shortDate(post.date)}</span>
               <span>·</span>
               <span className="inline-flex items-center gap-1">
                 <Clock className="h-3.5 w-3.5" />

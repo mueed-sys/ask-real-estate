@@ -2,6 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const SITE_URL = 'https://irebahrain.com'
 
@@ -62,6 +65,13 @@ function sitemapPlugin() {
 }
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      // Redirect react-i18next to our English-only shim so we can keep
+      // useTranslation() calls intact without bundling i18next.
+      'react-i18next': path.resolve(__dirname, 'src/lib/i18n-shim.js'),
+    },
+  },
   plugins: [react(), sitemapPlugin()],
   build: {
     chunkSizeWarningLimit: 700,
@@ -72,7 +82,6 @@ export default defineConfig({
           if (id.includes('react-router')) return 'react-vendor'
           if (id.includes('react-dom') || /\/react\//.test(id)) return 'react-vendor'
           if (id.includes('framer-motion')) return 'motion'
-          if (id.includes('i18next')) return 'i18n'
           if (id.includes('zustand')) return 'state'
           if (id.includes('lucide-react')) return 'icons'
           if (id.includes('react-helmet-async')) return 'helmet'

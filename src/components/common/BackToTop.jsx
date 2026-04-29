@@ -17,7 +17,7 @@ export default function BackToTop() {
         <motion.button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className="fixed bottom-24 right-6 z-40 inline-flex h-11 w-11 items-center justify-center rounded-full border border-gold-500/30 bg-ink-900/80 text-gold-400 backdrop-blur-md transition-colors hover:border-gold-500 hover:text-gold-300 rtl:right-auto rtl:left-6"
+          className="fixed bottom-24 right-6 z-40 inline-flex h-11 w-11 items-center justify-center rounded-full border border-gold-500/30 bg-ink-900/80 text-gold-400 backdrop-blur-md transition-colors hover:border-gold-500 hover:text-gold-300"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 20 }}

@@ -1,41 +1,34 @@
-// Display formatters for property data — keep these tiny & branding-aware.
+// Display formatters for property data — English-only build.
 
-export function formatPrice(value, locale = 'en') {
+export function formatPrice(value) {
   if (value == null) return ''
-  const localised = locale === 'ar' ? value.toLocaleString('ar-EG') : value.toLocaleString('en-US')
-  return localised
+  return value.toLocaleString('en-US')
 }
 
-export function formatPriceWithCurrency(value, locale = 'en') {
-  const currency = locale === 'ar' ? 'د.ب' : 'BD'
-  return `${currency} ${formatPrice(value, locale)}`
+export function formatPriceWithCurrency(value) {
+  return `BD ${formatPrice(value)}`
 }
 
-export function bedroomLabel(count, locale = 'en') {
-  if (count === 0) return locale === 'ar' ? 'استوديو' : 'Studio'
+export function bedroomLabel(count) {
+  if (count === 0) return 'Studio'
   return String(count)
 }
 
-export function floorLabel(floor, locale = 'en') {
-  if (floor === 0) return locale === 'ar' ? 'الطابق الأرضي' : 'Ground'
+export function floorLabel(floor) {
+  if (floor === 0) return 'Ground'
   return String(floor)
 }
 
-export function shortDate(iso, locale = 'en') {
+export function shortDate(iso) {
   if (!iso) return ''
   const d = new Date(iso)
   if (Number.isNaN(d.getTime())) return iso
-  return d.toLocaleDateString(locale === 'ar' ? 'ar-BH' : 'en-GB', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  })
+  return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })
 }
 
-// Used to render localized property fields (title, description) based on locale,
-// falling back to the English version if Arabic content is missing.
-export function localized(obj, key, locale = 'en') {
+// Returns the property field as-is (Arabic alternates removed in v1).
+// Kept for compatibility — accepts an optional locale arg that is now ignored.
+export function localized(obj, key) {
   if (!obj) return ''
-  if (locale === 'ar' && obj[`${key}_ar`]) return obj[`${key}_ar`]
   return obj[key] ?? ''
 }

@@ -16,8 +16,7 @@ function monthlyPayment({ principal, annualRate, years }) {
 const TERM_OPTIONS = [10, 15, 20, 25, 30]
 
 export default function MortgageCalculator({ defaultPrice = 100000, isRental = false }) {
-  const { t, i18n } = useTranslation()
-  const lang = i18n.language
+  const { t } = useTranslation()
 
   const [price, setPrice] = useState(defaultPrice)
   const [downPct, setDownPct] = useState(20)
@@ -68,7 +67,7 @@ export default function MortgageCalculator({ defaultPrice = 100000, isRental = f
             />
           </Field>
 
-          <Field label={t('mortgage.down_payment')} value={`${downPct}% · ${formatPriceWithCurrency((price * downPct) / 100, lang)}`}>
+          <Field label={t('mortgage.down_payment')} value={`${downPct}% · ${formatPriceWithCurrency((price * downPct) / 100)}`}>
             <input
               type="range"
               min={0}
@@ -114,14 +113,14 @@ export default function MortgageCalculator({ defaultPrice = 100000, isRental = f
         {/* Results column */}
         <div className="rounded-sm border border-gold-500/20 bg-gold-500/[0.03] p-6">
           <p className="text-[10px] uppercase tracking-widest text-gold-500">{t('mortgage.monthly_payment')}</p>
-          <p className="mt-2 font-display text-5xl leading-none text-gold-gradient">
-            {formatPriceWithCurrency(Math.round(monthly), lang)}
+          <p className="mt-2 font-numbers text-6xl leading-none tracking-wider text-gold-gradient">
+            {formatPriceWithCurrency(Math.round(monthly))}
           </p>
 
           <div className="mt-6 space-y-3 border-t border-white/5 pt-5 text-sm">
-            <Row label={t('mortgage.loan_amount')} value={formatPriceWithCurrency(Math.round(loanAmount), lang)} />
-            <Row label={t('mortgage.total_payment')} value={formatPriceWithCurrency(Math.round(totalPayment), lang)} />
-            <Row label={t('mortgage.total_interest')} value={formatPriceWithCurrency(Math.round(totalInterest), lang)} />
+            <Row label={t('mortgage.loan_amount')} value={formatPriceWithCurrency(Math.round(loanAmount))} />
+            <Row label={t('mortgage.total_payment')} value={formatPriceWithCurrency(Math.round(totalPayment))} />
+            <Row label={t('mortgage.total_interest')} value={formatPriceWithCurrency(Math.round(totalInterest))} />
           </div>
         </div>
       </div>

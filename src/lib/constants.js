@@ -43,7 +43,6 @@ export const STATS = {
 
 export const LOCALES = {
   en: { code: 'en', label: 'English', dir: 'ltr', short: 'EN' },
-  ar: { code: 'ar', label: 'العربية', dir: 'rtl', short: 'AR' },
 }
 
 export const PROPERTY_TYPES = [

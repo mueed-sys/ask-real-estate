@@ -12,8 +12,7 @@ import { BRAND, SITE_URL } from '../lib/constants'
 import { shortDate } from '../lib/format'
 
 export default function Blog() {
-  const { t, i18n } = useTranslation()
-  const lang = i18n.language
+  const { t } = useTranslation()
 
   const categories = ['All', ...Array.from(new Set(blog.map((p) => p.category)))]
   const [active, setActive] = useState('All')
@@ -69,12 +68,10 @@ export default function Blog() {
                   </span>
                 </div>
                 <div className="flex flex-1 flex-col gap-4 p-6">
-                  <h3 className="font-display text-xl leading-snug text-ink-100">
-                    {lang === 'ar' && post.title_ar ? post.title_ar : post.title}
-                  </h3>
+                  <h3 className="font-display text-xl leading-snug text-ink-100">{post.title}</h3>
                   <p className="line-clamp-2 text-sm text-ink-300">{post.excerpt}</p>
                   <div className="mt-auto flex items-center justify-between border-t border-white/5 pt-4 text-[11px] text-ink-400">
-                    <span>{shortDate(post.date, lang)} · {post.author}</span>
+                    <span>{shortDate(post.date)} · {post.author}</span>
                     <span className="inline-flex items-center gap-1">
                       <Clock className="h-3 w-3" />
                       {t('blog.read_time', { count: post.read_time })}

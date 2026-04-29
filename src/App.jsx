@@ -1,7 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Helmet } from 'react-helmet-async'
-import { useTranslation } from 'react-i18next'
 
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
@@ -51,18 +50,16 @@ function PageWrap({ children }) {
 
 export default function App() {
   const location = useLocation()
-  const { t, i18n } = useTranslation()
-
   const isComparePage = location.pathname === '/compare'
 
   return (
     <>
       <Helmet>
-        <html lang={i18n.language} dir={i18n.language === 'ar' ? 'rtl' : 'ltr'} />
-        <title>{t('brand.shortName')} — {t('brand.tagline')}</title>
-        <meta name="description" content={t('brand.tagline')} />
+        <html lang="en" dir="ltr" />
+        <title>IRE Bahrain — Your Trusted Real Estate Partner in Bahrain</title>
+        <meta name="description" content="IRE Bahrain — Your Trusted Real Estate Partner in Bahrain" />
         <meta property="og:site_name" content={BRAND.shortName} />
-        <meta property="og:locale" content={i18n.language === 'ar' ? 'ar_BH' : 'en_US'} />
+        <meta property="og:locale" content="en_US" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         {/* Site-wide Organization JSON-LD */}
         <script type="application/ld+json">

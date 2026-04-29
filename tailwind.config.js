@@ -31,10 +31,12 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Cormorant Garamond"', 'serif'],
-        sans: ['Outfit', 'system-ui', 'sans-serif'],
-        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
-        arabic: ['"Noto Naskh Arabic"', 'serif'],
+        display: ['"Cormorant"', 'Georgia', 'serif'],
+        sans: ['Manrope', 'system-ui', 'sans-serif'],
+        body: ['Manrope', 'system-ui', 'sans-serif'],
+        // Bebas Neue — used for prices, stat counters, and big numerals.
+        // Condensed and impactful; reads bold even at default weight.
+        numbers: ['"Bebas Neue"', '"Oswald"', 'sans-serif'],
       },
       backgroundImage: {
         'gold-gradient': 'linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%)',
