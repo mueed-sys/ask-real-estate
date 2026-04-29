@@ -31,12 +31,14 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Spectral', 'Georgia', 'serif'],
+        // Display: Playfair Display — high-contrast neoclassical serif used
+        // by Vogue, Architectural Digest, Sotheby's editorial. Reads as
+        // unmistakably luxury at large sizes. Variable weight 400-900.
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
-        // Numbers: same family as body but tabular figures (set via .numerals
-        // class in index.css). Keeps prices crisp and aligned without a
-        // separate display font screaming for attention.
+        // Numbers: Inter w/ tabular-nums via .numerals class. Keeps prices
+        // column-aligned and crisp without a competing display font.
         numbers: ['Inter', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {

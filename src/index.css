@@ -42,10 +42,10 @@
   }
 
   h1, h2, h3, h4, .display {
-    font-family: 'Spectral', Georgia, serif;
-    font-weight: 500;
-    letter-spacing: -0.015em;
-    line-height: 1.1;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
   }
 
   /* Inter tabular figures — prices, stats, big counters. Aligned, crisp,
