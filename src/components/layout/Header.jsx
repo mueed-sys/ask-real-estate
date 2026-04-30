@@ -166,6 +166,13 @@ export default function Header() {
                     {t(link.key)}
                   </NavLink>
                 ))}
+                <Link
+                  to="/tools/mortgage-calculator"
+                  className="border-l-2 border-transparent px-4 py-3 text-base font-medium tracking-wide text-ink-200 transition-colors hover:border-gold-500/40 hover:text-gold-300"
+                >
+                  Mortgage Calculator
+                  <span className="ml-2 rounded-full border border-gold-500/40 bg-gold-500/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-gold-300">Beta</span>
+                </Link>
                 <Link to="/list-property" className="btn-gold mt-4 text-xs">
                   {t('nav.list_property')}
                 </Link>

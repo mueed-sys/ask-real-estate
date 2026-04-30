@@ -8,6 +8,14 @@ import { PROPERTY_TYPES, BEDROOM_OPTIONS, BATHROOM_OPTIONS, PRICE_RANGE } from '
 export default function PropertyFilters({ filters, set, onClose, onClear, isMobile }) {
   const { t } = useTranslation()
 
+  // Price slider scale changes by purpose:
+  //   rent → BD 0–5,000 step 50      (monthly rent range)
+  //   sale → BD 0–1,000,000 step 10K (Bahrain freehold band)
+  //   all  → BD 0–1,000,000 step 10K (covers both)
+  const priceCfg = filters.purpose === 'rent'
+    ? { min: 0, max: PRICE_RANGE.max, step: 50 }
+    : { min: 0, max: 1_000_000, step: 10_000 }
+
   const toggleArea = (name) => {
     set((f) => ({
       ...f,
@@ -72,8 +80,8 @@ export default function PropertyFilters({ filters, set, onClose, onClear, isMobi
         </div>
       </FilterGroup>
 
-      {/* PRICE */}
-      <FilterGroup title={t('filters.price_range')}>
+      {/* PRICE — scale depends on purpose: rent BD 0-5K, sale BD 0-1M */}
+      <FilterGroup title={t('filters.price_range') + (filters.purpose === 'sale' ? ' (Total)' : ' (per month)')}>
         <p className="mb-3 text-sm text-ink-200">
           BD {filters.priceMin.toLocaleString()} — BD {filters.priceMax.toLocaleString()}
         </p>
@@ -81,24 +89,24 @@ export default function PropertyFilters({ filters, set, onClose, onClear, isMobi
           {/* Dual-handle range slider */}
           <input
             type="range"
-            min={PRICE_RANGE.min}
-            max={PRICE_RANGE.max}
-            step={50}
+            min={priceCfg.min}
+            max={priceCfg.max}
+            step={priceCfg.step}
             value={filters.priceMin}
             onChange={(e) => {
-              const v = Math.min(Number(e.target.value), filters.priceMax - 50)
+              const v = Math.min(Number(e.target.value), filters.priceMax - priceCfg.step)
               set((f) => ({ ...f, priceMin: v }))
             }}
             className="pointer-events-none absolute inset-0 w-full appearance-none bg-transparent accent-gold-500 [&::-webkit-slider-thumb]:pointer-events-auto"
           />
           <input
             type="range"
-            min={PRICE_RANGE.min}
-            max={PRICE_RANGE.max}
-            step={50}
+            min={priceCfg.min}
+            max={priceCfg.max}
+            step={priceCfg.step}
             value={filters.priceMax}
             onChange={(e) => {
-              const v = Math.max(Number(e.target.value), filters.priceMin + 50)
+              const v = Math.max(Number(e.target.value), filters.priceMin + priceCfg.step)
               set((f) => ({ ...f, priceMax: v }))
             }}
             className="pointer-events-none absolute inset-0 w-full appearance-none bg-transparent accent-gold-500 [&::-webkit-slider-thumb]:pointer-events-auto"

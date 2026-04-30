@@ -22,6 +22,7 @@ import BlogPost from './pages/BlogPost'
 import ListProperty from './pages/ListProperty'
 import Favorites from './pages/Favorites'
 import Compare from './pages/Compare'
+import MortgageTool from './pages/MortgageTool'
 import NotFound from './pages/NotFound'
 
 // Dashboard
@@ -81,6 +82,7 @@ export default function App() {
             <Route path="/list-property" element={<PageWrap><ListProperty /></PageWrap>} />
             <Route path="/favorites" element={<PageWrap><Favorites /></PageWrap>} />
             <Route path="/compare" element={<PageWrap><Compare /></PageWrap>} />
+            <Route path="/tools/mortgage-calculator" element={<PageWrap><MortgageTool /></PageWrap>} />
             <Route path="*" element={<PageWrap><NotFound /></PageWrap>} />
           </Route>
 

@@ -14,6 +14,7 @@ const NAV_GROUPS = [
       { to: '/blog', key: 'nav.blog' },
       { to: '/about', key: 'nav.about' },
       { to: '/list-property', key: 'nav.list_property' },
+      { to: '/tools/mortgage-calculator', label: 'Mortgage Calculator', beta: true },
     ],
   },
 ]
@@ -90,9 +91,14 @@ export default function Footer() {
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="text-sm text-ink-300 transition-colors hover:text-gold-300"
+                    className="inline-flex items-center gap-2 text-sm text-ink-300 transition-colors hover:text-gold-300"
                   >
-                    {t(link.key)}
+                    {link.label || t(link.key)}
+                    {link.beta && (
+                      <span className="rounded-full border border-gold-500/40 bg-gold-500/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-widest text-gold-300">
+                        Beta
+                      </span>
+                    )}
                   </Link>
                 </li>
               ))}

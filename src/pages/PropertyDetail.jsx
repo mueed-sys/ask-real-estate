@@ -271,13 +271,14 @@ export default function PropertyDetail() {
               </section>
             </Reveal>
 
-            {/* Mortgage Calculator */}
-            <Reveal>
-              <MortgageCalculator
-                defaultPrice={property.purpose === 'sale' ? property.price : property.price * 200}
-                isRental={property.purpose === 'rent'}
-              />
-            </Reveal>
+            {/* Mortgage Calculator — only relevant for For Sale listings.
+                Rentals: skip entirely; users can still reach the tool via the
+                global /tools/mortgage-calculator page. */}
+            {property.purpose === 'sale' && (
+              <Reveal>
+                <MortgageCalculator defaultPrice={property.price} />
+              </Reveal>
+            )}
 
             {/* Share */}
             <Reveal>

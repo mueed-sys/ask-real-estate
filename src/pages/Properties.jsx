@@ -14,11 +14,16 @@ import { PRICE_RANGE, BRAND, SITE_URL } from '../lib/constants'
 
 const PER_PAGE = 12
 
+// Sale prices are an order of magnitude larger than rentals — every filter
+// reads its scale ceiling from this map keyed by purpose.
+const PRICE_CEIL = { rent: PRICE_RANGE.max, sale: 1_000_000, all: 1_000_000 }
+const ceilFor = (purpose) => PRICE_CEIL[purpose] ?? PRICE_CEIL.all
+
 const DEFAULT_FILTERS = {
   areas: [],
   types: [],
   priceMin: PRICE_RANGE.min,
-  priceMax: PRICE_RANGE.max,
+  priceMax: PRICE_CEIL.all,
   bedrooms: '',
   bathrooms: '',
   furnished: 'all',
@@ -28,15 +33,16 @@ const DEFAULT_FILTERS = {
 
 // Read URL params into the filter state shape.
 function filtersFromParams(params) {
+  const purpose = params.get('purpose') ?? 'all'
   return {
     areas: params.get('area') ? params.get('area').split(',').filter(Boolean) : [],
     types: params.get('type') ? params.get('type').split(',').filter(Boolean) : [],
     priceMin: Number(params.get('priceMin') ?? PRICE_RANGE.min),
-    priceMax: Number(params.get('priceMax') ?? PRICE_RANGE.max),
+    priceMax: Number(params.get('priceMax') ?? ceilFor(purpose)),
     bedrooms: params.get('bedrooms') ?? '',
     bathrooms: params.get('bathrooms') ?? '',
     furnished: params.get('furnished') ?? 'all',
-    purpose: params.get('purpose') ?? 'all',
+    purpose,
     sort: params.get('sort') ?? 'newest',
   }
 }
@@ -46,7 +52,7 @@ function filtersToParams(filters) {
   if (filters.areas.length) p.set('area', filters.areas.join(','))
   if (filters.types.length) p.set('type', filters.types.join(','))
   if (filters.priceMin !== PRICE_RANGE.min) p.set('priceMin', String(filters.priceMin))
-  if (filters.priceMax !== PRICE_RANGE.max) p.set('priceMax', String(filters.priceMax))
+  if (filters.priceMax !== ceilFor(filters.purpose)) p.set('priceMax', String(filters.priceMax))
   if (filters.bedrooms) p.set('bedrooms', filters.bedrooms)
   if (filters.bathrooms) p.set('bathrooms', filters.bathrooms)
   if (filters.furnished !== 'all') p.set('furnished', filters.furnished)
@@ -60,9 +66,10 @@ function applyFilters(list, f) {
 
   if (f.areas.length) out = out.filter((p) => f.areas.includes(p.location))
   if (f.types.length) out = out.filter((p) => f.types.includes(p.type))
-  out = out.filter((p) => p.price >= f.priceMin && p.price <= Math.max(f.priceMax, p.price === 0 ? 0 : 1))
-  // Allow listings priced higher than max only if max is at the slider ceiling
-  if (f.priceMax < PRICE_RANGE.max) out = out.filter((p) => p.price <= f.priceMax)
+
+  // Purpose-aware price filter. When purpose is 'all', the slider scale is
+  // already wide enough (ceiling 1M) to cover both rentals and sales.
+  out = out.filter((p) => p.price >= f.priceMin && p.price <= f.priceMax)
 
   if (f.bedrooms === 'Studio') out = out.filter((p) => p.bedrooms === 0)
   else if (f.bedrooms === '5+') out = out.filter((p) => p.bedrooms >= 5)
@@ -123,7 +130,16 @@ export default function Properties() {
   const visible = filtered.slice((safePage - 1) * PER_PAGE, safePage * PER_PAGE)
 
   const setFilter = (updater) => {
-    setFilters((prev) => (typeof updater === 'function' ? updater(prev) : updater))
+    setFilters((prev) => {
+      const next = typeof updater === 'function' ? updater(prev) : updater
+      // When purpose toggles, snap priceMax to the new scale's ceiling so
+      // rent results don't get filtered out by a leftover sale ceiling
+      // (or vice versa).
+      if (next.purpose !== prev.purpose) {
+        return { ...next, priceMax: ceilFor(next.purpose), priceMin: 0 }
+      }
+      return next
+    })
     setPage(1)
   }
   const clearAll = () => {
