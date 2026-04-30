@@ -49,7 +49,7 @@ export default function PublicLayout() {
 
       <Header />
 
-      <main className="min-h-screen pt-20">
+      <main id="main" className="min-h-screen pt-[72px]">
         <Outlet />
       </main>
 

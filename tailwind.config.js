@@ -5,6 +5,11 @@ export default {
     extend: {
       colors: {
         ink: {
+          // Surface ramp: bg → card → elevated. Used by container, card,
+          // popover/dialog respectively so layers separate via tone, not borders.
+          bg:        '#0B0E1F',
+          card:      '#11152C',
+          elevated:  '#171B36',
           950: '#06070d',
           900: '#0a0b14',
           850: '#0c0f1a',
@@ -13,11 +18,18 @@ export default {
           600: '#252a45',
           500: '#3a3f5e',
           400: '#5b6080',
-          // Lightened readable copy tokens — every paragraph using
-          // text-ink-200 / text-ink-300 now clears the #e0e0e0-on-dark bar.
           300: '#c4c8db', // muted UI text (timestamps, helper)
           200: '#e0e3ee', // primary paragraph copy
           100: '#f3f4f9', // headlines / stat values
+        },
+        // Soft ivory for de-emphasized accents — replaces gold for non-CTA
+        // text so the actual gold elements pop.
+        ivory: {
+          50:  '#FAF7F0',
+          100: '#F2EDDF',
+          200: '#E8E0D0',
+          300: '#D6CDB8',
+          400: '#B8AE94',
         },
         gold: {
           50: '#fdf9e7',
@@ -31,6 +43,13 @@ export default {
           800: '#634e16',
           900: '#3d300d',
         },
+        // Functional / semantic palette — same saturation/luminance band so
+        // status pills and chart series read as a related family.
+        success: { 50: '#E6F8EE', 300: '#3DDB85', 500: '#10B981', 700: '#067A55' },
+        warning: { 50: '#FBF1DC', 300: '#F2C35F', 500: '#D9941A', 700: '#8E5F0E' },
+        danger:  { 50: '#FCE9E9', 300: '#F47B7B', 500: '#E5484D', 700: '#9B2D31' },
+        info:    { 50: '#E5F1FB', 300: '#5AAEF1', 500: '#1F86D8', 700: '#125989' },
+        muted:   { 50: '#EDEFF3', 300: '#A1A8BD', 500: '#6B7390', 700: '#3A4060' },
       },
       fontFamily: {
         // Display — Playfair Display 700/800. The luxury editorial serif
@@ -76,10 +95,35 @@ export default {
         'fade-up': 'fade-up 0.6s ease-out forwards',
       },
       letterSpacing: {
-        // Restrained luxury tracking — was 0.32em which read as awkwardly
-        // wide. 0.12em keeps small-caps eyebrows feeling refined without the
-        // letters drifting apart.
         widest: '0.12em',
+        eyebrow: '0.22em',
+      },
+      // Modular type scale (1.250 / major-third). Use these for headings,
+      // paragraphs, and numerics so vertical rhythm stays consistent across
+      // every page.
+      fontSize: {
+        'display':  ['72px', { lineHeight: '1.04', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'h1':       ['56px', { lineHeight: '1.06', letterSpacing: '-0.018em', fontWeight: '700' }],
+        'h1-mob':   ['40px', { lineHeight: '1.08', letterSpacing: '-0.018em', fontWeight: '700' }],
+        'h2':       ['40px', { lineHeight: '1.10', letterSpacing: '-0.015em', fontWeight: '700' }],
+        'h2-mob':   ['32px', { lineHeight: '1.12', letterSpacing: '-0.012em', fontWeight: '700' }],
+        'h3':       ['32px', { lineHeight: '1.18', letterSpacing: '-0.01em',  fontWeight: '700' }],
+        'h3-mob':   ['24px', { lineHeight: '1.22', letterSpacing: '-0.005em', fontWeight: '700' }],
+        'h4':       ['24px', { lineHeight: '1.28', fontWeight: '600' }],
+        'h4-mob':   ['18px', { lineHeight: '1.32', fontWeight: '600' }],
+        'body':     ['16px', { lineHeight: '1.7' }],
+        'small':    ['13px', { lineHeight: '1.55' }],
+      },
+      // Section vertical rhythm — used by every page so spacing stays
+      // unified. py-section-mobile / md:py-section-tablet / lg:py-section.
+      spacing: {
+        'section':         '120px',
+        'section-tablet':  '80px',
+        'section-mobile':  '56px',
+      },
+      maxWidth: {
+        'content': '1280px',
+        'content-wide': '1440px',
       },
     },
   },

@@ -10,6 +10,8 @@ import { useState } from 'react'
 import HeroSearch from '../components/home/HeroSearch'
 import StatsBar from '../components/home/StatsBar'
 import TestimonialCarousel from '../components/home/TestimonialCarousel'
+import EditorialMoment from '../components/home/EditorialMoment'
+import HomeMap from '../components/home/HomeMap'
 import PropertyCard from '../components/property/PropertyCard'
 import AreaCard from '../components/area/AreaCard'
 import SectionHeader from '../components/common/SectionHeader'
@@ -54,13 +56,18 @@ export default function Home() {
       {/* HERO */}
       <Hero />
 
+      {/* EDITORIAL MOMENT — magazine spotlight on a featured neighbourhood */}
+      <section className="py-section">
+        <EditorialMoment />
+      </section>
+
       {/* STATS */}
-      <section className="container-lux -mt-8 relative z-10 sm:-mt-12">
+      <section className="container-lux relative z-10">
         <StatsBar />
       </section>
 
       {/* FEATURED PROPERTIES */}
-      <section className="container-lux py-16 sm:py-24 lg:py-32">
+      <section className="container-lux py-section">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4 sm:mb-12 sm:gap-6">
           <SectionHeader
             eyebrow={t('sections.featured_eyebrow')}
@@ -70,7 +77,7 @@ export default function Home() {
           <Reveal delay={0.2}>
             <Link
               to="/properties"
-              className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-widest text-gold-500 transition-colors hover:text-gold-300"
+              className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-widest text-gold-300 transition-colors hover:text-gold-200"
             >
               {t('common.view_all')}
               <ArrowUpRight className="h-3 w-3" />
@@ -78,17 +85,22 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="grid gap-5 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid items-stretch gap-5 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {featured.map((property, i) => (
-            <Reveal key={property.id} delay={i * 0.08}>
+            <Reveal key={property.id} delay={i * 0.08} className="h-full">
               <PropertyCard property={property} />
             </Reveal>
           ))}
         </div>
       </section>
 
+      {/* INTERACTIVE BAHRAIN MAP — Zillow-tier discovery layer */}
+      <section className="py-section">
+        <HomeMap />
+      </section>
+
       {/* AREAS */}
-      <section className="bg-ink-850/40 py-16 sm:py-24 lg:py-32">
+      <section className="bg-ink-card/40 py-section">
         <div className="container-lux">
           <SectionHeader
             eyebrow={t('sections.areas_eyebrow')}
@@ -106,7 +118,7 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE IRE */}
-      <section className="relative overflow-hidden bg-ink-950 py-16 sm:py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-ink-950 py-section">
         <div className="pointer-events-none absolute inset-0 bg-radial-gold opacity-50" />
         <div className="container-lux relative">
           <SectionHeader
@@ -141,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="container-lux py-16 sm:py-24 lg:py-32">
+      <section className="container-lux py-section">
         <div className="mx-auto max-w-3xl">
           <SectionHeader
             eyebrow={t('sections.testimonials_eyebrow')}
@@ -155,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* INSTAGRAM */}
-      <section className="bg-ink-850/40 py-16 sm:py-24 lg:py-32">
+      <section className="bg-ink-850/40 py-section">
         <div className="container-lux">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <SectionHeader
@@ -209,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* NEWSLETTER */}
-      <section className="relative overflow-hidden bg-ink-950 py-16 sm:py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-ink-950 py-section">
         <div className="pointer-events-none absolute -left-1/2 top-0 h-full w-full bg-radial-gold opacity-30" />
         <div className="container-lux relative">
           <Reveal>

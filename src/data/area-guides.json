@@ -1,0 +1,252 @@
+{
+  "juffair": {
+    "consultant_name": "Murat Yilmaz",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Juffair is the area I show first to anyone arriving on a NATO posting or a regional finance role. The grid between American Alley and Juffair Avenue means you can walk to dinner at Cantina Kahlo or grab late-night shawarma at Al Abraaj without unlocking the car. Most of my clients here are single professionals or young couples who want a furnished one-bed and a building gym they will actually use. The trade-off is honest: parking is a sport on weekends, and the construction noise off Road 4023 has been steady for two years. If you want quiet and a garden, Juffair is the wrong shortlist. If you want walkable nightlife and a 12-minute commute to the Diplomatic Area, this is the answer.",
+    "walk_score": 86,
+    "nearest_mosque": "Shaikh Hamad Mosque",
+    "prayer_note": "Fajr ~4:05, Maghrib ~6:08 (Apr)",
+    "traffic": "12 min to Seef Mall · 18 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [462, 465, 468, 470, 467, 471, 474, 476, 478, 475, 478, 481, 483, 485, 482, 484, 487, 489, 491, 488, 490, 493, 495, 497],
+    "cafes": [
+      { "name": "Lanterns Indian", "blurb": "Long-running curry classic on Juffair Avenue", "distance": "5 min walk" },
+      { "name": "Calexico", "blurb": "Reliable brunch and burrito staple", "distance": "7 min walk" },
+      { "name": "Cantina Kahlo", "blurb": "Mexican plates and weekend live music", "distance": "9 min walk" }
+    ],
+    "schools": [
+      { "name": "Bahrain School (DoDDS)", "blurb": "American curriculum, K-12 on the same site", "distance": "6 min drive" },
+      { "name": "Naseem International School", "blurb": "British curriculum, mixed nationalities", "distance": "9 min drive" },
+      { "name": "Ibn Khuldoon National School", "blurb": "IB programme, strong reputation", "distance": "14 min drive" }
+    ],
+    "gyms": [
+      { "name": "Fitness First Juffair", "blurb": "Largest floorplate in the area", "distance": "4 min walk" },
+      { "name": "Body Tonic", "blurb": "Boutique classes, smaller crowd", "distance": "6 min walk" },
+      { "name": "Gold's Gym Juffair", "blurb": "24-hour access for night owls", "distance": "8 min walk" }
+    ]
+  },
+  "seef": {
+    "consultant_name": "Sarah Williams",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Seef sells itself on convenience. From most towers along Al Fateh Highway you can be inside City Centre in under five minutes and at the Bahrain Financial Harbour in eight. I steer dual-income households here who want one car instead of two and a school run that is genuinely a 10-minute job. The honest caveat is that Seef is not a neighbourhood in the village sense; the streets are designed for vehicles, not pedestrians, and the noise from the highway carries to the lower floors. Pick a unit above the 12th floor facing inland and you sidestep that. The quiet win for residents is Lulu Hypermarket on Exhibition Road for the weekly shop.",
+    "walk_score": 62,
+    "nearest_mosque": "Al Fateh Grand Mosque",
+    "prayer_note": "Fajr ~4:06, Maghrib ~6:08 (Apr)",
+    "traffic": "5 min to Seef Mall · 14 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [501, 503, 506, 508, 510, 507, 511, 514, 516, 518, 515, 519, 522, 524, 526, 523, 527, 530, 532, 534, 531, 535, 538, 540],
+    "cafes": [
+      { "name": "The Hub Cafe", "blurb": "Strong flat whites near City Centre", "distance": "6 min walk" },
+      { "name": "Steve's Cafe Seef", "blurb": "All-day breakfast and pasta dishes", "distance": "8 min walk" },
+      { "name": "Coco's Seef", "blurb": "Long-standing brunch institution", "distance": "10 min walk" }
+    ],
+    "schools": [
+      { "name": "St Christopher's School", "blurb": "British curriculum, oldest in Bahrain", "distance": "7 min drive" },
+      { "name": "British School of Bahrain", "blurb": "IGCSE and A-levels, large campus", "distance": "11 min drive" },
+      { "name": "Multinational School Bahrain", "blurb": "Smaller cohorts, American curriculum", "distance": "8 min drive" }
+    ],
+    "gyms": [
+      { "name": "Fitness First Seef", "blurb": "Inside City Centre, busy at lunch", "distance": "5 min walk" },
+      { "name": "BFit Seef", "blurb": "Pay-as-you-go classes available", "distance": "7 min walk" },
+      { "name": "Vivafit Seef", "blurb": "Women-only, smaller and quieter", "distance": "9 min walk" }
+    ]
+  },
+  "amwaj": {
+    "consultant_name": "Hassan Al Mahmood",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Amwaj is what I show clients who want a sea view and freehold ownership in the same conversation. The Lagoon side around Tala Island and Floating City is genuinely walkable, and you can take a coffee at Le Pain Quotidien and end up at the marina without crossing a major road. The trade-off is the bridge. When the Muharraq airport traffic stacks up around 7:45 AM, your 18-minute commute can stretch to 35. I tell working couples to drive it once before signing. Families I know have settled into Tala Bay villas and the kids cycle to swim lessons at the Lagoon Club. Maintenance fees here are honest and worth checking line by line before offers.",
+    "walk_score": 58,
+    "nearest_mosque": "Amwaj Mosque (Tala Island)",
+    "prayer_note": "Fajr ~4:04, Maghrib ~6:09 (Apr)",
+    "traffic": "22 min to Seef Mall · 28 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [695, 698, 702, 705, 708, 705, 709, 713, 716, 718, 715, 719, 723, 726, 729, 726, 730, 734, 737, 740, 736, 740, 744, 748],
+    "cafes": [
+      { "name": "Le Pain Quotidien", "blurb": "Lagoon-side breakfast with bread basket", "distance": "5 min walk" },
+      { "name": "Block 338 Amwaj", "blurb": "Burger spot popular with families", "distance": "7 min walk" },
+      { "name": "Fishmarket by Lagoon", "blurb": "Weekend seafood on the boardwalk", "distance": "9 min walk" }
+    ],
+    "schools": [
+      { "name": "Asian School Amwaj", "blurb": "Indian CBSE, on-island option", "distance": "5 min drive" },
+      { "name": "British School of Bahrain", "blurb": "Across the bridge in Hamala", "distance": "28 min drive" },
+      { "name": "Riffa Views International", "blurb": "American curriculum, popular with expats", "distance": "32 min drive" }
+    ],
+    "gyms": [
+      { "name": "Fitness First Amwaj", "blurb": "Pool plus group classes", "distance": "6 min drive" },
+      { "name": "Lagoon Club Gym", "blurb": "Members-only, lap pool included", "distance": "4 min walk" },
+      { "name": "BFit Amwaj", "blurb": "Smaller boutique with personal training", "distance": "8 min drive" }
+    ]
+  },
+  "riffa": {
+    "consultant_name": "Ahmed Al Khalifa",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Riffa is where my Bahraini clients raise families and where my expat clients move when the apartment phase ends. The split between East and West Riffa matters. East Riffa, off Shaikh Salman Highway, leans traditional and the souq there is still the place to buy fresh dates in Ramadan. West Riffa around the Riffa Views compound is where you find the larger villas, the golf course, and the international school catchment most parents are after. The downside is real distance: a 28-minute commute to the Diplomatic Area on a good morning, longer on a wet one. If you do not need the airport, the trade is space and quiet for time in the car.",
+    "walk_score": 32,
+    "nearest_mosque": "Shaikh Isa Bin Salman Mosque",
+    "prayer_note": "Fajr ~4:05, Maghrib ~6:07 (Apr)",
+    "traffic": "24 min to Seef Mall · 30 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [365, 367, 369, 371, 368, 370, 372, 374, 376, 373, 375, 378, 380, 382, 379, 381, 384, 386, 388, 385, 387, 390, 392, 394],
+    "cafes": [
+      { "name": "Cuca by Riffa Views", "blurb": "Brunch, sourdough, and weekend lines", "distance": "6 min drive" },
+      { "name": "Sukar Pasha Ottoman Lounge", "blurb": "Turkish coffee with a view", "distance": "9 min drive" },
+      { "name": "Riffa Palace Cafe", "blurb": "Traditional Bahraini breakfast plates", "distance": "11 min drive" }
+    ],
+    "schools": [
+      { "name": "Riffa Views International School", "blurb": "American curriculum, on the compound", "distance": "5 min drive" },
+      { "name": "Al Hekma International School", "blurb": "British curriculum, established locally", "distance": "8 min drive" },
+      { "name": "St Christopher's Senior School", "blurb": "Saar campus, sixth form available", "distance": "22 min drive" }
+    ],
+    "gyms": [
+      { "name": "Royal Golf Club Gym", "blurb": "Members of the club access included", "distance": "5 min drive" },
+      { "name": "Fitness First Riffa", "blurb": "Inside The Walk, full equipment floor", "distance": "8 min drive" },
+      { "name": "Gold's Gym Riffa", "blurb": "Weights-heavy, late closing hours", "distance": "10 min drive" }
+    ]
+  },
+  "bahrain-bay": {
+    "consultant_name": "Fatima Al Doseri",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Bahrain Bay is the address I take banking and law clients to first. Living inside the Four Seasons or the Avenues catchment means a five-minute walk to the office at Arcapita or BFH and a Friday brunch at Re/Asian Cuisine without moving a car. The skyline view from the upper Onyx floors is genuinely the best on the island. What I am candid about is the price floor: this is not a starter address, and service charges scale with the postcode. The other note is that the area is still completing. Some plots remain hoarded, so confirm the view your tenancy actually gets. If you want polished and central, this is the shortest answer.",
+    "walk_score": 74,
+    "nearest_mosque": "Bahrain Bay Mosque",
+    "prayer_note": "Fajr ~4:06, Maghrib ~6:08 (Apr)",
+    "traffic": "8 min to Seef Mall · 6 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [918, 922, 925, 929, 932, 928, 933, 938, 942, 945, 941, 946, 951, 955, 958, 954, 959, 964, 968, 972, 967, 972, 977, 982],
+    "cafes": [
+      { "name": "Re/Asian Cuisine", "blurb": "Pan-Asian inside the Four Seasons", "distance": "4 min walk" },
+      { "name": "Bay View Lounge", "blurb": "Skyline cocktails on the 50th floor", "distance": "3 min walk" },
+      { "name": "Cafe Lilou Bay", "blurb": "French-Lebanese all-day brunch", "distance": "7 min walk" }
+    ],
+    "schools": [
+      { "name": "St Christopher's School", "blurb": "Saar campus, the standard expat pick", "distance": "18 min drive" },
+      { "name": "Ibn Khuldoon National School", "blurb": "IB diploma programme available", "distance": "16 min drive" },
+      { "name": "British School of Bahrain", "blurb": "Bus service from the Bay area", "distance": "26 min drive" }
+    ],
+    "gyms": [
+      { "name": "Four Seasons Spa Gym", "blurb": "Hotel-grade equipment, paid membership", "distance": "3 min walk" },
+      { "name": "Fitness First Bay", "blurb": "Inside The Avenues mall complex", "distance": "8 min walk" },
+      { "name": "Body Tonic Bay", "blurb": "Reformer Pilates and small classes", "distance": "11 min walk" }
+    ]
+  },
+  "reef-island": {
+    "consultant_name": "Ali Karimi",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Reef Island is a closed community in the literal sense, and that is the point. One bridge in, one bridge out, mostly residential, and a beach club my clients actually use on weekday evenings. I show the larger Floresta and Lagoon Park units to families relocating from Dubai who miss the gated-compound feel. The honest negatives: dining options on the island are limited, so you will drive to Adliya or Seef for variety, and resale liquidity is slower than Juffair or Seef when you eventually exit. The win is privacy. The promenade walk past the marina at dusk is the thing residents quietly talk about most.",
+    "walk_score": 48,
+    "nearest_mosque": "Reef Island Mosque",
+    "prayer_note": "Fajr ~4:06, Maghrib ~6:08 (Apr)",
+    "traffic": "10 min to Seef Mall · 9 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [1158, 1162, 1167, 1171, 1176, 1170, 1177, 1183, 1188, 1193, 1187, 1194, 1200, 1206, 1211, 1205, 1212, 1218, 1224, 1230, 1224, 1231, 1238, 1244],
+    "cafes": [
+      { "name": "Mirai Reef", "blurb": "Japanese omakase and sushi counter", "distance": "5 min walk" },
+      { "name": "La Maison Reef", "blurb": "Marina-side French bistro tables", "distance": "7 min walk" },
+      { "name": "Costa Coffee Promenade", "blurb": "Quick coffee on the boardwalk", "distance": "4 min walk" }
+    ],
+    "schools": [
+      { "name": "St Christopher's School", "blurb": "British curriculum, off-island", "distance": "20 min drive" },
+      { "name": "British School of Bahrain", "blurb": "Bus pickup from Reef gates", "distance": "28 min drive" },
+      { "name": "Ibn Khuldoon National School", "blurb": "IB diploma route available", "distance": "18 min drive" }
+    ],
+    "gyms": [
+      { "name": "Reef Island Beach Club", "blurb": "Resident pool, gym, and beach", "distance": "4 min walk" },
+      { "name": "Fitness First Seef", "blurb": "Closest commercial gym off-island", "distance": "10 min drive" },
+      { "name": "Vivafit Seef", "blurb": "Women-only, short bridge drive", "distance": "12 min drive" }
+    ]
+  },
+  "saar": {
+    "consultant_name": "Sarah Williams",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Saar is the school-run answer. Most of my families here have a child at St Christopher's or BSB, and the daily routine works because the schools, the Saar Mall Spar, and the villa compounds sit inside a five-minute triangle. The Saar burial mounds at the edge of the village are a quiet reminder that this neighbourhood has been lived in for thousands of years. What I caution clients on is car dependency: the area is built around villas and there is no real walkable high street. The tenancy stock turns in June and July when school contracts end, so the best units come up in a tight window.",
+    "walk_score": 34,
+    "nearest_mosque": "Saar Mosque",
+    "prayer_note": "Fajr ~4:07, Maghrib ~6:09 (Apr)",
+    "traffic": "16 min to Seef Mall · 24 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [501, 504, 506, 509, 511, 508, 512, 516, 519, 521, 518, 522, 526, 529, 531, 528, 532, 536, 539, 542, 539, 543, 547, 550],
+    "cafes": [
+      { "name": "Cafe Lilou Saar", "blurb": "French-Lebanese brunch all morning", "distance": "5 min drive" },
+      { "name": "Maki Saar", "blurb": "Reliable Japanese inside the Walk", "distance": "6 min drive" },
+      { "name": "Cuca Saar", "blurb": "Sourdough toasts and weekend queues", "distance": "8 min drive" }
+    ],
+    "schools": [
+      { "name": "St Christopher's Senior", "blurb": "British, sixth form on this campus", "distance": "4 min drive" },
+      { "name": "British School of Bahrain", "blurb": "IGCSE and A-levels, large grounds", "distance": "9 min drive" },
+      { "name": "Nadeen School", "blurb": "British primary, smaller intake", "distance": "7 min drive" }
+    ],
+    "gyms": [
+      { "name": "Fitness First Saar", "blurb": "Inside The Walk, family-friendly", "distance": "5 min drive" },
+      { "name": "Body Tonic Saar", "blurb": "Pilates reformer and small group", "distance": "7 min drive" },
+      { "name": "Vivafit Saar", "blurb": "Women-only, classes at school hours", "distance": "8 min drive" }
+    ]
+  },
+  "budaiya": {
+    "consultant_name": "Hassan Al Mahmood",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Budaiya is for clients who actually want Bahrain, not a pastiche of it. The villages along Budaiya Highway, from Janabiya through Diraz, are built around mosques, family compounds, and the date farms that still line the side roads. Friday morning at the Budaiya Farmers' Market is where I tell new arrivals to start. Rents are softer than anywhere else on this list because the stock is older and the amenities are spread out. The clients I match here are usually long-stay teachers, journalists, or Arabic-speaking professionals who want to be inside the culture rather than next to it. Driving to Seef takes about 22 minutes when traffic behaves.",
+    "walk_score": 41,
+    "nearest_mosque": "Al Sadiq Mosque Diraz",
+    "prayer_note": "Fajr ~4:07, Maghrib ~6:09 (Apr)",
+    "traffic": "22 min to Seef Mall · 30 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [325, 327, 328, 330, 327, 329, 331, 333, 335, 332, 334, 336, 338, 340, 337, 339, 342, 344, 346, 343, 345, 348, 350, 352],
+    "cafes": [
+      { "name": "Budaiya Farmers Market Cafe", "blurb": "Friday-only, fresh from local farms", "distance": "5 min drive" },
+      { "name": "Saffron by Jena", "blurb": "Indian fine-dining within Budaiya", "distance": "7 min drive" },
+      { "name": "Coral Bay Cafe", "blurb": "Beachside coffee at Marassi Drive", "distance": "10 min drive" }
+    ],
+    "schools": [
+      { "name": "British School of Bahrain", "blurb": "Hamala campus, short Budaiya commute", "distance": "10 min drive" },
+      { "name": "Nadeen School", "blurb": "British primary, smaller class sizes", "distance": "8 min drive" },
+      { "name": "Al Raja School", "blurb": "Long-running mixed curriculum", "distance": "14 min drive" }
+    ],
+    "gyms": [
+      { "name": "Beach Bunny Gym Budaiya", "blurb": "Boutique studio, classes morning and evening", "distance": "6 min drive" },
+      { "name": "Gold's Gym Budaiya", "blurb": "Big floorplate, full equipment range", "distance": "8 min drive" },
+      { "name": "Fitness First Hamala", "blurb": "Closest premium gym chain", "distance": "11 min drive" }
+    ]
+  },
+  "diplomatic-area": {
+    "consultant_name": "Fatima Al Doseri",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "The Diplomatic Area suits clients whose work calendar runs on the 8 AM meeting. Living in one of the towers along Government Avenue or Al Khalifa Avenue means you walk to the embassies, the BHB, and most legal and consulting offices. Lunch at Block 338 in Adliya is a six-minute drive. The drawback is the after-hours quiet: when the office workers leave, the streets empty, and on a Thursday night you will likely drive to Juffair or Adliya for energy. I match this area with single executives and embassy staff on shorter postings who want zero commute and a building gym on the same lift line as their flat.",
+    "walk_score": 71,
+    "nearest_mosque": "Yateem Mosque",
+    "prayer_note": "Fajr ~4:06, Maghrib ~6:08 (Apr)",
+    "traffic": "9 min to Seef Mall · 6 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [598, 601, 604, 607, 604, 608, 611, 614, 617, 614, 618, 622, 625, 628, 625, 629, 633, 636, 639, 636, 640, 644, 647, 651],
+    "cafes": [
+      { "name": "Cafe Lilou Diplomatic", "blurb": "French-Lebanese reliable for breakfast", "distance": "4 min walk" },
+      { "name": "Block 338 Adliya", "blurb": "Streets of small plates restaurants", "distance": "6 min drive" },
+      { "name": "Mosaic Cafe Crowne Plaza", "blurb": "Hotel buffet popular for lunches", "distance": "5 min walk" }
+    ],
+    "schools": [
+      { "name": "Bahrain School (DoDDS)", "blurb": "American K-12, walking distance", "distance": "8 min drive" },
+      { "name": "Ibn Khuldoon National School", "blurb": "IB programme, mixed nationalities", "distance": "12 min drive" },
+      { "name": "St Christopher's School", "blurb": "British, the standard expat option", "distance": "16 min drive" }
+    ],
+    "gyms": [
+      { "name": "Fitness First Diplomatic", "blurb": "Inside Manama Centre, full classes", "distance": "5 min walk" },
+      { "name": "Crowne Plaza Health Club", "blurb": "Hotel gym with day passes", "distance": "5 min walk" },
+      { "name": "BFit Diplomatic", "blurb": "Smaller box, weights focused", "distance": "8 min walk" }
+    ]
+  },
+  "hidd": {
+    "consultant_name": "Ahmed Al Khalifa",
+    "consultant_role": "Senior Property Consultant",
+    "voice": "Hidd has changed in the last five years. What used to be mostly industrial is now a working answer for younger Bahraini families and engineers who want a townhouse in Diyar Al Muharraq or Dilmunia at a fair number per square foot. The old town side near Hidd Souq still keeps the fishing-village rhythm, and the Friday morning fish market at the corniche is a real one. The honest constraint is the drive to Manama: the bridge is fine off-peak but stiffens at 8 AM. Also be specific about which Hidd you mean, because Diyar, Dilmunia, and Old Hidd are three different products with three different price floors.",
+    "walk_score": 39,
+    "nearest_mosque": "Hidd Grand Mosque",
+    "prayer_note": "Fajr ~4:04, Maghrib ~6:09 (Apr)",
+    "traffic": "20 min to Seef Mall · 24 min to Manama Souq at 8 AM (Sun-Thu)",
+    "rent_trend": [345, 347, 349, 351, 348, 350, 352, 354, 356, 353, 355, 358, 360, 362, 359, 361, 364, 366, 368, 365, 367, 370, 372, 374],
+    "cafes": [
+      { "name": "Hidd Fish Market Cafe", "blurb": "Friday catch, simple grilled plates", "distance": "5 min drive" },
+      { "name": "Dilmunia Boardwalk Coffee", "blurb": "New canal-side spot for residents", "distance": "7 min drive" },
+      { "name": "Diyar Cafe Wahaj", "blurb": "Townhouse-side breakfast and pastries", "distance": "6 min drive" }
+    ],
+    "schools": [
+      { "name": "Al Raja School", "blurb": "Long-running, mixed curriculum", "distance": "16 min drive" },
+      { "name": "Asian School Amwaj", "blurb": "Indian CBSE, short Muharraq drive", "distance": "12 min drive" },
+      { "name": "Bahrain Bayan School", "blurb": "Bilingual, established Bahraini option", "distance": "20 min drive" }
+    ],
+    "gyms": [
+      { "name": "Fitness First Dilmunia", "blurb": "Newest branch, canal-side floor", "distance": "8 min drive" },
+      { "name": "Gold's Gym Muharraq", "blurb": "Closest big-box gym, weights heavy", "distance": "11 min drive" },
+      { "name": "BFit Diyar", "blurb": "Boutique inside Diyar townhouse cluster", "distance": "6 min drive" }
+    ]
+  }
+}

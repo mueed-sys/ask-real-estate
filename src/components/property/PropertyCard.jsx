@@ -7,8 +7,9 @@ import {
 import { useFavorites } from '../../store/useFavorites'
 import { useComparison } from '../../store/useComparison'
 import { useToast } from '../../store/useToast'
-import { formatPriceWithCurrency, bedroomLabel, localized } from '../../lib/format'
+import { bedroomLabel, localized } from '../../lib/format'
 import { waLink } from '../../lib/whatsapp'
+import Price from '../common/Price'
 
 // Compact / luxury / list variants share data but differ in dimension.
 // Default variant fits a 3-column grid on desktop.
@@ -47,7 +48,6 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
   }
 
   const title = localized(property, 'title', lang)
-  const price = formatPriceWithCurrency(property.price, lang)
   const period =
     property.purpose === 'rent'
       ? property.price_period === 'year'
@@ -79,7 +79,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
           <div>
             <h3 className="font-sans text-xl font-semibold leading-snug tracking-tight text-ink-100">{title}</h3>
             <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.22em]">
-              <span className="inline-flex items-center gap-1.5 text-gold-500">
+              <span className="inline-flex items-center gap-1.5 text-ivory-300">
                 <MapPin className="h-3 w-3" /> {property.location}
               </span>
               <span className="text-ink-400">·</span>
@@ -88,10 +88,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
             <Specs property={property} t={t} className="mt-4" />
           </div>
           <div className="flex items-end justify-between">
-            <div>
-              <span className="text-gold-gradient font-numbers text-3xl font-bold tracking-tight tabular-nums">{price}</span>
-              {period && <span className="ml-1 text-sm text-ink-300">{period}</span>}
-            </div>
+            <Price bd={property.price} unit={period} size="36px" />
             <CardActions {...{ isFav, isCompare, handleFav, handleCompare, handleWhatsapp, showCompare, t }} />
           </div>
         </div>
@@ -102,9 +99,9 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
   // Default grid variant
   return (
     <motion.div
-      whileHover={{ y: -8 }}
+      whileHover={{ y: -6 }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="group"
+      className="group h-full"
     >
       <Link to={`/properties/${property.id}`} className="card-lux flex h-full flex-col">
         <div className="relative aspect-[4/3] overflow-hidden">
@@ -138,7 +135,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
             <h3 className="font-sans text-base font-semibold leading-snug tracking-tight text-ink-100 sm:text-lg">{title}</h3>
             {/* Meta row: location + property type so the type isn't crowding the image */}
             <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] uppercase tracking-[0.22em]">
-              <span className="inline-flex items-center gap-1.5 text-gold-500">
+              <span className="inline-flex items-center gap-1.5 text-ivory-300">
                 <MapPin className="h-3 w-3" /> {property.location}
               </span>
               <span className="text-ink-400">·</span>
@@ -146,10 +143,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
             </div>
           </div>
 
-          <div>
-            <span className="text-gold-gradient font-numbers text-4xl font-bold leading-none tracking-tight tabular-nums">{price}</span>
-            {period && <span className="ml-1 text-sm text-ink-300">{period}</span>}
-          </div>
+          <Price bd={property.price} unit={period} size="40px" />
 
           <Specs property={property} t={t} />
 
@@ -173,15 +167,15 @@ function Specs({ property, t, className = '' }) {
   return (
     <div className={`flex items-center gap-5 text-sm text-ink-300 ${className}`}>
       <span className="inline-flex items-center gap-1.5">
-        <BedDouble className="h-4 w-4 text-gold-500" />
+        <BedDouble className="h-4 w-4 text-ivory-300" />
         {bedroomLabel(property.bedrooms, 'en')}
       </span>
       <span className="inline-flex items-center gap-1.5">
-        <Bath className="h-4 w-4 text-gold-500" />
+        <Bath className="h-4 w-4 text-ivory-300" />
         {property.bathrooms}
       </span>
       <span className="inline-flex items-center gap-1.5">
-        <Maximize2 className="h-4 w-4 text-gold-500" />
+        <Maximize2 className="h-4 w-4 text-ivory-300" />
         {property.sqm} m²
       </span>
     </div>

@@ -2,11 +2,12 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
-  Plus, Search, ArrowUp, ArrowDown, Edit, EyeOff, Trash2, X, ExternalLink, Sparkles,
+  Plus, Search, ArrowUp, ArrowDown, Edit, EyeOff, Trash2, X, ExternalLink, Sparkles, Instagram, Crown,
 } from 'lucide-react'
 
 import Panel from '../../components/dashboard/Panel'
 import StatusBadge from '../../components/dashboard/StatusBadge'
+import InstagramPostGenerator from '../../components/dashboard/InstagramPostGenerator'
 import { useToast } from '../../store/useToast'
 import properties from '../../data/properties.json'
 import agents from '../../data/agents.json'
@@ -51,6 +52,7 @@ export default function DashProperties() {
   const [selected, setSelected] = useState(new Set())
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [editing, setEditing] = useState(null)
+  const [igFor, setIgFor] = useState(null)
 
   const enriched = useMemo(
     () =>
@@ -241,6 +243,13 @@ export default function DashProperties() {
                         <Link to={`/properties/${p.id}`} target="_blank" className="rounded p-1.5 text-ink-300 hover:bg-white/5 hover:text-gold-300" title="View live">
                           <ExternalLink className="h-3.5 w-3.5" />
                         </Link>
+                        <button
+                          onClick={() => setIgFor(p)}
+                          className="rounded p-1.5 text-ink-300 hover:bg-white/5 hover:text-gold-300"
+                          title="Instagram auto-post"
+                        >
+                          <Instagram className="h-3.5 w-3.5" />
+                        </button>
                         <button onClick={() => openEdit(p)} className="rounded p-1.5 text-ink-300 hover:bg-white/5 hover:text-gold-300" title="Edit">
                           <Edit className="h-3.5 w-3.5" />
                         </button>
@@ -259,6 +268,13 @@ export default function DashProperties() {
           </table>
         </div>
       </Panel>
+
+      {/* Instagram auto-post modal */}
+      <InstagramPostGenerator
+        property={igFor}
+        open={!!igFor}
+        onClose={() => setIgFor(null)}
+      />
 
       {/* Slide-out drawer */}
       <PropertyDrawer

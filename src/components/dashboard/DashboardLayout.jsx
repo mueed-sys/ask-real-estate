@@ -5,22 +5,25 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   LayoutDashboard, Building2, Users, UserCog, BarChart3, Map,
   Brain, Sparkles, FileText, Settings, ExternalLink, Search, Bell, Menu, X,
-  ChevronLeft, ChevronRight, ChevronDown,
+  ChevronDown, DollarSign, ScrollText, Lock,
 } from 'lucide-react'
 import notifications from '../../data/dashboard/notifications.json'
 import MobileNotice from './MobileNotice'
+import { useRole, ROLES, FEATURE_TIER } from '../../store/useRole'
 
 const NAV_SECTIONS = [
-  { to: '/dashboard', label: 'Overview', icon: LayoutDashboard, end: true },
-  { to: '/dashboard/properties', label: 'Properties', icon: Building2 },
-  { to: '/dashboard/leads', label: 'Leads & Inquiries', icon: Users },
-  { to: '/dashboard/agents', label: 'Agents', icon: UserCog },
-  { to: '/dashboard/analytics', label: 'Analytics', icon: BarChart3 },
-  { to: '/dashboard/heatmap', label: 'Heat Map', icon: Map },
-  { to: '/dashboard/market-intel', label: 'Market Intelligence', icon: Brain },
-  { to: '/dashboard/ai-pricing', label: 'AI Price Analysis', icon: Sparkles },
-  { to: '/dashboard/documents', label: 'Documents', icon: FileText },
-  { to: '/dashboard/settings', label: 'Settings', icon: Settings },
+  { to: '/dashboard',                   label: 'Overview',            icon: LayoutDashboard, end: true, key: 'overview'   },
+  { to: '/dashboard/properties',        label: 'Properties',          icon: Building2,                  key: 'properties' },
+  { to: '/dashboard/leads',             label: 'Leads & Inquiries',   icon: Users,                      key: 'leads'      },
+  { to: '/dashboard/agents',            label: 'Agents',              icon: UserCog,                    key: 'agents'     },
+  { to: '/dashboard/analytics',         label: 'Analytics',           icon: BarChart3,                  key: 'analytics'  },
+  { to: '/dashboard/commission',        label: 'Commission',          icon: DollarSign,                 key: 'commission' },
+  { to: '/dashboard/heatmap',           label: 'Heat Map',            icon: Map,                        key: 'heatmap'    },
+  { to: '/dashboard/market-intel',      label: 'Market Intelligence', icon: Brain,                      key: 'market'     },
+  { to: '/dashboard/ai-pricing',        label: 'AI Price Analysis',   icon: Sparkles,                   key: 'ai_pricing' },
+  { to: '/dashboard/documents',         label: 'Documents',           icon: FileText,                   key: 'documents'  },
+  { to: '/dashboard/audit',             label: 'Audit Log',           icon: ScrollText,                 key: 'audit'      },
+  { to: '/dashboard/settings',          label: 'Settings',            icon: Settings,                   key: 'settings'   },
 ]
 
 // Title shown in topbar per route
@@ -169,8 +172,12 @@ export default function DashboardLayout() {
 }
 
 function Sidebar({ onNavigate }) {
+  const role = useRole((s) => s.role)
+  const setRole = useRole((s) => s.setRole)
+  const tier = ROLES[role]?.tier ?? 3
+
   return (
-    <aside className="flex h-screen w-60 flex-shrink-0 flex-col border-r border-white/5 bg-[#0a0c18]">
+    <aside className="flex h-screen w-60 flex-shrink-0 flex-col border-r border-white/5 bg-ink-bg">
       {/* Logo */}
       <div className="flex h-16 items-center gap-3 border-b border-white/5 px-5">
         <span className="relative inline-flex h-9 w-9 flex-shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold-500/30">
@@ -178,7 +185,7 @@ function Sidebar({ onNavigate }) {
         </span>
         <span className="flex min-w-0 flex-col leading-none">
           <span className="font-display text-base text-ink-100">IRE Bahrain</span>
-          <span className="mt-0.5 text-[9px] font-medium uppercase tracking-widest text-gold-500">Admin</span>
+          <span className="mt-0.5 text-[9px] font-medium uppercase tracking-[0.22em] text-gold-300">Admin</span>
         </span>
       </div>
 
@@ -187,39 +194,52 @@ function Sidebar({ onNavigate }) {
         <ul className="space-y-0.5 px-3">
           {NAV_SECTIONS.map((item) => {
             const Icon = item.icon
+            const required = FEATURE_TIER[item.key] ?? 1
+            const locked = tier < required
             return (
               <li key={item.to}>
-                <NavLink
-                  to={item.to}
-                  end={item.end}
-                  onClick={onNavigate}
-                  className={({ isActive }) =>
-                    `group relative flex items-center gap-3 rounded-md px-3 py-2.5 text-[13px] font-medium tracking-wide transition-all ${
-                      isActive
-                        ? 'bg-gold-500/10 text-gold-300'
-                        : 'text-ink-300 hover:bg-white/[0.03] hover:text-ink-100'
-                    }`
-                  }
-                >
-                  {({ isActive }) => (
-                    <>
-                      {isActive && (
-                        <span className="absolute inset-y-1 left-0 w-0.5 rounded-full bg-gold-gradient" />
-                      )}
-                      <Icon className="h-4 w-4 flex-shrink-0" strokeWidth={1.6} />
-                      <span>{item.label}</span>
-                    </>
-                  )}
-                </NavLink>
+                {locked ? (
+                  <span
+                    className="group relative flex cursor-not-allowed items-center gap-3 rounded-md px-3 py-2.5 text-[13px] font-medium tracking-wide text-ink-500 opacity-50"
+                    title="Requires Senior access"
+                  >
+                    <Icon className="h-4 w-4 flex-shrink-0" strokeWidth={1.6} />
+                    <span>{item.label}</span>
+                    <Lock className="ml-auto h-3 w-3" strokeWidth={1.6} />
+                  </span>
+                ) : (
+                  <NavLink
+                    to={item.to}
+                    end={item.end}
+                    onClick={onNavigate}
+                    className={({ isActive }) =>
+                      `group relative flex items-center gap-3 rounded-md px-3 py-2.5 text-[13px] font-medium tracking-wide transition-all ${
+                        isActive
+                          ? 'bg-ink-elevated text-gold-200'
+                          : 'text-ink-300 hover:bg-white/[0.03] hover:text-ink-100'
+                      }`
+                    }
+                  >
+                    {({ isActive }) => (
+                      <>
+                        {isActive && (
+                          <span className="absolute inset-y-1 left-0 w-[3px] rounded-full bg-gold-gradient" />
+                        )}
+                        <Icon className="h-4 w-4 flex-shrink-0" strokeWidth={1.6} />
+                        <span>{item.label}</span>
+                      </>
+                    )}
+                  </NavLink>
+                )}
               </li>
             )
           })}
         </ul>
       </nav>
 
-      {/* User */}
+      {/* User + role switcher */}
       <div className="border-t border-white/5 p-4">
-        <div className="flex items-center gap-3 rounded-md p-2 transition-colors hover:bg-white/[0.03]">
+        <div className="flex items-center gap-3 rounded-md p-2">
           <img
             src="https://randomuser.me/api/portraits/men/68.jpg"
             alt="Ahmed Al Khalifa"
@@ -227,9 +247,22 @@ function Sidebar({ onNavigate }) {
           />
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-medium text-ink-100">Ahmed Al Khalifa</p>
-            <p className="text-[10px] uppercase tracking-widest text-gold-500">Branch Manager</p>
+            <p className="text-[10px] uppercase tracking-[0.22em] text-gold-300">{ROLES[role].label}</p>
           </div>
-          <ChevronDown className="h-3.5 w-3.5 flex-shrink-0 text-ink-400" />
+        </div>
+
+        {/* Demo: View-as switcher so the sales-pitch can flip between roles. */}
+        <div className="mt-2">
+          <p className="text-[9px] uppercase tracking-[0.22em] text-ivory-400">View as</p>
+          <select
+            value={role}
+            onChange={(e) => setRole(e.target.value)}
+            className="mt-1 w-full rounded-md border border-white/10 bg-white/[0.03] px-2 py-1.5 text-xs text-ink-100 outline-none focus:border-gold-500/40"
+          >
+            {Object.entries(ROLES).map(([k, v]) => (
+              <option key={k} value={k} className="bg-ink-900">{v.label}</option>
+            ))}
+          </select>
         </div>
       </div>
     </aside>

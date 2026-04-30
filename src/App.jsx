@@ -23,6 +23,8 @@ import ListProperty from './pages/ListProperty'
 import Favorites from './pages/Favorites'
 import Compare from './pages/Compare'
 import MortgageTool from './pages/MortgageTool'
+import Invest from './pages/Invest'
+import PrivateCollection from './pages/PrivateCollection'
 import NotFound from './pages/NotFound'
 
 // Dashboard
@@ -36,6 +38,8 @@ import DashMarketIntel from './pages/dashboard/MarketIntel'
 import DashAiPricing from './pages/dashboard/AiPricing'
 import DashDocuments from './pages/dashboard/Documents'
 import DashSettings from './pages/dashboard/Settings'
+import DashCommission from './pages/dashboard/Commission'
+import DashAudit from './pages/dashboard/Audit'
 
 const pageVariants = {
   initial: { opacity: 0, y: 16 },
@@ -83,6 +87,8 @@ export default function App() {
             <Route path="/favorites" element={<PageWrap><Favorites /></PageWrap>} />
             <Route path="/compare" element={<PageWrap><Compare /></PageWrap>} />
             <Route path="/tools/mortgage-calculator" element={<PageWrap><MortgageTool /></PageWrap>} />
+            <Route path="/invest" element={<PageWrap><Invest /></PageWrap>} />
+            <Route path="/private-collection" element={<PageWrap><PrivateCollection /></PageWrap>} />
             <Route path="*" element={<PageWrap><NotFound /></PageWrap>} />
           </Route>
 
@@ -97,6 +103,8 @@ export default function App() {
             <Route path="market-intel" element={<PageWrap><DashMarketIntel /></PageWrap>} />
             <Route path="ai-pricing" element={<PageWrap><DashAiPricing /></PageWrap>} />
             <Route path="documents" element={<PageWrap><DashDocuments /></PageWrap>} />
+            <Route path="commission" element={<PageWrap><DashCommission /></PageWrap>} />
+            <Route path="audit" element={<PageWrap><DashAudit /></PageWrap>} />
             <Route path="settings" element={<PageWrap><DashSettings /></PageWrap>} />
           </Route>
         </Routes>

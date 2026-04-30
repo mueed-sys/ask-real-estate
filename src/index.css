@@ -11,7 +11,9 @@
   }
 
   body {
-    background-color: #0a0b14;
+    /* Surface ramp: page bg = ink-bg (#0B0E1F). Cards lift to ink-card
+       (#11152C); popovers/elevated panels use ink-elevated (#171B36). */
+    background-color: #0B0E1F;
     color: #f3f4f9;
     font-family: 'DM Sans', system-ui, sans-serif;
     font-weight: 400;
@@ -19,6 +21,35 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
+
+  /* Honor reduced-motion: kill the heavy default animations + scroll smoothing
+     when the user has the OS preference set. */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Skip-to-content target — visually hidden until focused. Keyboard
+     navigation lands here first so users can jump past the header chrome. */
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+    padding: 0.6rem 1rem;
+    background: #d4af37;
+    color: #0a0b14;
+    font-weight: 600;
+    border-radius: 4px;
+    transform: translateY(-200%);
+    transition: transform 200ms ease;
+  }
+  .skip-link:focus { transform: translateY(0); outline: none; }
 
   /* Paragraph copy on dark backgrounds — guaranteed legible default. */
   p {
@@ -47,16 +78,27 @@
     background: linear-gradient(180deg, #d4af37, #f4d03f);
   }
 
+  /* Editorial serif is reserved for editorial moments: hero, section titles,
+     property names on detail pages. UI/labels/body copy stays in DM Sans for
+     readability. Apply font-display explicitly where the editorial register
+     belongs. */
   h1, h2, h3, h4, .display {
     font-family: 'Playfair Display', Georgia, serif;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.018em;
     line-height: 1.1;
     color: #f3f4f9;
   }
   h1 { margin-bottom: 0.4em; }
   h2 { margin-top: 0.4em; margin-bottom: 0.4em; }
   h3 { margin-top: 0.5em; margin-bottom: 0.4em; }
+
+  /* Visible focus ring everywhere — gold @ 60% with 2px outline. */
+  :focus-visible {
+    outline: 2px solid rgba(244, 208, 63, 0.7);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
 
   /* Outfit numbers — prices, stat counters, percentages, sqm, distances.
      Bold + tabular so figures align column-perfect across rows. */
@@ -75,16 +117,26 @@
 }
 
 @layer components {
-  /* Eyebrow / badge / small-cap label — DM Sans 600, uppercase, 3px tracking. */
+  /* Eyebrow / badge / small-cap label — DM Sans 600, uppercase, 0.22em
+     tracking. Demoted to soft ivory by default; gold reserved for hero
+     eyebrow + interactive states. */
   .eyebrow {
-    @apply inline-flex items-center gap-3 text-[11px] font-semibold uppercase text-gold-500;
+    @apply inline-flex items-center gap-3 text-[11px] font-semibold uppercase text-ivory-200;
     font-family: 'DM Sans', sans-serif;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.22em;
   }
   .eyebrow::before {
     content: '';
     width: 28px;
     height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(232, 224, 208, 0.55));
+  }
+  /* Gold variant — for the hero eyebrow only, where the editorial moment
+     justifies the brand colour. */
+  .eyebrow-gold {
+    @apply text-gold-300;
+  }
+  .eyebrow-gold::before {
     background: linear-gradient(90deg, transparent, #d4af37);
   }
 
@@ -151,22 +203,66 @@
     color: #f4e08f;
   }
 
-  /* Card luxury baseline */
+  /* Card luxury baseline — sits on the elevated surface tone so it lifts
+     off the page even before any border or shadow. */
   .card-lux {
-    @apply relative overflow-hidden bg-ink-850/60 transition-all duration-500;
+    @apply relative h-full overflow-hidden transition-all duration-500;
+    background-color: #11152C;
     border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
+    border-radius: 6px;
   }
   .card-lux:hover {
+    background-color: #171B36;
     border-color: rgba(212, 175, 55, 0.25);
-    transform: translateY(-8px);
-    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.2), 0 32px 64px -16px rgba(212, 175, 55, 0.18);
+    transform: translateY(-6px);
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.2), 0 32px 64px -16px rgba(0, 0, 0, 0.55);
   }
 
-  /* Decorative gold underline used under section titles */
+  /* Standardised price typography: muted small "BD" → bold gold number → muted
+     small unit. Apply to <span class="price-row">…</span>. */
+  .price-row {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    line-height: 1;
+  }
+  .price-row .price-currency {
+    color: rgba(212, 175, 55, 0.72);
+    font-family: 'Outfit', 'DM Sans', system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 0.55em;
+    letter-spacing: 0.04em;
+  }
+  .price-row .price-amount {
+    background: linear-gradient(135deg, #f4d03f 0%, #d4af37 60%, #b08d24 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Outfit', 'DM Sans', system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'tnum' 1, 'lnum' 1;
+  }
+  .price-row .price-unit {
+    color: rgba(196, 200, 219, 0.7);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 0.4em;
+    letter-spacing: 0.04em;
+  }
+
+  /* Decorative gold underline used under section titles. Reserved as the
+     subtle gold accent below white serif headings — gold is for here, prices,
+     and CTAs only. */
   .gold-rule {
     @apply mt-4 h-px w-16 bg-gold-gradient;
   }
+
+  /* Standard section vertical rhythm — applied via class so spacing tokens
+     stay consistent across pages. */
+  .py-section { padding-top: 56px; padding-bottom: 56px; }
+  @media (min-width: 768px) { .py-section { padding-top: 80px; padding-bottom: 80px; } }
+  @media (min-width: 1024px) { .py-section { padding-top: 120px; padding-bottom: 120px; } }
 
   /* Skeleton shimmer */
   .skeleton {
@@ -180,10 +276,61 @@
     animation: shimmer 2s linear infinite;
   }
 
-  /* Container with luxury max-width */
+  /* Container — text content. Capped at 1280px so paragraph line-lengths
+     stay readable. */
   .container-lux {
     @apply mx-auto w-full px-5 sm:px-8 lg:px-12;
-    max-width: 1400px;
+    max-width: 1280px;
+  }
+  /* Wide container — hero imagery, full-bleed visuals. 1440 cap. */
+  .container-wide {
+    @apply mx-auto w-full px-5 sm:px-8 lg:px-12;
+    max-width: 1440px;
+  }
+
+  /* Print stylesheet — when an agent prints a property page for a client,
+     swap the dark theme for a clean white-background A4 layout. */
+  @media print {
+    body { background: #fff !important; color: #111 !important; }
+    header, nav, footer, .skip-link { display: none !important; }
+    .card-lux, .bg-ink-card, .bg-ink-elevated, .bg-ink-bg, .bg-ink-850\/40, .bg-ink-850\/60, .bg-ink-card\/40, .bg-ink-card\/70 {
+      background: #fff !important;
+      color: #111 !important;
+      border-color: rgba(0,0,0,0.12) !important;
+      box-shadow: none !important;
+    }
+    h1, h2, h3, h4 { color: #111 !important; }
+    p, span, li, td, th { color: #222 !important; }
+    .text-ink-100, .text-ink-200, .text-ink-300, .text-ink-400, .text-ivory-200, .text-ivory-300 {
+      color: #222 !important;
+    }
+    .text-gold-200, .text-gold-300, .text-gold-400, .text-gold-500 {
+      color: #8a6c1d !important;
+    }
+    .price-row .price-amount {
+      background: none !important;
+      -webkit-text-fill-color: #8a6c1d !important;
+      color: #8a6c1d !important;
+    }
+    .price-row .price-currency, .price-row .price-unit { color: #555 !important; }
+    .gold-rule, .bg-gold-gradient { background: #8a6c1d !important; }
+    img { max-width: 100% !important; }
+    a[href]:after { content: ''; }
+    .container-lux { max-width: none !important; padding: 0 24px !important; }
+    section { page-break-inside: avoid; }
+  }
+
+  /* Image shimmer loading placeholder — gold-tinted gradient sweep that
+     replaces grey skeleton boxes site-wide. */
+  .img-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(212, 175, 55, 0.10) 50%,
+      rgba(255, 255, 255, 0.03) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.8s linear infinite;
   }
 }
 

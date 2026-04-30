@@ -194,6 +194,13 @@ export default function Footer() {
             </a>
             {t('footer.credit_after')}
           </p>
+          <Link
+            to="/dashboard"
+            className="text-[10px] uppercase tracking-[0.22em] text-ink-400 transition-colors hover:text-gold-300"
+            title="Agent / admin dashboard (also: ⌃⇧A)"
+          >
+            Agent Login →
+          </Link>
         </div>
       </div>
     </footer>

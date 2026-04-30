@@ -9,6 +9,8 @@ import {
 
 import StatCard from '../../components/dashboard/StatCard'
 import Panel from '../../components/dashboard/Panel'
+import SalesFunnel from '../../components/dashboard/SalesFunnel'
+import LeaseExpiryCalendar from '../../components/dashboard/LeaseExpiryCalendar'
 import { CHART_COLORS, visitorsLastNDays, peakHoursGrid } from '../../lib/dashboard'
 
 import searchTerms from '../../data/dashboard/searchTerms.json'
@@ -231,6 +233,12 @@ export default function Analytics() {
           </div>
         </div>
       </Panel>
+
+      {/* Sales funnel */}
+      <SalesFunnel />
+
+      {/* Lease expiry */}
+      <LeaseExpiryCalendar />
     </div>
   )
 }
