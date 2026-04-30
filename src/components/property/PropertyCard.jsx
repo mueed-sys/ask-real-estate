@@ -66,14 +66,25 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
             decoding="async"
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <Badges property={property} t={t} />
+          <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-ink-900/75 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-100 backdrop-blur-sm">
+            {property.purpose === 'rent' ? t('common.for_rent') : t('common.for_sale')}
+          </span>
+          {property.featured && (
+            <span className="absolute right-4 top-4 inline-flex items-center gap-1 rounded-full bg-gold-gradient px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.22em] text-ink-900 shadow-[0_4px_14px_-4px_rgba(212,175,55,0.55)]">
+              <Sparkles className="h-3 w-3" strokeWidth={2.4} /> {t('common.featured')}
+            </span>
+          )}
         </div>
         <div className="flex flex-1 flex-col justify-between gap-4 p-6">
           <div>
             <h3 className="font-sans text-xl font-semibold leading-snug tracking-tight text-ink-100">{title}</h3>
-            <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-gold-500">
-              <MapPin className="h-3 w-3" /> {property.location}
-            </p>
+            <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.22em]">
+              <span className="inline-flex items-center gap-1.5 text-gold-500">
+                <MapPin className="h-3 w-3" /> {property.location}
+              </span>
+              <span className="text-ink-400">·</span>
+              <span className="text-ink-300">{property.type}</span>
+            </div>
             <Specs property={property} t={t} className="mt-4" />
           </div>
           <div className="flex items-end justify-between">
@@ -106,15 +117,33 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
           />
           {/* gradient overlay for text legibility on hover */}
           <div className="absolute inset-0 bg-gradient-to-t from-ink-900/80 via-ink-900/20 to-transparent" />
-          <Badges property={property} t={t} />
-          <FavBtn isFav={isFav} onClick={handleFav} />
+
+          {/* Top-left: single primary purpose pill (For Rent / For Sale) */}
+          <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-ink-900/75 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-100 backdrop-blur-sm">
+            {property.purpose === 'rent' ? t('common.for_rent') : t('common.for_sale')}
+          </span>
+
+          {/* Top-right: featured pill (gold star) stacked above the favorite button */}
+          <div className="absolute right-4 top-4 flex flex-col items-end gap-2">
+            {property.featured && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-gold-gradient px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.22em] text-ink-900 shadow-[0_4px_14px_-4px_rgba(212,175,55,0.55)]">
+                <Sparkles className="h-3 w-3" strokeWidth={2.4} /> {t('common.featured')}
+              </span>
+            )}
+            <FavBtn isFav={isFav} onClick={handleFav} />
+          </div>
         </div>
         <div className="flex flex-1 flex-col gap-4 p-5">
           <div>
             <h3 className="font-sans text-base font-semibold leading-snug tracking-tight text-ink-100 sm:text-lg">{title}</h3>
-            <p className="mt-1.5 inline-flex items-center gap-1.5 text-[11px] uppercase tracking-widest text-gold-500">
-              <MapPin className="h-3 w-3" /> {property.location}
-            </p>
+            {/* Meta row: location + property type so the type isn't crowding the image */}
+            <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] uppercase tracking-[0.22em]">
+              <span className="inline-flex items-center gap-1.5 text-gold-500">
+                <MapPin className="h-3 w-3" /> {property.location}
+              </span>
+              <span className="text-ink-400">·</span>
+              <span className="text-ink-300">{property.type}</span>
+            </div>
           </div>
 
           <div>
@@ -137,24 +166,6 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
         </div>
       </Link>
     </motion.div>
-  )
-}
-
-function Badges({ property, t }) {
-  return (
-    <div className="absolute left-4 top-4 flex items-center gap-2">
-      {property.featured && (
-        <span className="inline-flex items-center gap-1 rounded-full bg-gold-gradient px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-ink-900">
-          <Sparkles className="h-3 w-3" /> {t('common.featured')}
-        </span>
-      )}
-      <span className="rounded-full border border-white/15 bg-ink-900/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-ink-100 backdrop-blur-sm">
-        {property.purpose === 'rent' ? t('common.for_rent') : t('common.for_sale')}
-      </span>
-      <span className="rounded-full border border-white/15 bg-ink-900/70 px-3 py-1 text-[10px] font-medium uppercase tracking-widest text-ink-200 backdrop-blur-sm">
-        {property.type}
-      </span>
-    </div>
   )
 }
 
@@ -182,7 +193,7 @@ function FavBtn({ isFav, onClick }) {
     <button
       onClick={onClick}
       aria-label="Save to favorites"
-      className="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-ink-900/70 text-ink-100 backdrop-blur-sm transition-all hover:border-gold-500/40 hover:text-gold-300"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-ink-900/70 text-ink-100 backdrop-blur-sm transition-all hover:border-gold-500/40 hover:text-gold-300"
     >
       <Heart
         className={`h-4 w-4 transition-all ${isFav ? 'fill-gold-500 text-gold-500' : ''}`}

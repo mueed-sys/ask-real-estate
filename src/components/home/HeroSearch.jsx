@@ -17,16 +17,17 @@ export default function HeroSearch() {
   const [bedrooms, setBedrooms] = useState('')
 
   // Scale the price slider depending on rent vs sale — different orders of magnitude.
+  // Sale ceilings sit at BD 500k with 25k snaps; rent at BD 5,000/mo with 50 snaps.
   const priceCfg =
     purpose === 'sale'
-      ? { min: 0, max: 1_000_000, step: 10_000, default: 1_000_000 }
-      : { min: PRICE_RANGE.min, max: PRICE_RANGE.max, step: 50, default: PRICE_RANGE.max }
+      ? { min: 0, max: 500_000, step: 25_000, default: 500_000, unit: 'total' }
+      : { min: PRICE_RANGE.min, max: PRICE_RANGE.max, step: 50, default: PRICE_RANGE.max, unit: '/month' }
 
   // Reset price ceiling when toggling between rent/sale so the slider doesn't
   // get stuck at the wrong scale.
   const handlePurpose = (next) => {
     setPurpose(next)
-    setMaxPrice(next === 'sale' ? 1_000_000 : PRICE_RANGE.max)
+    setMaxPrice(next === 'sale' ? 500_000 : PRICE_RANGE.max)
   }
 
   const submit = (e) => {
@@ -48,30 +49,34 @@ export default function HeroSearch() {
       transition={{ delay: 0.6, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="w-full max-w-5xl rounded-[3px] border border-white/10 bg-ink-950/35 p-2.5 shadow-gold-soft backdrop-blur-2xl"
     >
-      {/* Rent / Sale toggle — primary intent selector before any filters */}
-      <div className="flex gap-2 px-1 pb-2">
-        <button
-          type="button"
-          onClick={() => handlePurpose('rent')}
-          className={`rounded-full px-5 py-1.5 text-xs font-semibold uppercase tracking-widest transition-all ${
-            purpose === 'rent'
-              ? 'bg-gold-gradient text-ink-900 shadow-gold-soft'
-              : 'border border-white/15 text-ink-200 hover:border-gold-500/40'
-          }`}
-        >
-          For Rent
-        </button>
-        <button
-          type="button"
-          onClick={() => handlePurpose('sale')}
-          className={`rounded-full px-5 py-1.5 text-xs font-semibold uppercase tracking-widest transition-all ${
-            purpose === 'sale'
-              ? 'bg-gold-gradient text-ink-900 shadow-gold-soft'
-              : 'border border-white/15 text-ink-200 hover:border-gold-500/40'
-          }`}
-        >
-          For Sale
-        </button>
+      {/* Rent / Sale segmented control — sliding gold pill behind the active
+          option using framer-motion's shared layout, so the active state is
+          unmistakable instead of two adjacent buttons. */}
+      <div className="mb-2 flex w-full max-w-[260px] items-center rounded-full border border-white/15 bg-ink-950/40 p-1 backdrop-blur-sm">
+        {[
+          { value: 'rent', label: 'For Rent' },
+          { value: 'sale', label: 'For Sale' },
+        ].map((opt) => {
+          const active = purpose === opt.value
+          return (
+            <button
+              key={opt.value}
+              type="button"
+              onClick={() => handlePurpose(opt.value)}
+              aria-pressed={active}
+              className="relative flex-1 rounded-full px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] transition-colors"
+            >
+              {active && (
+                <motion.span
+                  layoutId="purpose-pill"
+                  transition={{ type: 'spring', stiffness: 460, damping: 36 }}
+                  className="absolute inset-0 rounded-full bg-gold-gradient shadow-[0_4px_18px_-4px_rgba(212,175,55,0.5)]"
+                />
+              )}
+              <span className={`relative z-10 ${active ? 'text-ink-900' : 'text-ink-200'}`}>{opt.label}</span>
+            </button>
+          )
+        })}
       </div>
 
       <div className="grid items-stretch gap-1 lg:grid-cols-[1.2fr_1fr_1.4fr_0.8fr_auto]">
@@ -94,7 +99,6 @@ export default function HeroSearch() {
           value={maxPrice}
           onChange={setMaxPrice}
           cfg={priceCfg}
-          purpose={purpose}
         />
         <SelectField
           icon={BedDouble}
@@ -141,18 +145,19 @@ function SelectField({ icon: Icon, label, value, onChange, options }) {
   )
 }
 
-function PriceField({ label, value, onChange, cfg, purpose }) {
+function PriceField({ label, value, onChange, cfg }) {
   // Cap value to current cfg.max in case we're transitioning between rent/sale
   const safeValue = Math.min(value, cfg.max)
-  const suffix = purpose === 'rent' ? '/mo' : ''
   return (
     <label className="block px-4 py-3">
       <p className="text-[10px] font-medium uppercase tracking-widest text-ink-400">{label}</p>
       <p className="mt-0.5 text-sm font-medium text-ink-100">
-        BD 0 — BD {safeValue.toLocaleString()}{suffix}
+        BD 0 — BD {safeValue.toLocaleString()}{' '}
+        <span className="text-ink-400">{cfg.unit}</span>
       </p>
       <input
         type="range"
+        aria-label={label}
         min={cfg.min}
         max={cfg.max}
         step={cfg.step}
