@@ -70,7 +70,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
         </div>
         <div className="flex flex-1 flex-col justify-between gap-4 p-6">
           <div>
-            <h3 className="font-display text-2xl text-ink-100">{title}</h3>
+            <h3 className="font-sans text-xl font-semibold leading-snug tracking-tight text-ink-100">{title}</h3>
             <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-gold-500">
               <MapPin className="h-3 w-3" /> {property.location}
             </p>
@@ -111,7 +111,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
         </div>
         <div className="flex flex-1 flex-col gap-4 p-5">
           <div>
-            <h3 className="font-display text-xl leading-tight text-ink-100">{title}</h3>
+            <h3 className="font-sans text-base font-semibold leading-snug tracking-tight text-ink-100 sm:text-lg">{title}</h3>
             <p className="mt-1.5 inline-flex items-center gap-1.5 text-[11px] uppercase tracking-widest text-gold-500">
               <MapPin className="h-3 w-3" /> {property.location}
             </p>
