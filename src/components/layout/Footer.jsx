@@ -182,8 +182,8 @@ export default function Footer() {
           <p className="text-[11px] uppercase tracking-widest text-ink-400">
             {t('footer.rera')}: {BRAND.rera.join(' · ')}
           </p>
-          <p className="text-xs text-ink-400">
-            {t('footer.credit').replace('msstech.ai', '')}
+          <p className="max-w-3xl text-xs leading-relaxed text-ink-400">
+            {t('footer.credit_before')}
             <a
               href="https://msstech.ai"
               target="_blank"
@@ -192,6 +192,7 @@ export default function Footer() {
             >
               msstech.ai
             </a>
+            {t('footer.credit_after')}
           </p>
         </div>
       </div>

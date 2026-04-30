@@ -272,7 +272,8 @@
     "contact": "Contact",
     "rera": "RERA License",
     "rights": "All rights reserved.",
-    "credit": "Built by MSS Tech | msstech.ai"
+    "credit_before": "This website is the property of MSS TECHNOLOGY COMPANY W.L.L (CR 182156) | ",
+    "credit_after": " — Unauthorized reproduction or distribution is prohibited."
   },
   "office_hours": {
     "sun_wed": "Sunday – Wednesday",

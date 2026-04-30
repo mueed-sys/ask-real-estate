@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import './index.css'
 import App from './App.jsx'
+import PinGate from './components/PinGate'
 import { installProtection } from './lib/protection'
 
 // Production-only: block right-click, view-source, and DevTools shortcuts.
@@ -13,9 +14,11 @@ installProtection()
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HelmetProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <PinGate>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </PinGate>
     </HelmetProvider>
   </StrictMode>,
 )
