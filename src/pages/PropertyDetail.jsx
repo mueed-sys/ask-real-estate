@@ -134,7 +134,7 @@ export default function PropertyDetail() {
                   </span>
                 )}
               </div>
-              <h1 className="font-display text-4xl leading-tight text-ink-100 md:text-5xl lg:text-6xl">{title}</h1>
+              <h1 className="font-sans text-3xl font-semibold leading-tight tracking-tight text-ink-100 md:text-4xl lg:text-5xl">{title}</h1>
               <p className="mt-3 inline-flex items-center gap-2 text-sm text-ink-300">
                 <MapPin className="h-4 w-4 text-gold-500" />
                 {property.address}
