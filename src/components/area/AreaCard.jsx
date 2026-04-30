@@ -56,7 +56,7 @@ export default function AreaCard({ area, variant = 'home' }) {
     <motion.div whileHover={{ y: -6 }} transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}>
       <Link
         to={`/areas/${area.slug}`}
-        className="group card-sheen relative block aspect-square overflow-hidden rounded-sm sm:aspect-[4/5]"
+        className="group relative block aspect-square overflow-hidden rounded-sm sm:aspect-[4/5]"
       >
         <img
           src={area.image}

@@ -6,8 +6,6 @@ import DashboardLayout from './components/dashboard/DashboardLayout'
 
 import Toaster from './components/common/Toaster'
 import ScrollToTop from './components/common/ScrollToTop'
-import SmoothScroll from './components/common/SmoothScroll'
-import ScrollProgress from './components/common/ScrollProgress'
 
 // Public site
 import Home from './pages/Home'
@@ -39,18 +37,10 @@ import DashAiPricing from './pages/dashboard/AiPricing'
 import DashDocuments from './pages/dashboard/Documents'
 import DashSettings from './pages/dashboard/Settings'
 
-// Cinematic page transition — soft rise + scale + blur lift, with a gold
-// accent sheen that crosses the screen during the swap so route changes feel
-// like a dissolve in a film cut rather than a basic fade.
 const pageVariants = {
-  initial: { opacity: 0, y: 24, scale: 0.985, filter: 'blur(8px)' },
-  enter:   { opacity: 1, y: 0,  scale: 1,     filter: 'blur(0px)' },
-  exit:    { opacity: 0, y: -10, scale: 0.99, filter: 'blur(6px)' },
-}
-
-const sheenVariants = {
-  initial: { x: '-110%' },
-  enter:   { x: '110%', transition: { duration: 0.95, ease: [0.22, 1, 0.36, 1] } },
+  initial: { opacity: 0, y: 16 },
+  enter: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -8 },
 }
 
 function PageWrap({ children }) {
@@ -60,23 +50,8 @@ function PageWrap({ children }) {
       initial="initial"
       animate="enter"
       exit="exit"
-      transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-      className="relative"
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* Gold sheen that sweeps across once on enter — gives route changes a
-          cinematic curtain reveal without blocking interaction. */}
-      <motion.span
-        variants={sheenVariants}
-        initial="initial"
-        animate="enter"
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 z-50"
-        style={{
-          background:
-            'linear-gradient(115deg, transparent 35%, rgba(244,208,63,0.10) 48%, rgba(255,255,255,0.18) 50%, rgba(244,208,63,0.10) 52%, transparent 65%)',
-          mixBlendMode: 'screen',
-        }}
-      />
       {children}
     </motion.div>
   )
@@ -87,8 +62,6 @@ export default function App() {
 
   return (
     <>
-      <SmoothScroll />
-      <ScrollProgress />
       <ScrollToTop />
 
       <AnimatePresence mode="wait" initial={false}>

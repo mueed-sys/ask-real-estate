@@ -95,7 +95,7 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="group"
     >
-      <Link to={`/properties/${property.id}`} className="card-lux card-sheen flex h-full flex-col">
+      <Link to={`/properties/${property.id}`} className="card-lux flex h-full flex-col">
         <div className="relative aspect-[4/3] overflow-hidden">
           <img
             src={property.images[0]}

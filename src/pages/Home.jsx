@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import {
   Building2, Home as HomeIcon, Box, Crown, Briefcase, Map,
   ShieldCheck, MessageCircle, BookOpen, Handshake, Instagram, ArrowUpRight, Send,
 } from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 
 import HeroSearch from '../components/home/HeroSearch'
 import StatsBar from '../components/home/StatsBar'
@@ -15,8 +15,6 @@ import PropertyCard from '../components/property/PropertyCard'
 import AreaCard from '../components/area/AreaCard'
 import SectionHeader from '../components/common/SectionHeader'
 import Reveal from '../components/common/Reveal'
-import SplitText from '../components/common/SplitText'
-import SectionDivider from '../components/common/SectionDivider'
 
 import properties from '../data/properties.json'
 import areas from '../data/areas.json'
@@ -103,8 +101,6 @@ export default function Home() {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* AREAS */}
       <section className="bg-ink-850/40 py-16 sm:py-24 lg:py-32">
         <div className="container-lux">
@@ -153,8 +149,6 @@ export default function Home() {
         </div>
       </section>
 
-      <SectionDivider />
-
       {/* WHY CHOOSE IRE */}
       <section className="relative overflow-hidden bg-ink-950 py-16 sm:py-24 lg:py-32">
         <div className="pointer-events-none absolute inset-0 bg-radial-gold opacity-50" />
@@ -189,8 +183,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <SectionDivider />
 
       {/* TESTIMONIALS */}
       <section className="container-lux py-16 sm:py-24 lg:py-32">
@@ -310,148 +302,70 @@ export default function Home() {
 }
 
 function Hero() {
-  const sectionRef = useRef(null)
-
-  // Mouse parallax — translate the bg layers a few pixels off the cursor.
-  const mouseX = useMotionValue(0)
-  const mouseY = useMotionValue(0)
-  const parallaxX = useSpring(mouseX, { stiffness: 50, damping: 18, mass: 0.6 })
-  const parallaxY = useSpring(mouseY, { stiffness: 50, damping: 18, mass: 0.6 })
-
-  // Scroll-linked: as the user scrolls past the hero, fade the content out
-  // and shift it up slightly while the bg pushes the opposite way.
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ['start start', 'end start'],
-  })
-  const contentY = useTransform(scrollYProgress, [0, 1], ['0%', '-18%'])
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0])
-  const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '12%'])
-  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.08])
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const onMove = (e) => {
-      const w = window.innerWidth
-      const h = window.innerHeight
-      // Range -1..1 from center; multiply for shift amount in px.
-      mouseX.set(((e.clientX / w) - 0.5) * -24)
-      mouseY.set(((e.clientY / h) - 0.5) * -16)
-    }
-    window.addEventListener('mousemove', onMove)
-    return () => window.removeEventListener('mousemove', onMove)
-  }, [mouseX, mouseY])
+  const { t } = useTranslation()
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative -mt-20 flex min-h-[100vh] items-center overflow-hidden"
-    >
-      {/* Layered cinematic background */}
-      <motion.div
-        className="absolute inset-0"
-        style={{ y: bgY, scale: bgScale }}
-      >
-        {/* Image: ken-burns slow zoom + mouse parallax */}
-        <motion.div
-          className="absolute -inset-[6%]"
-          style={{ x: parallaxX, y: parallaxY }}
-        >
-          <img
-            src="/images/hero/bahrain-bay-panorama.webp"
-            alt="Bahrain Bay at sunset — Four Seasons Hotel, Bahrain Financial Harbour and Manama skyline"
-            fetchpriority="high"
-            className="ken-burns h-full w-full object-cover object-center"
-          />
-        </motion.div>
-
-        {/* Diagonal darkening — heavier on the lower-left where the headline sits */}
+    <section className="relative -mt-20 flex min-h-[100vh] items-center overflow-hidden">
+      {/* Layered background */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/hero/bahrain-bay-panorama.webp"
+          alt="Bahrain Bay at sunset — Four Seasons Hotel, Bahrain Financial Harbour and Manama skyline"
+          fetchpriority="high"
+          className="h-full w-full object-cover object-center"
+        />
+        {/* Diagonal darkening — heavy on the lower-left where the headline lives, fading toward the sunset on the upper-right */}
         <div className="absolute inset-0 bg-gradient-to-tr from-ink-950/90 via-ink-950/55 to-ink-950/20" />
-
         {/* Soft top + bottom feather so the section seams blend into the page */}
         <div className="absolute inset-0 bg-gradient-to-b from-ink-950/40 via-transparent to-ink-900" />
-
-        {/* Warm gold radial accent anchoring the headline */}
+        {/* Warm gold accent behind the headline */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_25%_70%,rgba(212,175,55,0.22),transparent_55%)]" />
+      </div>
 
-        {/* Atmospheric godrays drifting across the sunset */}
-        <div className="pointer-events-none absolute inset-0 godrays" aria-hidden="true" />
-
-        {/* Subtle floating sparkles / motes of light */}
-        <div className="pointer-events-none absolute inset-0 sparkles" aria-hidden="true" />
-      </motion.div>
-
-      {/* Foreground content — drifts up and fades on scroll */}
-      <motion.div
-        style={{ y: contentY, opacity: contentOpacity }}
-        className="container-lux relative z-10 pb-16 pt-28 sm:pb-24 sm:pt-32"
-      >
-        <motion.span
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-          className="eyebrow"
-        >
-          IRE BAHRAIN · SINCE 2008
-        </motion.span>
-
-        {/* Two-line cinematic headline */}
-        <h1 className="mt-6 text-balance leading-[0.95]">
-          <span className="block font-sans font-normal text-[clamp(1.5rem,3.6vw,2.6rem)] leading-snug text-ink-100">
-            <SplitText
-              text="Your Trusted Partner in"
-              type="word"
-              initialDelay={0.25}
-              stagger={0.07}
-              y="0.6em"
-              duration={0.85}
-            />
-          </span>
-          <span className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(3.25rem,11vw,9.5rem)]">
-            <SplitText
-              text="Bahrain Real Estate"
-              type="letter"
-              initialDelay={0.7}
-              stagger={0.035}
-              y="0.5em"
-              duration={1.0}
-              gradient
-            />
-          </span>
-        </h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.4, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-7 max-w-xl text-base leading-[1.7] text-ink-200 sm:mt-9 sm:text-lg"
-        >
-          The Kingdom's premier property portfolio. 17 years of excellence,
-          4,000+ properties, one trusted name.
-        </motion.p>
-
+      {/* Content */}
+      <div className="container-lux relative z-10 pb-16 pt-28 sm:pb-24 sm:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 1.65, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-8 sm:mt-12 lg:mt-16"
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-3xl"
         >
-          <HeroSearch />
-        </motion.div>
-      </motion.div>
+          <span className="eyebrow">
+            IRE BAHRAIN · SINCE 2008
+          </span>
 
-      {/* Refined scroll cue: hairline column with a gold dot riding down */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 2.1 }}
-        className="pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
-      >
-        <span className="relative block h-12 w-px overflow-hidden bg-gradient-to-b from-transparent via-gold-500/40 to-transparent">
-          <span className="scroll-dot absolute left-1/2 top-0 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-gold-400 shadow-[0_0_8px_rgba(212,175,55,0.8)]" />
-        </span>
-        <p className="mt-3 text-center text-[9px] uppercase tracking-[0.4em] text-gold-500/70">Scroll</p>
-      </motion.div>
+          {/* Two-line headline — Line 1 in DM Sans for "trusted partner" framing,
+              Line 2 the commanding Playfair Display 800 gold-gradient block. */}
+          <h1 className="mt-6 text-balance leading-[0.95]">
+            <span className="block font-sans font-normal text-[clamp(1.5rem,3.6vw,2.6rem)] leading-snug text-ink-100">
+              Your Trusted Partner in
+            </span>
+            <span
+              className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(3.25rem,11vw,9.5rem)]"
+              style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}
+            >
+              Bahrain Real Estate
+            </span>
+          </h1>
+
+          <p className="mt-7 max-w-xl text-base leading-[1.7] text-ink-200 sm:mt-9 sm:text-lg">
+            The Kingdom's premier property portfolio. 17 years of excellence, 4,000+ properties, one trusted name.
+          </p>
+        </motion.div>
+
+        <div className="mt-8 sm:mt-12 lg:mt-16">
+          <HeroSearch />
+        </div>
+      </div>
+
+      {/* Scroll cue */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+          className="h-10 w-px bg-gradient-to-b from-gold-500 to-transparent"
+        />
+      </div>
     </section>
   )
 }
