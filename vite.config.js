@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import obfuscator from 'vite-plugin-javascript-obfuscator'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -72,7 +73,37 @@ export default defineConfig({
       'react-i18next': path.resolve(__dirname, 'src/lib/i18n-shim.js'),
     },
   },
-  plugins: [react(), sitemapPlugin()],
+  plugins: [
+    react(),
+    sitemapPlugin(),
+    // JS obfuscator — production only. Settings tuned for "deterrent" rather
+    // than "max protection" so the runtime perf cost stays bearable. Heavy
+    // string-array / control-flow flattening doubles bundle size and slows
+    // the React render loop noticeably; keep them off.
+    obfuscator({
+      apply: 'build',
+      include: ['**/*.js'],
+      // Skip the recharts and leaflet vendor chunks — heavy obfuscation on
+      // those bloats the bundle 2-3× without protecting our actual code.
+      exclude: ['**/charts-*.js', '**/leaflet-*.js', '**/react-vendor-*.js', '**/motion-*.js'],
+      options: {
+        compact: true,
+        controlFlowFlattening: false,
+        deadCodeInjection: false,
+        debugProtection: false,
+        disableConsoleOutput: false,
+        identifierNamesGenerator: 'hexadecimal',
+        log: false,
+        renameGlobals: false,
+        rotateStringArray: true,
+        selfDefending: true,
+        stringArray: true,
+        stringArrayThreshold: 0.7,
+        transformObjectKeys: false,
+        unicodeEscapeSequence: false,
+      },
+    }),
+  ],
   build: {
     chunkSizeWarningLimit: 700,
     rolldownOptions: {
