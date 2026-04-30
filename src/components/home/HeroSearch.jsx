@@ -46,7 +46,7 @@ export default function HeroSearch() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="glass-strong w-full max-w-5xl rounded-[2px] p-3 shadow-gold-soft"
+      className="w-full max-w-5xl rounded-[3px] border border-white/10 bg-ink-950/35 p-2.5 shadow-gold-soft backdrop-blur-2xl"
     >
       {/* Rent / Sale toggle — primary intent selector before any filters */}
       <div className="flex gap-2 px-1 pb-2">
@@ -74,7 +74,7 @@ export default function HeroSearch() {
         </button>
       </div>
 
-      <div className="grid gap-1 lg:grid-cols-[1.2fr_1fr_1.4fr_0.8fr_auto]">
+      <div className="grid items-stretch gap-1 lg:grid-cols-[1.2fr_1fr_1.4fr_0.8fr_auto]">
         <SelectField
           icon={MapPin}
           label={t('search.location')}
@@ -105,9 +105,11 @@ export default function HeroSearch() {
         />
         <button
           type="submit"
-          className="btn-gold inline-flex h-full items-center justify-center gap-2 px-6 lg:px-8"
+          aria-label={t('common.search')}
+          className="btn-gold inline-flex h-12 items-center justify-center gap-2 self-center px-5 text-xs lg:ml-1"
         >
-          <Search className="h-4 w-4" /> {t('common.search')}
+          <Search className="h-4 w-4" />
+          <span>{t('common.search')}</span>
         </button>
       </div>
     </motion.form>
