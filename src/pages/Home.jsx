@@ -310,12 +310,16 @@ function Hero() {
       <div className="absolute inset-0">
         <img
           src="/images/hero/bahrain-bay-panorama.webp"
-          alt="Bahrain Bay panorama at twilight — Four Seasons Hotel and Manama skyline"
+          alt="Bahrain Bay at sunset — Four Seasons Hotel, Bahrain Financial Harbour and Manama skyline"
           fetchpriority="high"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink-950/85 via-ink-950/65 to-ink-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_30%,rgba(212,175,55,0.18),transparent_60%)]" />
+        {/* Diagonal darkening — heavy on the lower-left where the headline lives, fading toward the sunset on the upper-right */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-ink-950/90 via-ink-950/55 to-ink-950/20" />
+        {/* Soft top + bottom feather so the section seams blend into the page */}
+        <div className="absolute inset-0 bg-gradient-to-b from-ink-950/40 via-transparent to-ink-900" />
+        {/* Warm gold accent behind the headline */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_25%_70%,rgba(212,175,55,0.22),transparent_55%)]" />
       </div>
 
       {/* Content */}
