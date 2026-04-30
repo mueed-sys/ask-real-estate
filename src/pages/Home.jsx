@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import {
-  Building2, Home as HomeIcon, Box, Crown, Briefcase, Map,
   ShieldCheck, MessageCircle, BookOpen, Handshake, Instagram, ArrowUpRight, Send,
 } from 'lucide-react'
 import { useState } from 'react'
@@ -20,15 +19,6 @@ import properties from '../data/properties.json'
 import areas from '../data/areas.json'
 import { CONTACT, SITE_URL, BRAND } from '../lib/constants'
 
-const PROPERTY_TYPES = [
-  { value: 'Apartment', icon: Building2 },
-  { value: 'Villa', icon: HomeIcon },
-  { value: 'Studio', icon: Box },
-  { value: 'Penthouse', icon: Crown },
-  { value: 'Commercial', icon: Briefcase },
-  { value: 'Land', icon: Map },
-]
-
 const HOMEPAGE_AREAS = ['juffair', 'seef', 'amwaj', 'riffa', 'bahrain-bay', 'diplomatic-area']
 
 export default function Home() {
@@ -37,10 +27,6 @@ export default function Home() {
   const homepageAreas = HOMEPAGE_AREAS
     .map((slug) => areas.find((a) => a.slug === slug))
     .filter(Boolean)
-  const typeCounts = PROPERTY_TYPES.map((typeInfo) => ({
-    ...typeInfo,
-    count: properties.filter((p) => p.type === typeInfo.value).length,
-  }))
 
   const [email, setEmail] = useState('')
   const [subscribed, setSubscribed] = useState(false)
@@ -116,36 +102,6 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* PROPERTY TYPES */}
-      <section className="container-lux py-16 sm:py-24 lg:py-32">
-        <SectionHeader
-          eyebrow={t('sections.types_eyebrow')}
-          title={t('sections.types_title')}
-          align="center"
-        />
-        <div className="mx-auto mt-8 grid max-w-5xl grid-cols-3 gap-3 sm:mt-12 sm:gap-4 md:grid-cols-3 lg:grid-cols-6">
-          {typeCounts.map((typeInfo, i) => {
-            const Icon = typeInfo.icon
-            return (
-              <Reveal key={typeInfo.value} delay={i * 0.05}>
-                <Link
-                  to={`/properties?type=${typeInfo.value}`}
-                  className="card-lux group flex flex-col items-center gap-2 p-4 text-center sm:gap-3 sm:p-6"
-                >
-                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gold-500/20 bg-gold-500/5 text-gold-400 transition-all group-hover:border-gold-500 group-hover:bg-gold-500/10 sm:h-14 sm:w-14">
-                    <Icon className="h-4 w-4 sm:h-6 sm:w-6" strokeWidth={1.4} />
-                  </div>
-                  <p className="font-display text-sm leading-tight text-ink-100 sm:text-lg">{typeInfo.value}</p>
-                  <p className="text-[9px] font-medium uppercase tracking-widest text-gold-500 sm:text-[10px]">
-                    {typeInfo.count} listed
-                  </p>
-                </Link>
-              </Reveal>
-            )
-          })}
         </div>
       </section>
 
@@ -341,8 +297,8 @@ function Hero() {
               Your Trusted Partner in
             </span>
             <span
-              className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(3.25rem,11vw,9.5rem)]"
-              style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}
+              className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(2.25rem,11vw,9.5rem)]"
+              style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', wordBreak: 'normal', overflowWrap: 'break-word' }}
             >
               Bahrain Real Estate
             </span>
