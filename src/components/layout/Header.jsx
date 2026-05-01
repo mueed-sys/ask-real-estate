@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { Menu, X, Heart, Search as SearchIcon, Lock } from 'lucide-react'
+import { Menu, X, Heart, Search as SearchIcon, Lock, ShieldCheck } from 'lucide-react'
 import { BRAND } from '../../lib/constants'
 import { useFavorites } from '../../store/useFavorites'
 import CurrencyToggle from '../common/CurrencyToggle'
@@ -164,6 +164,18 @@ export default function Header() {
               )}
             </Link>
 
+            {/* Admin entry — temporary visible button for testing the dashboard
+                without the keyboard shortcut. Remove or gate behind a flag once
+                rollout is done. */}
+            <Link
+              to="/dashboard"
+              className="hidden h-9 items-center gap-1.5 rounded-full border border-gold-500/40 bg-gold-500/[0.08] px-3.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-gold-200 transition-colors hover:border-gold-400 hover:bg-gold-500/[0.14] hover:text-gold-100 sm:inline-flex"
+              title="Admin dashboard (⌃⇧A)"
+            >
+              <ShieldCheck className="h-3.5 w-3.5" strokeWidth={1.6} />
+              Admin
+            </Link>
+
             {/* Primary CTA — gold pill aligned to nav baseline */}
             <Link
               to="/list-property"
@@ -278,8 +290,16 @@ export default function Header() {
                 </div>
 
                 <Link
+                  to="/dashboard"
+                  className="mt-3 inline-flex h-12 items-center justify-center gap-2 rounded-full border border-gold-500/40 bg-gold-500/[0.08] text-[11px] font-semibold uppercase tracking-[0.22em] text-gold-200"
+                >
+                  <ShieldCheck className="h-4 w-4" strokeWidth={1.6} />
+                  Admin Dashboard
+                </Link>
+
+                <Link
                   to="/list-property"
-                  className="mt-4 inline-flex h-12 items-center justify-center rounded-full bg-gold-gradient text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-900"
+                  className="mt-3 inline-flex h-12 items-center justify-center rounded-full bg-gold-gradient text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-900"
                 >
                   {t('nav.list_property')}
                 </Link>
