@@ -6,25 +6,23 @@ import { Search, MapPin, Building2, BedDouble, ChevronDown } from 'lucide-react'
 import areas from '../../data/areas.json'
 import { PROPERTY_TYPES, BEDROOM_OPTIONS, PRICE_RANGE } from '../../lib/constants'
 
-// Glass-morphism floating search bar over the hero image.
+// Fully transparent search bar — sits over the hero photograph with all
+// chrome rendered in white. No background fill, no blur; the image carries
+// the visual weight and the form reads like editorial overlay text.
 export default function HeroSearch() {
   const { t } = useTranslation()
   const navigate = useNavigate()
-  const [purpose, setPurpose] = useState('rent')   // 'rent' | 'sale'
+  const [purpose, setPurpose] = useState('rent')
   const [location, setLocation] = useState('')
   const [type, setType] = useState('')
   const [maxPrice, setMaxPrice] = useState(PRICE_RANGE.max)
   const [bedrooms, setBedrooms] = useState('')
 
-  // Scale the price slider depending on rent vs sale — different orders of magnitude.
-  // Sale ceilings sit at BD 500k with 25k snaps; rent at BD 5,000/mo with 50 snaps.
   const priceCfg =
     purpose === 'sale'
       ? { min: 0, max: 500_000, step: 25_000, default: 500_000, unit: 'total' }
       : { min: PRICE_RANGE.min, max: PRICE_RANGE.max, step: 50, default: PRICE_RANGE.max, unit: '/month' }
 
-  // Reset price ceiling when toggling between rent/sale so the slider doesn't
-  // get stuck at the wrong scale.
   const handlePurpose = (next) => {
     setPurpose(next)
     setMaxPrice(next === 'sale' ? 500_000 : PRICE_RANGE.max)
@@ -47,12 +45,11 @@ export default function HeroSearch() {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.6, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="w-full max-w-5xl rounded-[3px] border border-white/10 bg-ink-950/35 p-2.5 shadow-gold-soft backdrop-blur-2xl"
+      className="w-full max-w-5xl border border-white/30 bg-transparent p-2.5"
     >
-      {/* Rent / Sale segmented control — sliding gold pill behind the active
-          option using framer-motion's shared layout, so the active state is
-          unmistakable instead of two adjacent buttons. */}
-      <div className="mb-2 flex w-full max-w-[260px] items-center rounded-full border border-white/15 bg-ink-950/40 p-1 backdrop-blur-sm">
+      {/* Rent / Sale segmented control — pure white outline, the active option
+          slides a white pill behind it with inverted (dark) text. */}
+      <div className="mb-2 flex w-full max-w-[260px] items-center rounded-full border border-white/40 p-1">
         {[
           { value: 'rent', label: 'For Rent' },
           { value: 'sale', label: 'For Sale' },
@@ -70,10 +67,10 @@ export default function HeroSearch() {
                 <motion.span
                   layoutId="purpose-pill"
                   transition={{ type: 'spring', stiffness: 460, damping: 36 }}
-                  className="absolute inset-0 rounded-full bg-gold-gradient shadow-[0_4px_18px_-4px_rgba(212,175,55,0.5)]"
+                  className="absolute inset-0 rounded-full bg-white"
                 />
               )}
-              <span className={`relative z-10 ${active ? 'text-ink-900' : 'text-ink-200'}`}>{opt.label}</span>
+              <span className={`relative z-10 ${active ? 'text-ink-900' : 'text-white'}`}>{opt.label}</span>
             </button>
           )
         })}
@@ -110,9 +107,9 @@ export default function HeroSearch() {
         <button
           type="submit"
           aria-label={t('common.search')}
-          className="btn-gold inline-flex h-12 items-center justify-center gap-2 self-center px-5 text-xs lg:ml-1"
+          className="inline-flex h-12 items-center justify-center gap-2 self-center rounded-full border border-white px-6 text-[11px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-white hover:text-ink-900 lg:ml-1"
         >
-          <Search className="h-4 w-4" />
+          <Search className="h-4 w-4" strokeWidth={1.6} />
           <span>{t('common.search')}</span>
         </button>
       </div>
@@ -122,38 +119,37 @@ export default function HeroSearch() {
 
 function SelectField({ icon: Icon, label, value, onChange, options }) {
   return (
-    <label className="group relative block rounded-sm transition-colors hover:bg-white/[0.02]">
+    <label className="group relative block rounded-sm transition-colors hover:bg-white/[0.06]">
       <div className="flex items-center gap-2.5 px-4 py-3">
-        <Icon className="h-4 w-4 flex-shrink-0 text-gold-500" strokeWidth={1.5} />
+        <Icon className="h-4 w-4 flex-shrink-0 text-white" strokeWidth={1.5} />
         <div className="flex-1">
-          <p className="text-[10px] font-medium uppercase tracking-widest text-ink-400">{label}</p>
+          <p className="text-[10px] font-medium uppercase tracking-widest text-white/70">{label}</p>
           <select
             value={value}
             onChange={(e) => onChange(e.target.value)}
-            className="w-full appearance-none bg-transparent text-sm font-medium text-ink-100 outline-none"
+            className="w-full appearance-none bg-transparent text-sm font-medium text-white outline-none"
           >
             {options.map((o) => (
-              <option key={o.value} value={o.value} className="bg-ink-900 text-ink-100">
+              <option key={o.value} value={o.value} className="bg-ink-900 text-white">
                 {o.label}
               </option>
             ))}
           </select>
         </div>
-        <ChevronDown className="h-3.5 w-3.5 flex-shrink-0 text-ink-400 transition-transform group-hover:translate-y-0.5" />
+        <ChevronDown className="h-3.5 w-3.5 flex-shrink-0 text-white transition-transform group-hover:translate-y-0.5" />
       </div>
     </label>
   )
 }
 
 function PriceField({ label, value, onChange, cfg }) {
-  // Cap value to current cfg.max in case we're transitioning between rent/sale
   const safeValue = Math.min(value, cfg.max)
   return (
     <label className="block px-4 py-3">
-      <p className="text-[10px] font-medium uppercase tracking-widest text-ink-400">{label}</p>
-      <p className="mt-0.5 text-sm font-medium text-ink-100">
+      <p className="text-[10px] font-medium uppercase tracking-widest text-white/70">{label}</p>
+      <p className="mt-0.5 text-sm font-medium text-white">
         BD 0 — BD {safeValue.toLocaleString()}{' '}
-        <span className="text-ink-400">{cfg.unit}</span>
+        <span className="text-white/70">{cfg.unit}</span>
       </p>
       <input
         type="range"
@@ -163,7 +159,7 @@ function PriceField({ label, value, onChange, cfg }) {
         step={cfg.step}
         value={safeValue}
         onChange={(e) => onChange(Number(e.target.value))}
-        className="mt-2 w-full accent-gold-500"
+        className="mt-2 w-full accent-white"
       />
     </label>
   )
