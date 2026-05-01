@@ -73,10 +73,10 @@ export default function Header() {
       <a href="#main" className="skip-link">Skip to content</a>
 
       <header
-        className={`fixed left-0 right-0 top-0 z-50 transition-[height,background-color,border-color] duration-300 ease-out ${
+        className={`fixed left-0 right-0 top-0 z-50 transition-[height,background-color] duration-300 ease-out ${
           scrolled
-            ? 'h-14 border-b border-white/8 bg-ink-bg/85 backdrop-blur-xl'
-            : 'h-[72px] border-b border-transparent bg-transparent'
+            ? 'h-14 bg-ink-bg/90 backdrop-blur-xl'
+            : 'h-[72px] bg-transparent'
         }`}
         style={{ paddingTop: 'env(safe-area-inset-top, 0px)' }}
       >
