@@ -7,7 +7,7 @@ import { waLink } from '../../lib/whatsapp'
 export default function MobilePropertyBar({ agent, property, onSchedule }) {
   if (!agent) return null
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-ink-bg/95 px-3 py-2.5 backdrop-blur-xl lg:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 bg-ink-bg/95 px-3 pt-2.5 pb-safe backdrop-blur-xl lg:hidden">
       <div className="mx-auto flex max-w-md items-center gap-2">
         <a
           href={`tel:${agent.phone}`}

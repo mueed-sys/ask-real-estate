@@ -58,7 +58,7 @@ export default function EditorialMoment() {
             <p className="text-base leading-[1.8] text-ink-200 sm:text-[17px]">{SPOTLIGHT.body}</p>
           </Reveal>
 
-          <div className="grid gap-5 sm:grid-cols-2">
+          <div className="grid grid-cols-2 items-stretch gap-3 sm:gap-5">
             {picks.map((p, i) => (
               <Reveal key={p.id} delay={0.08 * (i + 1)} className="h-full">
                 <PropertyCard property={p} showCompare={false} />

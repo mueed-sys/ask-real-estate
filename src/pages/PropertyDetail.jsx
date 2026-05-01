@@ -333,7 +333,7 @@ export default function PropertyDetail() {
               <h2 className="font-display text-2xl text-ink-100 sm:text-3xl">{t('sections.similar_title')}</h2>
               <div className="gold-rule" />
             </Reveal>
-            <div className="mt-10 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 items-stretch gap-3 sm:gap-6 lg:grid-cols-4">
               {similar.map((p, i) => (
                 <Reveal key={p.id} delay={i * 0.08} className="h-full">
                   <PropertyCard property={p} showCompare={false} />

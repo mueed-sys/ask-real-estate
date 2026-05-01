@@ -96,7 +96,9 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
     )
   }
 
-  // Default grid variant
+  // Default grid variant — tuned to fit two-up on phones (PropertyCard now
+  // shrinks padding, title size, pill chrome, and the action row at narrow
+  // widths so two cards fit a 390px viewport without feeling cramped).
   return (
     <motion.div
       whileHover={{ y: -6 }}
@@ -113,41 +115,44 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           {/* gradient overlay for text legibility on hover */}
-          <div className="absolute inset-0 bg-gradient-to-t from-ink-900/80 via-ink-900/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-900/85 via-ink-900/30 to-transparent" />
 
           {/* Top-left: single primary purpose pill (For Rent / For Sale) */}
-          <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-ink-900/75 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-100 backdrop-blur-sm">
+          <span className="absolute left-2 top-2 rounded-full border border-white/15 bg-ink-900/75 px-2 py-0.5 text-[8.5px] font-semibold uppercase tracking-[0.18em] text-ink-100 backdrop-blur-sm sm:left-4 sm:top-4 sm:px-3 sm:py-1 sm:text-[10px] sm:tracking-[0.22em]">
             {property.purpose === 'rent' ? t('common.for_rent') : t('common.for_sale')}
           </span>
 
           {/* Top-right: featured pill (gold star) stacked above the favorite button */}
-          <div className="absolute right-4 top-4 flex flex-col items-end gap-2">
+          <div className="absolute right-2 top-2 flex flex-col items-end gap-1.5 sm:right-4 sm:top-4 sm:gap-2">
             {property.featured && (
-              <span className="inline-flex items-center gap-1 rounded-full bg-gold-gradient px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.22em] text-ink-900 shadow-[0_4px_14px_-4px_rgba(212,175,55,0.55)]">
-                <Sparkles className="h-3 w-3" strokeWidth={2.4} /> {t('common.featured')}
+              <span className="inline-flex items-center gap-1 rounded-full bg-gold-gradient px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-[0.18em] text-ink-900 shadow-[0_4px_14px_-4px_rgba(212,175,55,0.55)] sm:px-2.5 sm:py-1 sm:text-[9px] sm:tracking-[0.22em]">
+                <Sparkles className="h-2.5 w-2.5 sm:h-3 sm:w-3" strokeWidth={2.4} />
+                <span className="hidden xs:inline sm:inline">{t('common.featured')}</span>
               </span>
             )}
             <FavBtn isFav={isFav} onClick={handleFav} />
           </div>
         </div>
-        <div className="flex flex-1 flex-col gap-4 p-5">
+        <div className="flex flex-1 flex-col gap-2.5 p-3 sm:gap-4 sm:p-5">
           <div>
-            <h3 className="font-sans text-base font-semibold leading-snug tracking-tight text-ink-100 sm:text-lg">{title}</h3>
+            <h3 className="line-clamp-2 font-sans text-sm font-semibold leading-snug tracking-tight text-ink-100 sm:text-lg">
+              {title}
+            </h3>
             {/* Meta row: location + property type so the type isn't crowding the image */}
-            <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] uppercase tracking-[0.22em]">
-              <span className="inline-flex items-center gap-1.5 text-ivory-300">
-                <MapPin className="h-3 w-3" /> {property.location}
+            <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[9.5px] uppercase tracking-[0.18em] sm:mt-1.5 sm:gap-x-3 sm:text-[11px] sm:tracking-[0.22em]">
+              <span className="inline-flex items-center gap-1 text-ivory-300 sm:gap-1.5">
+                <MapPin className="h-2.5 w-2.5 sm:h-3 sm:w-3" /> {property.location}
               </span>
-              <span className="text-ink-400">·</span>
+              <span className="hidden text-ink-400 sm:inline">·</span>
               <span className="text-ink-300">{property.type}</span>
             </div>
           </div>
 
-          <Price bd={property.price} unit={period} size="40px" />
+          <Price bd={property.price} unit={period} size="26px" className="sm:!text-[40px]" />
 
           <Specs property={property} t={t} />
 
-          <div className="mt-auto flex items-center justify-between border-t border-white/5 pt-4">
+          <div className="mt-auto hidden items-center justify-between border-t border-white/5 pt-4 sm:flex">
             <div className="flex items-center gap-2">
               {property.furnished && (
                 <span className="text-[10px] font-medium uppercase tracking-widest text-ink-300">
@@ -165,18 +170,19 @@ export default function PropertyCard({ property, variant = 'grid', showCompare =
 
 function Specs({ property, t, className = '' }) {
   return (
-    <div className={`flex items-center gap-5 text-sm text-ink-300 ${className}`}>
-      <span className="inline-flex items-center gap-1.5">
-        <BedDouble className="h-4 w-4 text-ivory-300" />
-        {bedroomLabel(property.bedrooms, 'en')}
+    <div className={`flex items-center gap-3 text-xs text-ink-300 sm:gap-5 sm:text-sm ${className}`}>
+      <span className="inline-flex items-center gap-1 sm:gap-1.5">
+        <BedDouble className="h-3 w-3 text-ivory-300 sm:h-4 sm:w-4" />
+        {property.bedrooms === 0 ? '0' : property.bedrooms}
       </span>
-      <span className="inline-flex items-center gap-1.5">
-        <Bath className="h-4 w-4 text-ivory-300" />
+      <span className="inline-flex items-center gap-1 sm:gap-1.5">
+        <Bath className="h-3 w-3 text-ivory-300 sm:h-4 sm:w-4" />
         {property.bathrooms}
       </span>
-      <span className="inline-flex items-center gap-1.5">
-        <Maximize2 className="h-4 w-4 text-ivory-300" />
-        {property.sqm} m²
+      <span className="inline-flex items-center gap-1 sm:gap-1.5">
+        <Maximize2 className="h-3 w-3 text-ivory-300 sm:h-4 sm:w-4" />
+        {property.sqm}<span className="hidden sm:inline"> m²</span>
+        <span className="sm:hidden">m²</span>
       </span>
     </div>
   )
@@ -187,10 +193,10 @@ function FavBtn({ isFav, onClick }) {
     <button
       onClick={onClick}
       aria-label="Save to favorites"
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-ink-900/70 text-ink-100 backdrop-blur-sm transition-all hover:border-gold-500/40 hover:text-gold-300"
+      className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-ink-900/70 text-ink-100 backdrop-blur-sm transition-all hover:border-gold-500/40 hover:text-gold-300 sm:h-9 sm:w-9"
     >
       <Heart
-        className={`h-4 w-4 transition-all ${isFav ? 'fill-gold-500 text-gold-500' : ''}`}
+        className={`h-3 w-3 transition-all sm:h-4 sm:w-4 ${isFav ? 'fill-gold-500 text-gold-500' : ''}`}
         strokeWidth={1.6}
       />
     </button>

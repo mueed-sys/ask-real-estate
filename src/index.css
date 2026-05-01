@@ -20,6 +20,25 @@
     font-size: 16px;
     line-height: 1.7;
     overflow-x: hidden;
+    /* iOS: kill the blue tap-highlight flash, opt-in for native momentum
+       scrolling, and never let zoom on inputs hijack the layout. */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* iOS Safari fires :hover on first tap; collapse it to nothing on touch
+     devices so cards don't get stuck in their hover state until you scroll. */
+  @media (hover: none) {
+    a:hover, button:hover, .card-lux:hover, [class*="hover\\:"]:hover { transition: none; }
+  }
+
+  /* Stop iOS from auto-zooming on input focus by enforcing >= 16px font
+     on every text input regardless of utility classes. */
+  input, select, textarea { font-size: 16px; }
+  @media (min-width: 768px) {
+    input, select, textarea { font-size: inherit; }
   }
 
   /* Honor reduced-motion: kill the heavy default animations + scroll smoothing
@@ -319,6 +338,14 @@
     .container-lux { max-width: none !important; padding: 0 24px !important; }
     section { page-break-inside: avoid; }
   }
+
+  /* Helper utilities for iPhone safe-area insets — apply to fixed bars and
+     floating chrome so home-indicator + notches don't overlap content. */
+  .pb-safe { padding-bottom: max(env(safe-area-inset-bottom, 0px), 0.5rem); }
+  .pt-safe { padding-top:    max(env(safe-area-inset-top,    0px), 0.5rem); }
+  .pl-safe { padding-left:   env(safe-area-inset-left, 0px); }
+  .pr-safe { padding-right:  env(safe-area-inset-right, 0px); }
+  .bottom-safe { bottom: env(safe-area-inset-bottom, 0px); }
 
   /* Image shimmer loading placeholder — gold-tinted gradient sweep that
      replaces grey skeleton boxes site-wide. */

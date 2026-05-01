@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import {
@@ -7,7 +7,9 @@ import {
 
 import Panel from '../../components/dashboard/Panel'
 import StatusBadge from '../../components/dashboard/StatusBadge'
-import InstagramPostGenerator from '../../components/dashboard/InstagramPostGenerator'
+// html2canvas is heavy — only fetch the IG generator chunk when the modal is
+// actually opened on a property row.
+const InstagramPostGenerator = lazy(() => import('../../components/dashboard/InstagramPostGenerator'))
 import { useToast } from '../../store/useToast'
 import properties from '../../data/properties.json'
 import agents from '../../data/agents.json'
@@ -269,12 +271,16 @@ export default function DashProperties() {
         </div>
       </Panel>
 
-      {/* Instagram auto-post modal */}
-      <InstagramPostGenerator
-        property={igFor}
-        open={!!igFor}
-        onClose={() => setIgFor(null)}
-      />
+      {/* Instagram auto-post modal — chunked + only mounted on demand */}
+      {igFor && (
+        <Suspense fallback={null}>
+          <InstagramPostGenerator
+            property={igFor}
+            open={!!igFor}
+            onClose={() => setIgFor(null)}
+          />
+        </Suspense>
+      )}
 
       {/* Slide-out drawer */}
       <PropertyDrawer

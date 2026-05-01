@@ -259,7 +259,7 @@ export default function Invest() {
       {/* Listings in freehold zones */}
       <section className="container-lux py-section">
         <SectionHeader eyebrow="FREEHOLD LISTINGS" title="Investment-grade properties available now" />
-        <div className="mt-10 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-2 items-stretch gap-3 sm:gap-6 lg:grid-cols-3">
           {listings.map((p, i) => (
             <Reveal key={p.id} delay={i * 0.06} className="h-full">
               <PropertyCard property={p} />

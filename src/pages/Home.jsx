@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
-import {
-  ShieldCheck, MessageCircle, BookOpen, Handshake, Instagram, ArrowUpRight, Send,
-} from 'lucide-react'
+import { Instagram, ArrowUpRight, Send } from 'lucide-react'
 import { useState } from 'react'
 
 import HeroSearch from '../components/home/HeroSearch'
@@ -85,7 +83,7 @@ export default function Home() {
           </Reveal>
         </div>
 
-        <div className="grid items-stretch gap-5 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-2 items-stretch gap-3 sm:gap-5 md:gap-8 lg:grid-cols-3">
           {featured.map((property, i) => (
             <Reveal key={property.id} delay={i * 0.08} className="h-full">
               <PropertyCard property={property} />
@@ -117,40 +115,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY CHOOSE IRE */}
-      <section className="relative overflow-hidden bg-ink-950 py-section">
-        <div className="pointer-events-none absolute inset-0 bg-radial-gold opacity-50" />
-        <div className="container-lux relative">
-          <SectionHeader
-            eyebrow={t('sections.why_eyebrow')}
-            title={t('sections.why_title')}
-            subtitle={t('sections.why_subtitle')}
-            align="center"
-          />
-          <div className="mt-10 grid gap-4 sm:mt-16 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              { icon: ShieldCheck, t: 'why.verified_title', d: 'why.verified_text' },
-              { icon: MessageCircle, t: 'why.whatsapp_title', d: 'why.whatsapp_text' },
-              { icon: BookOpen, t: 'why.knowledge_title', d: 'why.knowledge_text' },
-              { icon: Handshake, t: 'why.support_title', d: 'why.support_text' },
-            ].map((item, i) => {
-              const Icon = item.icon
-              return (
-                <Reveal key={i} delay={i * 0.1}>
-                  <div className="card-lux flex h-full flex-col p-5 sm:p-8">
-                    <div className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gold-500/30 bg-gold-500/5 text-gold-400 sm:h-12 sm:w-12">
-                      <Icon className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={1.4} />
-                    </div>
-                    <h3 className="mt-4 font-display text-lg text-ink-100 sm:mt-6 sm:text-xl">{t(item.t)}</h3>
-                    <div className="mt-2 h-px w-8 bg-gold-gradient sm:mt-3" />
-                    <p className="mt-3 text-sm leading-relaxed text-ink-300 sm:mt-4">{t(item.d)}</p>
-                  </div>
-                </Reveal>
-              )
-            })}
-          </div>
-        </div>
-      </section>
 
       {/* TESTIMONIALS */}
       <section className="container-lux py-section">

@@ -219,7 +219,7 @@ export default function Properties() {
                 <div
                   className={
                     view === 'grid'
-                      ? 'grid gap-6 sm:grid-cols-2 xl:grid-cols-3'
+                      ? 'grid grid-cols-2 items-stretch gap-3 sm:gap-6 xl:grid-cols-3'
                       : 'flex flex-col gap-5'
                   }
                 >
