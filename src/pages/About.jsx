@@ -99,7 +99,7 @@ export default function About() {
 
       {/* Timeline */}
       <section className="container-lux py-24">
-        <SectionHeader eyebrow={t('sections.timeline_title')} title={t('sections.timeline_title')} align="center" />
+        <SectionHeader eyebrow="Our History" title={t('sections.timeline_title')} align="center" />
 
         <div className="relative mx-auto mt-16 max-w-4xl">
           <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-gold-500/0 via-gold-500/40 to-gold-500/0 md:block" />
@@ -179,7 +179,7 @@ export default function About() {
         <div className="pointer-events-none absolute inset-0 bg-radial-gold opacity-30" />
         <div className="container-lux relative text-center">
           <Reveal>
-            <span className="eyebrow mx-auto justify-center">CTA</span>
+            <span className="eyebrow mx-auto justify-center">Start Your Journey</span>
             <h2 className="mx-auto mt-4 max-w-2xl font-display text-4xl leading-tight text-ink-100 md:text-5xl">
               {t('about.cta_title')}
             </h2>

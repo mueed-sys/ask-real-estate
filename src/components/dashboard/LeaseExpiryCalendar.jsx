@@ -7,7 +7,7 @@ import agents from '../../data/agents.json'
 // renewal dates spread realistically across the next 6 months.
 function buildTenancies() {
   const rentals = properties.filter((p) => p.purpose === 'rent').slice(0, 12)
-  const today = new Date(2026, 3, 30) // 30 Apr 2026
+  const today = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000) // 30 days from now
   return rentals.map((p, i) => {
     const seed = (p.id || 'X').charCodeAt(p.id.length - 1)
     const daysOut = (seed * 17 + i * 23) % 180 // 0–180 days
@@ -33,7 +33,6 @@ function urgencyColor(days) {
 
 export default function LeaseExpiryCalendar() {
   const rows = useMemo(() => buildTenancies().sort((a, b) => a.daysOut - b.daysOut), [])
-  const today = new Date(2026, 3, 30)
   const horizon = 180
 
   return (

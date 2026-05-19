@@ -58,12 +58,17 @@ export default function DashCommission() {
   const teamYtd   = monthly.reduce((s, a) => s + a.ytd,   0)
 
   const exportCsv = () => {
+    const now = new Date()
+    const monthName = now.toLocaleString('en-US', { month: 'long' }).toLowerCase()
+    const year = now.getFullYear()
+    const filename = `ire-commission-${monthName}-${year}.csv`
+
     const header = ['Agent', 'Property', 'Type', 'Closed', 'Commission BD'].join(',')
     const rows = closed.map((d) => [d.agent.name, d.property.id, d.type, d.closedOn, d.commission].join(','))
     const csv = [header, ...rows].join('\n')
     const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }))
     const a = document.createElement('a')
-    a.href = url; a.download = 'ire-commission-april-2026.csv'; a.click()
+    a.href = url; a.download = filename; a.click()
     pushToast('Exported to CSV — sent to /Downloads')
   }
 

@@ -194,6 +194,26 @@ export default function Footer() {
             </a>
             {t('footer.credit_after')}
           </p>
+          <p className="text-[11px] text-ink-400">
+            Built by{' '}
+            <a
+              href="https://msstech.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-500 transition-colors hover:text-gold-300"
+            >
+              MSS Tech
+            </a>
+            {' '}|{' '}
+            <a
+              href="https://msstech.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold-500 transition-colors hover:text-gold-300"
+            >
+              msstech.ai
+            </a>
+          </p>
           <Link
             to="/dashboard"
             className="text-[10px] uppercase tracking-[0.22em] text-ink-400 transition-colors hover:text-gold-300"

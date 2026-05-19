@@ -2,6 +2,7 @@ import {
   ResponsiveContainer, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend,
 } from 'recharts'
 import { Sparkles, TrendingUp, Globe, AlertCircle, ArrowUpRight, Brain } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 import StatCard from '../../components/dashboard/StatCard'
 import Panel from '../../components/dashboard/Panel'
@@ -21,26 +22,35 @@ const OPPORTUNITIES = [
     headline: 'Juffair 1BR apartments are 12% under-priced',
     body: 'Compared to market average. Opportunity to adjust pricing on 8 of your listings.',
     accent: 'from-gold-500/20',
+    action: 'Review Properties',
+    route: '/dashboard/properties',
   },
   {
     headline: 'Amwaj villa demand up 34%',
     body: 'Demand has increased 34% in the last 90 days but listings have only grown 5%. Supply gap detected — recruit more Amwaj inventory.',
     accent: 'from-emerald-500/20',
+    action: 'View Leads Pipeline',
+    route: '/dashboard/leads',
   },
   {
     headline: 'Seef commercial avg 45 days on market vs your 28',
     body: 'Your pricing strategy in Diplomatic Area / Seef is working — keep current commercial price band.',
     accent: 'from-blue-500/20',
+    action: 'View Analytics',
+    route: '/dashboard/analytics',
   },
   {
     headline: '3 competitors have no website',
     body: 'Underhill, Best Properties and Al Mahd Real Estate operate without websites. Target their primary areas through Google SEO.',
     accent: 'from-purple-500/20',
+    action: 'Run AI Pricing',
+    route: '/dashboard/ai-pricing',
   },
 ]
 
 export default function MarketIntel() {
   const trends = priceTrends12mo()
+  const navigate = useNavigate()
 
   return (
     <div className="space-y-6">
@@ -152,8 +162,11 @@ export default function MarketIntel() {
               <Brain className="h-4 w-4 text-gold-500" strokeWidth={1.5} />
               <h3 className="mt-3 font-display text-lg leading-snug text-ink-100">{o.headline}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-300">{o.body}</p>
-              <button className="mt-4 inline-flex items-center gap-1.5 text-[11px] uppercase tracking-widest text-gold-500 hover:text-gold-300">
-                Take action
+              <button
+                onClick={() => navigate(o.route)}
+                className="mt-4 inline-flex items-center gap-1.5 text-[11px] uppercase tracking-widest text-gold-500 hover:text-gold-300 transition-colors"
+              >
+                {o.action}
                 <ArrowUpRight className="h-3 w-3" />
               </button>
             </article>

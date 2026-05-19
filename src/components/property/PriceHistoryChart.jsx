@@ -6,7 +6,7 @@ import { TrendingDown, TrendingUp } from 'lucide-react'
 // across renders. In production this would come from a sale-history API.
 function buildSeries(property) {
   const months = 12
-  const now = new Date(2026, 3, 1) // April 2026 — keep it stable; pages prerender.
+  const now = new Date() // current date
   const id = (property.id || 'X')
   const seed = [...id].reduce((a, c) => a + c.charCodeAt(0), 0)
   const rand = (i) => {

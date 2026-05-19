@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, forwardRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import html2canvas from 'html2canvas'
 import { X, Download, Copy, Instagram, Check } from 'lucide-react'
-import { BRAND } from '../../lib/constants'
+import { BRAND, SITE_URL } from '../../lib/constants'
 
 // Renders a 1080×1080 IRE-branded Instagram card from a property record.
 // Live HTML preview drives html2canvas → PNG download. Caption + hashtags are
@@ -137,6 +137,8 @@ export default function InstagramPostGenerator({ property, open, onClose }) {
 // it with web fonts and overlays preserved. Forwarded ref lets the parent grab
 // the node for export.
 const PostCard = forwardRef(function PostCard({ property, period }, ref) {
+  // Strip the protocol for display (irebahrain.com)
+  const displayDomain = SITE_URL.replace(/^https?:\/\//, '')
   return (
       <div
         ref={ref}
@@ -231,7 +233,7 @@ const PostCard = forwardRef(function PostCard({ property, period }, ref) {
           display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         }}>
           <p style={{ margin: 0, fontSize: 22, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#E8E0D0' }}>
-            DM us · ire.msstech.ai
+            DM us · {displayDomain}
           </p>
           <p style={{ margin: 0, fontSize: 18, color: '#d4af37', fontWeight: 600, letterSpacing: '0.22em' }}>
             @irebahrain
@@ -255,6 +257,7 @@ function truncate(s, n) {
 }
 
 function buildCaption(p) {
+  const displayDomain = SITE_URL.replace(/^https?:\/\//, '')
   const period = p.purpose === 'rent' ? `BD ${p.price.toLocaleString()}/month` : `BD ${p.price.toLocaleString()}`
   const beds = p.bedrooms === 0 ? 'Studio' : `${p.bedrooms} bed`
   const tags = [
@@ -272,7 +275,7 @@ function buildCaption(p) {
     '',
     p.description?.slice(0, 220) + (p.description?.length > 220 ? '…' : ''),
     '',
-    'DM us, WhatsApp, or visit ire.msstech.ai for viewings.',
+    `DM us, WhatsApp, or visit ${displayDomain} for viewings.`,
     '',
     tags,
   ].join('\n')

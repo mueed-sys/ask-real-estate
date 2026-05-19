@@ -143,6 +143,7 @@
     "concierge": "Concierge Service"
   },
   "details": {
+    "overview": "Property Overview",
     "bedrooms": "Bedrooms",
     "bathrooms": "Bathrooms",
     "area_sqm": "Total Area",

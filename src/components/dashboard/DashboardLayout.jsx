@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -38,6 +38,10 @@ export default function DashboardLayout() {
   const location = useLocation()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [bellOpen, setBellOpen] = useState(false)
+  const [readIds, setReadIds] = useState(new Set())
+  const unreadCount = notifications.filter((n) => !readIds.has(n.id)).length
+  const markRead = useCallback((id) => setReadIds((s) => new Set([...s, id])), [])
+  const markAllRead = useCallback(() => setReadIds(new Set(notifications.map((n) => n.id))), [])
 
   return (
     <>
@@ -119,9 +123,9 @@ export default function DashboardLayout() {
                 aria-label="Notifications"
               >
                 <Bell className="h-4 w-4" />
-                {notifications.length > 0 && (
+                {unreadCount > 0 && (
                   <span className="absolute -right-1 -top-1 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-gold-500 px-1 text-[10px] font-semibold text-ink-900">
-                    {notifications.length}
+                    {unreadCount}
                   </span>
                 )}
               </button>
@@ -134,16 +138,31 @@ export default function DashboardLayout() {
                     exit={{ opacity: 0, y: -8 }}
                     className="absolute right-0 top-full mt-2 w-80 overflow-hidden rounded-md border border-white/10 bg-ink-900 shadow-2xl"
                   >
-                    <div className="border-b border-white/5 px-4 py-3">
-                      <p className="text-[10px] font-semibold uppercase tracking-widest text-gold-500">Recent Activity</p>
+                    <div className="flex items-center justify-between border-b border-white/5 px-4 py-3">
+                      <p className="text-[10px] font-semibold uppercase tracking-widest text-gold-500">
+                        Notifications {unreadCount > 0 && <span className="ml-1 text-ink-400">({unreadCount} unread)</span>}
+                      </p>
+                      {unreadCount > 0 && (
+                        <button onClick={markAllRead} className="text-[10px] text-ink-400 hover:text-gold-300 transition-colors">
+                          Mark all read
+                        </button>
+                      )}
                     </div>
                     <ul className="max-h-80 divide-y divide-white/5 overflow-y-auto">
-                      {notifications.map((n) => (
-                        <li key={n.id} className="px-4 py-3 text-sm hover:bg-white/[0.02]">
-                          <p className="text-ink-100">{n.message}</p>
-                          <p className="mt-0.5 text-[11px] text-ink-400">{n.time}</p>
-                        </li>
-                      ))}
+                      {notifications.map((n) => {
+                        const isUnread = !readIds.has(n.id)
+                        return (
+                          <li
+                            key={n.id}
+                            onClick={() => markRead(n.id)}
+                            className={`cursor-pointer px-4 py-3 text-sm transition-colors hover:bg-white/[0.02] ${isUnread ? 'bg-gold-500/[0.03]' : ''}`}
+                          >
+                            {isUnread && <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-gold-500 align-middle" />}
+                            <span className={isUnread ? 'text-ink-100' : 'text-ink-300'}>{n.message}</span>
+                            <p className="mt-0.5 text-[11px] text-ink-400">{n.time}</p>
+                          </li>
+                        )
+                      })}
                     </ul>
                   </motion.div>
                 )}

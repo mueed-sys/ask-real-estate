@@ -1,24 +1,46 @@
 import { motion } from 'framer-motion'
+import leadsData from '../../data/dashboard/leads.json'
+import agentsData from '../../data/agents.json'
 
-// Editorial sales funnel — stages render as trapezoids that taper down so the
-// drop-off at each conversion is visually unmistakable. Includes per-agent
-// breakdown when `byAgent` is supplied.
-const STAGES = [
-  { key: 'inquiries', label: 'Inquiries',  count: 1842, fill: 'rgba(212,175,55,0.85)', text: '#0a0b14' },
-  { key: 'leads',     label: 'Leads',      count: 890,  fill: 'rgba(212,175,55,0.7)',  text: '#0a0b14' },
-  { key: 'viewings',  label: 'Viewings',   count: 234,  fill: 'rgba(212,175,55,0.55)', text: '#fff' },
-  { key: 'offers',    label: 'Offers',     count: 89,   fill: 'rgba(212,175,55,0.4)',  text: '#fff' },
-  { key: 'closed',    label: 'Closed',     count: 63,   fill: 'rgba(212,175,55,0.3)',  text: '#fff' },
-]
+function buildStages(leads) {
+  const total = leads.length
+  const reached = (statuses) => leads.filter((l) => statuses.includes(l.status)).length
+  const counts = [
+    total,
+    reached(['contacted', 'viewing', 'negotiating', 'closed']),
+    reached(['viewing', 'negotiating', 'closed']),
+    reached(['negotiating', 'closed']),
+    reached(['closed']),
+  ]
+  const FILLS = [
+    { fill: 'rgba(212,175,55,0.85)', text: '#0a0b14' },
+    { fill: 'rgba(212,175,55,0.7)',  text: '#0a0b14' },
+    { fill: 'rgba(212,175,55,0.55)', text: '#fff' },
+    { fill: 'rgba(212,175,55,0.4)',  text: '#fff' },
+    { fill: 'rgba(212,175,55,0.3)',  text: '#fff' },
+  ]
+  const LABELS = ['Inquiries', 'Leads', 'Viewings', 'Offers', 'Closed']
+  const KEYS = ['inquiries', 'leads', 'viewings', 'offers', 'closed']
+  return KEYS.map((key, i) => ({ key, label: LABELS[i], count: counts[i], ...FILLS[i] }))
+}
 
-const PER_AGENT = [
-  { name: 'Murat',   I: 412, L: 224, V: 81, O: 38, C: 28 },
-  { name: 'Hassan',  I: 388, L: 198, V: 56, O: 22, C: 14 },
-  { name: 'Fatima',  I: 295, L: 152, V: 48, O: 19, C: 12 },
-  { name: 'Ali',     I: 248, L: 96,  V: 22, O: 6,  C: 4  },
-  { name: 'Sarah',   I: 320, L: 144, V: 18, O: 4,  C: 3  },
-  { name: 'Ahmed',   I: 179, L: 76,  V: 9,  O: 0,  C: 2  },
-]
+function buildPerAgent(leads) {
+  return agentsData.map((agent) => {
+    const mine = leads.filter((l) => l.agent_id === agent.id)
+    const r = (statuses) => mine.filter((l) => statuses.includes(l.status)).length
+    return {
+      name: agent.name.split(' ')[0],
+      I: mine.length,
+      L: r(['contacted', 'viewing', 'negotiating', 'closed']),
+      V: r(['viewing', 'negotiating', 'closed']),
+      O: r(['negotiating', 'closed']),
+      C: r(['closed']),
+    }
+  }).filter((a) => a.I > 0)
+}
+
+const STAGES = buildStages(leadsData)
+const PER_AGENT = buildPerAgent(leadsData)
 
 function pctOfPrev(stages, i) {
   if (i === 0) return null

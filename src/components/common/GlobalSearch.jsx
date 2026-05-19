@@ -45,7 +45,6 @@ export default function GlobalSearch({ open, onClose }) {
       .filter(
         (p) =>
           match(p.title) ||
-          match(p.title_en) ||
           match(p.location) ||
           match(p.address) ||
           match(p.id) ||
@@ -54,7 +53,7 @@ export default function GlobalSearch({ open, onClose }) {
       .slice(0, 6)
       .map((p) => ({
         kind: 'property',
-        label: p.title || p.title_en,
+        label: p.title,
         sub: `${p.location} · ${p.type}`,
         to: `/properties/${p.id}`,
       }))

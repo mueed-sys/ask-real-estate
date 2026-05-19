@@ -15,6 +15,12 @@ const ALL_AMENITIES = [
   'kitchen_appliances', 'internet', 'playground', 'concierge',
 ]
 
+function confidenceLabel(pct) {
+  if (pct >= 90) return 'high signal'
+  if (pct >= 80) return 'good signal'
+  return 'moderate signal'
+}
+
 // Synthetic price model — combines location, type, beds, sqm, floor, amenities
 // to compute a "recommended" price + factor breakdown that visualises *why*.
 function computePrice(input) {
@@ -37,6 +43,7 @@ function computePrice(input) {
 
   const recommended = Math.round(base + bedAdd + sqmAdd + floorAdd + yearAdd + furnAdd + seaAdd + maidAdd + storageAdd)
   const range = { low: Math.round(recommended * 0.9), high: Math.round(recommended * 1.1) }
+  const confidence = Math.min(96, 72 + input.bedrooms * 3 + (input.bathrooms > 0 ? 4 : 0) + (input.sqm > 100 ? 8 : 0) + (input.furnished ? 4 : 0) + (input.floor > 0 ? 4 : 0))
 
   const factors = [
     { label: `Sea View`, delta: seaAdd, condition: input.amenities.includes('sea_view') },
@@ -50,7 +57,7 @@ function computePrice(input) {
     { label: 'No Storage', delta: storageAdd, condition: storageAdd < 0 },
   ].filter((f) => f.condition && f.delta !== 0)
 
-  return { recommended, range, factors }
+  return { recommended, range, factors, confidence }
 }
 
 export default function AiPricing() {
@@ -238,10 +245,10 @@ export default function AiPricing() {
 
                   {/* Confidence */}
                   <div className="flex items-center justify-center gap-6 rounded-md border border-white/5 bg-white/[0.02] p-4">
-                    <ConfidenceRing pct={94} />
+                    <ConfidenceRing pct={result.confidence} />
                     <div>
                       <p className="text-[11px] uppercase tracking-widest text-gold-500">Confidence</p>
-                      <p className="font-display text-xl text-ink-100">94% — high signal</p>
+                      <p className="font-display text-xl text-ink-100">{result.confidence}% — {confidenceLabel(result.confidence)}</p>
                       <p className="text-xs text-ink-400">Based on 12 closely matching comparables in the same area.</p>
                     </div>
                   </div>

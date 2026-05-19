@@ -4,7 +4,7 @@ import {
 } from 'lucide-react'
 import Panel from '../../components/dashboard/Panel'
 import { useToast } from '../../store/useToast'
-import { BRAND, CONTACT, OFFICE } from '../../lib/constants'
+import { BRAND, CONTACT, OFFICE, SITE_URL } from '../../lib/constants'
 import agents from '../../data/agents.json'
 
 export default function Settings() {
@@ -23,13 +23,14 @@ export default function Settings() {
 /* ============================ COMPANY PROFILE ============================ */
 function CompanyProfile() {
   const pushToast = useToast((s) => s.push)
-  const [form, setForm] = useState({
-    name: BRAND.legalName,
-    address: OFFICE.full,
-    phone: CONTACT.phoneDisplay,
-    email: CONTACT.email,
-    rera: BRAND.rera.join(' · '),
-    website: 'ire.msstech.ai',
+  const displayDomain = SITE_URL.replace(/^https?:\/\//, '')
+  const defaults = {
+    name: BRAND.legalName, address: OFFICE.full, phone: CONTACT.phoneDisplay,
+    email: CONTACT.email, rera: BRAND.rera.join(' · '), website: displayDomain,
+  }
+  const [form, setForm] = useState(() => {
+    try { const s = localStorage.getItem('dash_company_profile'); return s ? JSON.parse(s) : defaults }
+    catch { return defaults }
   })
   return (
     <Panel title="Company Profile" subtitle="Public-facing details across the website">
@@ -70,11 +71,21 @@ function CompanyProfile() {
             </Field>
           </div>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button onClick={() => pushToast('Company profile saved')} className="btn-gold text-xs">
+            <button
+              onClick={() => {
+                localStorage.setItem('dash_company_profile', JSON.stringify(form))
+                pushToast('Company profile saved')
+              }}
+              className="btn-gold text-xs"
+            >
               Save changes
             </button>
             <button
-              onClick={() => pushToast('Reverted unsaved changes')}
+              onClick={() => {
+                try { const s = localStorage.getItem('dash_company_profile'); if (s) setForm(JSON.parse(s)) }
+                catch { setForm(defaults) }
+                pushToast('Reverted unsaved changes')
+              }}
               className="text-[11px] font-medium uppercase tracking-[0.22em] text-ink-300 hover:text-gold-300"
             >
               Discard
@@ -145,14 +156,18 @@ function TeamManagement() {
 }
 
 /* ============================ NOTIFICATIONS ============================ */
+const NOTIF_DEFAULTS = { new_inquiry: true, daily_summary: true, weekly_report: true, competitor_alerts: false }
+
 function NotificationPrefs() {
-  const [prefs, setPrefs] = useState({
-    new_inquiry: true,
-    daily_summary: true,
-    weekly_report: true,
-    competitor_alerts: false,
+  const [prefs, setPrefs] = useState(() => {
+    try { const s = localStorage.getItem('dash_notif_prefs'); return s ? JSON.parse(s) : NOTIF_DEFAULTS }
+    catch { return NOTIF_DEFAULTS }
   })
-  const toggle = (k) => setPrefs((p) => ({ ...p, [k]: !p[k] }))
+  const toggle = (k) => setPrefs((p) => {
+    const next = { ...p, [k]: !p[k] }
+    localStorage.setItem('dash_notif_prefs', JSON.stringify(next))
+    return next
+  })
   return (
     <Panel title="Notifications" subtitle="When and how the team gets pinged">
       <ul className="divide-y divide-white/5">
@@ -203,17 +218,18 @@ function Integrations() {
 }
 
 /* ============================ WEBSITE SECTIONS ============================ */
+const SECTIONS_DEFAULTS = { featured: true, areas: true, types: true, why: true, testimonials: true, instagram: true, newsletter: true }
+
 function SiteSettings() {
-  const [sections, setSections] = useState({
-    featured: true,
-    areas: true,
-    types: true,
-    why: true,
-    testimonials: true,
-    instagram: true,
-    newsletter: true,
+  const [sections, setSections] = useState(() => {
+    try { const s = localStorage.getItem('dash_site_sections'); return s ? JSON.parse(s) : SECTIONS_DEFAULTS }
+    catch { return SECTIONS_DEFAULTS }
   })
-  const toggle = (k) => setSections((s) => ({ ...s, [k]: !s[k] }))
+  const toggle = (k) => setSections((s) => {
+    const next = { ...s, [k]: !s[k] }
+    localStorage.setItem('dash_site_sections', JSON.stringify(next))
+    return next
+  })
   return (
     <Panel title="Website Sections" subtitle="Toggle homepage sections without touching code">
       <div className="grid gap-3 sm:grid-cols-2">

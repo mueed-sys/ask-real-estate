@@ -1,7 +1,7 @@
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
-import { Phone, MessageCircle, Mail, Star, Clock, Briefcase, Award } from 'lucide-react'
+import { Phone, MessageCircle, Mail, Star, Clock, Briefcase, Award, ArrowLeft } from 'lucide-react'
 
 import PropertyCard from '../components/property/PropertyCard'
 import SectionHeader from '../components/common/SectionHeader'
@@ -16,6 +16,7 @@ import { BRAND, SITE_URL } from '../lib/constants'
 
 export default function AgentDetail() {
   const { id } = useParams()
+  const navigate = useNavigate()
   const { t, i18n } = useTranslation()
   const lang = i18n.language
 
@@ -33,10 +34,21 @@ export default function AgentDetail() {
         <link rel="canonical" href={`${SITE_URL}/agents/${agent.id}`} />
       </Helmet>
 
+      {/* Back button */}
+      <div className="container-lux pt-8">
+        <button
+          onClick={() => navigate(-1)}
+          className="inline-flex items-center gap-1.5 text-xs text-muted-500 hover:text-gold-300 transition-colors"
+        >
+          <ArrowLeft className="h-3.5 w-3.5" strokeWidth={1.5} />
+          Back to Agents
+        </button>
+      </div>
+
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-radial-gold opacity-30" />
-        <div className="container-lux relative grid gap-12 py-24 md:grid-cols-[auto_1fr] md:items-center">
+        <div className="container-lux relative grid gap-12 py-16 md:grid-cols-[auto_1fr] md:items-center">
           <Reveal>
             <div className="relative">
               <div className="absolute -inset-2 rounded-full bg-gold-gradient opacity-20 blur-2xl" />

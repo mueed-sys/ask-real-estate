@@ -6,10 +6,10 @@ import { CONTACT } from './constants'
 //   waLink()                         // generic
 //   waLink({ text: 'Hello' })        // plain custom message
 //   waLink({ property })             // property-specific message with title, location, price, ID
-//   waLink({ agent })                // agent-specific message
+//   waLink({ agent })                // agent-specific message, uses agent.whatsapp if present
 //
-// We keep the phone number in one place (CONTACT.whatsapp) so changing it later
-// requires editing one file.
+// When an agent param is passed and has a whatsapp field, the link dials that
+// agent's own number instead of the central office number.
 
 const PHONE = CONTACT.whatsapp
 
@@ -23,8 +23,9 @@ export function waLink({ text, property, agent } = {}) {
     return `https://wa.me/${PHONE}?text=${encode(msg)}`
   }
   if (agent) {
+    const phone = agent.whatsapp || PHONE
     const msg = `Hi ${agent.name}, I found you on the IRE Bahrain website and I'd like to discuss a property with you.`
-    return `https://wa.me/${PHONE}?text=${encode(msg)}`
+    return `https://wa.me/${phone}?text=${encode(msg)}`
   }
   if (text) {
     return `https://wa.me/${PHONE}?text=${encode(text)}`

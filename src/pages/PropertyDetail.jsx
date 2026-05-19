@@ -1,11 +1,11 @@
 import { useRef } from 'react'
-import { Link, useParams, Navigate } from 'react-router-dom'
+import { Link, useParams, Navigate, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Helmet } from 'react-helmet-async'
 import {
   MapPin, BedDouble, Bath, Maximize2, Layers, Car, Sofa, Calendar, Hash, Check,
   Phone, MessageCircle, Mail, Star, Twitter, Facebook, Link2, Heart, GitCompare,
-  Building2, Sparkles, Sun, Waves,
+  Building2, Sparkles, Sun, Waves, ArrowLeft, ChevronRight,
 } from 'lucide-react'
 
 import PropertyGallery from '../components/property/PropertyGallery'
@@ -41,8 +41,17 @@ const AMENITY_GROUPS = [
   { title: 'Lifestyle',icon: Waves,     keys: ['sea_view', 'playground'] },
 ]
 
+function formatPropertyDate(created_at) {
+  return new Date(created_at).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  })
+}
+
 export default function PropertyDetail() {
   const { id } = useParams()
+  const navigate = useNavigate()
   const { t } = useTranslation()
 
   const property = properties.find((p) => p.id === id)
@@ -70,6 +79,8 @@ export default function PropertyDetail() {
       ? property.price_period === 'year' ? t('common.per_year') : t('common.per_month')
       : 'total'
   const isPremium = PREMIUM_AREAS.has(property.location)
+
+  const propertyDate = formatPropertyDate(property.created_at)
 
   const handleFav = () => {
     toggleFav(property.id)
@@ -121,6 +132,23 @@ export default function PropertyDetail() {
       </Helmet>
 
       <div className="container-lux pb-32 pt-12 print:pt-8">
+        {/* Breadcrumb + back */}
+        <div className="mb-6 flex items-center justify-between gap-4">
+          <nav className="flex items-center gap-1.5 text-xs text-muted-500" aria-label="Breadcrumb">
+            <Link to="/" className="hover:text-gold-400 transition-colors">Home</Link>
+            <ChevronRight className="h-3 w-3" strokeWidth={1.5} />
+            <Link to="/properties" className="hover:text-gold-400 transition-colors">Properties</Link>
+            <ChevronRight className="h-3 w-3" strokeWidth={1.5} />
+            <span className="max-w-[200px] truncate text-ivory-200">{property.title}</span>
+          </nav>
+          <button
+            onClick={() => navigate(-1)}
+            className="inline-flex items-center gap-1.5 text-xs text-muted-500 hover:text-gold-300 transition-colors"
+          >
+            <ArrowLeft className="h-3.5 w-3.5" strokeWidth={1.5} />
+            Back
+          </button>
+        </div>
         {/* Header */}
         <Reveal>
           <header className="mb-8 flex flex-wrap items-start justify-between gap-6">
@@ -139,8 +167,8 @@ export default function PropertyDetail() {
                 )}
                 <RERAVerifiedBadge
                   inspector={agent?.name}
-                  inspectedOn="12 Apr 2026"
-                  lastPriceUpdate="22 Apr 2026"
+                  inspectedOn={propertyDate}
+                  lastPriceUpdate={propertyDate}
                 />
               </div>
               <h1 className="font-sans text-3xl font-semibold leading-tight tracking-tight text-ink-100 md:text-4xl lg:text-5xl">{title}</h1>
