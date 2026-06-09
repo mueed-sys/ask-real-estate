@@ -1,0 +1,33 @@
+<svg viewBox="0 0 420 490" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange block -->
+  <rect width="420" height="302" fill="#E8651A"/>
+  <!-- White base -->
+  <rect y="302" width="420" height="188" fill="#FFFFFF"/>
+
+  <!-- "ask" lettering — bold rounded white, straddling the boundary -->
+  <text
+    x="205"
+    y="328"
+    text-anchor="middle"
+    font-family="'Arial Rounded MT Bold', 'Nunito', Arial, sans-serif"
+    font-size="252"
+    font-weight="900"
+    fill="white"
+    letter-spacing="-6"
+  >ask</text>
+
+  <!-- Gray arrow/triangle — bottom right of the k -->
+  <polygon points="420,302 420,432 296,432" fill="#878787"/>
+
+  <!-- "REAL ESTATE" wordmark -->
+  <text
+    x="200"
+    y="458"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="38"
+    font-weight="400"
+    fill="#878787"
+    letter-spacing="9"
+  >REAL ESTATE</text>
+</svg>

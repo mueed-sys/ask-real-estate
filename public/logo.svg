@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orange square — this is the top block of the ASK logo -->
+  <rect width="200" height="200" fill="#E8651A"/>
+
+  <!-- "ask" in bold rounded white — centered in the square -->
+  <text
+    x="100"
+    y="152"
+    text-anchor="middle"
+    font-family="'Arial Rounded MT Bold', 'Nunito', Arial, sans-serif"
+    font-size="128"
+    font-weight="900"
+    fill="white"
+    letter-spacing="-3"
+  >ask</text>
+</svg>
