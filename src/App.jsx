@@ -31,6 +31,9 @@ const Compare            = lazy(() => import('./pages/Compare'))
 const MortgageTool       = lazy(() => import('./pages/MortgageTool'))
 const Invest             = lazy(() => import('./pages/Invest'))
 const PrivateCollection  = lazy(() => import('./pages/PrivateCollection'))
+const Services           = lazy(() => import('./pages/Services'))
+const Projects           = lazy(() => import('./pages/Projects'))
+const Careers            = lazy(() => import('./pages/Careers'))
 
 // Dashboard — every page lazy. The dashboard tree is huge (charts +
 // leaflet + html2canvas + recharts) and never loads for a public visitor.
@@ -108,6 +111,10 @@ export default function App() {
               <Route path="/tools/mortgage-calculator" element={<PageWrap><MortgageTool /></PageWrap>} />
               <Route path="/invest" element={<PageWrap><Invest /></PageWrap>} />
               <Route path="/private-collection" element={<PageWrap><PrivateCollection /></PageWrap>} />
+              <Route path="/services" element={<PageWrap><Services /></PageWrap>} />
+              <Route path="/projects" element={<PageWrap><Projects /></PageWrap>} />
+              <Route path="/projects/:slug" element={<PageWrap><Projects /></PageWrap>} />
+              <Route path="/careers" element={<PageWrap><Careers /></PageWrap>} />
               <Route path="*" element={<PageWrap><NotFound /></PageWrap>} />
             </Route>
 

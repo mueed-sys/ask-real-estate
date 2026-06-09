@@ -10,6 +10,8 @@ import StatsBar from '../components/home/StatsBar'
 import TestimonialCarousel from '../components/home/TestimonialCarousel'
 import EditorialMoment from '../components/home/EditorialMoment'
 import HomeMap from '../components/home/HomeMap'
+import WhyUs from '../components/home/WhyUs'
+import AccreditationStrip from '../components/home/AccreditationStrip'
 import PropertyCard from '../components/property/PropertyCard'
 import AreaCard from '../components/area/AreaCard'
 import SectionHeader from '../components/common/SectionHeader'
@@ -116,6 +118,14 @@ export default function Home() {
       </section>
 
 
+      {/* WHY CHOOSE ASK */}
+      <section className="py-section">
+        <WhyUs />
+      </section>
+
+      {/* ACCREDITATION STRIP */}
+      <AccreditationStrip />
+
       {/* TESTIMONIALS */}
       <section className="container-lux py-section">
         <div className="mx-auto max-w-3xl">
@@ -170,7 +180,7 @@ export default function Home() {
                 >
                   <img
                     src={`https://images.unsplash.com/${id}?w=400&auto=format&fit=crop&q=80`}
-                    alt="IRE Bahrain Instagram"
+                    alt="ASK Real Estate Instagram"
                     loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -263,14 +273,14 @@ function Hero() {
           className="max-w-3xl"
         >
           <span className="eyebrow">
-            IRE BAHRAIN · SINCE 2008
+            ASK REAL ESTATE · EST. 2016
           </span>
 
           {/* Two-line headline — Line 1 in DM Sans for "trusted partner" framing,
               Line 2 the commanding Playfair Display 800 gold-gradient block. */}
           <h1 className="mt-6 text-balance leading-[0.95]">
             <span className="block font-sans font-normal text-[clamp(1.5rem,3.6vw,2.6rem)] leading-snug text-ink-100">
-              Your Trusted Partner in
+              Your Trusted Property Partner in
             </span>
             <span
               className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(2.25rem,11vw,9.5rem)]"
@@ -281,7 +291,7 @@ function Hero() {
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-[1.7] text-ink-200 sm:mt-9 sm:text-lg">
-            The Kingdom's premier property portfolio. 17 years of excellence, 4,000+ properties, one trusted name.
+            RERA licensed. RICS accredited. Over 1,200 clients served since 2016 — one trusted name in Bahrain property.
           </p>
         </motion.div>
 

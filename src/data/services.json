@@ -1,0 +1,107 @@
+[
+  {
+    "id": "brokerage",
+    "title": "Sales & Leasing Brokerage",
+    "tagline": "Connecting buyers, sellers, landlords and tenants across Bahrain",
+    "description": "Our brokerage division is the core of ASK Real Estate. With a portfolio spanning residential apartments, villas, penthouses, commercial spaces and land plots across Bahrain's premier districts, our consultants work every side of every deal. RERA-licensed agents. No hidden fees. Direct line to a human every time.",
+    "icon": "building-2",
+    "features": [
+      "Residential sales and lettings",
+      "Commercial leasing and investment",
+      "Off-plan and new development advisory",
+      "Investment portfolio structuring",
+      "Market appraisals and valuations"
+    ],
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "property-management",
+    "title": "Property Management",
+    "tagline": "Full-cycle management for landlords who want peace of mind",
+    "description": "From tenant sourcing and credit checks to rent collection, maintenance coordination and annual accounts — ASK Property Management handles every aspect of your investment. Our managed portfolio exceeds 2,800 units across Bahrain, giving us the scale to negotiate better service contracts and respond faster than any competitor.",
+    "icon": "key",
+    "features": [
+      "Tenant sourcing and vetting",
+      "Lease drafting and renewals",
+      "Rent collection and arrears management",
+      "Planned and reactive maintenance",
+      "Annual landlord reporting"
+    ],
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "valuation",
+    "title": "Valuation & Advisory",
+    "tagline": "RICS-accredited, bank-trusted, IVSC-compliant valuations",
+    "description": "ASK holds accreditation from the Royal Institution of Chartered Surveyors (RICS) and operates under IVSC standards. Our valuation reports are accepted by every major bank in Bahrain for mortgage purposes and are regularly instructed by government entities, insurance firms, and private equity funds requiring independent certified opinions of value.",
+    "icon": "bar-chart-2",
+    "features": [
+      "Mortgage and financing valuations",
+      "Investment and portfolio valuations",
+      "Insurance reinstatement assessments",
+      "Dispute resolution and arbitration support",
+      "Development feasibility appraisals"
+    ],
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "facility-management",
+    "title": "Facility Management",
+    "tagline": "End-to-end building operations for owners and developers",
+    "description": "Our FM division manages the day-to-day operation of residential towers, commercial buildings and mixed-use developments. We handle MEP maintenance, cleaning contracts, security services, common area management and capital expenditure planning — all through a single point of contact backed by our ISO 9001-certified quality system.",
+    "icon": "wrench",
+    "features": [
+      "MEP preventive and corrective maintenance",
+      "Cleaning and grounds management",
+      "Security and access control",
+      "Common area operations",
+      "CAPEX planning and contractor management"
+    ],
+    "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "interior-design",
+    "title": "Interior Design & Fit-Out",
+    "tagline": "Design-led transformations for residential and commercial spaces",
+    "description": "The ASK Interior Design studio works with property owners, developers and tenants to create spaces that command higher rents and sell faster. From concept boards and 3D renders through to contractor management and snagging, we deliver complete fit-outs for apartments, villas, retail units and corporate offices.",
+    "icon": "paintbrush",
+    "features": [
+      "Concept and space planning",
+      "3D visualisation and mood boards",
+      "Material and FF&E specification",
+      "Contractor procurement and oversight",
+      "Snagging and handover"
+    ],
+    "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "owners-association",
+    "title": "Owners' Association Management",
+    "tagline": "Professional OA governance for Bahraini strata developments",
+    "description": "Managing an Owners' Association in Bahrain requires deep knowledge of RERA regulations, maintenance fund accounting and multi-stakeholder governance. ASK OA Management handles AGMs, service charge collection, reserve fund management and RERA compliance for strata buildings across the Kingdom.",
+    "icon": "users",
+    "features": [
+      "RERA OA registration and compliance",
+      "Annual service charge budgets",
+      "AGM facilitation and minutes",
+      "Maintenance reserve fund management",
+      "Unit owner dispute resolution"
+    ],
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=80"
+  },
+  {
+    "id": "hospitality",
+    "title": "Short-Term & Hospitality Lettings",
+    "tagline": "Premium serviced apartment management for the corporate and leisure market",
+    "description": "Bahrain's growing corporate and tourism market has created strong demand for premium furnished short-stay accommodation. ASK Hospitality manages fully serviced apartments listed on major platforms alongside a direct corporate booking channel, handling everything from linen and cleaning to guest communications and revenue optimisation.",
+    "icon": "hotel",
+    "features": [
+      "Furnished apartment setup and staging",
+      "Multi-platform listing management",
+      "Guest communications 24/7",
+      "Housekeeping and linen service",
+      "Monthly owner remittance and reporting"
+    ],
+    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&auto=format&fit=crop&q=80"
+  }
+]

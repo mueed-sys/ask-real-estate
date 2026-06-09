@@ -11,11 +11,12 @@ import GlobalSearch from '../common/GlobalSearch'
 const NAV_LINKS = [
   { to: '/properties',         key: 'nav.properties' },
   { to: '/areas',              key: 'nav.areas' },
+  { to: '/services',           key: 'nav.services' },
+  { to: '/projects',           key: 'nav.projects' },
   { to: '/invest',             label: 'Invest' },
   { to: '/private-collection', label: 'Private', icon: Lock },
   { to: '/about',              key: 'nav.about' },
-  { to: '/agents',             key: 'nav.agents' },
-  { to: '/blog',               key: 'nav.blog' },
+  { to: '/careers',            key: 'nav.careers' },
   { to: '/contact',            key: 'nav.contact' },
 ]
 

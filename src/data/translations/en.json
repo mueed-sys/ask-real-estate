@@ -1,20 +1,23 @@
 {
   "brand": {
-    "name": "Istanbul Real Estate",
-    "shortName": "IRE Bahrain",
-    "since": "Since 2008",
-    "tagline": "Your Trusted Real Estate Partner in Bahrain"
+    "name": "ASK Real Estate",
+    "shortName": "ASK Real Estate",
+    "since": "Est. 2016",
+    "tagline": "Your Trusted Property Partner in Bahrain"
   },
   "nav": {
     "properties": "Properties",
     "areas": "Areas",
     "about": "About",
     "agents": "Agents",
-    "blog": "Blog",
+    "blog": "Insights",
     "contact": "Contact",
     "list_property": "List Your Property",
     "favorites": "Saved",
-    "compare": "Compare"
+    "compare": "Compare",
+    "services": "Services",
+    "projects": "Projects",
+    "careers": "Careers"
   },
   "common": {
     "view_all": "View All",
@@ -54,7 +57,7 @@
     "no_results_hint": "Try adjusting your search or clearing some filters."
   },
   "hero": {
-    "headline": "Your Trusted Real Estate Partner in Bahrain",
+    "headline": "Your Trusted Property Partner in Bahrain",
     "subheadline": "Find Your Perfect Home",
     "find_property": "Find Property",
     "search_placeholder": "Search by area, type, or price"
@@ -75,7 +78,7 @@
   "stats": {
     "experience": "{{years}}+ Years Experience",
     "clients": "{{count}}+ Happy Clients",
-    "listings": "{{count}}+ Properties Listed",
+    "listings": "{{count}}+ Properties",
     "rera": "RERA Licensed"
   },
   "sections": {
@@ -87,9 +90,9 @@
     "areas_subtitle": "From cosmopolitan high-rise districts to family villa enclaves.",
     "types_eyebrow": "By property type",
     "types_title": "Find by Property Type",
-    "why_eyebrow": "The IRE Difference",
-    "why_title": "Why Choose IRE",
-    "why_subtitle": "What clients have come to expect from us since 2008.",
+    "why_eyebrow": "The ASK Difference",
+    "why_title": "Why Choose ASK",
+    "why_subtitle": "What clients have come to expect from us since 2016.",
     "testimonials_eyebrow": "Words from our clients",
     "testimonials_title": "Trusted By Bahrain",
     "instagram_eyebrow": "Daily updates",
@@ -104,21 +107,26 @@
     "team_title": "Meet Our Team",
     "values_title": "Our Values",
     "story_title": "Our Story",
-    "timeline_title": "Our Journey"
+    "timeline_title": "Our Journey",
+    "services_eyebrow": "Full-Spectrum Expertise",
+    "services_title": "Our Services",
+    "accreditations_eyebrow": "Accreditations & Standards",
+    "projects_eyebrow": "Our Portfolio",
+    "projects_title": "Landmark Projects"
   },
   "why": {
-    "verified_title": "Verified Listings Only",
-    "verified_text": "Every listing in our portfolio is RERA-verified and personally inspected by an IRE consultant.",
+    "verified_title": "RERA Licensed",
+    "verified_text": "Every listing in our portfolio is RERA-verified and personally inspected by an ASK consultant.",
     "whatsapp_title": "Instant WhatsApp Connect",
     "whatsapp_text": "Direct line to a real consultant — no chatbots, no call centers. Most messages answered within 30 minutes.",
-    "knowledge_title": "Expert Market Knowledge",
-    "knowledge_text": "Seventeen years of Bahrain transaction history. Our team lives in every neighborhood we sell.",
-    "support_title": "End to End Support",
-    "support_text": "From the first viewing to handover, key collection, and renewal — IRE stays with you."
+    "knowledge_title": "RICS Accredited Valuation",
+    "knowledge_text": "Our RICS-qualified valuers provide independently certified market appraisals trusted by Bahrain's major banks.",
+    "support_title": "End-to-End Service",
+    "support_text": "From brokerage and management to valuation, facility management, and interior design — all under one roof."
   },
   "values": {
     "trust_title": "Trust",
-    "trust_text": "Built on transparent dealings since 2008.",
+    "trust_text": "Built on transparent dealings since 2016.",
     "excellence_title": "Excellence",
     "excellence_text": "Setting the highest standard in Bahrain real estate.",
     "innovation_title": "Innovation",
@@ -206,7 +214,7 @@
     "specializations": "Specializations"
   },
   "list_property": {
-    "title": "List Your Property With IRE",
+    "title": "List Your Property With ASK",
     "subtitle": "Tell us about your property and we'll be in touch within 24 hours.",
     "step": "Step {{current}} of {{total}}",
     "step_purpose": "Purpose & Type",
@@ -268,10 +276,10 @@
     "browse": "Browse Properties"
   },
   "footer": {
-    "about_blurb": "Bahrain's most trusted real estate brokerage since 2008. RERA licensed B201806/0212.",
+    "about_blurb": "Bahrain's most trusted real estate firm since 2016. RERA licensed, RICS accredited, ISO 9001 certified.",
     "quick_links": "Explore",
     "contact": "Contact",
-    "rera": "RERA License",
+    "rera": "Accreditation",
     "rights": "All rights reserved.",
     "credit_before": "This website is the property of MSS TECHNOLOGY COMPANY W.L.L (CR 182156) | ",
     "credit_after": " — Unauthorized reproduction or distribution is prohibited."
@@ -281,10 +289,10 @@
     "thu": "Thursday",
     "fri": "Friday",
     "sat": "Saturday",
-    "sun_wed_time": "6:30 AM – 8:00 PM",
-    "thu_time": "6:30 AM – 6:00 PM",
-    "fri_time": "11:00 AM – 5:00 PM",
-    "sat_time": "6:30 AM – 8:00 PM"
+    "sun_wed_time": "8:00 AM – 6:00 PM",
+    "thu_time": "8:00 AM – 5:00 PM",
+    "fri_time": "Closed",
+    "sat_time": "9:00 AM – 2:00 PM"
   },
   "toast": {
     "saved_added": "Saved to favorites",
@@ -310,7 +318,7 @@
     "copy": "Copy Link"
   },
   "blog": {
-    "title": "Insights & Guides",
+    "title": "Market Insights",
     "subtitle": "Bahrain real estate, written by the people doing the deals.",
     "read_time": "{{count}} min read",
     "related": "Related Articles",
@@ -326,31 +334,31 @@
   },
   "agents_page": {
     "title": "Our Team",
-    "subtitle": "Seventeen years and twenty-four thousand clients later — meet the consultants you'll work with."
+    "subtitle": "Nine years and over a thousand clients — meet the consultants you'll work with."
   },
   "about": {
-    "title": "About IRE Bahrain",
-    "subtitle": "Istanbul Real Estate WLL — bringing Turkish hospitality to Bahrain real estate since 2008.",
-    "story_p1": "Istanbul Real Estate was founded in 2008 by a small group of Bahraini and Turkish brokers who believed Bahrain's expat real estate market could be served with more discretion, more honesty, and more attention to detail than the regional norm.",
-    "story_p2": "Seventeen years later, IRE has signed over 24,000 leases, sold over 4,000 freehold properties, and grown to become one of the kingdom's most followed real estate brands — with more than 24,000 followers on Instagram and recognition across Bahrain's expat community as the agency to call first.",
-    "story_p3": "We hold full RERA licensing (B201806/0212 and SA201807/0101). Our office on the 15th floor of Platinum Tower, Seef, is open every day except Friday morning. We answer WhatsApp messages personally — no call centers, no chatbots, no junior offshore desks.",
+    "title": "About ASK Real Estate",
+    "subtitle": "ASK Real Estate W.L.L — Bahrain's most trusted property firm since 2016.",
+    "story_p1": "ASK Real Estate was founded in 2016 with a clear ambition: to build a real estate firm that clients could trust completely — one that combined world-class brokerage expertise with RICS-accredited valuation, professional property management, and integrated facility services under a single roof.",
+    "story_p2": "Today, ASK manages over 2,800 residential and commercial units, has closed hundreds of transactions across Bahrain, and holds accreditations from RERA, the Royal Institution of Chartered Surveyors (RICS), and the International Valuation Standards Council (IVSC). Our ISO 9001-certified quality management system ensures every client interaction meets the highest professional standard.",
+    "story_p3": "Our Seef District office serves clients across every price point and property type — from first-time renters to institutional investors managing multi-building portfolios. We answer WhatsApp messages personally — no call centers, no chatbots, no junior offshore desks.",
     "cta_title": "Looking for your next property?",
     "cta_text": "Talk to one of our consultants — most properties are matched in a single conversation.",
     "cta_button": "Browse Properties"
   },
   "timeline": {
-    "y2008": "Founded in Bahrain",
-    "y2010": "100th transaction completed",
-    "y2014": "First RERA licensing under new regulations",
-    "y2017": "1,000th lease signed",
-    "y2018": "Reached 10,000 Instagram followers",
-    "y2020": "Moved to Platinum Tower, Seef",
-    "y2023": "Crossed 20,000 followers",
-    "y2025": "4,000+ properties listed across Bahrain"
+    "y2016": "ASK Real Estate founded in Bahrain",
+    "y2017": "Property Management division launched",
+    "y2018": "RICS accreditation achieved",
+    "y2019": "Harbour Heights portfolio win",
+    "y2020": "Facility Management division expanded",
+    "y2022": "ISO 9001 certification awarded",
+    "y2023": "$4B+ assets under management",
+    "y2025": "500+ properties across Bahrain"
   },
   "instagram": {
-    "handle": "@irebahrain",
-    "followers": "24,000+ followers",
+    "handle": "@askrealestatebh",
+    "followers": "12,000+ followers",
     "view": "View on Instagram"
   }
 }
