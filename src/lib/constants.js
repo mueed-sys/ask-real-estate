@@ -1,7 +1,7 @@
 // Single source of truth for ASK Real Estate brand & business constants.
 // If you change these, every page auto-updates.
 
-export const SITE_URL = 'https://askrealestate.bh'
+export const SITE_URL = 'https://ask.msstech.ai'
 
 export const BRAND = {
   legalName: 'ASK Real Estate W.L.L',
