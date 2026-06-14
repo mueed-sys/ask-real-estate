@@ -1,10 +1,47 @@
 [
   {
-    "id": "agent-001",
-    "name": "Murat Yilmaz",
+    "id": "ask-agent-001",
+    "name": "Karim Yazji",
+    "title": "CEO/Managing Director",
+    "photo": "https://randomuser.me/api/portraits/men/41.jpg",
+    "bio": "Karim leads ASK Real Estate as CEO and Managing Director, overseeing a portfolio exceeding $3 billion in assets under management across Bahrain and Dubai. With over 15 years of executive experience in GCC real estate, he has built ASK into a full-service firm trusted by institutional investors and private clients alike, delivering end-to-end solutions across residential, commercial, and hospitality asset classes.",
+    "specializations": [
+      "All asset classes",
+      "Institutional clients",
+      "Asset management"
+    ],
+    "languages": [
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      },
+      {
+        "code": "fr",
+        "label": "French",
+        "flag": "🇫🇷"
+      }
+    ],
+    "years_with_ask": 15,
+    "active_listings": 80,
+    "rating": 5.0,
+    "deals_closed_year": 95,
+    "response_time": "< 1 hr",
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "karim@askre.com"
+  },
+  {
+    "id": "ask-agent-002",
+    "name": "Ahmed Al Mansoori",
     "title": "Senior Property Consultant",
-    "photo": "https://randomuser.me/api/portraits/men/32.jpg",
-    "bio": "Murat brings five years of high-end residential and commercial leasing experience in Bahrain's most competitive districts. Originally from Istanbul, he specializes in matching expat executives with premium Juffair and Seef towers, with deep knowledge of every newly delivered building.",
+    "photo": "https://randomuser.me/api/portraits/men/55.jpg",
+    "bio": "Ahmed is ASK Real Estate's go-to consultant for Juffair and Seef, with 8 years of experience placing expat executives and GCC investors in premium towers and serviced residences. His intimate knowledge of every delivered building in both districts — from floor plans to service charge schedules — means clients close faster and with confidence.",
     "specializations": [
       "Juffair",
       "Seef"
@@ -19,28 +56,23 @@
         "code": "en",
         "label": "English",
         "flag": "🇬🇧"
-      },
-      {
-        "code": "tr",
-        "label": "Turkish",
-        "flag": "🇹🇷"
       }
     ],
-    "years_with_ire": 5,
-    "active_listings": 45,
+    "years_with_ask": 8,
+    "active_listings": 52,
     "rating": 4.9,
-    "deals_closed_year": 64,
+    "deals_closed_year": 72,
     "response_time": "< 15 min",
-    "phone": "+97366000009",
-    "whatsapp": "97339777724",
-    "email": "murat@irebahrain.com"
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "ahmed@askre.com"
   },
   {
-    "id": "agent-002",
-    "name": "Hassan Al Mahmood",
+    "id": "ask-agent-003",
+    "name": "Sara Hassan",
     "title": "Property Consultant",
-    "photo": "https://randomuser.me/api/portraits/men/45.jpg",
-    "bio": "Hassan is the IRE specialist for Bahrain's waterfront and island communities. With three years brokering Amwaj villas and Bahrain Bay penthouses, he understands the lifestyle expectations of every buyer who walks through his doors.",
+    "photo": "https://randomuser.me/api/portraits/women/33.jpg",
+    "bio": "Sara specialises in Bahrain's most sought-after island communities at ASK Real Estate. With 5 years dedicated to Amwaj Islands and Bahrain Bay, she has an unmatched understanding of waterfront living — from marina-facing apartments to custom villas — and guides buyers through every step from viewings to handover.",
     "specializations": [
       "Amwaj Islands",
       "Bahrain Bay"
@@ -57,21 +89,53 @@
         "flag": "🇬🇧"
       }
     ],
-    "years_with_ire": 3,
-    "active_listings": 32,
+    "years_with_ask": 5,
+    "active_listings": 38,
     "rating": 4.8,
-    "deals_closed_year": 41,
-    "response_time": "< 30 min",
-    "phone": "+97366000010",
-    "whatsapp": "97339777724",
-    "email": "hassan@irebahrain.com"
+    "deals_closed_year": 49,
+    "response_time": "< 20 min",
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "sara@askre.com"
   },
   {
-    "id": "agent-003",
-    "name": "Fatima Al Doseri",
+    "id": "ask-agent-004",
+    "name": "Omar Khalid",
+    "title": "Commercial Property Specialist",
+    "photo": "https://randomuser.me/api/portraits/men/29.jpg",
+    "bio": "Omar heads ASK Real Estate's commercial leasing desk, advising banks, embassies, and multinational firms on Grade A office space in the Diplomatic Area and Seef. With 6 years in commercial brokerage, he excels at structuring complex lease agreements and identifying emerging opportunities before they reach the open market.",
+    "specializations": [
+      "Diplomatic Area",
+      "Seef",
+      "Commercial"
+    ],
+    "languages": [
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
+      {
+        "code": "en",
+        "label": "English",
+        "flag": "🇬🇧"
+      }
+    ],
+    "years_with_ask": 6,
+    "active_listings": 24,
+    "rating": 4.8,
+    "deals_closed_year": 33,
+    "response_time": "< 30 min",
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "omar@askre.com"
+  },
+  {
+    "id": "ask-agent-005",
+    "name": "Nadia Al Farsi",
     "title": "Senior Leasing Consultant",
-    "photo": "https://randomuser.me/api/portraits/women/65.jpg",
-    "bio": "Fatima has spent seven years building IRE's family-villa portfolio across Riffa and Saar. Bahraini-born and a parent herself, she understands what families need from a home — from school catchments to garden orientations.",
+    "photo": "https://randomuser.me/api/portraits/women/58.jpg",
+    "bio": "Nadia has spent 9 years at ASK Real Estate mastering Bahrain's family-centric villa market in Riffa and Saar. As a Bahraini consultant who understands what growing families truly need — school proximity, community feel, and generous outdoor space — she consistently matches clients with homes they stay in for years.",
     "specializations": [
       "Riffa",
       "Saar"
@@ -88,24 +152,24 @@
         "flag": "🇬🇧"
       }
     ],
-    "years_with_ire": 7,
-    "active_listings": 28,
+    "years_with_ask": 9,
+    "active_listings": 31,
     "rating": 4.9,
-    "deals_closed_year": 58,
+    "deals_closed_year": 61,
     "response_time": "< 20 min",
-    "phone": "+97366000011",
-    "whatsapp": "97339777724",
-    "email": "fatima@irebahrain.com"
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "nadia@askre.com"
   },
   {
-    "id": "agent-004",
-    "name": "Ali Karimi",
-    "title": "Commercial Property Specialist",
-    "photo": "https://randomuser.me/api/portraits/men/52.jpg",
-    "bio": "Ali leads IRE's commercial leasing desk, with a focus on Diplomatic Area and Seef office towers. Four years advising banks, embassies, and multinational tenants on flexible workspace and prestige addresses.",
+    "id": "ask-agent-006",
+    "name": "Faisal Al Doseri",
+    "title": "Property Consultant",
+    "photo": "https://randomuser.me/api/portraits/men/63.jpg",
+    "bio": "Faisal is ASK Real Estate's specialist for Bahrain's newest master-planned communities. With 4 years focused on Diyar Al Muharraq and Dilmunia Island, he helps first-time buyers and investors navigate off-plan purchases and ready-unit handovers in developments that are rapidly becoming the kingdom's most desirable addresses.",
     "specializations": [
-      "Diplomatic Area",
-      "Seef"
+      "Diyar Al Muharraq",
+      "Dilmunia"
     ],
     "languages": [
       {
@@ -117,33 +181,34 @@
         "code": "en",
         "label": "English",
         "flag": "🇬🇧"
-      },
-      {
-        "code": "fa",
-        "label": "Farsi",
-        "flag": "🇮🇷"
       }
     ],
-    "years_with_ire": 4,
-    "active_listings": 18,
+    "years_with_ask": 4,
+    "active_listings": 43,
     "rating": 4.7,
-    "deals_closed_year": 27,
+    "deals_closed_year": 38,
     "response_time": "< 30 min",
-    "phone": "+97366000012",
-    "whatsapp": "97339777724",
-    "email": "ali@irebahrain.com"
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "faisal@askre.com"
   },
   {
-    "id": "agent-005",
-    "name": "Sarah Williams",
+    "id": "ask-agent-007",
+    "name": "Layla Mahmoud",
     "title": "Luxury Property Specialist",
-    "photo": "https://randomuser.me/api/portraits/women/44.jpg",
-    "bio": "Sarah brings two years of trophy-property experience to IRE's Bahrain Bay and Reef Island portfolio. British-born and Cannes-trained, she advises high-net-worth individuals on Bahrain's most exclusive new addresses.",
+    "photo": "https://randomuser.me/api/portraits/women/47.jpg",
+    "bio": "Layla manages ASK Real Estate's ultra-premium residential portfolio across Reef Island and Bahrain Bay. With 7 years advising high-net-worth individuals and family offices, she offers a discreet, white-glove service — from private viewings of penthouses and waterfront mansions to post-acquisition property management.",
     "specializations": [
+      "Reef Island",
       "Bahrain Bay",
-      "Reef Island"
+      "Luxury"
     ],
     "languages": [
+      {
+        "code": "ar",
+        "label": "Arabic",
+        "flag": "🇧🇭"
+      },
       {
         "code": "en",
         "label": "English",
@@ -155,23 +220,24 @@
         "flag": "🇫🇷"
       }
     ],
-    "years_with_ire": 2,
-    "active_listings": 22,
-    "rating": 4.8,
-    "deals_closed_year": 19,
+    "years_with_ask": 7,
+    "active_listings": 19,
+    "rating": 4.9,
+    "deals_closed_year": 26,
     "response_time": "< 1 hr",
-    "phone": "+97366000013",
-    "whatsapp": "97339777724",
-    "email": "sarah@irebahrain.com"
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "layla@askre.com"
   },
   {
-    "id": "agent-006",
-    "name": "Ahmed Al Khalifa",
-    "title": "Branch Manager",
-    "photo": "https://randomuser.me/api/portraits/men/68.jpg",
-    "bio": "Ahmed has led IRE's Bahrain office for a decade, growing the team from a handful of consultants to one of the kingdom's most respected agencies. Direct line for institutional clients and complex transactions.",
+    "id": "ask-agent-008",
+    "name": "Reem Al Ansari",
+    "title": "Property Consultant",
+    "photo": "https://randomuser.me/api/portraits/women/22.jpg",
+    "bio": "Reem covers ASK Real Estate's fast-growing northern coastal portfolio, specialising in Busaiteen and Marassi Al Bahrain. With 3 years in residential sales and leasing, she brings energy and local insight to a corridor seeing strong demand from young professionals and UAE-based investors seeking value without compromise.",
     "specializations": [
-      "All areas"
+      "Busaiteen",
+      "Marassi Al Bahrain"
     ],
     "languages": [
       {
@@ -185,13 +251,13 @@
         "flag": "🇬🇧"
       }
     ],
-    "years_with_ire": 10,
-    "active_listings": 15,
-    "rating": 5,
-    "deals_closed_year": 22,
-    "response_time": "< 1 hr",
-    "phone": "+97366000009",
-    "whatsapp": "97339777724",
-    "email": "ahmed@irebahrain.com"
+    "years_with_ask": 3,
+    "active_listings": 27,
+    "rating": 4.7,
+    "deals_closed_year": 31,
+    "response_time": "< 30 min",
+    "phone": "+97336111323",
+    "whatsapp": "97336111323",
+    "email": "reem@askre.com"
   }
 ]

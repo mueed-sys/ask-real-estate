@@ -61,7 +61,7 @@ export default function DashCommission() {
     const now = new Date()
     const monthName = now.toLocaleString('en-US', { month: 'long' }).toLowerCase()
     const year = now.getFullYear()
-    const filename = `ire-commission-${monthName}-${year}.csv`
+    const filename = `ask-commission-${monthName}-${year}.csv`
 
     const header = ['Agent', 'Property', 'Type', 'Closed', 'Commission BD'].join(',')
     const rows = closed.map((d) => [d.agent.name, d.property.id, d.type, d.closedOn, d.commission].join(','))

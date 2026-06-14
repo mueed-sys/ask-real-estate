@@ -66,7 +66,7 @@ export default function BookingCalendar({ agent, property }) {
             <p className="mt-2 text-sm leading-relaxed text-ink-200">
               We've booked your viewing for <strong className="text-gold-200">{dayLabel(new Date(confirmed.date))}</strong> at{' '}
               <strong className="text-gold-200">{confirmed.slot}</strong> with{' '}
-              <strong>{agent?.name || 'an IRE consultant'}</strong>. You'll receive a WhatsApp confirmation at <strong>{confirmed.phone}</strong>.
+              <strong>{agent?.name || 'an ASK consultant'}</strong>. You'll receive a WhatsApp confirmation at <strong>{confirmed.phone}</strong>.
             </p>
           </div>
         </div>

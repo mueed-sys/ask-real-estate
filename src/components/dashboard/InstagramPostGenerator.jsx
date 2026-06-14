@@ -4,7 +4,7 @@ import html2canvas from 'html2canvas'
 import { X, Download, Copy, Instagram, Check } from 'lucide-react'
 import { BRAND, SITE_URL } from '../../lib/constants'
 
-// Renders a 1080×1080 IRE-branded Instagram card from a property record.
+// Renders a 1080×1080 ASK Real Estate-branded Instagram card from a property record.
 // Live HTML preview drives html2canvas → PNG download. Caption + hashtags are
 // generated in-component from the listing fields.
 export default function InstagramPostGenerator({ property, open, onClose }) {
@@ -35,7 +35,7 @@ export default function InstagramPostGenerator({ property, open, onClose }) {
       const url = canvas.toDataURL('image/png')
       const a = document.createElement('a')
       a.href = url
-      a.download = `IRE-${property.id}-instagram.png`
+      a.download = `ASK-${property.id}-instagram.png`
       a.click()
     } catch (e) {
       console.error('IG export failed', e)
@@ -137,7 +137,7 @@ export default function InstagramPostGenerator({ property, open, onClose }) {
 // it with web fonts and overlays preserved. Forwarded ref lets the parent grab
 // the node for export.
 const PostCard = forwardRef(function PostCard({ property, period }, ref) {
-  // Strip the protocol for display (irebahrain.com)
+  // Strip the protocol for display (askre.com)
   const displayDomain = SITE_URL.replace(/^https?:\/\//, '')
   return (
       <div
@@ -171,10 +171,10 @@ const PostCard = forwardRef(function PostCard({ property, period }, ref) {
 
         {/* Top: brand */}
         <div style={{ position: 'absolute', top: 90, left: 90, display: 'flex', alignItems: 'center', gap: 20 }}>
-          <img src="/logo.jpg" crossOrigin="anonymous" alt="" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(212,175,55,0.6)' }} />
+          <img src="/ask-logo.png" crossOrigin="anonymous" alt="" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(212,175,55,0.6)' }} />
           <div>
             <p style={{ margin: 0, fontFamily: '"Playfair Display", serif', fontSize: 38, fontWeight: 700, lineHeight: 1 }}>{BRAND.shortName}</p>
-            <p style={{ margin: '6px 0 0', fontSize: 16, letterSpacing: '0.22em', color: '#d4af37', fontWeight: 600 }}>SINCE 2008</p>
+            <p style={{ margin: '6px 0 0', fontSize: 16, letterSpacing: '0.22em', color: '#d4af37', fontWeight: 600 }}>SINCE 2016</p>
           </div>
         </div>
 
@@ -236,7 +236,7 @@ const PostCard = forwardRef(function PostCard({ property, period }, ref) {
             DM us · {displayDomain}
           </p>
           <p style={{ margin: 0, fontSize: 18, color: '#d4af37', fontWeight: 600, letterSpacing: '0.22em' }}>
-            @irebahrain
+            @askrealestatebh
           </p>
         </div>
       </div>
@@ -261,7 +261,7 @@ function buildCaption(p) {
   const period = p.purpose === 'rent' ? `BD ${p.price.toLocaleString()}/month` : `BD ${p.price.toLocaleString()}`
   const beds = p.bedrooms === 0 ? 'Studio' : `${p.bedrooms} bed`
   const tags = [
-    '#Bahrain', '#BahrainRealEstate', '#IRE', '#IREBahrain',
+    '#Bahrain', '#BahrainRealEstate', '#ASK', '#ASKRealEstate',
     `#${p.location.replace(/\s+/g, '')}`,
     p.purpose === 'sale' ? '#PropertyForSale' : '#PropertyForRent',
     `#${p.type}`, '#LuxuryLiving', '#GulfRealEstate',

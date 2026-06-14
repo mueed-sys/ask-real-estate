@@ -130,7 +130,7 @@ function GenerateDrawer({ template, onClose, onGenerated }) {
   const [form, setForm] = useState({
     landlord: 'Mohammed Al Ali',
     tenant: '',
-    property_id: 'IRE-001',
+    property_id: 'ASK-001',
     rent: 650,
     start: '2026-05-01',
     duration: '1 year',
@@ -148,7 +148,7 @@ function GenerateDrawer({ template, onClose, onGenerated }) {
   }
 
   const generate = () => {
-    const id = `IRE-DOC-${String(184 + Math.floor(Math.random() * 100)).padStart(4, '0')}`
+    const id = `ASK-DOC-${String(184 + Math.floor(Math.random() * 100)).padStart(4, '0')}`
     onGenerated({
       id,
       type: template.name,
@@ -268,16 +268,16 @@ function DocumentPreview({ document, onClose, pushToast }) {
               <header className="mb-10 border-b-2 border-[#d4af37] pb-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <img src="/logo.jpg" alt="" className="h-12 w-12 rounded-full" />
+                    <img src="/ask-logo.png" alt="" className="h-12 w-12 rounded-full" />
                     <div>
-                      <p className="font-display text-2xl font-bold">Istanbul Real Estate WLL</p>
-                      <p className="text-xs uppercase tracking-widest text-[#8a6c1d]">RERA B201806/0212 · Since 2008</p>
+                      <p className="font-display text-2xl font-bold">ASK Real Estate W.L.L</p>
+                      <p className="text-xs uppercase tracking-widest text-[#8a6c1d]">RERA B202401/1232 · Since 2016</p>
                     </div>
                   </div>
                   <div className="text-right text-xs">
-                    <p>Office 201, 15th Floor</p>
-                    <p>Platinum Tower, Seef</p>
-                    <p>+973 6600 0009 · irebahrain@gmail.com</p>
+                    <p>Suite 802, 8th Floor</p>
+                    <p>GFH Tower, Bahrain Harbour</p>
+                    <p>+973 1721 1180 · info@askre.com</p>
                   </div>
                 </div>
               </header>

@@ -39,7 +39,7 @@ function CompanyProfile() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold-500">Logo</p>
           <div className="flex flex-col items-center gap-2.5">
             <span className="relative inline-flex h-24 w-24 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold-500/30 sm:h-28 sm:w-28">
-              <img src="/logo.jpg" alt="" className="h-full w-full object-cover" />
+              <img src="/ask-logo.png" alt="" className="h-full w-full object-cover" />
             </span>
             <button className="rounded border border-white/10 px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.22em] text-ink-200 transition-colors hover:border-gold-500/40 hover:text-gold-300">
               Replace logo
@@ -198,7 +198,7 @@ function Integrations() {
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
         <IntegrationCard name="WhatsApp Business API" status="connected" desc="Lead inquiries auto-create cards in your CRM" />
         <IntegrationCard name="Google Analytics 4" status="connected" desc="Powers the Analytics dashboard" />
-        <IntegrationCard name="Instagram" status="connected" desc="@irebahrain feed displayed on homepage" />
+        <IntegrationCard name="Instagram" status="connected" desc="@askrealestatebh feed displayed on homepage" />
         <IntegrationCard
           name="Bayut Bahrain"
           status="disconnected"
@@ -237,7 +237,7 @@ function SiteSettings() {
           ['featured', 'Featured Properties'],
           ['areas', 'Areas We Serve'],
           ['types', 'Property Types'],
-          ['why', 'Why Choose IRE'],
+          ['why', 'Why Choose ASK'],
           ['testimonials', 'Testimonials'],
           ['instagram', 'Instagram Feed'],
           ['newsletter', 'Newsletter signup'],

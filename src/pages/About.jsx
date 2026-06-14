@@ -11,14 +11,14 @@ import agents from '../data/agents.json'
 import { BRAND, SITE_URL, STATS } from '../lib/constants'
 
 const TIMELINE = [
-  { year: 2008, key: 'timeline.y2008' },
-  { year: 2010, key: 'timeline.y2010' },
-  { year: 2014, key: 'timeline.y2014' },
+  { year: 2016, key: 'timeline.y2016' },
   { year: 2017, key: 'timeline.y2017' },
   { year: 2018, key: 'timeline.y2018' },
+  { year: 2019, key: 'timeline.y2019' },
   { year: 2020, key: 'timeline.y2020' },
+  { year: 2021, key: 'timeline.y2021' },
   { year: 2023, key: 'timeline.y2023' },
-  { year: 2025, key: 'timeline.y2025' },
+  { year: 2024, key: 'timeline.y2024' },
 ]
 
 const VALUES = [
@@ -67,7 +67,7 @@ export default function About() {
           <Reveal>
             <span className="eyebrow">{t('sections.story_title')}</span>
             <h2 className="mt-4 font-display text-4xl leading-tight text-ink-100 md:text-5xl">
-              Seventeen years of Bahrain real estate.
+              Nine years of Bahrain real estate.
             </h2>
             <div className="gold-rule mt-6" />
           </Reveal>

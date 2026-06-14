@@ -72,7 +72,7 @@ export default function Invest() {
             <p className="mt-6 max-w-xl text-base leading-[1.8] text-ink-200">
               Bahrain offers GCC and Saudi nationals freehold ownership in five designated zones, with
               rental yields averaging <strong className="text-gold-200">6.4 – 7.4%</strong> — among the
-              highest in the Gulf. IRE represents owners and buyers across all five.
+              highest in the Gulf. ASK Real Estate represents owners and buyers across all five.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.22em]">
@@ -276,7 +276,7 @@ export default function Invest() {
             <p className="mt-4 max-w-2xl text-sm leading-[1.8] text-ink-200">
               Property owners in Bahrain who meet minimum investment thresholds may apply for a renewable
               residency permit covering themselves and immediate family. Conditions and thresholds change
-              periodically — IRE works with vetted Bahraini legal counsel to handle every step. The figures
+              periodically — ASK Real Estate works with vetted Bahraini legal counsel to handle every step. The figures
               below are informational, not legal advice.
             </p>
 

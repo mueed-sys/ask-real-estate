@@ -42,7 +42,7 @@ export default function Footer() {
         <div className="md:col-span-4">
           <Link to="/" className="flex items-center gap-3">
             <span className="relative inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold-500/30">
-              <img src="/logo.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover" />
+              <img src="/ask-logo.png" alt="ASK Real Estate" className="h-10 w-auto object-contain" />
             </span>
             <span className="flex flex-col leading-none">
               <span className="font-display text-xl tracking-wide text-ink-100">{BRAND.shortName}</span>
@@ -180,6 +180,7 @@ export default function Footer() {
         <div className="container-lux flex flex-wrap items-center justify-between gap-4 py-6">
           <p className="text-xs text-ink-400">
             © {new Date().getFullYear()} {BRAND.legalName}. {t('footer.rights')}
+            <span className="mx-2 text-surface-muted">|</span><a href="https://msstech.ai" target="_blank" rel="noopener noreferrer" className="text-surface-muted hover:text-emerald-400 transition-colors">Built by MSS Tech</a>
           </p>
           <p className="text-[11px] uppercase tracking-widest text-ink-400">
             {t('footer.rera')}: {BRAND.rera.join(' · ')}

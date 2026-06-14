@@ -75,7 +75,7 @@ function printConsoleWarning() {
     'line-height: 1.6',
   ].join(';')
 
-  console.log('%cIRE Bahrain — Stop.', big)
+  console.log('%cASK Real Estate — Stop.', big)
   console.log(
     '%cThis site is proprietary software of MSS Tech.\nUnauthorized copying or reproduction is prohibited.\nCR 182156.',
     body

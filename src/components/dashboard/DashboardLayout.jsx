@@ -46,7 +46,7 @@ export default function DashboardLayout() {
   return (
     <>
       <Helmet>
-        <title>Admin Dashboard — IRE Bahrain</title>
+        <title>Admin Dashboard — ASK Real Estate</title>
         <meta name="robots" content="noindex, nofollow" />
         <body className="dashboard-body" />
       </Helmet>
@@ -200,10 +200,10 @@ function Sidebar({ onNavigate }) {
       {/* Logo */}
       <div className="flex h-16 items-center gap-3 border-b border-white/5 px-5">
         <span className="relative inline-flex h-9 w-9 flex-shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold-500/30">
-          <img src="/logo.jpg" alt="" className="h-full w-full object-cover" />
+          <img src="/ask-logo.png" alt="" className="h-full w-full object-cover" />
         </span>
         <span className="flex min-w-0 flex-col leading-none">
-          <span className="font-display text-base text-ink-100">IRE Bahrain</span>
+          <span className="font-display text-base text-ink-100">ASK Real Estate</span>
           <span className="mt-0.5 text-[9px] font-medium uppercase tracking-[0.22em] text-gold-300">Admin</span>
         </span>
       </div>

@@ -5,7 +5,7 @@ import { ShieldCheck, ExternalLink } from 'lucide-react'
 // Verified badge that expands on hover (desktop) or tap (mobile) into a panel
 // showing license, inspector, inspection date, and last price update. Mock
 // data filled in by the caller — props are simple strings.
-export default function RERAVerifiedBadge({ license = 'B201806/0212', inspector, inspectedOn, lastPriceUpdate }) {
+export default function RERAVerifiedBadge({ license = 'B202401/1232', inspector, inspectedOn, lastPriceUpdate }) {
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
   useEffect(() => {

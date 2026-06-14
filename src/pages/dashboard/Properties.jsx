@@ -112,7 +112,7 @@ export default function DashProperties() {
     const blob = new Blob([csv], { type: 'text/csv' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
-    a.href = url; a.download = 'ire-properties.csv'; a.click(); URL.revokeObjectURL(url)
+    a.href = url; a.download = 'ask-properties.csv'; a.click(); URL.revokeObjectURL(url)
     pushToast('Exported to CSV')
   }
 
@@ -289,7 +289,7 @@ export default function DashProperties() {
         onClose={() => setDrawerOpen(false)}
         onSubmit={(payload) => {
           setDrawerOpen(false)
-          const id = payload.id || `IRE-0${properties.length + 1}`
+          const id = payload.id || `ASK-0${properties.length + 1}`
           pushToast(`Property ${id} ${editing ? 'updated' : 'published successfully. It is now live on your website.'}`, { type: 'success' })
         }}
       />
@@ -324,7 +324,7 @@ function PropertyDrawer({ open, editing, onClose, onSubmit }) {
       : {
           id: '', title: '', location: 'Juffair', type: 'Apartment', purpose: 'rent',
           price: 500, bedrooms: 1, bathrooms: 1, sqm: 80, floor: 1, parking: 1,
-          furnished: false, featured: false, year_built: 2024, agent_id: 'agent-001',
+          furnished: false, featured: false, year_built: 2024, agent_id: 'ask-agent-001',
           description: '', amenitySet: new Set(),
         }
   )

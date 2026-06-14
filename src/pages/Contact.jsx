@@ -144,7 +144,7 @@ export default function Contact() {
                       value={form.reference}
                       onChange={(e) => setForm({ ...form, reference: e.target.value })}
                       className="input"
-                      placeholder="IRE-001"
+                      placeholder="ASK-001"
                     />
                   </Field>
                   <Field label={t('contact.form_message')} error={errors.message} required>
@@ -201,7 +201,7 @@ export default function Contact() {
         <Reveal>
           <div className="mt-12 overflow-hidden rounded-sm border border-white/10">
             <iframe
-              title="IRE Bahrain office"
+              title="ASK Real Estate office"
               src={`https://maps.google.com/maps?q=${OFFICE.lat},${OFFICE.lng}&z=15&output=embed`}
               className="h-96 w-full"
               loading="lazy"

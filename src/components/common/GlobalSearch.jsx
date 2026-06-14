@@ -136,7 +136,7 @@ export default function GlobalSearch({ open, onClose }) {
             transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }}
             className="w-full max-w-xl overflow-hidden rounded-xl border border-white/10 bg-ink-elevated shadow-[0_50px_120px_-30px_rgba(0,0,0,0.7)]"
             role="dialog"
-            aria-label="Search IRE Bahrain"
+            aria-label="Search ASK Real Estate"
           >
             <div className="flex items-center gap-3 border-b border-white/8 px-4 py-3">
               <SearchIcon className="h-4 w-4 text-gold-400" strokeWidth={1.5} />

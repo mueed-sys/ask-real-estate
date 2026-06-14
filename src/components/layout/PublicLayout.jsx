@@ -19,8 +19,8 @@ export default function PublicLayout() {
     <>
       <Helmet>
         <html lang="en" dir="ltr" />
-        <title>IRE Bahrain — Your Trusted Real Estate Partner in Bahrain</title>
-        <meta name="description" content="IRE Bahrain — Your Trusted Real Estate Partner in Bahrain" />
+        <title>ASK Real Estate — Bahrain's Premier Real Estate & Asset Management Firm</title>
+        <meta name="description" content="ASK Real Estate — Bahrain's Premier Real Estate & Asset Management Firm" />
         <meta property="og:site_name" content={BRAND.shortName} />
         <meta property="og:locale" content="en_US" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
@@ -31,7 +31,7 @@ export default function PublicLayout() {
             name: BRAND.legalName,
             alternateName: BRAND.shortName,
             url: SITE_URL,
-            logo: `${SITE_URL}/logo.jpg`,
+            logo: `${SITE_URL}/ask-logo.png`,
             telephone: CONTACT.phone,
             email: CONTACT.email,
             address: {

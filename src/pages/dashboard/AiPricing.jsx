@@ -309,7 +309,7 @@ export default function AiPricing() {
                     <td className="px-5 py-3 text-right font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">{c.bedrooms}</td>
                     <td className="px-5 py-3 text-right font-numbers text-sm font-bold tracking-tight tabular-nums text-ink-200">{c.sqm}</td>
                     <td className="px-5 py-3 text-right font-numbers text-sm font-bold tracking-tight tabular-nums text-gold-300">BD {c.price}</td>
-                    <td className="px-5 py-3 text-xs uppercase tracking-widest text-ink-400">IRE Bahrain</td>
+                    <td className="px-5 py-3 text-xs uppercase tracking-widest text-ink-400">ASK Real Estate</td>
                   </tr>
                 ))}
               </tbody>

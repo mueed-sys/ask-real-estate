@@ -17,7 +17,7 @@ export const useCurrency = create(
       code: 'BD',
       setCurrency: (code) => set({ code }),
     }),
-    { name: 'ire-currency' }
+    { name: 'ask-currency' }
   )
 )
 

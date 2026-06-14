@@ -40,18 +40,18 @@ export default function Overview() {
     <div className="space-y-6">
       {/* Stat row */}
       <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3 xl:grid-cols-6">
-        <StatCard icon={Building2} label="Active Listings" value={247} trend={{ dir: 'up', text: '+12 this week' }} />
-        <StatCard icon={MessageSquare} label="Inquiries / Month" value={1842} trend={{ dir: 'up', text: '+23% vs last month' }} />
-        <StatCard icon={Home} label="Rented This Month" value={63} trend={{ dir: 'up', text: '+8 vs last month' }} />
+        <StatCard icon={Building2} label="Active Listings" value={261} trend={{ dir: 'up', text: '+14 this week' }} />
+        <StatCard icon={MessageSquare} label="Inquiries / Month" value={3240} trend={{ dir: 'up', text: '+31% vs last month' }} />
+        <StatCard icon={Home} label="Rented This Month" value={94} trend={{ dir: 'up', text: '+11 vs last month' }} />
         <StatCard
           icon={DollarSign}
           label="Revenue / Month"
-          value={18400}
+          value={86500}
           prefix="BD "
-          trend={{ dir: 'up', text: '+22% MoM' }}
+          trend={{ dir: 'up', text: '+28% MoM' }}
         />
-        <StatCard icon={Clock} label="Avg Response" value={12} suffix=" min" duration={1200} />
-        <StatCard icon={Eye} label="Visitors Today" value={489} trend={{ dir: 'up', text: '+12% vs yesterday' }} />
+        <StatCard icon={Clock} label="Avg Response" value={9} suffix=" min" duration={1200} />
+        <StatCard icon={Eye} label="Visitors Today" value={1240} trend={{ dir: 'up', text: '+18% vs yesterday' }} />
       </div>
 
       {/* Charts row */}

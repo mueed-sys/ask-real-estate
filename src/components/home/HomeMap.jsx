@@ -152,7 +152,7 @@ export default function HomeMap() {
           maxBounds={BAHRAIN_BOUNDS}
           scrollWheelZoom={false}
           className="absolute inset-0 z-0 h-full w-full"
-          aria-label="Map of Bahrain showing IRE properties"
+          aria-label="Map of Bahrain showing ASK Real Estate properties"
         >
           <TileLayer
             attribution='&copy; <a href="https://carto.com">CARTO</a> &copy; OpenStreetMap'
@@ -181,7 +181,7 @@ export default function HomeMap() {
                   weight: 2,
                 }}
               >
-                <Popup className="ire-popup">
+                <Popup className="ask-popup">
                   <Link to={`/properties/${p.id}`} className="block w-56">
                     <img src={p.images[0]} alt="" className="h-28 w-full rounded object-cover" />
                     <p className="mt-2 truncate text-sm font-semibold text-ink-100">{p.title}</p>

@@ -45,6 +45,7 @@ export default {
         },
         // Functional / semantic palette — same saturation/luminance band so
         // status pills and chart series read as a related family.
+        primary: { 50: '#ECFDF5', 100: '#D1FAE5', 200: '#A7F3D0', 300: '#6EE7B7', 400: '#34D399', 500: '#10B981', 600: '#059669', 700: '#047857', 800: '#065F46', 900: '#064E3B' },
         success: { 50: '#E6F8EE', 300: '#3DDB85', 500: '#10B981', 700: '#067A55' },
         warning: { 50: '#FBF1DC', 300: '#F2C35F', 500: '#D9941A', 700: '#8E5F0E' },
         danger:  { 50: '#FCE9E9', 300: '#F47B7B', 500: '#E5484D', 700: '#9B2D31' },
@@ -62,6 +63,8 @@ export default {
         // Numbers — Outfit 700/800. Bold geometric, commanding. Used for
         // every BD price, stat counter, percentage, sqm value, distance.
         numbers: ['Outfit', '"DM Sans"', 'system-ui', 'sans-serif'],
+        // Mono — JetBrains Mono. Used for code, reference IDs, technical data.
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       backgroundImage: {
         'gold-gradient': 'linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%)',

@@ -42,7 +42,7 @@ export default function PriceHistoryChart({ property }) {
       <header className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <h2 id="price-history-title" className="font-display text-2xl text-ink-100 sm:text-3xl">Price History</h2>
-          <p className="mt-1 text-xs text-ink-400">Last 12 months · Source: IRE valuation index (mock)</p>
+          <p className="mt-1 text-xs text-ink-400">Last 12 months · Source: ASK valuation index (mock)</p>
         </div>
         <div className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.22em] ${
           up ? 'border-success-500/30 bg-success-500/10 text-success-300' : 'border-danger-500/30 bg-danger-500/10 text-danger-300'

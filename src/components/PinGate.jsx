@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const PIN = '2008'                       // IRE founding year
-const STORAGE_KEY = 'ire.access'         // localStorage token
+const PIN = '2016'                       // ASK Real Estate founding year
+const STORAGE_KEY = 'ask.access'         // localStorage token
 const TTL_MS = 24 * 60 * 60 * 1000       // 24 hours
 
 // Read + validate the access token. Returns true if unlocked and not expired.
@@ -140,22 +140,15 @@ function Gate({ onUnlock }) {
       >
         {/* Logo */}
         <div className="flex flex-col items-center">
-          <div className="relative">
-            <div className="absolute -inset-3 rounded-full bg-gold-gradient opacity-25 blur-2xl" />
-            <img
-              src="/logo.jpg"
-              alt="IRE Bahrain"
-              className="relative h-24 w-24 rounded-full object-cover ring-1 ring-gold-500/40"
-            />
-          </div>
+          <img src="/ask-logo.png" alt="ASK Real Estate" className="h-16 w-auto mx-auto mb-6" />
           <p className="mt-6 text-[10px] font-semibold uppercase tracking-[0.25em] text-gold-500">
             Private Demo
           </p>
           <h1 className="mt-3 font-display text-3xl text-ink-100">
-            IRE Bahrain
+            ASK Real Estate
           </h1>
           <p className="mt-3 max-w-sm text-center text-sm leading-relaxed text-ink-200">
-            This is a private demo. Enter your access code to continue.
+            Enter your ASK Real Estate access code to continue.
           </p>
         </div>
 

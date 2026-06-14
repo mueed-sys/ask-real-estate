@@ -11,7 +11,7 @@ import SectionHeader from '../components/common/SectionHeader'
 import { useToast } from '../store/useToast'
 import { BRAND, SITE_URL } from '../lib/constants'
 
-const STORAGE_KEY = 'ire.private-collection.unlocked'
+const STORAGE_KEY = 'ask.private-collection.unlocked'
 
 // Curate the 5-10 most premium listings as the "private collection". We pick
 // any sale property over BD 500k and any rental over BD 1500/mo, sorted by
@@ -84,7 +84,7 @@ export default function PrivateCollection() {
                 <ul className="mt-8 grid gap-3 text-sm text-ink-200 sm:grid-cols-2">
                   <Bullet>{listings.length} curated residences</Bullet>
                   <Bullet>BD 500K+ sale · BD 1,500+/mo rent</Bullet>
-                  <Bullet>RERA verified by IRE consultants</Bullet>
+                  <Bullet>RERA verified by ASK consultants</Bullet>
                   <Bullet>No public listings or photos online</Bullet>
                 </ul>
               </Reveal>
@@ -142,7 +142,7 @@ export default function PrivateCollection() {
                     <Lock className="h-3.5 w-3.5" /> Reveal the collection
                   </button>
                   <p className="mt-3 text-center text-[10px] uppercase tracking-[0.22em] text-ivory-400">
-                    By submitting you agree to be contacted by an IRE consultant.
+                    By submitting you agree to be contacted by an ASK consultant.
                   </p>
                 </form>
               </Reveal>

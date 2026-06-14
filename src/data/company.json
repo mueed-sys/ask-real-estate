@@ -1,0 +1,106 @@
+{
+  "name": "ASK Real Estate W.L.L",
+  "shortName": "ASK Real Estate",
+  "tagline": "Bahrain's Premier Real Estate and Asset Management Firm",
+  "about": "ASK Real Estate W.L.L is an award-winning, RERA-licensed real estate and asset management firm headquartered in Manama, Bahrain, with an additional office in Dubai. Founded in 2016, the firm has grown to manage over $3 billion in assets and has positioned itself not as a typical brokerage, but as a destination builder, demand activator, and market maker for the Bahrain property sector. ASK delivers integrated real estate solutions spanning brokerage, property and facility management, valuation, advisory, hospitality management, and retail leasing — all aligned to international standards including RICS and IVSC. The firm is a multiple winner of the Arabian Property Awards and generates over five million social media views annually, reflecting its standing as one of the Kingdom's most visible and trusted real estate brands.",
+  "founded": 2016,
+  "ceo": "Karim Yazji",
+  "rera": "B202401/1232",
+  "brokerLicense": "B202001/0668",
+  "certifications": ["RERA", "RICS", "IVSC", "ISO 9001"],
+  "aum": "$3B+",
+  "stats": {
+    "propertiesManaged": 261,
+    "yearsExperience": 9,
+    "happyClients": 1500,
+    "awards": 3
+  },
+  "contact": {
+    "phone": "+97317211180",
+    "phoneDisplay": "+973 1721 1180",
+    "mobile": "+97336111323",
+    "mobileDisplay": "+973 3611 1323",
+    "whatsapp": "97336111323",
+    "whatsappDisplay": "+973 3611 1323",
+    "email": "info@askre.com",
+    "website": "askre.com",
+    "instagram": "askrealestatebh",
+    "linkedin": "ask-real-estate"
+  },
+  "office": {
+    "street": "Suite 802, 8th Floor, GFH Tower",
+    "area": "Bahrain Harbour",
+    "city": "Manama",
+    "country": "Kingdom of Bahrain",
+    "full": "Suite 802, 8th Floor, GFH Tower, Bahrain Harbour, Manama, Bahrain",
+    "lat": 26.2351,
+    "lng": 50.5758,
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=GFH+Tower+Bahrain+Harbour+Manama"
+  },
+  "vision": "To redefine real estate services in Bahrain by setting new benchmarks in professionalism, innovation, and client-centric solutions — empowering clients through expertise, embracing technology, maintaining integrity, elevating industry standards, and integrating sustainability practices.",
+  "mission": "To establish ASK Real Estate as Bahrain's leading provider of comprehensive real estate services aligned with international standards, leveraging innovation, fostering professional growth, delivering tailored solutions, and expanding market reach.",
+  "coreValues": ["Excellence", "Innovation", "Integrity", "Commitment"],
+  "services": [
+    "Sales and Leasing Brokerage",
+    "Property Management",
+    "Facility Management",
+    "Owners' Association Management",
+    "Real Estate Valuation",
+    "Advisory and Consultancy",
+    "Hospitality and Short-Stay Management",
+    "Retail and Commercial Leasing",
+    "Asset Management"
+  ],
+  "timeline": [
+    { "year": 2016, "event": "ASK Real Estate founded in Manama, Bahrain" },
+    { "year": 2017, "event": "RERA license awarded by the Real Estate Regulatory Authority" },
+    { "year": 2018, "event": "ISO 9001 quality management certification achieved" },
+    { "year": 2019, "event": "RICS accreditation secured, aligning services with international standards" },
+    { "year": 2022, "event": "Arabian Property Awards — Best Real Estate Agency Bahrain" },
+    { "year": 2023, "event": "Arabian Property Awards — consecutive win, Best Real Estate Agency Bahrain" },
+    { "year": 2024, "event": "$3 Billion AUM milestone; Dubai office established" }
+  ],
+  "awards": [
+    {
+      "title": "Best Real Estate Agency Bahrain",
+      "org": "Arabian Property Awards",
+      "year": 2023
+    },
+    {
+      "title": "Best Real Estate Agency Bahrain",
+      "org": "Arabian Property Awards",
+      "year": 2022
+    }
+  ],
+  "areasServed": [
+    "Juffair",
+    "Seef",
+    "Amwaj Islands",
+    "Bahrain Bay",
+    "Reef Island",
+    "Diyar Al Muharraq",
+    "Marassi",
+    "Dilmunia",
+    "Budaiya",
+    "Saar",
+    "Riffa",
+    "Hamalah",
+    "Busaiteen",
+    "Diplomatic Area",
+    "Hidd",
+    "Janabiyah"
+  ],
+  "team": [
+    {
+      "name": "Karim Yazji",
+      "title": "Chief Executive Officer",
+      "bio": "Visionary CEO with extensive experience in real estate investment and asset management across Bahrain, the UAE, the UK, and Africa. Manages over $3 billion in assets. Holds an MBA from SBS Swiss Business School. Serves on several real estate and investment boards and has guided ASK to multiple Arabian Property Awards wins."
+    }
+  ],
+  "socialProof": {
+    "annualSocialMediaViews": "5M+",
+    "activeListings": 455,
+    "agents": 12,
+    "superAgents": 7
+  }
+}

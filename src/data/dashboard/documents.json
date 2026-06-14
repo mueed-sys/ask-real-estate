@@ -1,4 +1,13 @@
 {
+  "company": {
+    "name": "ASK Real Estate W.L.L",
+    "logo": "/ask-logo.png",
+    "address": "Building 361, Road 1705, Block 317, Diplomatic Area, Manama, Kingdom of Bahrain",
+    "phone": "+973 1700 0000",
+    "email": "info@askre.com",
+    "crNumber": "123456-1",
+    "vatNumber": "BH-VAT-000000"
+  },
   "templates": [
     { "id": "tenancy", "name": "Tenancy Agreement", "icon": "FileSignature", "description": "Standard 1-year lease agreement compliant with Bahrain rental law." },
     { "id": "viewing", "name": "Property Viewing Report", "icon": "ClipboardCheck", "description": "Post-viewing summary with feedback and next steps." },
@@ -10,15 +19,15 @@
     { "id": "eviction", "name": "Eviction Notice", "icon": "ShieldAlert", "description": "Statutory eviction notice with required notice period." }
   ],
   "recent": [
-    { "id": "IRE-DOC-0184", "type": "Tenancy Agreement", "property": "IRE-001", "client": "Ahmed Al-Sayed", "agent": "Murat Yilmaz", "generated": "2026-04-29", "status": "Sent" },
-    { "id": "IRE-DOC-0183", "type": "Commission Invoice", "property": "IRE-006", "client": "James Wilson", "agent": "Ali Karimi", "generated": "2026-04-29", "status": "Signed" },
-    { "id": "IRE-DOC-0182", "type": "Viewing Report", "property": "IRE-011", "client": "Sarah Mitchell", "agent": "Fatima Al Doseri", "generated": "2026-04-28", "status": "Draft" },
-    { "id": "IRE-DOC-0181", "type": "Tenancy Agreement", "property": "IRE-006", "client": "James Wilson", "agent": "Ali Karimi", "generated": "2026-04-26", "status": "Signed" },
-    { "id": "IRE-DOC-0180", "type": "NOC", "property": "IRE-005", "client": "Khalid Al-Rashid", "agent": "Sarah Williams", "generated": "2026-04-25", "status": "Sent" },
-    { "id": "IRE-DOC-0179", "type": "Tenancy Agreement", "property": "IRE-002", "client": "Nadia Hassan", "agent": "Murat Yilmaz", "generated": "2026-04-22", "status": "Signed" },
-    { "id": "IRE-DOC-0178", "type": "Offer Letter", "property": "IRE-013", "client": "Mariam Al-Khalifa", "agent": "Hassan Al Mahmood", "generated": "2026-04-21", "status": "Sent" },
-    { "id": "IRE-DOC-0177", "type": "Handover Checklist", "property": "IRE-009", "client": "Olivier Dubois", "agent": "Sarah Williams", "generated": "2026-04-20", "status": "Signed" },
-    { "id": "IRE-DOC-0176", "type": "Commission Invoice", "property": "IRE-016", "client": "Ravi Krishnan", "agent": "Ahmed Al Khalifa", "generated": "2026-04-19", "status": "Signed" },
-    { "id": "IRE-DOC-0175", "type": "Rent Renewal Notice", "property": "IRE-012", "client": "Existing tenant", "agent": "Fatima Al Doseri", "generated": "2026-04-18", "status": "Draft" }
+    { "id": "ASK-DOC-0184", "type": "Tenancy Agreement", "property": "ASK-001", "client": "Ahmed Al-Sayed", "agent": "Karim Yazji", "generated": "2026-04-29", "status": "Sent" },
+    { "id": "ASK-DOC-0183", "type": "Commission Invoice", "property": "ASK-006", "client": "James Wilson", "agent": "Omar Khalid", "generated": "2026-04-29", "status": "Signed" },
+    { "id": "ASK-DOC-0182", "type": "Viewing Report", "property": "ASK-011", "client": "Sarah Mitchell", "agent": "Sara Hassan", "generated": "2026-04-28", "status": "Draft" },
+    { "id": "ASK-DOC-0181", "type": "Tenancy Agreement", "property": "ASK-006", "client": "James Wilson", "agent": "Omar Khalid", "generated": "2026-04-26", "status": "Signed" },
+    { "id": "ASK-DOC-0180", "type": "NOC", "property": "ASK-005", "client": "Khalid Al-Rashid", "agent": "Nadia Al Farsi", "generated": "2026-04-25", "status": "Sent" },
+    { "id": "ASK-DOC-0179", "type": "Tenancy Agreement", "property": "ASK-002", "client": "Nadia Hassan", "agent": "Karim Yazji", "generated": "2026-04-22", "status": "Signed" },
+    { "id": "ASK-DOC-0178", "type": "Offer Letter", "property": "ASK-013", "client": "Mariam Al-Khalifa", "agent": "Ahmed Al Mansoori", "generated": "2026-04-21", "status": "Sent" },
+    { "id": "ASK-DOC-0177", "type": "Handover Checklist", "property": "ASK-009", "client": "Olivier Dubois", "agent": "Nadia Al Farsi", "generated": "2026-04-20", "status": "Signed" },
+    { "id": "ASK-DOC-0176", "type": "Commission Invoice", "property": "ASK-016", "client": "Ravi Krishnan", "agent": "Faisal Al Doseri", "generated": "2026-04-19", "status": "Signed" },
+    { "id": "ASK-DOC-0175", "type": "Rent Renewal Notice", "property": "ASK-012", "client": "Existing tenant", "agent": "Sara Hassan", "generated": "2026-04-18", "status": "Draft" }
   ]
 }

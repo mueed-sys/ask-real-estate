@@ -83,9 +83,9 @@ export default function Header() {
       >
         <div className="container-wide flex h-full items-center justify-between gap-4 px-4 sm:px-6 lg:px-12">
           {/* Logo + wordmark */}
-          <Link to="/" className="group flex items-center gap-3" aria-label={BRAND.shortName}>
+          <Link to="/" className="group flex items-center gap-3" aria-label="ASK Real Estate">
             <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold-500/30 transition-all group-hover:ring-gold-400">
-              <img src="/logo.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover" />
+              <img src="/ask-logo.png" alt="ASK Real Estate" className="h-full w-full object-cover" />
             </span>
             <span className="hidden flex-col leading-none sm:flex">
               <span className="font-display text-base tracking-tight text-ink-100">{BRAND.shortName}</span>
@@ -238,7 +238,7 @@ export default function Header() {
               <div className="flex h-[72px] items-center justify-between border-b border-white/8 px-4">
                 <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
                   <span className="relative inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-full ring-1 ring-gold-500/30">
-                    <img src="/logo.jpg" alt="" aria-hidden="true" className="h-full w-full object-cover" />
+                    <img src="/ask-logo.png" alt="ASK Real Estate" className="h-full w-full object-cover" />
                   </span>
                   <span className="flex flex-col leading-none">
                     <span className="font-display text-base tracking-tight text-ink-100">{BRAND.shortName}</span>

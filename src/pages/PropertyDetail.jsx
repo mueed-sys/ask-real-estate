@@ -323,7 +323,7 @@ export default function PropertyDetail() {
                   <ShareBtn
                     icon={MessageCircle}
                     label={t('share.whatsapp')}
-                    href={waLink({ text: `Check out this property on IRE Bahrain: ${title} — ${typeof window !== 'undefined' ? window.location.href : SITE_URL}` })}
+                    href={waLink({ text: `Check out this property on ASK Real Estate: ${title} — ${typeof window !== 'undefined' ? window.location.href : SITE_URL}` })}
                   />
                   <ShareBtn
                     icon={Twitter}

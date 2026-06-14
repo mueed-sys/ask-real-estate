@@ -1,9 +1,9 @@
 [
-  { "id": "n1", "message": "New WhatsApp inquiry from Ahmed Al-Sayed for IRE-001 (2BR Juffair)", "time": "3 min ago" },
-  { "id": "n2", "message": "Murat closed a deal on IRE-003 (3BR Villa Amwaj)", "time": "1 hour ago" },
-  { "id": "n3", "message": "New listing IRE-021 published successfully", "time": "2 hours ago" },
-  { "id": "n4", "message": "Viewing scheduled for tomorrow 10:30 AM — Sarah Mitchell, IRE-011", "time": "3 hours ago" },
-  { "id": "n5", "message": "Fatima updated 4 listings in Riffa", "time": "Yesterday" },
+  { "id": "n1", "message": "New WhatsApp inquiry from Ahmed Al-Sayed for ASK-001 (2BR Juffair)", "time": "3 min ago" },
+  { "id": "n2", "message": "Karim closed a deal on ASK-003 (3BR Villa Amwaj)", "time": "1 hour ago" },
+  { "id": "n3", "message": "New listing ASK-021 published successfully", "time": "2 hours ago" },
+  { "id": "n4", "message": "Viewing scheduled for tomorrow 10:30 AM — Sarah Mitchell, ASK-011", "time": "3 hours ago" },
+  { "id": "n5", "message": "Sara Hassan updated 4 listings in Riffa", "time": "Yesterday" },
   { "id": "n6", "message": "Daily traffic report: 489 visitors, +12% vs yesterday", "time": "Yesterday" },
-  { "id": "n7", "message": "Tenancy agreement IRE-DOC-0184 signed by tenant", "time": "Yesterday" }
+  { "id": "n7", "message": "Tenancy agreement ASK-DOC-0184 signed by tenant", "time": "Yesterday" }
 ]

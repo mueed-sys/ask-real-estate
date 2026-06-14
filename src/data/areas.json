@@ -168,5 +168,107 @@
       "Sheikh Khalifa Bin Salman Port",
       "Muharraq Souq"
     ]
+  },
+  {
+    "slug": "muharraq",
+    "name": "Muharraq",
+    "tagline": "Historic pearling capital with a vibrant old town",
+    "description": "Muharraq is Bahrain's second city and its historic heart — the old pearling district, narrow souq lanes, and traditional courtyard houses sit alongside the international airport and modern residential blocks. A UNESCO-listed pearling path and the Shaikh Isa bin Ali House make it Bahrain's most culturally rich neighborhood.",
+    "image": "/images/areas/muharraq.jpg",
+    "avg_rent_bd": 300,
+    "avg_sale_bd": 65000,
+    "property_count": 1,
+    "amenities": [
+      "Bahrain International Airport",
+      "Muharraq Souq",
+      "Shaikh Isa bin Ali House",
+      "Arad Fort",
+      "UNESCO Pearling Path"
+    ]
+  },
+  {
+    "slug": "adliya",
+    "name": "Adliya",
+    "tagline": "Bahrain's creative quarter — art galleries, cafés, and dining",
+    "description": "Adliya is Bahrain's most vibrant dining and arts district — Block 338 concentration of independent restaurants, galleries, and coffee shops make it a cultural anchor. A mix of older villas converted into boutique eateries and new low-rise residences define the neighbourhood's relaxed, creative energy.",
+    "image": "/images/areas/adliya.jpg",
+    "avg_rent_bd": 360,
+    "avg_sale_bd": 78000,
+    "property_count": 1,
+    "amenities": [
+      "Block 338 Dining Quarter",
+      "Bahrain National Theatre",
+      "Dana Mall",
+      "Bahrain Arts Society",
+      "Adliya Art Galleries"
+    ]
+  },
+  {
+    "slug": "manama",
+    "name": "Manama",
+    "tagline": "The capital — commerce, culture, and the historic souq",
+    "description": "Manama is Bahrain's capital and commercial centre — home to the iconic Bahrain Fort, the Gold Souq, and the Manama Souq, alongside towers housing the kingdom's most established banks and trading houses. Central location makes it a practical base for professionals with broad city-wide commitments.",
+    "image": "/images/areas/manama.jpg",
+    "avg_rent_bd": 390,
+    "avg_sale_bd": 82000,
+    "property_count": 1,
+    "amenities": [
+      "Manama Souq",
+      "Gold Souq",
+      "Bahrain Fort",
+      "Bab Al Bahrain",
+      "National Museum of Bahrain"
+    ]
+  },
+  {
+    "slug": "hamad-town",
+    "name": "Hamad Town",
+    "tagline": "Affordable family living with modern infrastructure",
+    "description": "Hamad Town is Bahrain's largest planned residential city — a grid of affordable family villas and apartments serving Bahraini families and budget-conscious expats. Modern schools, hypermarkets, and easy highway access to Manama and the Saudi causeway make it a practical choice for larger households.",
+    "image": "/images/areas/hamad-town.jpg",
+    "avg_rent_bd": 260,
+    "avg_sale_bd": 55000,
+    "property_count": 1,
+    "amenities": [
+      "Hamad Town Mall",
+      "Al Hekma International School",
+      "Lulu Hypermarket",
+      "Bahrain American School",
+      "King Fahd Causeway access"
+    ]
+  },
+  {
+    "slug": "diyar-al-muharraq",
+    "name": "Diyar Al Muharraq",
+    "tagline": "New waterfront city on Muharraq — modern townhouses and canals",
+    "description": "Diyar Al Muharraq is a large-scale waterfront development under progressive completion on the northeastern coast of Muharraq Island. Townhouses, apartments, canals, and a dedicated retail spine make it one of Bahrain's most ambitious new-build destinations for families and young professionals.",
+    "image": "/images/areas/diyar-al-muharraq.jpg",
+    "avg_rent_bd": 400,
+    "avg_sale_bd": 90000,
+    "property_count": 1,
+    "amenities": [
+      "Diyar Canal Promenade",
+      "Dilmunia Island",
+      "Al Bandar Hotel",
+      "Diyar Retail Quarter",
+      "Canal-front Boardwalk"
+    ]
+  },
+  {
+    "slug": "durrat-al-bahrain",
+    "name": "Durrat Al Bahrain",
+    "tagline": "Ultra-exclusive island resort living in southern Bahrain",
+    "description": "Durrat Al Bahrain is Bahrain's most exclusive freehold development — a collection of artificial islands in the kingdom's southern waters with private villas, a five-star resort hotel, an 18-hole golf course, and a marina. Ownership is open to all nationalities, making it a premier international investment address.",
+    "image": "/images/areas/durrat-al-bahrain.jpg",
+    "avg_rent_bd": 1400,
+    "avg_sale_bd": 300000,
+    "property_count": 1,
+    "amenities": [
+      "Durrat Marina",
+      "18-Hole Golf Course",
+      "Durrat Al Bahrain Beach Club",
+      "Five-Star Resort Hotel",
+      "Private Island Villas"
+    ]
   }
 ]

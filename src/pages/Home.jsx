@@ -50,7 +50,7 @@ export default function Home() {
         <meta property="og:description" content={t('brand.tagline')} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/`} />
-        <meta property="og:image" content={`${SITE_URL}/logo.jpg`} />
+        <meta property="og:image" content={`${SITE_URL}/ask-logo.png`} />
       </Helmet>
 
       {/* HERO */}
@@ -280,18 +280,18 @@ function Hero() {
               Line 2 the commanding Playfair Display 800 gold-gradient block. */}
           <h1 className="mt-6 text-balance leading-[0.95]">
             <span className="block font-sans font-normal text-[clamp(1.5rem,3.6vw,2.6rem)] leading-snug text-ink-100">
-              Your Trusted Property Partner in
+              Bahrain's Premier
             </span>
             <span
-              className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(2.25rem,11vw,9.5rem)]"
+              className="mt-2 block font-display font-extrabold leading-[0.95] tracking-tight text-[clamp(2.25rem,8vw,7rem)]"
               style={{ background: 'linear-gradient(135deg, #d4af37 0%, #f4d03f 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', wordBreak: 'normal', overflowWrap: 'break-word' }}
             >
-              Bahrain Real Estate
+              Real Estate &amp; Asset Management Firm
             </span>
           </h1>
 
           <p className="mt-7 max-w-xl text-base leading-[1.7] text-ink-200 sm:mt-9 sm:text-lg">
-            RERA licensed. RICS accredited. Over 1,200 clients served since 2016 — one trusted name in Bahrain property.
+            RERA licensed. RICS accredited. $3B+ assets under management since 2016 — one trusted name in Bahrain property.
           </p>
         </motion.div>
 

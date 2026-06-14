@@ -1,107 +1,107 @@
 [
   {
     "id": "brokerage",
-    "title": "Sales & Leasing Brokerage",
-    "tagline": "Connecting buyers, sellers, landlords and tenants across Bahrain",
-    "description": "Our brokerage division is the core of ASK Real Estate. With a portfolio spanning residential apartments, villas, penthouses, commercial spaces and land plots across Bahrain's premier districts, our consultants work every side of every deal. RERA-licensed agents. No hidden fees. Direct line to a human every time.",
-    "icon": "building-2",
+    "title": "Real Estate Brokerage",
+    "tagline": "Expert-led sales and leasing across Bahrain's most sought-after developments",
+    "description": "ASK Real Estate's brokerage division is the foundation of our integrated service offering, connecting buyers, sellers, landlords, and tenants across Bahrain's residential and commercial markets. Our RERA-licensed consultants bring deep local knowledge combined with international standards to every transaction, ensuring clients receive transparent, performance-driven guidance. ASK has facilitated transactions across over $3 billion in assets under management, giving our team unmatched market intelligence and negotiating leverage. Whether you are acquiring your first property or expanding an investment portfolio, ASK delivers outcomes that set benchmarks in the industry.",
     "features": [
-      "Residential sales and lettings",
-      "Commercial leasing and investment",
+      "Residential sales across apartments, villas, and penthouses",
+      "Commercial leasing and investment property acquisition",
       "Off-plan and new development advisory",
-      "Investment portfolio structuring",
-      "Market appraisals and valuations"
+      "Investment portfolio structuring and asset strategy",
+      "RERA-licensed agents with full market appraisal support"
     ],
+    "icon": "building-2",
     "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80"
   },
   {
     "id": "property-management",
     "title": "Property Management",
-    "tagline": "Full-cycle management for landlords who want peace of mind",
-    "description": "From tenant sourcing and credit checks to rent collection, maintenance coordination and annual accounts — ASK Property Management handles every aspect of your investment. Our managed portfolio exceeds 2,800 units across Bahrain, giving us the scale to negotiate better service contracts and respond faster than any competitor.",
-    "icon": "key",
+    "tagline": "End-to-end management so your investment works harder without the hassle",
+    "description": "ASK Real Estate offers comprehensive property management services designed to protect and maximise the returns of landlords and investors across Bahrain. From tenant sourcing and rigorous vetting through to rent collection, lease renewals, and coordinated maintenance, our team handles every aspect of your asset on your behalf. Our managed portfolio gives us the operational scale to negotiate superior service contracts and respond to issues faster than individual landlords ever could. ASK provides full transparency through regular reporting, giving owners complete visibility over their investment performance at all times.",
     "features": [
-      "Tenant sourcing and vetting",
-      "Lease drafting and renewals",
+      "Tenant sourcing, screening, and placement",
+      "Lease drafting, renewals, and legal compliance",
       "Rent collection and arrears management",
-      "Planned and reactive maintenance",
-      "Annual landlord reporting"
+      "Planned and reactive maintenance coordination",
+      "Detailed monthly and annual landlord reporting"
     ],
+    "icon": "settings",
     "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80"
   },
   {
     "id": "valuation",
-    "title": "Valuation & Advisory",
-    "tagline": "RICS-accredited, bank-trusted, IVSC-compliant valuations",
-    "description": "ASK holds accreditation from the Royal Institution of Chartered Surveyors (RICS) and operates under IVSC standards. Our valuation reports are accepted by every major bank in Bahrain for mortgage purposes and are regularly instructed by government entities, insurance firms, and private equity funds requiring independent certified opinions of value.",
-    "icon": "bar-chart-2",
+    "title": "Property Valuation and Advisory",
+    "tagline": "RICS and IVSC accredited valuations trusted by banks, investors, and institutions",
+    "description": "ASK Real Estate delivers independent, accredited property valuations conducted in accordance with Royal Institution of Chartered Surveyors (RICS) and International Valuation Standards Council (IVSC) guidelines. Our valuation reports are accepted by all major financial institutions in Bahrain for mortgage and financing purposes, and are regularly instructed by government bodies, insurance firms, and private equity funds requiring certified opinions of value. ASK's advisory team provides investment analysis, feasibility appraisals, and strategic counsel to help clients make informed decisions in a complex market. Our team has also completed consultancy and valuation assignments in the UK, Africa, and the UAE, bringing a genuinely international perspective to every engagement.",
     "features": [
-      "Mortgage and financing valuations",
-      "Investment and portfolio valuations",
-      "Insurance reinstatement assessments",
+      "Mortgage and bank financing valuations",
+      "Investment and institutional portfolio assessments",
+      "Insurance reinstatement cost appraisals",
       "Dispute resolution and arbitration support",
-      "Development feasibility appraisals"
+      "Development feasibility and highest-and-best-use analysis"
     ],
+    "icon": "calculator",
     "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop&q=80"
   },
   {
     "id": "facility-management",
     "title": "Facility Management",
-    "tagline": "End-to-end building operations for owners and developers",
-    "description": "Our FM division manages the day-to-day operation of residential towers, commercial buildings and mixed-use developments. We handle MEP maintenance, cleaning contracts, security services, common area management and capital expenditure planning — all through a single point of contact backed by our ISO 9001-certified quality system.",
-    "icon": "wrench",
+    "tagline": "Seamless building operations for residential towers and commercial assets",
+    "description": "ASK Real Estate's Facility Management division provides owners and developers with a single point of accountability for the full operational lifecycle of their buildings. Our FM teams manage MEP systems, cleaning contracts, security services, and common area upkeep for residential towers, commercial properties, and mixed-use developments across Bahrain. ASK brings a proactive, preventive approach to building maintenance that reduces capital expenditure over time and protects asset value for investors and unit owners alike. All FM operations are underpinned by structured service level agreements and regular performance reporting to ownership.",
     "features": [
-      "MEP preventive and corrective maintenance",
-      "Cleaning and grounds management",
-      "Security and access control",
-      "Common area operations",
-      "CAPEX planning and contractor management"
+      "MEP preventive and corrective maintenance programs",
+      "Professional cleaning and grounds management",
+      "Security personnel and access control systems",
+      "Common area and amenity operations",
+      "CAPEX planning and third-party contractor oversight"
     ],
+    "icon": "wrench",
     "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=80"
   },
   {
     "id": "interior-design",
-    "title": "Interior Design & Fit-Out",
-    "tagline": "Design-led transformations for residential and commercial spaces",
-    "description": "The ASK Interior Design studio works with property owners, developers and tenants to create spaces that command higher rents and sell faster. From concept boards and 3D renders through to contractor management and snagging, we deliver complete fit-outs for apartments, villas, retail units and corporate offices.",
-    "icon": "paintbrush",
+    "title": "Interior Design and Architecture",
+    "tagline": "Design-led fit-outs that elevate value and accelerate returns",
+    "description": "ASK Real Estate's Interior Design and Architecture studio partners with property owners, developers, and tenants to transform spaces into environments that command premium rents and sell faster in the market. Our team delivers the complete design journey — from initial concept development and space planning through to 3D visualisation, material specification, contractor procurement, and final handover snagging. Whether the brief calls for a luxury residential interior, a corporate office fit-out, or a retail transformation, ASK brings creativity and commercial rigour to every project. Our in-house capability ensures design vision and budget discipline are never in conflict.",
     "features": [
-      "Concept and space planning",
-      "3D visualisation and mood boards",
-      "Material and FF&E specification",
-      "Contractor procurement and oversight",
-      "Snagging and handover"
+      "Concept development and space planning",
+      "3D visualisation and photorealistic renders",
+      "Material, furniture, and FF&E specification",
+      "Contractor procurement and construction oversight",
+      "Snagging, defect resolution, and client handover"
     ],
+    "icon": "palette",
     "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&auto=format&fit=crop&q=80"
   },
   {
-    "id": "owners-association",
-    "title": "Owners' Association Management",
-    "tagline": "Professional OA governance for Bahraini strata developments",
-    "description": "Managing an Owners' Association in Bahrain requires deep knowledge of RERA regulations, maintenance fund accounting and multi-stakeholder governance. ASK OA Management handles AGMs, service charge collection, reserve fund management and RERA compliance for strata buildings across the Kingdom.",
-    "icon": "users",
+    "id": "hoa",
+    "title": "Owners Association Management",
+    "tagline": "Professional HOA governance and RERA-compliant strata management",
+    "description": "Managing an Owners Association in Bahrain demands expert knowledge of RERA regulations, service charge accounting, reserve fund governance, and multi-stakeholder relations — expertise that ASK Real Estate has built through years of hands-on OA management across the Kingdom. Our team handles everything from initial RERA registration and annual AGM facilitation through to service charge collection, maintenance fund planning, and dispute mediation between unit owners. ASK ensures that every OA we manage operates in full compliance with Bahraini law while maintaining the building standards that protect individual unit values. Transparent financial reporting is provided to all owners as a matter of course.",
     "features": [
-      "RERA OA registration and compliance",
-      "Annual service charge budgets",
-      "AGM facilitation and minutes",
-      "Maintenance reserve fund management",
-      "Unit owner dispute resolution"
+      "RERA Owners Association registration and ongoing compliance",
+      "Annual service charge budget preparation and levy",
+      "AGM facilitation, minutes, and resolution management",
+      "Maintenance reserve fund planning and governance",
+      "Unit owner communications and dispute resolution"
     ],
+    "icon": "users",
     "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=80"
   },
   {
     "id": "hospitality",
-    "title": "Short-Term & Hospitality Lettings",
-    "tagline": "Premium serviced apartment management for the corporate and leisure market",
-    "description": "Bahrain's growing corporate and tourism market has created strong demand for premium furnished short-stay accommodation. ASK Hospitality manages fully serviced apartments listed on major platforms alongside a direct corporate booking channel, handling everything from linen and cleaning to guest communications and revenue optimisation.",
-    "icon": "hotel",
+    "title": "Hospitality Services",
+    "tagline": "Premium serviced apartment management for Bahrain's corporate and leisure market",
+    "description": "ASK Real Estate's Hospitality Services division capitalises on Bahrain's growing demand for high-quality furnished accommodation from corporate travellers, relocating executives, and the leisure market. We manage fully serviced apartments through a combination of major online platforms and a direct corporate booking channel, handling every operational detail from professional staging and linen services to guest communications and dynamic revenue management. Property owners benefit from higher yields compared to traditional long-term leasing, with none of the operational burden. ASK provides full monthly remittance statements and performance analytics so owners always know exactly how their asset is performing.",
     "features": [
-      "Furnished apartment setup and staging",
-      "Multi-platform listing management",
-      "Guest communications 24/7",
-      "Housekeeping and linen service",
-      "Monthly owner remittance and reporting"
+      "Professional apartment staging and furnishing consultation",
+      "Multi-platform listing management and rate optimisation",
+      "24/7 guest communications and check-in coordination",
+      "Housekeeping, linen, and maintenance services",
+      "Monthly owner remittance with detailed performance reporting"
     ],
+    "icon": "hotel",
     "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&auto=format&fit=crop&q=80"
   }
 ]

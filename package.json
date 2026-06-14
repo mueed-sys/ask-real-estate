@@ -1,5 +1,5 @@
 {
-  "name": "ire-bahrain",
+  "name": "ask-real-estate",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -39,5 +39,6 @@
     "tailwindcss": "^3.4.19",
     "vite": "^8.0.10",
     "vite-plugin-javascript-obfuscator": "^3.1.0"
-  }
+  },
+  "description": "ASK Real Estate W.L.L \u2014 Bahrain's premier property brokerage, valuation, and asset management platform"
 }

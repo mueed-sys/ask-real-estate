@@ -90,7 +90,7 @@ export default function AgentDetail() {
           <div className="grid gap-px overflow-hidden rounded-sm border border-white/5 bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
             <Stat icon={Briefcase} label={t('agent_card.active_listings', { count: '' })} value={agent.active_listings} />
             <Stat icon={Award} label={t('agent_card.deals_closed')} value={agent.deals_closed_year} />
-            <Stat icon={Star} label={t('agent_card.experience')} value={`${agent.years_with_ire}y`} />
+            <Stat icon={Star} label={t('agent_card.experience')} value={`${agent.years_with_ask}y`} />
             <Stat icon={Clock} label={t('agent_card.response_time')} value={agent.response_time} />
           </div>
         </div>

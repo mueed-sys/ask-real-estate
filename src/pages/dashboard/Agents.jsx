@@ -21,7 +21,7 @@ export default function Agents() {
   const [selected, setSelected] = useState(null)
   // Mock per-agent status state
   const [statuses, setStatuses] = useState(
-    Object.fromEntries(agents.map((a) => [a.id, AGENT_STATUS[Math.floor(a.years_with_ire / 4)] || 'active']))
+    Object.fromEntries(agents.map((a) => [a.id, AGENT_STATUS[Math.floor(a.years_with_ask / 4)] || 'active']))
   )
 
   const cycleStatus = (id) => {
@@ -106,7 +106,7 @@ function AgentDetail({ agent, onClose }) {
   if (!agent) return null
   const listings = properties.filter((p) => p.agent_id === agent.id)
   const agentLeads = leads.filter((l) => l.agent_id === agent.id)
-  const dealHistory = agentDealsHistory(agent.deals_closed_year / 6, agent.years_with_ire)
+  const dealHistory = agentDealsHistory(agent.deals_closed_year / 6, agent.years_with_ask)
   const revenueMonth = Math.round(agent.deals_closed_year / 12) * 480
 
   return (

@@ -1,1331 +1,1112 @@
 [
   {
-    "id": "IRE-001",
-    "title": "Luxury 2BR Apartment with Sea View",
-    "type": "Apartment",
-    "purpose": "rent",
-    "price": 650,
-    "price_period": "month",
-    "location": "Juffair",
-    "address": "Building 245, Road 3609, Block 436, Juffair",
-    "lat": 26.212,
-    "lng": 50.6,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "sqm": 120,
-    "floor": 12,
-    "parking": 1,
-    "furnished": true,
-    "featured": true,
-    "year_built": 2020,
-    "description": "Stunning sea view apartment in the heart of Juffair, walking distance to Block 338 and Juffair Avenue. Floor-to-ceiling windows, fully equipped European kitchen, and a spa-style master bathroom. Building amenities include rooftop pool, gym, and 24-hour concierge.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "sea_view",
-      "central_ac",
-      "built_in_wardrobes",
-      "concierge",
-      "internet"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "City Centre Bahrain",
-        "distance": "5 min"
-      },
-      "restaurant": {
-        "name": "Block 338 Restaurants",
-        "distance": "3 min"
-      },
-      "school": {
-        "name": "British School of Bahrain",
-        "distance": "10 min"
-      },
-      "hospital": {
-        "name": "King Hamad Hospital",
-        "distance": "8 min"
-      },
-      "beach": {
-        "name": "Juffair Beach",
-        "distance": "2 min"
-      },
-      "transport": {
-        "name": "Juffair Bus Station",
-        "distance": "4 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-001",
-    "created_at": "2026-04-15",
-    "views": 342
-  },
-  {
-    "id": "IRE-002",
-    "title": "Modern Studio in Seef",
+    "id": "ASK-001",
+    "title": "Modern Studio with Sea View in Juffair",
     "type": "Studio",
     "purpose": "rent",
-    "price": 300,
-    "price_period": "month",
-    "location": "Seef",
-    "address": "Almoayyed Tower, Road 2811, Seef",
-    "lat": 26.2336,
-    "lng": 50.5469,
-    "bedrooms": 0,
-    "bathrooms": 1,
-    "sqm": 55,
-    "floor": 18,
-    "parking": 1,
-    "furnished": true,
-    "featured": true,
-    "year_built": 2019,
-    "description": "Stylish furnished studio in one of Seef's most recognisable towers. Walk to City Centre Bahrain in 4 minutes; the Bahrain Financial Harbour and embassies are a 10-minute drive. Designed for executive tenants who value walkability over square footage.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "central_ac",
-      "built_in_wardrobes",
-      "internet"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "City Centre Bahrain",
-        "distance": "4 min"
-      },
-      "restaurant": {
-        "name": "Seef Restaurants",
-        "distance": "2 min"
-      },
-      "school": {
-        "name": "Ibn Khuldoon National School",
-        "distance": "8 min"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "6 min"
-      },
-      "beach": {
-        "name": "Marina Club Beach",
-        "distance": "10 min"
-      },
-      "transport": {
-        "name": "Seef Bus Station",
-        "distance": "3 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1549388604-817d15aa0110?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-001",
-    "created_at": "2026-04-12",
-    "views": 218
-  },
-  {
-    "id": "IRE-003",
-    "title": "Spacious 3BR Villa with Private Pool",
-    "type": "Villa",
-    "purpose": "rent",
-    "price": 1400,
-    "price_period": "month",
-    "location": "Amwaj Islands",
-    "address": "Lagoon View Villa 22, Amwaj Islands",
-    "lat": 26.2877,
-    "lng": 50.665,
-    "bedrooms": 3,
-    "bathrooms": 4,
-    "sqm": 280,
-    "floor": 0,
-    "parking": 2,
-    "furnished": false,
-    "featured": true,
-    "year_built": 2018,
-    "description": "Generously proportioned canal-front villa on Amwaj Islands. Private pool, double garage, maid's quarters, and a sun terrace overlooking the lagoon. Steps to The Lagoon dining and Amwaj Marina.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "sea_view",
-      "maids_room",
-      "storage",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Dragon City Bahrain",
-        "distance": "12 min"
-      },
-      "restaurant": {
-        "name": "The Lagoon",
-        "distance": "3 min"
-      },
-      "school": {
-        "name": "Asian School Bahrain",
-        "distance": "8 min"
-      },
-      "hospital": {
-        "name": "King Hamad Hospital",
-        "distance": "20 min"
-      },
-      "beach": {
-        "name": "Amwaj Beach",
-        "distance": "5 min"
-      },
-      "transport": {
-        "name": "Amwaj Causeway",
-        "distance": "6 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-002",
-    "created_at": "2026-04-18",
-    "views": 487
-  },
-  {
-    "id": "IRE-004",
-    "title": "Premium 1BR with Pool View",
-    "type": "Apartment",
-    "purpose": "rent",
-    "price": 450,
-    "price_period": "month",
-    "location": "Juffair",
-    "address": "Skyline Tower, Road 4051, Juffair",
-    "lat": 26.2095,
-    "lng": 50.6028,
-    "bedrooms": 1,
-    "bathrooms": 1,
-    "sqm": 78,
-    "floor": 8,
-    "parking": 1,
-    "furnished": true,
-    "featured": true,
-    "year_built": 2021,
-    "description": "Brand-new one-bedroom in a newly delivered Juffair tower. Floor-through layout with a wide balcony overlooking the rooftop pool and city skyline. Designed for young professionals and weekend hosts.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances",
-      "internet"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "The Avenues Bahrain",
-        "distance": "8 min"
-      },
-      "restaurant": {
-        "name": "Block 338 Restaurants",
-        "distance": "4 min"
-      },
-      "school": {
-        "name": "British School of Bahrain",
-        "distance": "12 min"
-      },
-      "hospital": {
-        "name": "King Hamad Hospital",
-        "distance": "9 min"
-      },
-      "beach": {
-        "name": "Juffair Beach",
-        "distance": "3 min"
-      },
-      "transport": {
-        "name": "Juffair Bus Station",
-        "distance": "4 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-001",
-    "created_at": "2026-04-20",
-    "views": 296
-  },
-  {
-    "id": "IRE-005",
-    "title": "Executive Penthouse, Bahrain Bay",
-    "type": "Penthouse",
-    "purpose": "sale",
-    "price": 580000,
-    "price_period": "total",
-    "location": "Bahrain Bay",
-    "address": "Bay Tower 2, Bahrain Bay",
-    "lat": 26.24,
-    "lng": 50.591,
-    "bedrooms": 4,
-    "bathrooms": 5,
-    "sqm": 420,
-    "floor": 38,
-    "parking": 3,
-    "furnished": true,
-    "featured": true,
-    "year_built": 2022,
-    "description": "Top-floor penthouse with 360-degree views over Bahrain Bay, Manama, and the Gulf. Private elevator entry, four ensuite bedrooms, a wraparound terrace, double living room, and a chef's kitchen. The trophy address in IRE's portfolio.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "sea_view",
-      "maids_room",
-      "storage",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances",
-      "concierge",
-      "playground"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "The Avenues Bahrain",
-        "distance": "2 min"
-      },
-      "restaurant": {
-        "name": "Four Seasons Restaurants",
-        "distance": "1 min"
-      },
-      "school": {
-        "name": "Ibn Khuldoon National School",
-        "distance": "10 min"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "8 min"
-      },
-      "beach": {
-        "name": "Marina Club Beach",
-        "distance": "6 min"
-      },
-      "transport": {
-        "name": "Bahrain Bay Marina",
-        "distance": "2 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1549388604-817d15aa0110?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-005",
-    "created_at": "2026-04-22",
-    "views": 612
-  },
-  {
-    "id": "IRE-006",
-    "title": "Commercial Office Space in Diplomatic Area",
-    "type": "Commercial",
-    "purpose": "rent",
-    "price": 900,
-    "price_period": "month",
-    "location": "Diplomatic Area",
-    "address": "World Trade Center West, Diplomatic Area",
-    "lat": 26.2398,
-    "lng": 50.5778,
-    "bedrooms": 0,
-    "bathrooms": 2,
-    "sqm": 180,
-    "floor": 22,
-    "parking": 4,
-    "furnished": false,
-    "featured": true,
-    "year_built": 2008,
-    "description": "Premium grade-A office floor in Bahrain's most recognisable office address. Floor-through layout with twin-tower views, dedicated boardroom, four reserved parking bays, and 24-hour secure access.",
-    "amenities": [
-      "security_24_7",
-      "covered_parking",
-      "central_ac",
-      "internet",
-      "kitchen_appliances"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Moda Mall",
-        "distance": "3 min"
-      },
-      "restaurant": {
-        "name": "WTC Food Court",
-        "distance": "1 min"
-      },
-      "school": {
-        "name": "N/A",
-        "distance": "—"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "8 min"
-      },
-      "beach": {
-        "name": "Marina Club Beach",
-        "distance": "10 min"
-      },
-      "transport": {
-        "name": "Diplomatic Bus Station",
-        "distance": "5 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-004",
-    "created_at": "2026-04-10",
-    "views": 178
-  },
-  {
-    "id": "IRE-007",
-    "title": "Cozy 1BR Apartment in Seef",
-    "type": "Apartment",
-    "purpose": "rent",
-    "price": 380,
-    "price_period": "month",
-    "location": "Seef",
-    "address": "Almeer Tower, Road 2807, Seef",
-    "lat": 26.231,
-    "lng": 50.5505,
-    "bedrooms": 1,
-    "bathrooms": 1,
-    "sqm": 72,
-    "floor": 7,
-    "parking": 1,
-    "furnished": true,
-    "featured": false,
-    "year_built": 2017,
-    "description": "Comfortable furnished 1BR with city views. Building amenities include a small pool and gym; everything in Seef's retail core is in walking distance. Long-term tenants preferred.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "built_in_wardrobes",
-      "internet"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Seef Mall",
-        "distance": "3 min"
-      },
-      "restaurant": {
-        "name": "Seef Restaurants",
-        "distance": "2 min"
-      },
-      "school": {
-        "name": "Bahrain School",
-        "distance": "10 min"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "5 min"
-      },
-      "beach": {
-        "name": "Marina Club Beach",
-        "distance": "12 min"
-      },
-      "transport": {
-        "name": "Seef Bus Station",
-        "distance": "3 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-001",
-    "created_at": "2026-04-05",
-    "views": 152
-  },
-  {
-    "id": "IRE-008",
-    "title": "Family 3BR Flat in Riffa",
-    "type": "Apartment",
-    "purpose": "rent",
-    "price": 420,
-    "price_period": "month",
-    "location": "Riffa",
-    "address": "Building 18, Road 1213, East Riffa",
-    "lat": 26.13,
-    "lng": 50.555,
-    "bedrooms": 3,
-    "bathrooms": 2,
-    "sqm": 145,
-    "floor": 3,
-    "parking": 2,
-    "furnished": false,
-    "featured": false,
-    "year_built": 2014,
-    "description": "Spacious unfurnished 3-bedroom apartment in a quiet East Riffa block. Family-suited layout with a generous living-dining run, semi-closed kitchen, and ensuite master. Two reserved parking bays.",
-    "amenities": [
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "built_in_wardrobes"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Riffa Mall",
-        "distance": "5 min"
-      },
-      "restaurant": {
-        "name": "Riffa Plaza Restaurants",
-        "distance": "3 min"
-      },
-      "school": {
-        "name": "St Christopher's School",
-        "distance": "8 min"
-      },
-      "hospital": {
-        "name": "Saudi German Hospital",
-        "distance": "10 min"
-      },
-      "beach": {
-        "name": "Zallaq Beach",
-        "distance": "20 min"
-      },
-      "transport": {
-        "name": "Riffa Bus Stop",
-        "distance": "5 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-003",
-    "created_at": "2026-04-08",
-    "views": 134
-  },
-  {
-    "id": "IRE-009",
-    "title": "Luxury 2BR on Reef Island",
-    "type": "Apartment",
-    "purpose": "sale",
-    "price": 165000,
-    "price_period": "total",
-    "location": "Reef Island",
-    "address": "Reef Island Tower 4, Reef Island",
-    "lat": 26.251,
-    "lng": 50.575,
-    "bedrooms": 2,
-    "bathrooms": 3,
-    "sqm": 160,
-    "floor": 9,
-    "parking": 2,
-    "furnished": true,
-    "featured": false,
-    "year_built": 2020,
-    "description": "Furnished 2BR on Reef Island with private beach club access. Marble bathrooms, designer kitchen, and a wide balcony facing the reef. Resident-only beach, marina, and clubhouse.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "sea_view",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances",
-      "concierge",
-      "internet"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Reef Plaza",
-        "distance": "2 min"
-      },
-      "restaurant": {
-        "name": "Reef Plaza Cafés",
-        "distance": "2 min"
-      },
-      "school": {
-        "name": "Bahrain Bayan School",
-        "distance": "8 min"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "10 min"
-      },
-      "beach": {
-        "name": "Reef Island Beach",
-        "distance": "0 min"
-      },
-      "transport": {
-        "name": "Reef Causeway",
-        "distance": "5 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1549388604-817d15aa0110?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-005",
-    "created_at": "2026-04-19",
-    "views": 287
-  },
-  {
-    "id": "IRE-010",
-    "title": "Studio with Balcony in Juffair",
-    "type": "Studio",
-    "purpose": "rent",
-    "price": 280,
-    "price_period": "month",
-    "location": "Juffair",
-    "address": "Building 412, Road 4015, Juffair",
-    "lat": 26.2105,
-    "lng": 50.5985,
+    "price": 320,
+    "price_period": "monthly",
+    "location": "Juffair, Capital Governorate",
+    "address": "Juffair Avenue, Block 333, Juffair, Manama",
+    "lat": 26.2118,
+    "lng": 50.6003,
     "bedrooms": 0,
     "bathrooms": 1,
     "sqm": 48,
     "floor": 5,
     "parking": 1,
     "furnished": true,
-    "featured": false,
-    "year_built": 2018,
-    "description": "Affordable furnished studio with a generous balcony and city views. Walk-up to Juffair Avenue and Block 338. Perfect entry-level rental for graduate professionals.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "internet"
-    ],
+    "featured": true,
+    "year_built": 2019,
+    "description": "A well-appointed furnished studio with open sea views on the 5th floor of a modern residential tower in Juffair. Features premium finishes, built-in wardrobes, a fully equipped kitchen, and access to a rooftop pool. Minutes from diplomatic area and major embassies.",
+    "amenities": ["Swimming Pool", "Gym", "24/7 Security", "Covered Parking", "Rooftop Terrace", "High-Speed Internet", "Central AC"],
     "nearby": {
-      "mall": {
-        "name": "City Centre Bahrain",
-        "distance": "6 min"
-      },
-      "restaurant": {
-        "name": "Block 338 Restaurants",
-        "distance": "5 min"
-      },
-      "school": {
-        "name": "British School of Bahrain",
-        "distance": "12 min"
-      },
-      "hospital": {
-        "name": "King Hamad Hospital",
-        "distance": "10 min"
-      },
-      "beach": {
-        "name": "Juffair Beach",
-        "distance": "3 min"
-      },
-      "transport": {
-        "name": "Juffair Bus Station",
-        "distance": "4 min"
-      }
+      "mall": "City Centre Bahrain (2.5 km)",
+      "restaurant": "La Mer Restaurant (0.4 km)",
+      "school": "Bahrain Bayan School (1.8 km)",
+      "hospital": "American Mission Hospital (1.2 km)",
+      "beach": "Juffair Corniche (0.6 km)",
+      "transport": "Juffair Bus Stop (0.3 km)"
     },
     "images": [
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&auto=format&fit=crop&q=80"
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80"
     ],
-    "agent_id": "agent-001",
-    "created_at": "2026-04-03",
-    "views": 124
+    "agent_id": "ask-agent-001",
+    "ref": "ASK-BH-2024-001"
   },
   {
-    "id": "IRE-011",
-    "title": "4BR Villa with Garden in Saar",
-    "type": "Villa",
-    "purpose": "sale",
-    "price": 245000,
-    "price_period": "total",
-    "location": "Saar",
-    "address": "Villa 38, Road 2421, Saar",
-    "lat": 26.185,
-    "lng": 50.4778,
-    "bedrooms": 4,
-    "bathrooms": 4,
-    "sqm": 320,
-    "floor": 0,
-    "parking": 3,
-    "furnished": false,
-    "featured": false,
-    "year_built": 2012,
-    "description": "Detached 4-bedroom family villa with a mature garden, maid's quarters, and three reserved parking bays. Steps from British School of Bahrain and Saar Mall. Western-style kitchen and an enclosed patio for evening dining.",
-    "amenities": [
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "maids_room",
-      "storage",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Saar Mall",
-        "distance": "3 min"
-      },
-      "restaurant": {
-        "name": "Saar Cafés",
-        "distance": "5 min"
-      },
-      "school": {
-        "name": "British School of Bahrain",
-        "distance": "2 min"
-      },
-      "hospital": {
-        "name": "Royal Bahrain Hospital",
-        "distance": "12 min"
-      },
-      "beach": {
-        "name": "Budaiya Beach",
-        "distance": "10 min"
-      },
-      "transport": {
-        "name": "Saar Bus Stop",
-        "distance": "5 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-003",
-    "created_at": "2026-04-11",
-    "views": 198
-  },
-  {
-    "id": "IRE-012",
-    "title": "2BR Apartment in Budaiya",
+    "id": "ASK-002",
+    "title": "Spacious 1BR Apartment in Juffair Tower",
     "type": "Apartment",
     "purpose": "rent",
-    "price": 350,
-    "price_period": "month",
-    "location": "Budaiya",
-    "address": "Building 22, Road 4133, Budaiya",
-    "lat": 26.21,
-    "lng": 50.448,
-    "bedrooms": 2,
+    "price": 420,
+    "price_period": "monthly",
+    "location": "Juffair, Capital Governorate",
+    "address": "Juffair Tower, Road 3301, Juffair, Manama",
+    "lat": 26.2125,
+    "lng": 50.6011,
+    "bedrooms": 1,
     "bathrooms": 2,
-    "sqm": 110,
-    "floor": 2,
+    "sqm": 85,
+    "floor": 8,
+    "parking": 1,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2018,
+    "description": "Bright and spacious one-bedroom apartment in the heart of Juffair. Open-plan living and dining area, master bedroom with en-suite, separate guest bathroom, and a private balcony overlooking the city. Ideal for professionals and young families.",
+    "amenities": ["Swimming Pool", "Gym", "Sauna", "24/7 Security", "Covered Parking", "Children's Play Area"],
+    "nearby": {
+      "mall": "Seef Mall (3.1 km)",
+      "restaurant": "Copper Kitchen (0.2 km)",
+      "school": "Nadeen International School (1.5 km)",
+      "hospital": "Bahrain Specialist Hospital (0.9 km)",
+      "beach": "Juffair Beach (0.8 km)",
+      "transport": "Juffair Metro Link (0.4 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-002",
+    "ref": "ASK-BH-2024-002"
+  },
+  {
+    "id": "ASK-003",
+    "title": "Luxurious 2BR Fully Furnished in Juffair",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 750,
+    "price_period": "monthly",
+    "location": "Juffair, Capital Governorate",
+    "address": "La Fontaine Complex, Block 332, Juffair, Manama",
+    "lat": 26.2110,
+    "lng": 50.5998,
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "sqm": 145,
+    "floor": 12,
+    "parking": 2,
+    "furnished": true,
+    "featured": true,
+    "year_built": 2021,
+    "description": "Premium fully furnished two-bedroom apartment on the 12th floor offering panoramic views of Juffair and the Arabian Gulf. Features Italian marble floors, designer kitchen with integrated appliances, master walk-in closet, and a wraparound balcony. Building amenities include an infinity pool.",
+    "amenities": ["Infinity Pool", "Gym", "Spa", "Concierge Service", "Covered Parking", "Smart Home System", "Private Balcony", "Housekeeping Available"],
+    "nearby": {
+      "mall": "City Centre Bahrain (2.2 km)",
+      "restaurant": "Nobu Bahrain (1.1 km)",
+      "school": "British School of Bahrain (2.0 km)",
+      "hospital": "American Mission Hospital (1.0 km)",
+      "beach": "Juffair Corniche (0.5 km)",
+      "transport": "Juffair Bus Terminal (0.3 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80",
+      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&q=80",
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-001",
+    "ref": "ASK-BH-2024-003"
+  },
+  {
+    "id": "ASK-004",
+    "title": "High-Floor 3BR Penthouse in Juffair",
+    "type": "Penthouse",
+    "purpose": "rent",
+    "price": 1350,
+    "price_period": "monthly",
+    "location": "Juffair, Capital Governorate",
+    "address": "Skies Residence, Road 3302, Juffair, Manama",
+    "lat": 26.2132,
+    "lng": 50.6018,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "sqm": 280,
+    "floor": 22,
+    "parking": 2,
+    "furnished": true,
+    "featured": true,
+    "year_built": 2022,
+    "description": "Exceptional penthouse spanning the 22nd floor with 360-degree views of Manama skyline and the Arabian Gulf. Three en-suite bedrooms, a grand living room, gourmet kitchen, private rooftop terrace with plunge pool, and two dedicated parking spaces. The pinnacle of luxury rental living in Bahrain.",
+    "amenities": ["Private Rooftop Pool", "Home Cinema", "Smart Home System", "Concierge", "Private Elevator", "Wine Cellar", "Maid's Room", "BBQ Area"],
+    "nearby": {
+      "mall": "City Centre Bahrain (2.0 km)",
+      "restaurant": "Bushido Juffair (0.3 km)",
+      "school": "Bahrain Bayan School (1.6 km)",
+      "hospital": "King Hamad University Hospital (4.5 km)",
+      "beach": "Juffair Waterfront (0.7 km)",
+      "transport": "Juffair Bus Stop (0.2 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-003",
+    "ref": "ASK-BH-2024-004"
+  },
+  {
+    "id": "ASK-005",
+    "title": "Affordable 1BR for Sale in Juffair",
+    "type": "Apartment",
+    "purpose": "sale",
+    "price": 68000,
+    "price_period": null,
+    "location": "Juffair, Capital Governorate",
+    "address": "Diplomat Tower, Block 334, Juffair, Manama",
+    "lat": 26.2105,
+    "lng": 50.6007,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "sqm": 72,
+    "floor": 4,
     "parking": 1,
     "furnished": false,
     "featured": false,
     "year_built": 2016,
-    "description": "Practical unfurnished 2BR in coastal Budaiya. Close to the highway, supermarkets, and date-palm groves. Strong choice for families wanting space at a moderate budget.",
-    "amenities": [
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "built_in_wardrobes"
-    ],
+    "description": "A great investment opportunity — one-bedroom apartment in an established Juffair residential building. Well-maintained with tiled floors throughout, built-in wardrobes, and a covered parking spot. Ideal for buy-to-let investors given Juffair's strong rental demand.",
+    "amenities": ["Swimming Pool", "Gym", "24/7 Security", "Covered Parking", "Maintenance Services"],
     "nearby": {
-      "mall": {
-        "name": "Budaiya Plaza",
-        "distance": "5 min"
-      },
-      "restaurant": {
-        "name": "Budaiya Highway Cafés",
-        "distance": "3 min"
-      },
-      "school": {
-        "name": "Pakistan Urdu School",
-        "distance": "8 min"
-      },
-      "hospital": {
-        "name": "Royal Bahrain Hospital",
-        "distance": "10 min"
-      },
-      "beach": {
-        "name": "Budaiya Beach",
-        "distance": "4 min"
-      },
-      "transport": {
-        "name": "Budaiya Bus Stop",
-        "distance": "3 min"
-      }
+      "mall": "Bahrain City Centre (2.8 km)",
+      "restaurant": "Fuddruckers Juffair (0.5 km)",
+      "school": "Al Hekma International School (2.1 km)",
+      "hospital": "Bahrain Specialist Hospital (1.0 km)",
+      "beach": "Juffair Beach (0.9 km)",
+      "transport": "Juffair Bus Stop (0.4 km)"
     },
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80"
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&q=80",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80"
     ],
-    "agent_id": "agent-003",
-    "created_at": "2026-04-02",
-    "views": 87
+    "agent_id": "ask-agent-002",
+    "ref": "ASK-BH-2024-005"
   },
   {
-    "id": "IRE-013",
-    "title": "Sea View 3BR Penthouse on Amwaj",
-    "type": "Penthouse",
-    "purpose": "rent",
-    "price": 1800,
-    "price_period": "month",
-    "location": "Amwaj Islands",
-    "address": "Tala Island Tower, Amwaj Islands",
-    "lat": 26.286,
-    "lng": 50.668,
-    "bedrooms": 3,
-    "bathrooms": 4,
-    "sqm": 320,
-    "floor": 28,
-    "parking": 2,
-    "furnished": true,
-    "featured": false,
-    "year_built": 2021,
-    "description": "Three-bedroom duplex penthouse with full Gulf views, double-height living area, and a roof terrace with private plunge pool. Smart-home automation throughout. The ultimate Amwaj address.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "sea_view",
-      "maids_room",
-      "storage",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances",
-      "concierge"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Dragon City Bahrain",
-        "distance": "10 min"
-      },
-      "restaurant": {
-        "name": "The Lagoon",
-        "distance": "4 min"
-      },
-      "school": {
-        "name": "Asian School Bahrain",
-        "distance": "7 min"
-      },
-      "hospital": {
-        "name": "King Hamad Hospital",
-        "distance": "20 min"
-      },
-      "beach": {
-        "name": "Amwaj Beach",
-        "distance": "3 min"
-      },
-      "transport": {
-        "name": "Amwaj Causeway",
-        "distance": "6 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-002",
-    "created_at": "2026-04-21",
-    "views": 433
-  },
-  {
-    "id": "IRE-014",
-    "title": "Commercial Retail Space in Seef",
-    "type": "Commercial",
-    "purpose": "rent",
-    "price": 1200,
-    "price_period": "month",
-    "location": "Seef",
-    "address": "Seef Avenue Mall, Ground Floor, Seef",
-    "lat": 26.233,
-    "lng": 50.547,
-    "bedrooms": 0,
-    "bathrooms": 1,
-    "sqm": 95,
-    "floor": 0,
-    "parking": 0,
-    "furnished": false,
-    "featured": false,
-    "year_built": 2010,
-    "description": "Ground-floor retail unit on Seef's main shopping spine. High visibility, mall foot traffic, fitted utilities, and rear loading access. Suited to F&B, fashion, or specialist retail.",
-    "amenities": [
-      "security_24_7",
-      "central_ac"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Seef Mall",
-        "distance": "0 min"
-      },
-      "restaurant": {
-        "name": "Seef Restaurants",
-        "distance": "2 min"
-      },
-      "school": {
-        "name": "N/A",
-        "distance": "—"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "5 min"
-      },
-      "beach": {
-        "name": "Marina Club Beach",
-        "distance": "12 min"
-      },
-      "transport": {
-        "name": "Seef Bus Station",
-        "distance": "2 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-004",
-    "created_at": "2026-04-13",
-    "views": 92
-  },
-  {
-    "id": "IRE-015",
-    "title": "1BR in New Tower, Bahrain Bay",
+    "id": "ASK-006",
+    "title": "2BR Investment Apartment for Sale in Juffair",
     "type": "Apartment",
-    "purpose": "rent",
-    "price": 550,
-    "price_period": "month",
-    "location": "Bahrain Bay",
-    "address": "Reflections Tower 1, Bahrain Bay",
-    "lat": 26.2415,
-    "lng": 50.5915,
-    "bedrooms": 1,
-    "bathrooms": 1,
-    "sqm": 85,
-    "floor": 14,
-    "parking": 1,
-    "furnished": true,
-    "featured": false,
-    "year_built": 2023,
-    "description": "Brand-new 1BR in one of Bahrain Bay's freshly delivered towers. Floor-to-ceiling glass, integrated kitchen, sea-side balcony, and full access to the building's pool deck and gym.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "sea_view",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances",
-      "concierge",
-      "internet"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "The Avenues Bahrain",
-        "distance": "3 min"
-      },
-      "restaurant": {
-        "name": "Four Seasons Restaurants",
-        "distance": "2 min"
-      },
-      "school": {
-        "name": "Ibn Khuldoon National School",
-        "distance": "10 min"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "8 min"
-      },
-      "beach": {
-        "name": "Marina Club Beach",
-        "distance": "6 min"
-      },
-      "transport": {
-        "name": "Bahrain Bay Marina",
-        "distance": "3 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-005",
-    "created_at": "2026-04-25",
-    "views": 215
-  },
-  {
-    "id": "IRE-016",
-    "title": "Renovated 2BR in Hidd",
-    "type": "Apartment",
-    "purpose": "rent",
-    "price": 320,
-    "price_period": "month",
-    "location": "Hidd",
-    "address": "Building 76, Road 5611, Hidd",
-    "lat": 26.2497,
-    "lng": 50.648,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "sqm": 95,
-    "floor": 4,
-    "parking": 1,
-    "furnished": true,
-    "featured": false,
-    "year_built": 2015,
-    "description": "Recently renovated 2BR with new flooring, kitchen, and bathrooms. Best value 2BR in eastern Muharraq — ten minutes to the airport, fifteen to Manama, with easy industrial estate access.",
-    "amenities": [
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Hidd Mall",
-        "distance": "3 min"
-      },
-      "restaurant": {
-        "name": "Hidd Cafés",
-        "distance": "2 min"
-      },
-      "school": {
-        "name": "Hidd Secondary School",
-        "distance": "5 min"
-      },
-      "hospital": {
-        "name": "Muharraq Health Centre",
-        "distance": "8 min"
-      },
-      "beach": {
-        "name": "Hidd Beach",
-        "distance": "6 min"
-      },
-      "transport": {
-        "name": "Bahrain International Airport",
-        "distance": "10 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-006",
-    "created_at": "2026-04-09",
-    "views": 76
-  },
-  {
-    "id": "IRE-017",
-    "title": "5BR Luxury Villa in Saar",
-    "type": "Villa",
     "purpose": "sale",
-    "price": 280000,
-    "price_period": "total",
-    "location": "Saar",
-    "address": "Villa 14, Road 2517, Saar Compound",
-    "lat": 26.188,
-    "lng": 50.481,
-    "bedrooms": 5,
-    "bathrooms": 6,
-    "sqm": 480,
-    "floor": 0,
-    "parking": 4,
-    "furnished": false,
-    "featured": false,
-    "year_built": 2010,
-    "description": "Trophy 5-bedroom villa for sale in Saar's most established gated compound. Private pool, full maid's wing, double-height majlis, and a landscaped garden. Excellent long-term capital growth address.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "maids_room",
-      "storage",
-      "central_ac",
-      "built_in_wardrobes",
-      "kitchen_appliances",
-      "playground"
-    ],
-    "nearby": {
-      "mall": {
-        "name": "Saar Mall",
-        "distance": "5 min"
-      },
-      "restaurant": {
-        "name": "Saar Cafés",
-        "distance": "5 min"
-      },
-      "school": {
-        "name": "British School of Bahrain",
-        "distance": "3 min"
-      },
-      "hospital": {
-        "name": "Royal Bahrain Hospital",
-        "distance": "12 min"
-      },
-      "beach": {
-        "name": "Budaiya Beach",
-        "distance": "10 min"
-      },
-      "transport": {
-        "name": "Saar Bus Stop",
-        "distance": "5 min"
-      }
-    },
-    "images": [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&auto=format&fit=crop&q=80"
-    ],
-    "agent_id": "agent-003",
-    "created_at": "2026-04-16",
-    "views": 521
-  },
-  {
-    "id": "IRE-018",
-    "title": "2BR Garden Apartment in Tubli",
-    "type": "Apartment",
-    "purpose": "rent",
-    "price": 380,
-    "price_period": "month",
-    "location": "Tubli",
-    "address": "Building 23, Road 1109, Tubli",
-    "lat": 26.1865,
-    "lng": 50.535,
+    "price": 115000,
+    "price_period": null,
+    "location": "Juffair, Capital Governorate",
+    "address": "Pearl Residences, Road 3305, Juffair, Manama",
+    "lat": 26.2119,
+    "lng": 50.5995,
     "bedrooms": 2,
     "bathrooms": 2,
-    "sqm": 105,
-    "floor": 1,
+    "sqm": 118,
+    "floor": 7,
     "parking": 1,
     "furnished": false,
     "featured": false,
     "year_built": 2017,
-    "description": "Ground-floor 2BR with private garden patio — rare for Bahrain apartment stock. Western kitchen, separate utility, and direct ground entrance. Family-suited and pet-friendly.",
-    "amenities": [
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "built_in_wardrobes"
-    ],
+    "description": "Excellent two-bedroom apartment offered for sale in a sought-after Juffair residential complex. Currently tenanted with stable rental income, making it a turnkey investment. Spacious layout, good natural light, and proximity to restaurants, embassies, and the diplomatic area.",
+    "amenities": ["Swimming Pool", "Gym", "24/7 Security", "Covered Parking", "Children's Play Area", "Retail on Ground Floor"],
     "nearby": {
-      "mall": {
-        "name": "Tubli Centre",
-        "distance": "5 min"
-      },
-      "restaurant": {
-        "name": "Tubli Restaurants",
-        "distance": "4 min"
-      },
-      "school": {
-        "name": "Tubli Primary School",
-        "distance": "6 min"
-      },
-      "hospital": {
-        "name": "Salmaniya Medical Complex",
-        "distance": "10 min"
-      },
-      "beach": {
-        "name": "Tubli Bay",
-        "distance": "3 min"
-      },
-      "transport": {
-        "name": "Tubli Bus Stop",
-        "distance": "5 min"
-      }
+      "mall": "Seef Mall (3.5 km)",
+      "restaurant": "Applebee's Juffair (0.3 km)",
+      "school": "Nadeen International School (1.3 km)",
+      "hospital": "American Mission Hospital (1.4 km)",
+      "beach": "Juffair Corniche (0.6 km)",
+      "transport": "Block 334 Bus Stop (0.3 km)"
     },
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80"
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80"
     ],
-    "agent_id": "agent-003",
-    "created_at": "2026-04-06",
-    "views": 65
+    "agent_id": "ask-agent-004",
+    "ref": "ASK-BH-2024-006"
   },
   {
-    "id": "IRE-019",
-    "title": "Office Suite, Seef Tower",
-    "type": "Commercial",
+    "id": "ASK-007",
+    "title": "Cozy Studio Near Seef Mall",
+    "type": "Studio",
     "purpose": "rent",
-    "price": 650,
-    "price_period": "month",
-    "location": "Seef",
-    "address": "Seef Tower, Floor 11, Seef",
-    "lat": 26.234,
-    "lng": 50.5485,
+    "price": 290,
+    "price_period": "monthly",
+    "location": "Seef, Capital Governorate",
+    "address": "Seef District, Block 428, Seef, Manama",
+    "lat": 26.2198,
+    "lng": 50.5522,
     "bedrooms": 0,
     "bathrooms": 1,
-    "sqm": 110,
-    "floor": 11,
+    "sqm": 44,
+    "floor": 3,
+    "parking": 1,
+    "furnished": true,
+    "featured": false,
+    "year_built": 2015,
+    "description": "Compact, fully furnished studio in the prime Seef district. Walking distance to Seef Mall and the financial district. Suitable for professionals and singles looking for an affordable home in one of Bahrain's most connected commercial zones.",
+    "amenities": ["Gym", "24/7 Security", "Covered Parking", "High-Speed Internet", "Central AC"],
+    "nearby": {
+      "mall": "Seef Mall (0.4 km)",
+      "restaurant": "Chili's Seef (0.5 km)",
+      "school": "Ibn Khuldoon National School (1.2 km)",
+      "hospital": "Khalifa Medical Centre (1.0 km)",
+      "beach": "Al Jazayer Beach (4.0 km)",
+      "transport": "Seef Bus Terminal (0.3 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-005",
+    "ref": "ASK-BH-2024-007"
+  },
+  {
+    "id": "ASK-008",
+    "title": "Premium 2BR in Seef Business District",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 820,
+    "price_period": "monthly",
+    "location": "Seef, Capital Governorate",
+    "address": "Capital Gate Tower, Seef District, Manama",
+    "lat": 26.2205,
+    "lng": 50.5535,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqm": 138,
+    "floor": 15,
     "parking": 2,
     "furnished": true,
     "featured": false,
-    "year_built": 2014,
-    "description": "Furnished and fitted office suite — six workstations, two private offices, a meeting room, and a small kitchenette. Move-in ready for SMEs and consultancies. Two reserved bays.",
-    "amenities": [
-      "security_24_7",
-      "covered_parking",
-      "central_ac",
-      "internet",
-      "kitchen_appliances"
-    ],
+    "year_built": 2020,
+    "description": "Stunning fully furnished two-bedroom apartment on the 15th floor of a glass tower in Seef. Floor-to-ceiling windows reveal sweeping city and Gulf views. Contemporary interiors with high-end finishes, open-plan kitchen, and private balcony. Walking distance to Bahrain Bay and the diplomatic quarter.",
+    "amenities": ["Swimming Pool", "Gym", "Business Lounge", "Concierge", "Valet Parking", "Rooftop Garden", "Smart Home"],
     "nearby": {
-      "mall": {
-        "name": "Seef Mall",
-        "distance": "2 min"
-      },
-      "restaurant": {
-        "name": "Seef Restaurants",
-        "distance": "1 min"
-      },
-      "school": {
-        "name": "N/A",
-        "distance": "—"
-      },
-      "hospital": {
-        "name": "Bahrain Specialist Hospital",
-        "distance": "5 min"
-      },
-      "beach": {
-        "name": "Marina Club Beach",
-        "distance": "12 min"
-      },
-      "transport": {
-        "name": "Seef Bus Station",
-        "distance": "2 min"
-      }
+      "mall": "Seef Mall (0.6 km)",
+      "restaurant": "The Meat Co. (0.8 km)",
+      "school": "British School of Bahrain (1.5 km)",
+      "hospital": "Bahrain Defence Force Hospital (2.0 km)",
+      "beach": "Bahrain Bay Waterfront (1.0 km)",
+      "transport": "Seef Bus Stop (0.2 km)"
     },
     "images": [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&auto=format&fit=crop&q=80"
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&q=80",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80"
     ],
-    "agent_id": "agent-004",
-    "created_at": "2026-04-04",
-    "views": 89
+    "agent_id": "ask-agent-001",
+    "ref": "ASK-BH-2024-008"
   },
   {
-    "id": "IRE-020",
-    "title": "Duplex 3BR at Riffa Views",
+    "id": "ASK-009",
+    "title": "Flagship Office Suite for Sale in Seef",
+    "type": "Commercial",
+    "purpose": "sale",
+    "price": 145000,
+    "price_period": null,
+    "location": "Seef, Capital Governorate",
+    "address": "Bahrain Trade Centre, Seef District, Manama",
+    "lat": 26.2211,
+    "lng": 50.5548,
+    "bedrooms": 0,
+    "bathrooms": 2,
+    "sqm": 210,
+    "floor": 9,
+    "parking": 3,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2014,
+    "description": "A fully fitted commercial office suite on the 9th floor of a prominent Seef business tower. Open-plan layout adaptable to various business configurations, two executive washrooms, server room, and three dedicated parking bays. Strong rental yield potential in Bahrain's prime commercial district.",
+    "amenities": ["24/7 Security", "Dedicated Parking", "High-Speed Fiber", "Central AC", "Building Management", "Lobby Reception", "Conference Facilities"],
+    "nearby": {
+      "mall": "Seef Mall (0.3 km)",
+      "restaurant": "Nando's Seef (0.4 km)",
+      "school": "N/A",
+      "hospital": "Khalifa Medical Centre (0.9 km)",
+      "beach": "N/A",
+      "transport": "Seef District Bus Stop (0.2 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-006",
+    "ref": "ASK-BH-2024-009"
+  },
+  {
+    "id": "ASK-010",
+    "title": "3BR Family Apartment for Sale in Seef",
     "type": "Apartment",
-    "purpose": "rent",
-    "price": 700,
-    "price_period": "month",
-    "location": "Riffa",
-    "address": "Riffa Views Estate, Riffa",
-    "lat": 26.131,
-    "lng": 50.561,
+    "purpose": "sale",
+    "price": 155000,
+    "price_period": null,
+    "location": "Seef, Capital Governorate",
+    "address": "Seef Gardens, Block 429, Seef, Manama",
+    "lat": 26.2192,
+    "lng": 50.5515,
     "bedrooms": 3,
     "bathrooms": 3,
-    "sqm": 195,
-    "floor": 3,
+    "sqm": 192,
+    "floor": 6,
     "parking": 2,
     "furnished": false,
     "featured": false,
-    "year_built": 2013,
-    "description": "Two-storey duplex inside the Riffa Views golf community. Open-plan ground-floor living, three ensuite bedrooms upstairs, and a private terrace overlooking the fairway. Full estate amenities.",
-    "amenities": [
-      "pool",
-      "gym",
-      "security_24_7",
-      "covered_parking",
-      "balcony",
-      "central_ac",
-      "built_in_wardrobes",
-      "playground"
-    ],
+    "year_built": 2018,
+    "description": "Generously proportioned three-bedroom family apartment in a quiet Seef residential block. Three en-suite bedrooms, large living and dining area, separate maid's room, and a sunlit balcony. Ideal for families seeking proximity to top schools and shopping within a well-maintained building.",
+    "amenities": ["Swimming Pool", "Gym", "Covered Parking", "Children's Play Area", "24/7 Security", "Maid's Room"],
     "nearby": {
-      "mall": {
-        "name": "Riffa Mall",
-        "distance": "5 min"
-      },
-      "restaurant": {
-        "name": "Riffa Views Clubhouse",
-        "distance": "2 min"
-      },
-      "school": {
-        "name": "St Christopher's School",
-        "distance": "10 min"
-      },
-      "hospital": {
-        "name": "Saudi German Hospital",
-        "distance": "12 min"
-      },
-      "beach": {
-        "name": "Zallaq Beach",
-        "distance": "20 min"
-      },
-      "transport": {
-        "name": "Riffa Bus Stop",
-        "distance": "8 min"
-      }
+      "mall": "Seef Mall (0.8 km)",
+      "restaurant": "Fuddruckers Seef (0.5 km)",
+      "school": "Ibn Khuldoon National School (1.0 km)",
+      "hospital": "Bahrain Defence Force Hospital (1.5 km)",
+      "beach": "Corniche (3.0 km)",
+      "transport": "Seef Bus Terminal (0.5 km)"
     },
     "images": [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1564540583246-934409427776?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1600&auto=format&fit=crop&q=80"
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+      "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&q=80"
     ],
-    "agent_id": "agent-003",
-    "created_at": "2026-04-14",
-    "views": 142
+    "agent_id": "ask-agent-005",
+    "ref": "ASK-BH-2024-010"
+  },
+  {
+    "id": "ASK-011",
+    "title": "Waterfront 2BR Apartment in Amwaj Islands",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 870,
+    "price_period": "monthly",
+    "location": "Amwaj Islands, Muharraq Governorate",
+    "address": "Amwaj Avenue, Tala Island, Amwaj Islands",
+    "lat": 26.2645,
+    "lng": 50.6372,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqm": 155,
+    "floor": 4,
+    "parking": 1,
+    "furnished": true,
+    "featured": true,
+    "year_built": 2020,
+    "description": "A beautifully furnished waterfront apartment in the prestigious Amwaj Islands development. This two-bedroom unit enjoys direct marina views from the living room and master bedroom balcony. Contemporary finishes, fully equipped kitchen, and a short walk to Amwaj's private beach and restaurants.",
+    "amenities": ["Private Beach Access", "Swimming Pool", "Gym", "Marina Views", "Covered Parking", "24/7 Security", "BBQ Terrace"],
+    "nearby": {
+      "mall": "Al Aali Mall (12 km)",
+      "restaurant": "Shore by Katsuya (0.3 km)",
+      "school": "Bahrain Bayan School (8.0 km)",
+      "hospital": "Bahrain Specialist Hospital (10 km)",
+      "beach": "Amwaj Private Beach (0.2 km)",
+      "transport": "Amwaj Islands Shuttle (0.4 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=800&q=80",
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80",
+      "https://images.unsplash.com/photo-1540541338537-11ae23de10c5?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-003",
+    "ref": "ASK-BH-2024-011"
+  },
+  {
+    "id": "ASK-012",
+    "title": "Luxurious 3BR Villa on Amwaj Islands",
+    "type": "Villa",
+    "purpose": "rent",
+    "price": 2500,
+    "price_period": "monthly",
+    "location": "Amwaj Islands, Muharraq Governorate",
+    "address": "Nakheel Villas, Tala Island, Amwaj Islands",
+    "lat": 26.2658,
+    "lng": 50.6381,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "sqm": 380,
+    "floor": 1,
+    "parking": 2,
+    "furnished": true,
+    "featured": false,
+    "year_built": 2019,
+    "description": "Stunning three-bedroom villa on Amwaj Islands with a private garden and direct beach access. Elegant interiors with marble flooring, a chef's kitchen, spacious family room, and private pool. The master suite features floor-to-ceiling sea views. A rare offering for those seeking island living at its finest.",
+    "amenities": ["Private Pool", "Private Garden", "Beach Access", "Maid's Room", "Double Garage", "Home Cinema", "Smart Home System", "Outdoor Kitchen"],
+    "nearby": {
+      "mall": "Amwaj Lagoon Mall (0.8 km)",
+      "restaurant": "Masso Restaurant (0.5 km)",
+      "school": "Al Noor International School (7.0 km)",
+      "hospital": "King Hamad University Hospital (9.0 km)",
+      "beach": "Private Beach (0.1 km)",
+      "transport": "Amwaj Islands Causeway (1.5 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-004",
+    "ref": "ASK-BH-2024-012"
+  },
+  {
+    "id": "ASK-013",
+    "title": "Stylish 1BR for Sale in Amwaj Islands",
+    "type": "Apartment",
+    "purpose": "sale",
+    "price": 92000,
+    "price_period": null,
+    "location": "Amwaj Islands, Muharraq Governorate",
+    "address": "Coral Residences, Munairy Island, Amwaj Islands",
+    "lat": 26.2638,
+    "lng": 50.6362,
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "sqm": 90,
+    "floor": 3,
+    "parking": 1,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2021,
+    "description": "Brand-new one-bedroom apartment for sale in the desirable Amwaj Islands residential community. Features a large terrace with lagoon view, high-quality finishes, open-plan living area, and ample storage. Freehold ownership available for all nationalities — a compelling investment in a growing island community.",
+    "amenities": ["Swimming Pool", "Gym", "Covered Parking", "Lagoon Views", "24/7 Security", "Retail on Ground Floor"],
+    "nearby": {
+      "mall": "Amwaj Lagoon Mall (1.2 km)",
+      "restaurant": "Gaucho Grill (0.6 km)",
+      "school": "Bahrain Open University (9.0 km)",
+      "hospital": "Salmaniya Medical Complex (11 km)",
+      "beach": "Amwaj Beach Club (0.4 km)",
+      "transport": "Amwaj Causeway Bus (1.0 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-007",
+    "ref": "ASK-BH-2024-013"
+  },
+  {
+    "id": "ASK-014",
+    "title": "Sea-View Penthouse for Sale in Amwaj Islands",
+    "type": "Penthouse",
+    "purpose": "sale",
+    "price": 385000,
+    "price_period": null,
+    "location": "Amwaj Islands, Muharraq Governorate",
+    "address": "Horizon Tower, Tala Island, Amwaj Islands",
+    "lat": 26.2650,
+    "lng": 50.6390,
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "sqm": 420,
+    "floor": 18,
+    "parking": 3,
+    "furnished": true,
+    "featured": true,
+    "year_built": 2023,
+    "description": "An extraordinary penthouse atop one of Amwaj Islands' tallest towers. Four en-suite bedrooms, a grand reception hall, chef's kitchen with island bar, private rooftop with heated pool and outdoor lounge. Panoramic 270-degree views spanning the sea, lagoon, and Bahrain skyline. Freehold.",
+    "amenities": ["Private Rooftop Pool", "4 En-Suite Bedrooms", "Private Elevator", "Smart Home System", "Home Cinema", "Wine Cellar", "Triple Parking", "Concierge"],
+    "nearby": {
+      "mall": "Amwaj Lagoon Mall (0.7 km)",
+      "restaurant": "La Pergola (0.4 km)",
+      "school": "Al Noor International School (7.5 km)",
+      "hospital": "King Hamad University Hospital (8.5 km)",
+      "beach": "Amwaj Beach (0.3 km)",
+      "transport": "Amwaj Islands Causeway (1.2 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-003",
+    "ref": "ASK-BH-2024-014"
+  },
+  {
+    "id": "ASK-015",
+    "title": "Prime 2BR at Bahrain Bay Waterfront",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 900,
+    "price_period": "monthly",
+    "location": "Bahrain Bay, Capital Governorate",
+    "address": "Bay Front Tower, Bahrain Bay, Manama",
+    "lat": 26.2372,
+    "lng": 50.5812,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqm": 148,
+    "floor": 10,
+    "parking": 2,
+    "furnished": true,
+    "featured": true,
+    "year_built": 2022,
+    "description": "Exceptional two-bedroom apartment overlooking the iconic Bahrain Bay. Floor-to-ceiling glazing frames sweeping views of the water and the Four Seasons Bahrain. The open-plan interior features bespoke joinery, Miele appliances, and herringbone timber floors throughout. Lifestyle living steps from the bay promenade.",
+    "amenities": ["Infinity Pool", "Gym", "Spa", "Concierge", "Covered Parking", "Smart Home System", "Bay Views", "Private Balcony"],
+    "nearby": {
+      "mall": "Al Aali Shopping Complex (2.5 km)",
+      "restaurant": "Scalini Bahrain Bay (0.2 km)",
+      "school": "British School of Bahrain (3.0 km)",
+      "hospital": "American Mission Hospital (2.5 km)",
+      "beach": "Bahrain Bay Promenade (0.1 km)",
+      "transport": "Bahrain Bay Bus Stop (0.3 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&q=80",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-006",
+    "ref": "ASK-BH-2024-015"
+  },
+  {
+    "id": "ASK-016",
+    "title": "Iconic 3BR Penthouse at Bahrain Bay",
+    "type": "Penthouse",
+    "purpose": "sale",
+    "price": 430000,
+    "price_period": null,
+    "location": "Bahrain Bay, Capital Governorate",
+    "address": "Waterfront Tower, Bahrain Bay, Manama",
+    "lat": 26.2380,
+    "lng": 50.5820,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "sqm": 360,
+    "floor": 24,
+    "parking": 2,
+    "furnished": true,
+    "featured": false,
+    "year_built": 2021,
+    "description": "A landmark penthouse at the heart of Bahrain Bay's most prestigious address. Three bedrooms all with en-suite bathrooms, a double-height living area, wrap-around balcony, and private plunge pool terrace. Freehold property with direct sea views. A trophy asset for discerning buyers.",
+    "amenities": ["Private Plunge Pool", "Double-Height Living Room", "Wrap-Around Balcony", "Smart Home", "Concierge", "Private Elevator Lobby", "Maid's Room", "Triple AC Zones"],
+    "nearby": {
+      "mall": "City Centre Bahrain (3.0 km)",
+      "restaurant": "CUT by Wolfgang Puck (0.4 km)",
+      "school": "Bahrain Bayan School (3.5 km)",
+      "hospital": "Bahrain Defence Force Hospital (2.8 km)",
+      "beach": "Bahrain Bay (0.1 km)",
+      "transport": "Manama Suq Bus (1.0 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-001",
+    "ref": "ASK-BH-2024-016"
+  },
+  {
+    "id": "ASK-017",
+    "title": "Commercial Space for Rent at Bahrain Bay",
+    "type": "Commercial",
+    "purpose": "rent",
+    "price": 1800,
+    "price_period": "monthly",
+    "location": "Bahrain Bay, Capital Governorate",
+    "address": "Gateway Business Tower, Bahrain Bay, Manama",
+    "lat": 26.2365,
+    "lng": 50.5805,
+    "bedrooms": 0,
+    "bathrooms": 3,
+    "sqm": 320,
+    "floor": 6,
+    "parking": 4,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2019,
+    "description": "Modern Grade-A commercial space available for rent in the prestigious Bahrain Bay development. Open-plan floor plate suitable for corporate offices, financial services, or tech companies. Exceptional bay views, raised flooring, LED lighting, and four reserved parking spaces. A prestige address for ambitious businesses.",
+    "amenities": ["Grade-A Office Finishes", "Raised Flooring", "Dedicated Parking", "Bay Views", "24/7 Security", "Lobby Reception", "Fiber Internet", "Backup Generator"],
+    "nearby": {
+      "mall": "Al Aali Shopping Complex (2.5 km)",
+      "restaurant": "The Bay Kitchen (0.3 km)",
+      "school": "N/A",
+      "hospital": "American Mission Hospital (2.3 km)",
+      "beach": "Bahrain Bay Promenade (0.2 km)",
+      "transport": "Bahrain Bay Bus Stop (0.3 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80",
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-006",
+    "ref": "ASK-BH-2024-017"
+  },
+  {
+    "id": "ASK-018",
+    "title": "Ultra-Luxury 2BR at Reef Island",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 680,
+    "price_period": "monthly",
+    "location": "Reef Island, Capital Governorate",
+    "address": "Reef Residences Tower A, Reef Island, Manama",
+    "lat": 26.2280,
+    "lng": 50.5750,
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "sqm": 135,
+    "floor": 9,
+    "parking": 1,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2020,
+    "description": "Ultra-luxury two-bedroom apartment with premium finishes in one of Reef Island's finest residential towers. The open-plan layout features a kitchen island, designer bathrooms, and a generous private balcony with sea glimpses. Residents enjoy access to world-class facilities including a lagoon-edge pool.",
+    "amenities": ["Lagoon Pool", "Fully Equipped Gym", "Sauna & Steam Room", "Covered Parking", "24/7 Concierge", "Landscaped Gardens", "Retail Podium"],
+    "nearby": {
+      "mall": "Bahrain City Centre (1.5 km)",
+      "restaurant": "Reef Kitchen (0.3 km)",
+      "school": "St. Christopher's School (2.0 km)",
+      "hospital": "International Hospital of Bahrain (1.8 km)",
+      "beach": "Reef Island Beach (0.2 km)",
+      "transport": "Reef Island Shuttle (0.5 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80",
+      "https://images.unsplash.com/photo-1571055107559-3e67626fa8be?w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-002",
+    "ref": "ASK-BH-2024-018"
+  },
+  {
+    "id": "ASK-019",
+    "title": "Large Brand-New 2BR at Reef Island",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 850,
+    "price_period": "monthly",
+    "location": "Reef Island, Capital Governorate",
+    "address": "Reef Residences Tower B, Reef Island, Manama",
+    "lat": 26.2272,
+    "lng": 50.5742,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqm": 168,
+    "floor": 11,
+    "parking": 1,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2023,
+    "description": "Brand-new large two-bedroom apartment in the latest phase of Reef Island development. Exceptional size for the price point with a sprawling open-plan lounge, separate dining area, two full bathrooms, and a wide terrace. Premium specifications with quartz countertops and porcelain tile flooring throughout.",
+    "amenities": ["Swimming Pool", "Gym", "Kids Club", "Covered Parking", "24/7 Security", "Terrace", "Landscaped Podium"],
+    "nearby": {
+      "mall": "Bahrain City Centre (1.2 km)",
+      "restaurant": "Crust Pizza Reef Island (0.4 km)",
+      "school": "The Indian School Bahrain (2.2 km)",
+      "hospital": "International Hospital of Bahrain (1.6 km)",
+      "beach": "Reef Island Waterfront (0.3 km)",
+      "transport": "Reef Island Bus Link (0.6 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=800&q=80",
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80",
+      "https://images.unsplash.com/photo-1600047509782-20d39509f26d?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-004",
+    "ref": "ASK-BH-2024-019"
+  },
+  {
+    "id": "ASK-020",
+    "title": "Modern 3BR Villa in Diyar Al Muharraq",
+    "type": "Villa",
+    "purpose": "rent",
+    "price": 1600,
+    "price_period": "monthly",
+    "location": "Diyar Al Muharraq, Muharraq Governorate",
+    "address": "Diyar Al Muharraq, Phase 2, Muharraq",
+    "lat": 26.2700,
+    "lng": 50.6450,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "sqm": 320,
+    "floor": 1,
+    "parking": 2,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2021,
+    "description": "Contemporary three-bedroom villa in the master-planned Diyar Al Muharraq community. Single-level living with an internal courtyard, private garden with BBQ area, and double garage. Spacious master bedroom with walk-in dressing room. Located in a quiet, gated sub-community with 24/7 security.",
+    "amenities": ["Private Garden", "BBQ Area", "Double Garage", "Maid's Room", "Community Pool", "Children's Play Area", "Gated Community", "24/7 Security"],
+    "nearby": {
+      "mall": "Diyar Marina Mall (0.9 km)",
+      "restaurant": "The Harbour Club (1.0 km)",
+      "school": "Diyar Academy (0.5 km)",
+      "hospital": "King Hamad University Hospital (6.0 km)",
+      "beach": "Diyar Beach (0.8 km)",
+      "transport": "Muharraq Bus Link (2.0 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-007",
+    "ref": "ASK-BH-2024-020"
+  },
+  {
+    "id": "ASK-021",
+    "title": "4BR Sea-View Villa for Sale in Diyar Al Muharraq",
+    "type": "Villa",
+    "purpose": "sale",
+    "price": 480000,
+    "price_period": null,
+    "location": "Diyar Al Muharraq, Muharraq Governorate",
+    "address": "Diyar Al Muharraq Waterfront Villas, Muharraq",
+    "lat": 26.2712,
+    "lng": 50.6462,
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "sqm": 480,
+    "floor": 1,
+    "parking": 3,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2022,
+    "description": "Impressive four-bedroom waterfront villa for sale in one of Bahrain's most ambitious new communities. The villa offers direct sea views from the main living areas and master bedroom, a private pool with sun deck, a maid's room, driver's room, and triple garage. Freehold ownership for all nationalities.",
+    "amenities": ["Private Pool", "Sea Views", "Triple Garage", "Maid's Room", "Driver's Room", "Rooftop Terrace", "Smart Home", "Solar Panels"],
+    "nearby": {
+      "mall": "Diyar Marina Mall (1.3 km)",
+      "restaurant": "ZUMA Bahrain (15 km)",
+      "school": "Diyar Academy (0.8 km)",
+      "hospital": "King Hamad University Hospital (6.5 km)",
+      "beach": "Diyar Waterfront (0.1 km)",
+      "transport": "Muharraq Highway (2.5 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80",
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-004",
+    "ref": "ASK-BH-2024-021"
+  },
+  {
+    "id": "ASK-022",
+    "title": "Beachfront 2BR Apartment in Dilmunia Island",
+    "type": "Apartment",
+    "purpose": "sale",
+    "price": 138000,
+    "price_period": null,
+    "location": "Dilmunia Island, Muharraq Governorate",
+    "address": "Dilmunia Health Island, Muharraq Governorate",
+    "lat": 26.2750,
+    "lng": 50.6550,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqm": 120,
+    "floor": 5,
+    "parking": 1,
+    "furnished": false,
+    "featured": true,
+    "year_built": 2024,
+    "description": "Off-plan two-bedroom apartment on Dilmunia Island, Bahrain's dedicated health and wellness destination. Enjoy serene sea views, wellness-focused building amenities, and proximity to planned medical and resort facilities. Freehold for all nationalities. An early-mover investment in a unique island concept.",
+    "amenities": ["Wellness Centre", "Swimming Pool", "Gym", "Yoga Studio", "Beach Access", "Covered Parking", "24/7 Security", "Green Landscapes"],
+    "nearby": {
+      "mall": "Diyar Marina Mall (4.0 km)",
+      "restaurant": "Island Bistro (0.3 km)",
+      "school": "N/A (island development)",
+      "hospital": "Dilmunia Medical Hub (0.5 km)",
+      "beach": "Dilmunia Beach (0.1 km)",
+      "transport": "Dilmunia Causeway (1.0 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&q=80",
+      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=800&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-008",
+    "ref": "ASK-BH-2024-022"
+  },
+  {
+    "id": "ASK-023",
+    "title": "Elegant 3BR Villa in Marassi Al Bahrain",
+    "type": "Villa",
+    "purpose": "rent",
+    "price": 2800,
+    "price_period": "monthly",
+    "location": "Marassi Al Bahrain, Diyar Al Muharraq",
+    "address": "Marassi Al Bahrain, Marina District, Muharraq",
+    "lat": 26.2720,
+    "lng": 50.6480,
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "sqm": 400,
+    "floor": 1,
+    "parking": 2,
+    "furnished": true,
+    "featured": true,
+    "year_built": 2023,
+    "description": "Immaculate fully furnished three-bedroom villa in the Mediterranean-inspired Marassi Al Bahrain community. Enjoy direct marina views, a private pool, and landscaped garden. The ground floor features an open living area, guest suite, and designer kitchen with an outdoor dining space overlooking the water. Marassi's retail and dining promenade is steps away.",
+    "amenities": ["Private Pool", "Marina Views", "Furnished Interior", "Private Garden", "Double Garage", "Smart Home", "Concierge", "Marina Access"],
+    "nearby": {
+      "mall": "Marassi Boulevard (0.2 km)",
+      "restaurant": "Marassi Promenade Restaurants (0.1 km)",
+      "school": "Nord Anglia International School (5.0 km)",
+      "hospital": "King Hamad University Hospital (5.5 km)",
+      "beach": "Marassi Beach (0.3 km)",
+      "transport": "Diyar Al Muharraq Bridge (2.0 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?w=800&q=80",
+      "https://images.unsplash.com/photo-1599427303058-f04cbcf4756f?w=800&q=80",
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-003",
+    "ref": "ASK-BH-2024-023"
+  },
+  {
+    "id": "ASK-024",
+    "title": "1BR Apartment for Sale in Marassi Al Bahrain",
+    "type": "Apartment",
+    "purpose": "sale",
+    "price": 88000,
+    "price_period": null,
+    "location": "Marassi Al Bahrain, Diyar Al Muharraq",
+    "address": "Marassi Residences, Block A, Muharraq",
+    "lat": 26.2728,
+    "lng": 50.6488,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "sqm": 82,
+    "floor": 2,
+    "parking": 1,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2023,
+    "description": "Well-priced one-bedroom apartment within the stylish Marassi Al Bahrain resort community. The unit benefits from a private terrace facing the marina promenade and is finished to a high standard. Freehold title, attractive for investors seeking capital appreciation in a rapidly growing lifestyle destination.",
+    "amenities": ["Communal Pool", "Gym", "Terrace", "Covered Parking", "24/7 Security", "Retail & Dining Nearby"],
+    "nearby": {
+      "mall": "Marassi Boulevard (0.3 km)",
+      "restaurant": "Fish House Marassi (0.2 km)",
+      "school": "Nord Anglia International School (5.2 km)",
+      "hospital": "King Hamad University Hospital (5.8 km)",
+      "beach": "Marassi Beach (0.4 km)",
+      "transport": "Diyar Al Muharraq Bridge (2.2 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560185127-6a4a7b5e1a91?w=800&q=80",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+      "https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-007",
+    "ref": "ASK-BH-2024-024"
+  },
+  {
+    "id": "ASK-025",
+    "title": "Spacious 4BR Family Villa in Saar",
+    "type": "Villa",
+    "purpose": "rent",
+    "price": 1400,
+    "price_period": "monthly",
+    "location": "Saar, Northern Governorate",
+    "address": "Saar Village, Road 1033, Saar, Northern Governorate",
+    "lat": 26.2150,
+    "lng": 50.4780,
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "sqm": 450,
+    "floor": 1,
+    "parking": 3,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2010,
+    "description": "Traditional family villa set on a large plot in the leafy residential neighbourhood of Saar. Four generously sized bedrooms all with en-suites, a large family room, formal sitting room, a private garden with space for a pool, and triple parking. Close to top international schools and retail centres — a perennial favourite for expat families.",
+    "amenities": ["Private Garden", "Triple Parking", "Maid's Room", "Driver's Room", "Majlis Room", "Large Kitchen", "Storage Rooms", "Quiet Neighbourhood"],
+    "nearby": {
+      "mall": "Bahrain Mall (4.0 km)",
+      "restaurant": "Saar Cafeteria (0.4 km)",
+      "school": "Naseem International School (0.8 km)",
+      "hospital": "Bahrain Defence Force Hospital (5.0 km)",
+      "beach": "Al Jazayer Beach (8.0 km)",
+      "transport": "Saar Bus Stop (0.5 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-005",
+    "ref": "ASK-BH-2024-025"
+  },
+  {
+    "id": "ASK-026",
+    "title": "5BR Executive Villa for Sale in Saar",
+    "type": "Villa",
+    "purpose": "sale",
+    "price": 590000,
+    "price_period": null,
+    "location": "Saar, Northern Governorate",
+    "address": "Saar Heights, Road 1052, Saar, Northern Governorate",
+    "lat": 26.2162,
+    "lng": 50.4792,
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "sqm": 680,
+    "floor": 1,
+    "parking": 4,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2015,
+    "description": "Commanding five-bedroom executive villa on an elevated plot in prestigious Saar Heights. Grand entrance with double-height foyer, formal majlis, open-plan family kitchen, five en-suite bedrooms, plus maid and driver quarters. The exterior features a private pool, landscaped garden, and four-car garage. Rarely available in this neighbourhood.",
+    "amenities": ["Private Pool", "Landscaped Garden", "4-Car Garage", "Maid's Quarters", "Driver's Room", "Majlis", "Home Cinema", "Backup Generator"],
+    "nearby": {
+      "mall": "Bahrain Mall (4.5 km)",
+      "restaurant": "La Maison (1.0 km)",
+      "school": "Naseem International School (1.0 km)",
+      "hospital": "Bahrain Defence Force Hospital (5.2 km)",
+      "beach": "Al Jazayer Beach (8.5 km)",
+      "transport": "Saar Bus Stop (0.7 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-008",
+    "ref": "ASK-BH-2024-026"
+  },
+  {
+    "id": "ASK-027",
+    "title": "Affordable Studio for Rent in Busaiteen",
+    "type": "Studio",
+    "purpose": "rent",
+    "price": 285,
+    "price_period": "monthly",
+    "location": "Busaiteen, Muharraq Governorate",
+    "address": "Busaiteen Main Road, Block 215, Muharraq",
+    "lat": 26.2520,
+    "lng": 50.6300,
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "sqm": 42,
+    "floor": 2,
+    "parking": 1,
+    "furnished": true,
+    "featured": false,
+    "year_built": 2014,
+    "description": "Value-for-money furnished studio in Busaiteen, just minutes from Bahrain International Airport. Ideal for airline crew, airport staff, and short-term residents. The unit is fully equipped with a kitchenette, wardrobe, and high-speed internet. Well-managed building in a central Muharraq location.",
+    "amenities": ["Furnished", "High-Speed Internet", "Covered Parking", "24/7 Security", "Maintenance Services", "Central AC"],
+    "nearby": {
+      "mall": "Muharraq Mall (1.5 km)",
+      "restaurant": "Busaiteen Fish Market (0.3 km)",
+      "school": "Al Noor International School (2.0 km)",
+      "hospital": "Bahrain International Airport Medical Centre (1.0 km)",
+      "beach": "Busaiteen Beach (0.5 km)",
+      "transport": "Busaiteen Bus Stop (0.2 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&q=80",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-008",
+    "ref": "ASK-BH-2024-027"
+  },
+  {
+    "id": "ASK-028",
+    "title": "1BR Apartment for Rent in Busaiteen",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 390,
+    "price_period": "monthly",
+    "location": "Busaiteen, Muharraq Governorate",
+    "address": "Al Busaiteen Street, Block 212, Muharraq",
+    "lat": 26.2532,
+    "lng": 50.6315,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "sqm": 70,
+    "floor": 3,
+    "parking": 1,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2016,
+    "description": "Bright one-bedroom apartment in Busaiteen offering excellent value for money. The well-maintained unit features a spacious living room, fitted kitchen, built-in wardrobes, and a private balcony. Excellent connectivity to both Muharraq city centre and Manama via the Muharraq causeway.",
+    "amenities": ["Covered Parking", "24/7 Security", "Balcony", "Central AC", "Building Maintenance"],
+    "nearby": {
+      "mall": "Muharraq Mall (1.2 km)",
+      "restaurant": "Al Reef Restaurant (0.4 km)",
+      "school": "Al Ittihad National School (1.0 km)",
+      "hospital": "King Hamad University Hospital (4.0 km)",
+      "beach": "Busaiteen Waterfront (0.6 km)",
+      "transport": "Busaiteen Bus Terminal (0.3 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-005",
+    "ref": "ASK-BH-2024-028"
+  },
+  {
+    "id": "ASK-029",
+    "title": "3BR Apartment with Dedicated Home Office in Juffair",
+    "type": "Apartment",
+    "purpose": "rent",
+    "price": 1100,
+    "price_period": "monthly",
+    "location": "Juffair, Capital Governorate",
+    "address": "The Address Residences, Block 336, Juffair, Manama",
+    "lat": 26.2138,
+    "lng": 50.6025,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "sqm": 220,
+    "floor": 14,
+    "parking": 2,
+    "furnished": false,
+    "featured": false,
+    "year_built": 2020,
+    "description": "Rare three-bedroom apartment with a dedicated home office in one of Juffair's newest residential towers. Designed for the modern family or senior professional, this unit offers generous room proportions, a functional home office with a separate entrance, and expansive terraces on two sides offering sea and city views.",
+    "amenities": ["Dedicated Home Office", "Swimming Pool", "Gym", "Business Lounge", "Covered Parking", "Smart Home", "24/7 Concierge", "Children's Club"],
+    "nearby": {
+      "mall": "Bahrain City Centre (1.8 km)",
+      "restaurant": "Pier Lounge Juffair (0.4 km)",
+      "school": "British School of Bahrain (1.9 km)",
+      "hospital": "American Mission Hospital (1.1 km)",
+      "beach": "Juffair Corniche (0.5 km)",
+      "transport": "Juffair Bus Stop (0.3 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-002",
+    "ref": "ASK-BH-2024-029"
+  },
+  {
+    "id": "ASK-030",
+    "title": "Investor-Ready 3BR Apartment for Sale in Juffair",
+    "type": "Apartment",
+    "purpose": "sale",
+    "price": 168000,
+    "price_period": null,
+    "location": "Juffair, Capital Governorate",
+    "address": "Diplomat Heights, Block 331, Juffair, Manama",
+    "lat": 26.2113,
+    "lng": 50.5990,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "sqm": 205,
+    "floor": 9,
+    "parking": 2,
+    "furnished": false,
+    "featured": true,
+    "year_built": 2019,
+    "description": "Premium three-bedroom apartment for sale in a landmark Juffair tower, currently generating strong rental income. Three en-suite bedrooms including a master with a walk-in closet, an open-plan living and dining area, a utility room, and a wraparound balcony with unobstructed sea views. Sold with existing tenancy in place — a ready-to-earn investment.",
+    "amenities": ["Swimming Pool", "Gym", "Spa", "Covered Parking", "24/7 Security", "Concierge", "Retail Podium", "Sea Views"],
+    "nearby": {
+      "mall": "City Centre Bahrain (2.1 km)",
+      "restaurant": "OPA Greek Restaurant (0.3 km)",
+      "school": "Bahrain Bayan School (1.7 km)",
+      "hospital": "American Mission Hospital (1.0 km)",
+      "beach": "Juffair Waterfront (0.6 km)",
+      "transport": "Juffair Bus Stop (0.3 km)"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800&q=80",
+      "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
+    ],
+    "agent_id": "ask-agent-001",
+    "ref": "ASK-BH-2024-030"
   }
 ]

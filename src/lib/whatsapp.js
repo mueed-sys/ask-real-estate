@@ -11,7 +11,7 @@ import { CONTACT } from './constants'
 // When an agent param is passed and has a whatsapp field, the link dials that
 // agent's own number instead of the central office number.
 
-const PHONE = CONTACT.whatsapp
+const PHONE = '97336111323'
 
 function encode(msg) {
   return encodeURIComponent(msg)
@@ -24,7 +24,7 @@ export function waLink({ text, property, agent } = {}) {
   }
   if (agent) {
     const phone = agent.whatsapp || PHONE
-    const msg = `Hi ${agent.name}, I found you on the IRE Bahrain website and I'd like to discuss a property with you.`
+    const msg = `Hi ${agent.name}, I found you on the ASK Real Estate website and I'd like to discuss a property with you.`
     return `https://wa.me/${phone}?text=${encode(msg)}`
   }
   if (text) {
