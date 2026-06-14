@@ -10,11 +10,13 @@ export function formatPriceWithCurrency(value) {
 }
 
 export function bedroomLabel(count) {
+  if (count == null) return '—'
   if (count === 0) return 'Studio'
   return String(count)
 }
 
 export function floorLabel(floor) {
+  if (floor == null) return '—'
   if (floor === 0) return 'Ground'
   return String(floor)
 }

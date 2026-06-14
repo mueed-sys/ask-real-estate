@@ -94,7 +94,11 @@ function applyFilters(list, f) {
       out = [...out].sort((a, b) => b.sqm - a.sqm)
       break
     default:
-      out = [...out].sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
+      out = [...out].sort((a, b) => {
+        const da = a.created_at ? new Date(a.created_at).getTime() : 0
+        const db = b.created_at ? new Date(b.created_at).getTime() : 0
+        return db - da
+      })
   }
   return out
 }

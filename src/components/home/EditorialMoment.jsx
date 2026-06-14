@@ -22,7 +22,7 @@ const SPOTLIGHT = {
 where Four Seasons, the Avenues mall, and the Financial Harbour all sit within \
 walking distance. Sunset reflections off the towers feel cinematic from any of \
 its waterfront residences.",
-  pickIds: ['ASK-015', 'ASK-005'],
+  pickIds: ['ASK-052', 'ASK-059'],
 }
 
 export default function EditorialMoment() {

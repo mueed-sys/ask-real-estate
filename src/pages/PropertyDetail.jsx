@@ -29,24 +29,18 @@ import { useComparison } from '../store/useComparison'
 import { useToast } from '../store/useToast'
 import { SITE_URL, BRAND } from '../lib/constants'
 
-// Premium areas qualify for the cinematic video hero treatment.
-const PREMIUM_AREAS = new Set(['Bahrain Bay', 'Reef Island', 'Amwaj Islands'])
-
-// Amenity grouping for the new sectioned amenities row. Items not present on
-// the listing are dimmed; missing keys hidden so the section never feels
-// padded with nos.
-const AMENITY_GROUPS = [
-  { title: 'Building', icon: Building2, keys: ['pool', 'gym', 'security_24_7', 'covered_parking', 'concierge'] },
-  { title: 'Unit',     icon: Sparkles,  keys: ['balcony', 'built_in_wardrobes', 'central_ac', 'kitchen_appliances', 'maids_room', 'storage', 'internet'] },
-  { title: 'Lifestyle',icon: Waves,     keys: ['sea_view', 'playground'] },
-]
+// Exact location strings from the scraped dataset
+const PREMIUM_AREAS = new Set([
+  'Bahrain Bay', 'Reef Island', 'Amwaj Islands',
+  'Tala Island, Amwaj Islands', 'Bahrain Financial Harbour',
+  'Bahrain Harbour, Bahrain Financial Harbour',
+])
 
 function formatPropertyDate(created_at) {
-  return new Date(created_at).toLocaleDateString('en-GB', {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-  })
+  if (!created_at) return 'Available now'
+  const d = new Date(created_at)
+  if (isNaN(d.getTime())) return 'Available now'
+  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
 }
 
 export default function PropertyDetail() {
@@ -68,9 +62,11 @@ export default function PropertyDetail() {
   }
 
   const agent = agents.find((a) => a.id === property.agent_id)
-  const similar = properties
-    .filter((p) => p.id !== property.id && (p.location === property.location || Math.abs(p.price - property.price) < 200))
-    .slice(0, 4)
+  // Similar = same location first, then same type + purpose, max 4 results
+  const similar = [
+    ...properties.filter((p) => p.id !== property.id && p.location === property.location && p.purpose === property.purpose),
+    ...properties.filter((p) => p.id !== property.id && p.location !== property.location && p.type === property.type && p.purpose === property.purpose),
+  ].slice(0, 4)
 
   const title = property.title
   const description = property.description
@@ -244,37 +240,26 @@ export default function PropertyDetail() {
               </section>
             </Reveal>
 
-            {/* Amenities — grouped */}
-            <Reveal>
-              <section>
-                <h2 className="font-display text-2xl text-ink-100 sm:text-3xl">{t('details.amenities')}</h2>
-                <div className="gold-rule" />
-                <div className="mt-6 grid gap-6 lg:grid-cols-3">
-                  {AMENITY_GROUPS.map((g) => {
-                    const Icon = g.icon
-                    const items = g.keys.filter((k) => property.amenities.includes(k))
-                    return (
-                      <div key={g.title} className="rounded-md border border-white/8 bg-ink-card/40 p-5">
-                        <div className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-ivory-300">
-                          <Icon className="h-3.5 w-3.5 text-ivory-300" strokeWidth={1.6} /> {g.title}
-                        </div>
-                        <ul className="mt-3 space-y-2">
-                          {items.length === 0 && (
-                            <li className="text-xs italic text-ink-400">— Not listed —</li>
-                          )}
-                          {items.map((k) => (
-                            <li key={k} className="flex items-center gap-2 text-sm text-ink-100">
-                              <Check className="h-3.5 w-3.5 flex-shrink-0 text-success-300" strokeWidth={2} />
-                              <span>{t(`amenities.${k}`)}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )
-                  })}
-                </div>
-              </section>
-            </Reveal>
+            {/* Amenities */}
+            {property.amenities?.length > 0 && (
+              <Reveal>
+                <section>
+                  <h2 className="font-display text-2xl text-ink-100 sm:text-3xl">{t('details.amenities')}</h2>
+                  <div className="gold-rule" />
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {property.amenities.map((amenity) => (
+                      <span
+                        key={amenity}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-ink-card/60 px-4 py-2 text-sm text-ink-100"
+                      >
+                        <Check className="h-3.5 w-3.5 flex-shrink-0 text-success-300" strokeWidth={2} />
+                        {amenity}
+                      </span>
+                    ))}
+                  </div>
+                </section>
+              </Reveal>
+            )}
 
             {/* EWA bills */}
             <Reveal>
@@ -419,15 +404,14 @@ function PremiumVideoHero({ property, onBook }) {
 
 function DetailGrid({ property, t }) {
   const items = [
-    { icon: BedDouble, label: t('details.bedrooms'), value: bedroomLabel(property.bedrooms) },
-    { icon: Bath, label: t('details.bathrooms'), value: property.bathrooms },
-    { icon: Maximize2, label: t('details.area_sqm'), value: `${property.sqm} m²` },
-    { icon: Layers, label: t('details.floor'), value: floorLabel(property.floor) },
-    { icon: Car, label: t('details.parking'), value: property.parking },
+    property.bedrooms != null && { icon: BedDouble, label: t('details.bedrooms'), value: bedroomLabel(property.bedrooms) },
+    property.bathrooms != null && { icon: Bath, label: t('details.bathrooms'), value: property.bathrooms },
+    property.sqm != null && { icon: Maximize2, label: t('details.area_sqm'), value: `${property.sqm} m²` },
+    property.parking != null && { icon: Car, label: t('details.parking'), value: property.parking === 0 ? t('details.no') : property.parking },
     { icon: Sofa, label: t('details.furnished'), value: property.furnished ? t('details.yes') : t('details.no') },
-    { icon: Calendar, label: t('details.year_built'), value: property.year_built },
-    { icon: Hash, label: t('details.property_id'), value: property.id },
-  ]
+    property.year_built != null && { icon: Calendar, label: t('details.year_built'), value: property.year_built },
+    { icon: Hash, label: t('details.property_id'), value: property.ref || property.id },
+  ].filter(Boolean)
   return (
     <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
       {items.map((item, i) => {

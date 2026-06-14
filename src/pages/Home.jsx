@@ -21,7 +21,7 @@ import properties from '../data/properties.json'
 import areas from '../data/areas.json'
 import { CONTACT, SITE_URL, BRAND } from '../lib/constants'
 
-const HOMEPAGE_AREAS = ['juffair', 'seef', 'amwaj', 'riffa', 'bahrain-bay', 'diplomatic-area']
+const HOMEPAGE_AREAS = ['al-juffair', 'amwaj-islands', 'seef', 'bahrain-financial-harbour', 'reef-island', 'bahrain-bay']
 
 export default function Home() {
   const { t } = useTranslation()

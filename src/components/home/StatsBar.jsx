@@ -1,32 +1,13 @@
 import { TrendingUp, Home as HomeIcon, ShieldCheck, Calendar, Award } from 'lucide-react'
 import Reveal from '../common/Reveal'
+import { STATS as BRAND_STATS } from '../../lib/constants'
 
 const STATS = [
-  {
-    icon: TrendingUp,
-    display: '$3B+',
-    label: 'AUM',
-  },
-  {
-    icon: HomeIcon,
-    display: '261+',
-    label: 'Properties',
-  },
-  {
-    icon: ShieldCheck,
-    display: 'RICS',
-    label: 'Accredited',
-  },
-  {
-    icon: Calendar,
-    display: 'Since 2016',
-    label: 'Established',
-  },
-  {
-    icon: Award,
-    display: '9 Years',
-    label: 'Experience',
-  },
+  { icon: TrendingUp, display: BRAND_STATS.aum, label: 'AUM' },
+  { icon: HomeIcon, display: `${BRAND_STATS.propertiesListed}+`, label: 'Properties' },
+  { icon: ShieldCheck, display: 'RICS', label: 'Accredited' },
+  { icon: Calendar, display: 'Since 2016', label: 'Established' },
+  { icon: Award, display: `${BRAND_STATS.yearsExperience} Years`, label: 'Experience' },
 ]
 
 export default function StatsBar() {

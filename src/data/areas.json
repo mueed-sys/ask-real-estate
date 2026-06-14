@@ -1,274 +1,253 @@
 [
   {
-    "slug": "juffair",
-    "name": "Juffair",
-    "tagline": "Cosmopolitan high-rise living minutes from the sea",
-    "description": "Juffair is Bahrain's most popular expat-friendly neighborhood — a dense district of modern towers, boutique restaurants, embassies, and the iconic Juffair Avenue and Block 338 dining quarter. Living here means walking distance to a global mix of coffee shops, gyms, supermarkets, and waterfront promenades.",
+    "slug": "al-juffair",
+    "name": "Al Juffair",
+    "tagline": "Cosmopolitan high-rise living in the heart of Manama",
+    "description": "Al Juffair is Bahrain's most sought-after expat neighborhood — a dense district of modern towers, boutique restaurants, embassies, and walkable streets.",
     "image": "/images/areas/juffair.png",
-    "avg_rent_bd": 480,
-    "avg_sale_bd": 95000,
-    "property_count": 4,
+    "avg_rent_bd": 500,
+    "avg_sale_bd": 66654,
+    "property_count": 76,
     "amenities": [
-      "Block 338 Dining",
-      "The Avenues Mall",
-      "British School of Bahrain",
-      "King Hamad Hospital",
-      "Juffair Beach"
+      "City Centre Bahrain",
+      "American Mission Hospital",
+      "Juffair Corniche",
+      "Block 338 Dining"
+    ]
+  },
+  {
+    "slug": "amwaj-islands",
+    "name": "Amwaj Islands",
+    "tagline": "Exclusive island living with beachfront access",
+    "description": "Amwaj Islands is a man-made archipelago offering freehold properties, private beaches, marinas, and a resort-style lifestyle.",
+    "image": "/images/areas/amwaj.png",
+    "avg_rent_bd": 586,
+    "avg_sale_bd": 87375,
+    "property_count": 61,
+    "amenities": [
+      "Private Beaches",
+      "Marina Club",
+      "InterContinental Bahrain",
+      "Amwaj Avenue"
     ]
   },
   {
     "slug": "seef",
     "name": "Seef",
-    "tagline": "Bahrain's central business and shopping district",
-    "description": "Seef is the financial heart of Bahrain, home to City Centre Bahrain, Seef Mall, and Bahrain's tallest commercial towers. Premium offices, modern apartments, and unmatched access to retail, banking, and dining make Seef the address of choice for professionals.",
-    "image": "/images/areas/seef.webp",
-    "avg_rent_bd": 420,
-    "avg_sale_bd": 85000,
-    "property_count": 4,
+    "tagline": "Bahrain's premier business and retail district",
+    "description": "Seef is Bahrain's central business and shopping hub, home to Seef Mall, City Centre Bahrain, and a dense cluster of corporate towers and hotels.",
+    "image": "/images/areas/seef.png",
+    "avg_rent_bd": 534,
+    "avg_sale_bd": 96400,
+    "property_count": 61,
     "amenities": [
-      "City Centre Bahrain",
       "Seef Mall",
-      "Crowne Plaza Bahrain",
-      "Bahrain Financial Harbour",
-      "Le Meridien"
+      "City Centre Bahrain",
+      "Mercure Hotel",
+      "Seef Park"
     ]
   },
   {
-    "slug": "amwaj",
-    "name": "Amwaj Islands",
-    "tagline": "Man-made islands of waterfront villas and marina living",
-    "description": "Amwaj Islands is Bahrain's premier island lifestyle development — a constellation of canals, lagoons, private marinas, and beachfront villas. The Lagoon, Marina, and Floating City offer everything from intimate cafés to luxury yacht moorings.",
-    "image": "/images/areas/amwaj.jpg",
-    "avg_rent_bd": 1100,
-    "avg_sale_bd": 220000,
-    "property_count": 2,
+    "slug": "bahrain-financial-harbour",
+    "name": "Bahrain Financial Harbour",
+    "tagline": "Iconic twin towers on Manama's seafront",
+    "description": "Bahrain Financial Harbour is Bahrain's signature mixed-use financial district, featuring the landmark twin tower complex overlooking the Arabian Gulf.",
+    "image": "/images/areas/bfh.png",
+    "avg_rent_bd": 799,
+    "avg_sale_bd": 121667,
+    "property_count": 44,
     "amenities": [
-      "The Lagoon",
-      "Amwaj Marina",
-      "Dragon City",
-      "Floating City",
-      "Beach Club Amwaj"
-    ]
-  },
-  {
-    "slug": "riffa",
-    "name": "Riffa",
-    "tagline": "Family-oriented neighborhoods with space and serenity",
-    "description": "Riffa offers a quieter, family-focused alternative to the high-rise districts — sprawling villas, mature gardens, and Bahrain's famous Riffa Views golf community. Excellent international schools and ample space for growing families.",
-    "image": "/images/areas/riffa.jpg",
-    "avg_rent_bd": 560,
-    "avg_sale_bd": 145000,
-    "property_count": 2,
-    "amenities": [
-      "Riffa Views Golf Course",
-      "Royal Golf Club",
-      "Saudi German Hospital",
-      "St Christopher's School",
-      "Bahrain Polo Club"
-    ]
-  },
-  {
-    "slug": "bahrain-bay",
-    "name": "Bahrain Bay",
-    "tagline": "Iconic waterfront skyline with Four Seasons and Avenues Mall",
-    "description": "Bahrain Bay is the ambitious mixed-use waterfront masterplan anchored by Four Seasons Hotel Bahrain Bay and The Avenues Mall. New towers, premium offices, and panoramic sea-view residences define this fast-rising address.",
-    "image": "/images/areas/bahrain-bay.webp",
-    "avg_rent_bd": 950,
-    "avg_sale_bd": 180000,
-    "property_count": 2,
-    "amenities": [
+      "World Trade Center",
       "Four Seasons Hotel",
-      "The Avenues Bahrain",
-      "Bahrain Bay Marina",
-      "Wyndham Grand Manama",
-      "ART Rotana"
+      "Manama Waterfront",
+      "BFC"
     ]
   },
   {
     "slug": "reef-island",
     "name": "Reef Island",
-    "tagline": "Exclusive island address with private beach and reef",
-    "description": "Reef Island is a small, gated island development off the coast of Manama — exclusive low-density living with private beach access, a coral reef preservation, marina berths, and the Reef Plaza retail core. Privacy and prestige in equal measure.",
-    "image": "/images/areas/reef-island.jpg",
-    "avg_rent_bd": 850,
-    "avg_sale_bd": 195000,
-    "property_count": 1,
+    "tagline": "Upscale seafront living near the capital",
+    "description": "Reef Island offers premium waterfront apartments with direct sea views, luxury amenities, and easy access to Manama's business districts.",
+    "image": "/images/areas/reef-island.png",
+    "avg_rent_bd": 1004,
+    "avg_sale_bd": 120000,
+    "property_count": 38,
     "amenities": [
-      "Reef Plaza",
-      "Private Beach Club",
-      "Reef Marina",
-      "Coral Reserve",
-      "Reef Island Causeway"
+      "Marina Walk",
+      "Reef Island Park",
+      "Waterfront Promenade",
+      "Nearby Diplomatic Area"
     ]
   },
   {
-    "slug": "saar",
-    "name": "Saar",
-    "tagline": "Suburban villa community with international schools",
-    "description": "Saar is a leafy, low-rise western suburb favored by expat families. Spacious detached villas, the British School of Bahrain campus, Saar Mall, and easy access to King Fahd Causeway define the area.",
-    "image": "/images/areas/saar.jpg",
-    "avg_rent_bd": 850,
-    "avg_sale_bd": 165000,
-    "property_count": 2,
+    "slug": "dilmunia-island",
+    "name": "Dilmunia Island",
+    "tagline": "Health-centric island community in North Bahrain",
+    "description": "Dilmunia Island is a wellness-focused development in Muharraq, featuring modern apartments, parks, and direct sea access.",
+    "image": "/images/areas/dilmunia.png",
+    "avg_rent_bd": 705,
+    "avg_sale_bd": 86000,
+    "property_count": 21,
     "amenities": [
-      "British School of Bahrain",
-      "Saar Mall",
-      "Royal British School",
-      "Saar Park",
-      "King Fahd Causeway access"
-    ]
-  },
-  {
-    "slug": "budaiya",
-    "name": "Budaiya",
-    "tagline": "Coastal village charm with date palm groves",
-    "description": "Budaiya stretches along Bahrain's northern coast — a string of villages, date plantations, beach access, and a relaxed pace. Affordable family villas and apartments with a slice of traditional Bahrain.",
-    "image": "/images/areas/budaiya.jpg",
-    "avg_rent_bd": 320,
-    "avg_sale_bd": 75000,
-    "property_count": 1,
-    "amenities": [
-      "Budaiya Beach",
-      "Al-Areen Wildlife Park",
-      "Budaiya Highway",
-      "Al Jazira Supermarket",
-      "King Faisal Highway access"
-    ]
-  },
-  {
-    "slug": "diplomatic-area",
-    "name": "Diplomatic Area",
-    "tagline": "Embassies, banks, and Bahrain's most prestigious offices",
-    "description": "The Diplomatic Area concentrates Bahrain's foreign embassies, headquarters of major banks, and prestige office towers. Premium commercial real estate and discreet executive residences define this carefully planned district.",
-    "image": "/images/areas/diplomatic-area.jpg",
-    "avg_rent_bd": 1200,
-    "avg_sale_bd": 250000,
-    "property_count": 1,
-    "amenities": [
-      "US Embassy Bahrain",
-      "Bahrain Financial Harbour",
-      "World Trade Center",
-      "Central Bank of Bahrain",
-      "Diplomatic Court"
-    ]
-  },
-  {
-    "slug": "hidd",
-    "name": "Hidd",
-    "tagline": "Affordable modern living on Muharraq Island",
-    "description": "Hidd offers some of the best value modern apartments in Bahrain, on the eastern edge of Muharraq Island. New residential blocks, easy airport access, and proximity to industrial employment hubs make Hidd a strong rental market.",
-    "image": "/images/areas/hidd.jpg",
-    "avg_rent_bd": 280,
-    "avg_sale_bd": 60000,
-    "property_count": 1,
-    "amenities": [
-      "Bahrain International Airport",
-      "ASRY Shipyard",
-      "Hidd Mall",
-      "Sheikh Khalifa Bin Salman Port",
-      "Muharraq Souq"
-    ]
-  },
-  {
-    "slug": "muharraq",
-    "name": "Muharraq",
-    "tagline": "Historic pearling capital with a vibrant old town",
-    "description": "Muharraq is Bahrain's second city and its historic heart — the old pearling district, narrow souq lanes, and traditional courtyard houses sit alongside the international airport and modern residential blocks. A UNESCO-listed pearling path and the Shaikh Isa bin Ali House make it Bahrain's most culturally rich neighborhood.",
-    "image": "/images/areas/muharraq.jpg",
-    "avg_rent_bd": 300,
-    "avg_sale_bd": 65000,
-    "property_count": 1,
-    "amenities": [
-      "Bahrain International Airport",
-      "Muharraq Souq",
-      "Shaikh Isa bin Ali House",
-      "Arad Fort",
-      "UNESCO Pearling Path"
-    ]
-  },
-  {
-    "slug": "adliya",
-    "name": "Adliya",
-    "tagline": "Bahrain's creative quarter — art galleries, cafés, and dining",
-    "description": "Adliya is Bahrain's most vibrant dining and arts district — Block 338 concentration of independent restaurants, galleries, and coffee shops make it a cultural anchor. A mix of older villas converted into boutique eateries and new low-rise residences define the neighbourhood's relaxed, creative energy.",
-    "image": "/images/areas/adliya.jpg",
-    "avg_rent_bd": 360,
-    "avg_sale_bd": 78000,
-    "property_count": 1,
-    "amenities": [
-      "Block 338 Dining Quarter",
-      "Bahrain National Theatre",
-      "Dana Mall",
-      "Bahrain Arts Society",
-      "Adliya Art Galleries"
-    ]
-  },
-  {
-    "slug": "manama",
-    "name": "Manama",
-    "tagline": "The capital — commerce, culture, and the historic souq",
-    "description": "Manama is Bahrain's capital and commercial centre — home to the iconic Bahrain Fort, the Gold Souq, and the Manama Souq, alongside towers housing the kingdom's most established banks and trading houses. Central location makes it a practical base for professionals with broad city-wide commitments.",
-    "image": "/images/areas/manama.jpg",
-    "avg_rent_bd": 390,
-    "avg_sale_bd": 82000,
-    "property_count": 1,
-    "amenities": [
-      "Manama Souq",
-      "Gold Souq",
-      "Bahrain Fort",
-      "Bab Al Bahrain",
-      "National Museum of Bahrain"
-    ]
-  },
-  {
-    "slug": "hamad-town",
-    "name": "Hamad Town",
-    "tagline": "Affordable family living with modern infrastructure",
-    "description": "Hamad Town is Bahrain's largest planned residential city — a grid of affordable family villas and apartments serving Bahraini families and budget-conscious expats. Modern schools, hypermarkets, and easy highway access to Manama and the Saudi causeway make it a practical choice for larger households.",
-    "image": "/images/areas/hamad-town.jpg",
-    "avg_rent_bd": 260,
-    "avg_sale_bd": 55000,
-    "property_count": 1,
-    "amenities": [
-      "Hamad Town Mall",
-      "Al Hekma International School",
-      "Lulu Hypermarket",
-      "Bahrain American School",
-      "King Fahd Causeway access"
+      "Dilmunia Health City",
+      "Parks & Promenades",
+      "Sea Access",
+      "Al Noor Garden"
     ]
   },
   {
     "slug": "diyar-al-muharraq",
     "name": "Diyar Al Muharraq",
-    "tagline": "New waterfront city on Muharraq — modern townhouses and canals",
-    "description": "Diyar Al Muharraq is a large-scale waterfront development under progressive completion on the northeastern coast of Muharraq Island. Townhouses, apartments, canals, and a dedicated retail spine make it one of Bahrain's most ambitious new-build destinations for families and young professionals.",
-    "image": "/images/areas/diyar-al-muharraq.jpg",
-    "avg_rent_bd": 400,
-    "avg_sale_bd": 90000,
-    "property_count": 1,
+    "tagline": "Modern waterfront city north of Bahrain",
+    "description": "Diyar Al Muharraq is a large-scale master-planned community on reclaimed land, offering freehold properties, beaches, and resort amenities.",
+    "image": "/images/areas/diyar.png",
+    "avg_rent_bd": 985,
+    "avg_sale_bd": 122857,
+    "property_count": 21,
     "amenities": [
-      "Diyar Canal Promenade",
-      "Dilmunia Island",
-      "Al Bandar Hotel",
-      "Diyar Retail Quarter",
-      "Canal-front Boardwalk"
+      "Address Vista",
+      "Private Beaches",
+      "Melia Hotel",
+      "Marina"
     ]
   },
   {
-    "slug": "durrat-al-bahrain",
-    "name": "Durrat Al Bahrain",
-    "tagline": "Ultra-exclusive island resort living in southern Bahrain",
-    "description": "Durrat Al Bahrain is Bahrain's most exclusive freehold development — a collection of artificial islands in the kingdom's southern waters with private villas, a five-star resort hotel, an 18-hole golf course, and a marina. Ownership is open to all nationalities, making it a premier international investment address.",
-    "image": "/images/areas/durrat-al-bahrain.jpg",
-    "avg_rent_bd": 1400,
-    "avg_sale_bd": 300000,
-    "property_count": 1,
+    "slug": "manama",
+    "name": "Manama",
+    "tagline": "The historic capital at the heart of Bahrain",
+    "description": "Manama is Bahrain's cosmopolitan capital, blending modern towers, the historic souq, cultural landmarks, and the diplomatic quarter.",
+    "image": "/images/areas/manama.png",
+    "avg_rent_bd": 636,
+    "avg_sale_bd": 211250,
+    "property_count": 19,
     "amenities": [
-      "Durrat Marina",
-      "18-Hole Golf Course",
-      "Durrat Al Bahrain Beach Club",
-      "Five-Star Resort Hotel",
-      "Private Island Villas"
+      "Bab Al Bahrain Souq",
+      "Manama Corniche",
+      "National Museum",
+      "Diplomatic Area"
+    ]
+  },
+  {
+    "slug": "bahrain-bay",
+    "name": "Bahrain Bay",
+    "tagline": "Landmark mixed-use development on reclaimed land",
+    "description": "Bahrain Bay is an iconic waterfront district next to the Four Seasons Hotel, featuring premium residences, luxury hotels, and stunning sea views.",
+    "image": "/images/areas/bahrain-bay.png",
+    "avg_rent_bd": 1771,
+    "avg_sale_bd": 110000,
+    "property_count": 15,
+    "amenities": [
+      "Four Seasons Hotel",
+      "Waterfront Promenade",
+      "Bahrain WTC",
+      "Financial District"
+    ]
+  },
+  {
+    "slug": "saar",
+    "name": "Saar",
+    "tagline": "Quiet suburban living in the Northern Governorate",
+    "description": "Saar is a popular residential suburb offering spacious villas, family-friendly parks, and a calm lifestyle away from the city centre.",
+    "image": "/images/areas/saar.png",
+    "avg_rent_bd": 908,
+    "avg_sale_bd": 215147,
+    "property_count": 14,
+    "amenities": [
+      "Saar Mall",
+      "Saar Park",
+      "Indian School Bahrain",
+      "Al Reem Hospital"
+    ]
+  },
+  {
+    "slug": "janabiya",
+    "name": "Janabiya",
+    "tagline": "Upscale suburban villas in the Northern Governorate",
+    "description": "Janabiya is an affluent suburb popular with diplomats and expatriate families, offering large villas, private gardens, and a peaceful environment.",
+    "image": "/images/areas/janabiya.png",
+    "avg_rent_bd": 811,
+    "avg_sale_bd": 52000,
+    "property_count": 9,
+    "amenities": [
+      "Gravity Indoor Skydiving",
+      "Al Dana Club",
+      "Private Villas",
+      "Easy Airport Access"
+    ]
+  },
+  {
+    "slug": "hamala",
+    "name": "Hamala",
+    "tagline": "Lush green suburb with spacious family homes",
+    "description": "Hamala is a leafy residential area in the Northern Governorate, known for its green surroundings, large plot sizes, and relaxed suburban atmosphere.",
+    "image": "/images/areas/hamala.png",
+    "avg_rent_bd": 1000,
+    "avg_sale_bd": 48500,
+    "property_count": 8,
+    "amenities": [
+      "Equestrian Club",
+      "Al Hamar Park",
+      "Easy Highway Access",
+      "Low Density"
+    ]
+  },
+  {
+    "slug": "zallaq",
+    "name": "Zallaq",
+    "tagline": "Beachfront resort living in Southern Bahrain",
+    "description": "Zallaq is a resort destination on Bahrain's southern coast, featuring luxury hotels, private beaches, and the iconic Bahrain International Circuit nearby.",
+    "image": "/images/areas/zallaq.png",
+    "avg_rent_bd": null,
+    "avg_sale_bd": 219400,
+    "property_count": 5,
+    "amenities": [
+      "Sofitel Bahrain",
+      "Bahrain International Circuit",
+      "Private Beach",
+      "Al Jazayer Beach"
+    ]
+  },
+  {
+    "slug": "courtyard-w-l-l-seef",
+    "name": "Courtyard W.L.L, Seef",
+    "tagline": "Properties in Courtyard W.L.L, Seef",
+    "description": "Explore properties available in Courtyard W.L.L, Seef, Bahrain.",
+    "image": "/images/areas/default.png",
+    "avg_rent_bd": 470,
+    "avg_sale_bd": null,
+    "property_count": 5,
+    "amenities": []
+  },
+  {
+    "slug": "hidd",
+    "name": "Hidd",
+    "tagline": "Industrial port area with growing residential appeal",
+    "description": "Hidd is in Muharraq Governorate near the port and industrial zones, offering affordable apartments with easy access to the airport and Muharraq.",
+    "image": "/images/areas/hidd.png",
+    "avg_rent_bd": 407,
+    "avg_sale_bd": null,
+    "property_count": 5,
+    "amenities": [
+      "Khalifa Bin Salman Port",
+      "Airport Access",
+      "Budget Living",
+      "Sea Views"
+    ]
+  },
+  {
+    "slug": "sanabis",
+    "name": "Sanabis",
+    "tagline": "Convenient central location close to everything",
+    "description": "Sanabis is a centrally located residential area between Seef and Manama, offering affordable apartments with easy access to major highways.",
+    "image": "/images/areas/sanabis.png",
+    "avg_rent_bd": 460,
+    "avg_sale_bd": null,
+    "property_count": 4,
+    "amenities": [
+      "Seef Mall (nearby)",
+      "Al Areen Palace",
+      "Central Location",
+      "Highway Access"
     ]
   }
 ]

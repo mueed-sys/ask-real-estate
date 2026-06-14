@@ -44,7 +44,7 @@ export const OFFICE = {
 export const STATS = {
   yearsExperience: 9,
   happyClients: 1500,
-  propertiesListed: 261,
+  propertiesListed: 426,
   aum: '$3B+',
   awards: 2,
 }
@@ -53,15 +53,19 @@ export const LOCALES = {
   en: { code: 'en', label: 'English', dir: 'ltr', short: 'EN' },
 }
 
+// Matches actual property types in the scraped dataset
 export const PROPERTY_TYPES = [
   { value: 'Apartment', icon: 'building-2' },
   { value: 'Villa', icon: 'home' },
-  { value: 'Studio', icon: 'box' },
+  { value: 'Flat', icon: 'layers' },
   { value: 'Penthouse', icon: 'crown' },
-  { value: 'Commercial', icon: 'briefcase' },
-  { value: 'Land', icon: 'map' },
+  { value: 'Duplex', icon: 'copy' },
+  { value: 'Full Floor', icon: 'maximize-2' },
+  { value: 'Hotel Apartment', icon: 'hotel' },
+  { value: 'Plot', icon: 'map' },
 ]
 
 export const BEDROOM_OPTIONS = ['Studio', '1', '2', '3', '4', '5+']
 export const BATHROOM_OPTIONS = ['1', '2', '3', '4+']
-export const PRICE_RANGE = { min: 0, max: 5000 }
+// Rent max covers the full range (BHD 250–15,000/month); sale handled separately
+export const PRICE_RANGE = { min: 0, max: 15000 }
