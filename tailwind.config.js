@@ -53,16 +53,16 @@ export default {
         muted:   { 50: '#EDEFF3', 300: '#A1A8BD', 500: '#6B7390', 700: '#3A4060' },
       },
       fontFamily: {
-        // Display — Playfair Display 700/800. The luxury editorial serif
-        // (Vogue, Architectural Digest, Sotheby's). All h1/h2/h3.
-        display: ['"Playfair Display"', 'Georgia', 'serif'],
-        // Body & UI — DM Sans. Clean modern geometric sans, designed pair to
-        // DM Serif. Used for all paragraphs, nav, buttons, labels, tables.
-        sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
-        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+        // Display — Space Grotesk 600/700. Bold geometric sans (close to Involve
+        // used on askre.com). All h1/h2/h3. Tight tracking, modern authority.
+        display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        // Body & UI — Switzer 400/500/600. The exact font used on askre.com.
+        // Geometric sans with optical balance. All paragraphs, nav, labels.
+        sans: ['Switzer', 'system-ui', 'sans-serif'],
+        body: ['Switzer', 'system-ui', 'sans-serif'],
         // Numbers — Outfit 700/800. Bold geometric, commanding. Used for
         // every BD price, stat counter, percentage, sqm value, distance.
-        numbers: ['Outfit', '"DM Sans"', 'system-ui', 'sans-serif'],
+        numbers: ['Outfit', 'Switzer', 'system-ui', 'sans-serif'],
         // Mono — JetBrains Mono. Used for code, reference IDs, technical data.
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
