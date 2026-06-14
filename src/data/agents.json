@@ -2,262 +2,198 @@
   {
     "id": "ask-agent-001",
     "name": "Karim Yazji",
-    "title": "CEO/Managing Director",
-    "photo": "https://randomuser.me/api/portraits/men/41.jpg",
-    "bio": "Karim leads ASK Real Estate as CEO and Managing Director, overseeing a portfolio exceeding $3 billion in assets under management across Bahrain and Dubai. With over 15 years of executive experience in GCC real estate, he has built ASK into a full-service firm trusted by institutional investors and private clients alike, delivering end-to-end solutions across residential, commercial, and hospitality asset classes.",
-    "specializations": [
-      "All asset classes",
-      "Institutional clients",
-      "Asset management"
-    ],
+    "title": "Chief Executive Officer",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/team-1.jpg",
+    "bio": "Karim leads ASK Real Estate as Chief Executive Officer, overseeing a portfolio exceeding $3 billion in assets under management across Bahrain. With extensive executive experience in GCC real estate, he has built ASK into a full-service firm trusted by institutional investors and private clients alike, delivering end-to-end solutions across residential, commercial, and hospitality asset classes.",
+    "specializations": ["All asset classes", "Institutional clients", "Strategic advisory"],
     "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      },
-      {
-        "code": "fr",
-        "label": "French",
-        "flag": "🇫🇷"
-      }
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
     ],
-    "years_with_ask": 15,
-    "active_listings": 80,
+    "years_with_ask": 9,
+    "active_listings": 0,
     "rating": 5.0,
-    "deals_closed_year": 95,
-    "response_time": "< 1 hr",
-    "phone": "+97336111323",
+    "deals_closed_year": 0,
+    "response_time": "By appointment",
+    "phone": "+97317211180",
     "whatsapp": "97336111323",
     "email": "karim@askre.com"
   },
   {
     "id": "ask-agent-002",
-    "name": "Ahmed Al Mansoori",
-    "title": "Senior Property Consultant",
-    "photo": "https://randomuser.me/api/portraits/men/55.jpg",
-    "bio": "Ahmed is ASK Real Estate's go-to consultant for Juffair and Seef, with 8 years of experience placing expat executives and GCC investors in premium towers and serviced residences. His intimate knowledge of every delivered building in both districts — from floor plans to service charge schedules — means clients close faster and with confidence.",
-    "specializations": [
-      "Juffair",
-      "Seef"
-    ],
+    "name": "Shehab Mohsen",
+    "title": "Head of Facility Management",
+    "photo": "https://askre.com/wp-content/uploads/2025/11/IMG_6725-scaled.jpg",
+    "bio": "Shehab heads ASK's Facility Management division, delivering comprehensive FM services for residential towers, commercial properties, and mixed-use developments across Bahrain. His operational expertise ensures properties under ASK management maintain the highest standards of upkeep and tenant satisfaction.",
+    "specializations": ["Facility Management", "Residential towers", "Commercial properties"],
     "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      }
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
     ],
-    "years_with_ask": 8,
-    "active_listings": 52,
+    "years_with_ask": 6,
+    "active_listings": 0,
     "rating": 4.9,
-    "deals_closed_year": 72,
-    "response_time": "< 15 min",
-    "phone": "+97336111323",
+    "deals_closed_year": 0,
+    "response_time": "< 1 hr",
+    "phone": "+97317211180",
     "whatsapp": "97336111323",
-    "email": "ahmed@askre.com"
+    "email": "shehab@askre.com"
   },
   {
     "id": "ask-agent-003",
-    "name": "Sara Hassan",
-    "title": "Property Consultant",
-    "photo": "https://randomuser.me/api/portraits/women/33.jpg",
-    "bio": "Sara specialises in Bahrain's most sought-after island communities at ASK Real Estate. With 5 years dedicated to Amwaj Islands and Bahrain Bay, she has an unmatched understanding of waterfront living — from marina-facing apartments to custom villas — and guides buyers through every step from viewings to handover.",
-    "specializations": [
-      "Amwaj Islands",
-      "Bahrain Bay"
-    ],
+    "name": "Samer Nayal",
+    "title": "Business Development Manager",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/Samer-1.png",
+    "bio": "Samer drives ASK Real Estate's business development strategy, forging partnerships with developers, investors, and institutional clients. His deep understanding of Bahrain's real estate market and regional networks has been instrumental in growing ASK's portfolio and service offerings.",
+    "specializations": ["Business Development", "Investor relations", "Developer partnerships"],
     "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      }
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
     ],
     "years_with_ask": 5,
-    "active_listings": 38,
+    "active_listings": 0,
+    "rating": 4.9,
+    "deals_closed_year": 0,
+    "response_time": "< 30 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "samer@askre.com"
+  },
+  {
+    "id": "ask-agent-004",
+    "name": "Shinu Kochuthoppil",
+    "title": "Valuation Manager",
+    "photo": "https://askre.com/wp-content/uploads/2025/11/Artboard-7-scaled.jpg",
+    "bio": "Shinu leads ASK's RICS and IVSC-accredited valuation practice, providing independent property valuations for mortgage, investment, and legal purposes across Bahrain. His rigorous methodology and market expertise make him a trusted advisor for banks, developers, and private investors requiring certified valuations.",
+    "specializations": ["Property Valuation", "RICS accredited", "Investment appraisal"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 7,
+    "active_listings": 0,
+    "rating": 4.9,
+    "deals_closed_year": 0,
+    "response_time": "< 1 hr",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "shinu@askre.com"
+  },
+  {
+    "id": "ask-agent-005",
+    "name": "Mohamed Omar",
+    "title": "Head of Property Management",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/7T1A0512-scaled.jpg",
+    "bio": "Mohamed oversees ASK's property management portfolio, ensuring landlords and investors receive maximum returns from their assets. Specialising in residential and commercial property management, he coordinates maintenance, tenant relations, and lease renewals across ASK's managed properties in Bahrain.",
+    "specializations": ["Property Management", "Landlord services", "Lease management"],
+    "languages": [
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 6,
+    "active_listings": 45,
     "rating": 4.8,
-    "deals_closed_year": 49,
-    "response_time": "< 20 min",
-    "phone": "+97336111323",
+    "deals_closed_year": 38,
+    "response_time": "< 30 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "mohamed@askre.com"
+  },
+  {
+    "id": "ask-agent-006",
+    "name": "Sara Ali",
+    "title": "Marketing Manager",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/IMG_2576٠١٠٢٠-scaled.jpg",
+    "bio": "Sara leads ASK Real Estate's marketing and brand strategy, managing the company's digital presence, social media channels, and property marketing campaigns. Her creative direction and market positioning have helped establish ASK as one of Bahrain's most recognisable real estate brands.",
+    "specializations": ["Marketing", "Brand strategy", "Digital media"],
+    "languages": [
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 4,
+    "active_listings": 0,
+    "rating": 4.9,
+    "deals_closed_year": 0,
+    "response_time": "< 1 hr",
+    "phone": "+97317211180",
     "whatsapp": "97336111323",
     "email": "sara@askre.com"
   },
   {
-    "id": "ask-agent-004",
-    "name": "Omar Khalid",
-    "title": "Commercial Property Specialist",
-    "photo": "https://randomuser.me/api/portraits/men/29.jpg",
-    "bio": "Omar heads ASK Real Estate's commercial leasing desk, advising banks, embassies, and multinational firms on Grade A office space in the Diplomatic Area and Seef. With 6 years in commercial brokerage, he excels at structuring complex lease agreements and identifying emerging opportunities before they reach the open market.",
-    "specializations": [
-      "Diplomatic Area",
-      "Seef",
-      "Commercial"
-    ],
-    "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      }
-    ],
-    "years_with_ask": 6,
-    "active_listings": 24,
-    "rating": 4.8,
-    "deals_closed_year": 33,
-    "response_time": "< 30 min",
-    "phone": "+97336111323",
-    "whatsapp": "97336111323",
-    "email": "omar@askre.com"
-  },
-  {
-    "id": "ask-agent-005",
-    "name": "Nadia Al Farsi",
-    "title": "Senior Leasing Consultant",
-    "photo": "https://randomuser.me/api/portraits/women/58.jpg",
-    "bio": "Nadia has spent 9 years at ASK Real Estate mastering Bahrain's family-centric villa market in Riffa and Saar. As a Bahraini consultant who understands what growing families truly need — school proximity, community feel, and generous outdoor space — she consistently matches clients with homes they stay in for years.",
-    "specializations": [
-      "Riffa",
-      "Saar"
-    ],
-    "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      }
-    ],
-    "years_with_ask": 9,
-    "active_listings": 31,
-    "rating": 4.9,
-    "deals_closed_year": 61,
-    "response_time": "< 20 min",
-    "phone": "+97336111323",
-    "whatsapp": "97336111323",
-    "email": "nadia@askre.com"
-  },
-  {
-    "id": "ask-agent-006",
-    "name": "Faisal Al Doseri",
-    "title": "Property Consultant",
-    "photo": "https://randomuser.me/api/portraits/men/63.jpg",
-    "bio": "Faisal is ASK Real Estate's specialist for Bahrain's newest master-planned communities. With 4 years focused on Diyar Al Muharraq and Dilmunia Island, he helps first-time buyers and investors navigate off-plan purchases and ready-unit handovers in developments that are rapidly becoming the kingdom's most desirable addresses.",
-    "specializations": [
-      "Diyar Al Muharraq",
-      "Dilmunia"
-    ],
-    "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      }
-    ],
-    "years_with_ask": 4,
-    "active_listings": 43,
-    "rating": 4.7,
-    "deals_closed_year": 38,
-    "response_time": "< 30 min",
-    "phone": "+97336111323",
-    "whatsapp": "97336111323",
-    "email": "faisal@askre.com"
-  },
-  {
     "id": "ask-agent-007",
-    "name": "Layla Mahmoud",
-    "title": "Luxury Property Specialist",
-    "photo": "https://randomuser.me/api/portraits/women/47.jpg",
-    "bio": "Layla manages ASK Real Estate's ultra-premium residential portfolio across Reef Island and Bahrain Bay. With 7 years advising high-net-worth individuals and family offices, she offers a discreet, white-glove service — from private viewings of penthouses and waterfront mansions to post-acquisition property management.",
-    "specializations": [
-      "Reef Island",
-      "Bahrain Bay",
-      "Luxury"
-    ],
+    "name": "Fatima Ghazi",
+    "title": "HR and Administration Manager",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/7T1A5990-scaled.jpg",
+    "bio": "Fatima manages ASK Real Estate's human resources and administrative operations, ensuring the team is well-supported, compliant, and growing. She oversees recruitment, staff development, and the administrative backbone that keeps ASK running smoothly across all its service divisions.",
+    "specializations": ["Human Resources", "Administration", "Talent development"],
     "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      },
-      {
-        "code": "fr",
-        "label": "French",
-        "flag": "🇫🇷"
-      }
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
     ],
-    "years_with_ask": 7,
-    "active_listings": 19,
+    "years_with_ask": 5,
+    "active_listings": 0,
     "rating": 4.9,
-    "deals_closed_year": 26,
+    "deals_closed_year": 0,
     "response_time": "< 1 hr",
-    "phone": "+97336111323",
+    "phone": "+97317211180",
     "whatsapp": "97336111323",
-    "email": "layla@askre.com"
+    "email": "fatima@askre.com"
   },
   {
     "id": "ask-agent-008",
-    "name": "Reem Al Ansari",
-    "title": "Property Consultant",
-    "photo": "https://randomuser.me/api/portraits/women/22.jpg",
-    "bio": "Reem covers ASK Real Estate's fast-growing northern coastal portfolio, specialising in Busaiteen and Marassi Al Bahrain. With 3 years in residential sales and leasing, she brings energy and local insight to a corridor seeing strong demand from young professionals and UAE-based investors seeking value without compromise.",
-    "specializations": [
-      "Busaiteen",
-      "Marassi Al Bahrain"
-    ],
+    "name": "Neelika Mahawatte",
+    "title": "Head of Finance & Accounts",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/7T1A24750102-scaled.jpg",
+    "bio": "Neelika heads ASK's finance and accounts department, managing financial reporting, budgeting, and compliance across the company's diverse portfolio. Her expertise ensures ASK maintains full financial transparency and regulatory compliance across all its operations in Bahrain.",
+    "specializations": ["Finance", "Accounts", "Compliance"],
     "languages": [
-      {
-        "code": "ar",
-        "label": "Arabic",
-        "flag": "🇧🇭"
-      },
-      {
-        "code": "en",
-        "label": "English",
-        "flag": "🇬🇧"
-      }
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 4,
+    "active_listings": 0,
+    "rating": 4.8,
+    "deals_closed_year": 0,
+    "response_time": "< 1 hr",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "neelika@askre.com"
+  },
+  {
+    "id": "ask-agent-009",
+    "name": "Hussain Hussaini",
+    "title": "Sales Manager",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/5242.png",
+    "bio": "Hussain leads ASK's sales team, driving residential and commercial property transactions across Bahrain's key districts. With a strong track record in closing high-value deals and managing client relationships, he ensures every buyer and investor is matched with the right property at the right price.",
+    "specializations": ["Sales", "Residential", "Commercial"],
+    "languages": [
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 5,
+    "active_listings": 52,
+    "rating": 4.9,
+    "deals_closed_year": 67,
+    "response_time": "< 20 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "hussain@askre.com"
+  },
+  {
+    "id": "ask-agent-010",
+    "name": "Philip John",
+    "title": "QHSE Manager",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/7T1A24750102-1-scaled.jpg",
+    "bio": "Philip manages ASK Real Estate's Quality, Health, Safety and Environment (QHSE) standards across all operations. His rigorous approach to compliance and safety ensures ASK's properties and projects meet international standards, underpinning the company's ISO 9001 certification.",
+    "specializations": ["QHSE", "ISO compliance", "Health & Safety"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
     ],
     "years_with_ask": 3,
-    "active_listings": 27,
-    "rating": 4.7,
-    "deals_closed_year": 31,
-    "response_time": "< 30 min",
-    "phone": "+97336111323",
+    "active_listings": 0,
+    "rating": 4.8,
+    "deals_closed_year": 0,
+    "response_time": "< 1 hr",
+    "phone": "+97317211180",
     "whatsapp": "97336111323",
-    "email": "reem@askre.com"
+    "email": "philip@askre.com"
   }
 ]
