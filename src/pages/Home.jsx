@@ -156,7 +156,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold-500 transition-colors hover:text-gold-300"
               >
                 <Instagram className="h-4 w-4" />
-                @{CONTACT.instagram} · {CONTACT.instagramFollowers.toLocaleString()}+ followers
+                @{CONTACT.instagram}
                 <ArrowUpRight className="h-3 w-3" />
               </a>
             </Reveal>
