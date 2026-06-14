@@ -195,5 +195,184 @@
     "phone": "+97317211180",
     "whatsapp": "97336111323",
     "email": "philip@askre.com"
+  },
+  {
+    "id": "ask-agent-011",
+    "name": "Dawn Williams",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/Artboard-15-scaled.jpg",
+    "bio": "Dawn is a dedicated Property Advisor at ASK Real Estate, specialising in residential leasing and sales across Bahrain's key districts. Her client-first approach and thorough knowledge of the local market ensure every buyer, seller, and tenant receives tailored advice and seamless service.",
+    "specializations": ["Residential", "Leasing", "Sales"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 2,
+    "active_listings": 18,
+    "rating": 4.8,
+    "deals_closed_year": 24,
+    "response_time": "< 30 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "dawn@askre.com"
+  },
+  {
+    "id": "ask-agent-012",
+    "name": "Ahmed Hassan",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/Artboard-5-scaled.jpg",
+    "bio": "Ahmed is a Property Advisor at ASK Real Estate with strong expertise in the Bahrain residential market. He works closely with landlords and tenants to match the right property to the right client, drawing on his deep knowledge of Juffair, Seef, and Amwaj Islands.",
+    "specializations": ["Juffair", "Seef", "Amwaj Islands"],
+    "languages": [
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 3,
+    "active_listings": 26,
+    "rating": 4.8,
+    "deals_closed_year": 31,
+    "response_time": "< 20 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "ahmed@askre.com"
+  },
+  {
+    "id": "ask-agent-013",
+    "name": "Artyom Maulenov",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/art.png",
+    "bio": "Artyom brings an international perspective to ASK Real Estate's advisory team, supporting clients from CIS and Eastern European markets looking to invest or relocate to Bahrain. His multilingual skills and market knowledge make him a valued point of contact for international investors.",
+    "specializations": ["International clients", "Investment", "Bahrain Bay"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" },
+      { "code": "ru", "label": "Russian", "flag": "🇷🇺" }
+    ],
+    "years_with_ask": 2,
+    "active_listings": 15,
+    "rating": 4.7,
+    "deals_closed_year": 19,
+    "response_time": "< 30 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "artyom@askre.com"
+  },
+  {
+    "id": "ask-agent-014",
+    "name": "Su'naina",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/sonauna.png",
+    "bio": "Su'naina is a Property Advisor at ASK Real Estate with a focus on residential leasing and tenant relations. Her warm, professional approach and attention to detail ensure clients feel supported throughout their property search and move-in process.",
+    "specializations": ["Residential leasing", "Tenant relations", "Seef"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" },
+      { "code": "hi", "label": "Hindi", "flag": "🇮🇳" }
+    ],
+    "years_with_ask": 2,
+    "active_listings": 14,
+    "rating": 4.8,
+    "deals_closed_year": 18,
+    "response_time": "< 30 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "sunaina@askre.com"
+  },
+  {
+    "id": "ask-agent-015",
+    "name": "Ali Salah",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/ali.png",
+    "bio": "Ali is a Property Advisor at ASK Real Estate with strong roots in Bahrain's residential market. Specialising in family villas and larger apartments across Riffa, Saar, and Budaiya, he understands what Bahraini families look for in a home and delivers on those expectations every time.",
+    "specializations": ["Riffa", "Saar", "Budaiya", "Villas"],
+    "languages": [
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 3,
+    "active_listings": 22,
+    "rating": 4.9,
+    "deals_closed_year": 28,
+    "response_time": "< 20 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "ali@askre.com"
+  },
+  {
+    "id": "ask-agent-016",
+    "name": "Victoria Zaharich",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/Viktoryia.png",
+    "bio": "Victoria is a Property Advisor at ASK Real Estate who specialises in luxury residential properties and waterfront developments. She works primarily with international and expat clients seeking premium apartments and penthouses across Bahrain Bay, Reef Island, and Amwaj Islands.",
+    "specializations": ["Luxury residential", "Bahrain Bay", "Reef Island", "Expat clients"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" },
+      { "code": "ru", "label": "Russian", "flag": "🇷🇺" }
+    ],
+    "years_with_ask": 2,
+    "active_listings": 16,
+    "rating": 4.8,
+    "deals_closed_year": 21,
+    "response_time": "< 30 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "victoria@askre.com"
+  },
+  {
+    "id": "ask-agent-017",
+    "name": "Haris",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/Haris.png",
+    "bio": "Haris is a Property Advisor at ASK Real Estate with expertise in both residential and commercial property across Bahrain. Known for his responsiveness and thorough market knowledge, he guides clients through every step of the property transaction with clarity and professionalism.",
+    "specializations": ["Residential", "Commercial", "Juffair"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" },
+      { "code": "ur", "label": "Urdu", "flag": "🇵🇰" }
+    ],
+    "years_with_ask": 2,
+    "active_listings": 20,
+    "rating": 4.8,
+    "deals_closed_year": 25,
+    "response_time": "< 20 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "haris@askre.com"
+  },
+  {
+    "id": "ask-agent-018",
+    "name": "Sanya",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/Sanya.png",
+    "bio": "Sanya is a Property Advisor at ASK Real Estate with a passion for matching clients with their ideal homes in Bahrain. Her friendly, detail-oriented approach and strong follow-through make her a trusted advisor for both first-time renters and experienced property investors.",
+    "specializations": ["Residential", "Leasing", "Seef", "Diplomatic Area"],
+    "languages": [
+      { "code": "en", "label": "English", "flag": "🇬🇧" },
+      { "code": "hi", "label": "Hindi", "flag": "🇮🇳" }
+    ],
+    "years_with_ask": 2,
+    "active_listings": 17,
+    "rating": 4.8,
+    "deals_closed_year": 22,
+    "response_time": "< 30 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "sanya@askre.com"
+  },
+  {
+    "id": "ask-agent-019",
+    "name": "Salah Hashem",
+    "title": "Property Advisor",
+    "photo": "https://askre.com/wp-content/uploads/2025/12/Salah-1.png",
+    "bio": "Salah is a Property Advisor at ASK Real Estate with deep knowledge of Bahrain's residential and investment property market. He specialises in helping clients identify high-yield investment opportunities and navigate the Bahrain real estate market with confidence.",
+    "specializations": ["Investment properties", "Residential", "Amwaj Islands", "Diyar"],
+    "languages": [
+      { "code": "ar", "label": "Arabic", "flag": "🇧🇭" },
+      { "code": "en", "label": "English", "flag": "🇬🇧" }
+    ],
+    "years_with_ask": 3,
+    "active_listings": 24,
+    "rating": 4.9,
+    "deals_closed_year": 30,
+    "response_time": "< 20 min",
+    "phone": "+97317211180",
+    "whatsapp": "97336111323",
+    "email": "salah@askre.com"
   }
 ]
